@@ -1,0 +1,10 @@
+#+title: Affine function
+#+filed: math
+#+OPTIONS: toc:nil
+#+roam_alias: 仿射函数
+#+roam_tags:
+
+* Description
+有一阶多项式构成的函数，一般形式为 $f(x)=Ax+b$ 。
+
+当 $b=0$ 时，仿射函数又称线性函数。

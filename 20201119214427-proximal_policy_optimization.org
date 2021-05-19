@@ -1,0 +1,8 @@
+#+title: Proximal Policy Optimization
+#+filed: rl
+#+OPTIONS: toc:nil
+#+startup: latexpreview
+#+roam_alias:
+#+roam_tags: model-free ppo
+
+* Description

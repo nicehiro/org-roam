@@ -1,0 +1,8 @@
+#+title: k 阶样本中心矩
+#+filed: Statistics
+#+OPTIONS: toc:nil
+#+roam_alias:
+#+roam_tags: statistics moment
+
+* Description
+$m_k=\sum_{i=1}^{n}(X_i-\bar{X})^k/n$

@@ -1,0 +1,6 @@
+#+title: Bit Operation
+#+roam_alias: 位运算
+#+roam_tags: bit
+
+1. =2= 的幂整数的二进制特性： =x&(x-1)=0=
+2. 任意数的二进制特性： =x&(x-1)= 最后一个 1 为 0 。

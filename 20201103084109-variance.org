@@ -1,0 +1,10 @@
+#+title: Variance
+#+filed: Probability
+#+OPTIONS: toc:nil
+#+roam_alias:
+#+roam_tags: probability variance
+
+* Description
+$$
+Var(X)=E(X-EX)^2
+$$

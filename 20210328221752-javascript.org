@@ -1,0 +1,5 @@
+#+title: JavaScript
+#+roam_alias:
+#+roam_tags: javascript js
+
+** Basic

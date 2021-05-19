@@ -1,0 +1,236 @@
+#+title: Trust Region Policy Optimization
+#+filed: rl
+#+OPTIONS: toc:nil
+#+startup: latexpreview
+#+roam_alias:
+#+roam_tags: model-free
+
+* Preliminaries
+考虑一个无限长度的马尔科夫决策过程（MDP） $(\mathcal{S},\mathcal{A},P,r,\rho_0,\gamma)$ ,
+其中， $\mathcal{S}$ 是关于状态的有限集， $\mathcal{A}$ 是关于动作的有限集，
+$P:\mathcal{S}\times\mathcal{A}\times\mathcal{S}$ 是条件转移概率分布，
+$r:\mathcal{S}\rightarrow R$ 是奖励函数，
+$\rho_0:\mathcal{S}\rightarrow R$ 是初始状态的分布，
+$\gamma\in(0,1)$ 是折扣因子。
+
+令 $\pi:\mathcal{S}\times\mathcal{A}\rightarrow[0,1]$ 为随机策略，
+$\eta(\pi)$ 为期望折扣奖励：
+$$
+\eta(\pi)=E_{s_0,a_0,\dots}\left[
+\sum_{t=0}^{\infty}\gamma^{t}r(s_t)
+\right]
+$$
+
+其中， $s_0\sim\rho_0(s_0),a_t\sim\pi(a_t|s_t),s_{t+1}\sim P(s_{t+1}|s_t,a_t)$
+
+定义状态-动作值函数 $Q_{\pi}$ ，值函数 $V_{\pi}$ ，奖励函数 $A_{\pi}$ ：
+
+\begin{array}{l}
+Q_{\pi}\left(s_{t}, a_{t}\right)=\mathbb{E}_{s_{t+1}, a_{t+1}, \ldots}\left[\sum_{l=0}^{\infty} \gamma^{l} r\left(s_{t+l}\right)\right] \\
+V_{\pi}\left(s_{t}\right)=\mathbb{E}_{a_{t}, s_{t+1}, \ldots}\left[\sum_{l=0}^{\infty} \gamma^{l} r\left(s_{t+l}\right)\right] \\
+A_{\pi}(s, a)=Q_{\pi}(s, a)-V_{\pi}(s), \text { where } \\
+a_{t} \sim \pi\left(a_{t} \mid s_{t}\right), s_{t+1} \sim P\left(s_{t+1} \mid s_{t}, a_{t}\right) \text { for } t \geq 0
+\end{array}
+
+下面这个式子表示随着步长积累的另一个策略 $\tilde{\pi}$ 与当前策略 $\pi$ 的关系：
+\begin{equation}
+\eta(\tilde{\pi})=\eta(\pi)+E_{s_0,a_0,\dots\sim\tilde{\pi}}\left[
+\sum_{t=0}^{\infty}\gamma^{t}A_{\pi}(s_t,a_t)
+\right]
+\end{equation}
+
+上面的期望表明动作是取样自 $a_t\sim\tilde{\pi}(\cdot|s_t)$ 。
+
+证明如下：
+\begin{equation*}
+\begin{split}
+&\mathbb{E}_{\tau \sim \tilde{\pi}}\left[\sum_{t=0}^{\infty} \gamma^{t} A_{\pi}\left(s_{t}, a_{t}\right)\right] \\
+&=\mathbb{E}_{\tau \sim \tilde{\pi}}\left[\sum_{t=0}^{\infty} \gamma^{t}\left(r\left(s_{t}\right)+\gamma V_{\pi}\left(s_{t+1}\right)-V_{\pi}\left(s_{t}\right)\right)\right] \\
+&=\mathbb{E}_{\tau \sim \tilde{\pi}}\left[-V_{\pi}\left(s_{0}\right)+\sum_{t=0}^{\infty} \gamma^{t} r\left(s_{t}\right)\right] \\
+&=-\mathbb{E}_{s_{0}}\left[V_{\pi}\left(s_{0}\right)\right]+\mathbb{E}_{r \mid \tilde{\pi}}\left[\sum_{t=0}^{\infty} \gamma^{t} r\left(s_{t}\right)\right] \\
+&=-\eta(\pi)+\eta(\tilde{\eta})
+\end{split}
+\end{equation*}
+
+令 $\rho_{\pi}$ 表示状态的折扣访问频率：
+$$
+\rho_{\pi}(s)=P(s_0=s)+\gamma P(s_1=s)+\gamma^2 P(s_2=s)+\dots
+$$
+
+其中， $s_0\sim\rho_0$ ，动作取样自 $\pi$ 。
+
+将等式（1）展开：
+\begin{equation}
+\begin{aligned}
+\eta(\tilde{\pi}) &=\eta(\pi)+\sum_{t=0}^{\infty} \sum_{s} P\left(s_{t}=s \mid \tilde{\pi}\right) \sum_{a} \tilde{\pi}(a \mid s) \gamma^{t} A_{\pi}(s, a) \\
+&=\eta(\pi)+\sum_{s} \sum_{t=0}^{\infty} \gamma^{t} P\left(s_{t}=s \mid \tilde{\pi}\right) \sum_{a} \tilde{\pi}(a \mid s) A_{\pi}(s, a) \\
+&=\eta(\pi)+\sum_{s} \rho_{\tilde{\pi}}(s) \sum_{a} \tilde{\pi}(a \mid s) A_{\pi}(s, a)
+\end{aligned}
+\end{equation}
+
+从上式可以看出，如果每次策略的更新 $\pi\rightarrow\tilde{\pi}$ 中，每个状态 $s$ 都有非负期望优势 $A$ ，即
+$\sum_{a}\tilde{\pi}(a|s)A_{\pi}(s,a)\geq0$ ，那么就可以确保策略的期望回报是不断增加的。但是在训练过程中，我们很难保证
+每个状态的期望优势都是非负的。由于 $\rho_{\tilde{\pi}}(s)$ 使等式二变得更复杂，因此我们做第一次近似：
+$$
+L_{\pi}(\tilde{\pi})=\eta(\pi)+\sum_{s}\rho_{\pi}(s)\sum_{a}\tilde{\pi}(a|s)A_{\pi}(s,a)
+$$
+
+$L_{\pi}$ 忽视了由于策略改变引起的状态访问频率的变化，那么我们可以保证对 $L_{\pi}$ 的优化等同于对 $\eta$ 的优化吗？
+
+可以发现：
+\begin{aligned}
+L_{\pi_{\theta_{0}}}\left(\pi_{\theta_{0}}\right) &=\eta\left(\pi_{\theta_{0}}\right) \\
+\left.\nabla_{\theta} L_{\pi_{\theta_{0}}}\left(\pi_{\theta}\right)\right|_{\theta=\theta_{0}} &=\left.\nabla_{\theta} \eta\left(\pi_{\theta}\right)\right|_{\theta=\theta_{0}}
+\end{aligned}
+
+即，在 $\pi_{\theta_0}$ 作一个很小的改变，如果提高 $L_{\pi}$ ，那么也会提高 $\eta$ 。
+但这个式子并没有给出步长应该走多少。
+
+为了解决这个问题，Kakade 和 Langford 给出了一个策略更新方法——conservative policy iteration，
+提供了一个能够提高 $\eta$ 的明确的下限。
+令 $\pi_{old}$ 表示当前策略， $\pi^{\prime}=\arg\max_{\pi^{\prime}}L_{\pi_{old}}(\pi^{\prime})$ ，
+新的策略为：
+$$
+\pi_{new}(a|s)=(1-\alpha)\pi_{old}(a|s)+\alpha\pi^{\prime}(a|s)
+$$
+
+下限为：
+\begin{equation}
+\begin{aligned}
+\eta\left(\pi_{\text {new }}\right) & \geq L_{\pi_{\text {old }}}\left(\pi_{\text {new }}\right)-\frac{2 \epsilon \gamma}{(1-\gamma)^{2}} \alpha^{2} \\
+& \text { where } \epsilon=\max _{s}\left|\mathbb{E}_{a \sim \pi^{\prime}(a \mid s)}\left[A_{\pi}(s, a)\right]\right|
+\end{aligned}
+\end{equation}
+
+等式（3）表明，对等式右边的提升可以确保左边的提升。
+我们的主要理论结果是，通过用 $\pi$ 和 $\tilde{\pi}$ 之间的距离替换 $\alpha$ ，并适当更改常数 $\varepsilon$ 使
+等式（3）中策略改进范围扩展到一般随机策略，而不仅仅是混合策略（ $\pi_(new)$ ）。
+我们使用 total variation divergence 来衡量两个策略之间的距离。对于离散环境， $D_{TV}(p||q)=\frac{1}{2}\sum_{i}|p_i-q_i$ ，
+连续环境中使用密度函数。
+
+$$
+D_{TV}^{\max}=\max_{s}D_{TV}(\pi(\cdot|s)||\tilde{\pi}(\cdot|s))
+$$
+
+#+begin_theorem
+令 $\alpha=D_{TV}^{\max}(\pi_{old},\pi_{new})$ ，下限为：
+
+\begin{equation}
+\begin{array}{c}
+\eta\left(\pi_{\text {new }}\right) \geq L_{\pi_{\text {old }}}\left(\pi_{\text {new }}\right)-\frac{4 \epsilon \gamma}{(1-\gamma)^{2}} \alpha^{2} \\
+\text { where } \epsilon=\max _{s, a}\left|A_{\pi}(s, a)\right|
+\end{array}
+\end{equation}
+#+end_theorem
+
+可以发现 TV 散度和 KL 散度之间的关系为： $D_{TV}(p||q)^2\leq D_{KL}(p||q)$ 。
+令 $D_{KL}^{\max}(\pi,\tilde{\pi})=\max_{s}D_{KL}(\pi_(\cdot|s)||\tilde{\pi}(\cdot|s))$ ，
+等式（4）可以写成：
+\begin{equation}
+\begin{aligned}
+\eta(\tilde{\pi}) & \geq L_{\pi}(\tilde{\pi})-C D_{\mathrm{KL}}^{\max }(\pi, \tilde{\pi}) \\
+& \text { where } C=\frac{4 \epsilon \gamma}{(1-\gamma)^{2}}
+\end{aligned}
+\end{equation}
+
+算法 1 描述了基于等式（5）的策略梯度更新算法：
+#+begin_center
+#+caption: Algorithm 1
+#+attr_latex: scale=0.75
+#+attr_html: width 400
+#+attr_org: width 400
+
+[[file:./img/trpo/algo_1.png]]
+#+end_center
+
+使用算法 1 可以使策略回报随着时间变化而递增， $\eta(\pi_0)\leq\eta(\pi_2)\leq\dots$ ，
+令 $M_{i}(\pi)=L_{\pi_i}(\pi)-CD_{KL}^{\max}(\pi_i,\pi)$ ，
+\begin{equation}
+\begin{split}
+&\eta(\pi_{i+1}\geq M_{i}(\pi_{i+1}))\quad by\quad Equation\quad (5) \\
+&\eta(\pi_i)=M_{i}(\pi_i),\quad therefore, \\
+&\eta(\pi_{i+1})-\eta(\pi_{i})\geq M_{i}(\pi_{i+1})-M(\pi_i)
+\end{split}
+\end{equation}
+
+通过在每一步最大化 $M_i$ ，我们可以确保目标 $\eta$ 是非递减的。
+
+接下来介绍的 TRPO 算法是算法 1 的近似，通过对 KL 散度加约束而不是使用它作为惩罚项，
+来获得最大程度的更新。
+
+** Optimization of Parameterized Policies
+对前面的标记做个简化： $\eta(\theta):=\eta(\pi_{\theta}),L_{\theta}(\tilde{\theta}),D_{KL}(\theta||\tilde{\theta}):=D_{KL}(\pi_{\theta}||\pi_{\tilde{\theta}})$ 。
+
+之前得到的不等式为 $\eta(\theta)\geq L_{\theta_{old}}(\theta)-CD_{KL}^{\max}(\theta_{old},\theta)$ ，
+$\theta=\theta_{old}$ 时等式成立。通过实现下式来保证目标不断被优化：
+$$
+\max_{\theta}[L_{\theta_{old}}(\theta)-CD_{KL}^{\max}(\theta_{old},\theta)]
+$$
+
+在实际运算时，理论算法可能会有问题。
+**** 更新步长太小
+如果我们使用推导的 $C$ 作为更新步长，更新步幅是很小的。
+但上诉问题可以转化为约束问题，把 KL 散度当成约束，这样更新步幅就会变大了：
+\begin{equation}
+\begin{array}{l}
+\underset{\theta}{\operatorname{maximize}} L_{\theta_{\mathrm{old}}}(\theta) \\
+\text { subject to } D_{\mathrm{KL}}^{\max }\left(\theta_{\mathrm{old}}, \theta\right) \leq \delta
+\end{array}
+\end{equation}
+
+**** 计算复杂度很高
+理论上的 KL 散度是对所有状态空间的策略都要进行计算，我们使用平均 KL 散度进行替代。
+
+$$
+D_{KL}^{\rho}(\theta_1,\theta_2):=\mathbb{E}_{s\sim\rho}[D_{KL}(\pi_{\theta_1}(\cdot|s)||\pi_{\theta_2}(\cdot|s))]
+$$
+
+我们的优化函数变成了这样：
+\begin{equation}
+\begin{array}{l}
+\underset{\theta}{\operatorname{maximize}} L_{\theta_{\mathrm{old}}}(\theta) \\
+\text { subject to } \bar{D}_{\mathrm{KL}}^{\rho_{\theta \mathrm{old}}}\left(\theta_{\mathrm{old}}, \theta\right) \leq \delta
+\end{array}
+\end{equation}
+
+** Sample-Based Estimation of the Objective and Constraint
+将上诉优化函数展开：
+\begin{equation}
+\begin{array}{r}
+\underset{\theta}{\operatorname{maximize}} \sum_{s} \rho_{\theta_{\text {old }}}(s) \sum_{a} \pi_{\theta}(a \mid s) A_{\theta_{\text {old }}}(s, a) \\
+\text { subject to } \bar{D}_{\mathrm{KL}}^{\rho_{\text {old }}}\left(\theta_{\text {old }}, \theta\right) \leq \delta
+\end{array}
+\end{equation}
+
+接下来我们对上式做三处近似：
+1. 使用期望 \frac{1}{1-\gamma}\mathbb{E}_{s\sim\rho_{\theta_{old}}}[\dots] 来近似 $\sum_{s}\rho_{\theta_{old}}(s)[\dots]$
+2. 使用 Q 值 $Q_{\theta_{old}}$ 近似 $A_{\theta_{old}}$
+3. 使用重要性采样估计 $\sum_{a}[\dots]$
+
+$$
+\sum_{a} \pi_{\theta}\left(a \mid s_{n}\right) A_{\theta_{\mathrm{old}}}\left(s_{n}, a\right)=\mathbb{E}_{a \sim q}\left[\frac{\pi_{\theta}\left(a \mid s_{n}\right)}{q\left(a \mid s_{n}\right)} A_{\theta_{\mathrm{old}}}\left(s_{n}, a\right)\right]
+$$
+
+得到了最后的优化方程：
+\begin{equation}
+\begin{array}{l}
+\underset{\theta}{\operatorname{maximize}} \mathbb{E}_{s \sim \rho_{\theta \mathrm{old}}, a \sim q}\left[\frac{\pi_{\theta}(a \mid s)}{q(a \mid s)} Q_{\theta_{\mathrm{old}}}(s, a)\right] \\
+\text { subject to } \mathbb{E}_{s \sim \rho_{\theta \mathrm{old}}}\left[D_{\mathrm{KL}}\left(\pi_{\theta_{\mathrm{old}}}(\cdot \mid s) \| \pi_{\theta}(\cdot \mid s)\right)\right] \leq \delta
+\end{array}
+\begin{equation}
+
+**** Single Path
+先取样第一个状态 $s_0\sim\rho_0$ ，然后用策略 $\pi_{\theta_{old}}$ 生成一条轨迹：
+$s_0,a_0,s_1,a_1,\dots,s_{T-1},a_{T-1},s_{T}$ 。
+因此 $q(a|s)=\pi_{\theta_{old}}(a|s)$ ，Q 值是在每次轨迹结束之后计算的折扣奖励和。
+
+**** Vine
+先取样第一个状态 $s_0\sim\rho_0$ ，然后用策略 $\pi_{\theta_i}$ 生成一系列轨迹。
+然后，从这些轨迹中选 N 个状态 $s_1,s_2,\dots,s_N$ 组成 rollout 集。
+对 rollout 集中每一个状态 $s_n$ ，使用 $q$ 进行动作采样 $a_{n,k}\sim q(\cdot|s_n)$ 。
+对每个在 $s_n$ 采样到的动作 $a_{n,k}$ ，对其继续采样一个短的轨迹，来计算其 Q 值 $\hat{Q}(s_n,a_n,k)$ 。
+
+** Practical Algorithm
+1. 使用 Single-Path 或 Vine 方法进行采样
+2. 计算最终优化函数中的目标值的期望
+3. 近似的去解这个优化问题来更新策略参数 $\theta$ 。

@@ -1,0 +1,10 @@
+#+title: Discriminative learning algos
+#+filed: machine-learning
+#+OPTIONS: toc:nil
+#+startup: latexpreview
+#+roam_alias:
+#+roam_tags: machine-learning
+
+* Description
+直接学习 $p(y|x)$ 的算法（例如[[file:20201103094628-logistic_regression.org][Logistic Regression]]），
+或者直接学习输入和标签 ${0,1}$ 的算法被称为 discriminative learning algorithm。

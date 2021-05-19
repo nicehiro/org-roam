@@ -1,0 +1,10 @@
+#+title: Dynamic Programming
+#+filed:
+#+OPTIONS: toc:nil
+#+roam_alias: 动态规划
+#+roam_tags: algos
+
+* Description
+
+* 经典案例
+** [[file:20210109150500-买卖股票的最佳时机.org][买卖股票的最佳时机]]

@@ -1,0 +1,6 @@
+#+title: Blackbox in AI
+#+roam_alias:
+#+roam_tags:
+
+* old
+- Architecture + dataset + objective

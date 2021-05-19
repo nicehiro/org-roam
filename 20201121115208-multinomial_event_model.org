@@ -1,0 +1,9 @@
+#+title: Multinomial event model
+#+filed: machine-learning
+#+OPTIONS: toc:nil
+#+startup: latexpreview
+#+roam_alias:
+#+roam_tags: text classification multinomial
+
+* Description
+多项式事件模型。

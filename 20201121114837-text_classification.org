@@ -1,0 +1,13 @@
+#+title: Text classification
+#+filed: machine-learning
+#+OPTIONS: toc:nil
+#+startup: latexpreview
+#+roam_alias:
+#+roam_tags: text classification
+
+* Description
+文本分类。
+
+- [[file:20201120154028-navie_bayes.org][Navie Bayes]]
+
+- [[file:20201121115208-multinomial_event_model.org][Multinomial event model]]

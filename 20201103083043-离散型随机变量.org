@@ -1,0 +1,17 @@
+#+title: 离散型随机变量
+#+filed: Probability
+#+OPTIONS: toc:nil
+#+roam_alias:
+#+roam_tags: probability deterministic
+
+* Description
+
+设 $X$ 为离散型随机变量，其全部可能值为 ${a_1,a_2,\dots}$ ，则
+$$
+p_i=P(X=a_i)
+$$
+称为 $X$ 的概率函数。
+
+- [[file:20201103083202-binomial_distribution.org][二项分布]]
+
+- [[file:20201103083300-poisson_distribution.org][泊松分布]]

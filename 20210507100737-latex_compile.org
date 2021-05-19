@@ -1,0 +1,31 @@
+#+title: Latex Compile
+#+roam_alias:
+#+roam_tags: latex compile bib
+
+找到三张图可以很好的解释这个过程，虽然没有设计太底层的设计，
+但可以基本的了解下 Latex 的编译过程。
+
+
+* 有目录，ref 引用的排版时
+
+#+DOWNLOADED: screenshot @ 2021-05-07 10:20:50
+#+attr_html: scale=0.8 :align center
+#+attr_latex: :width 400cm
+#+attr_org: :width 400px
+[[file:img/latex-compile/有目录，ref_引用的排版时/2021-05-07_10-20-50_screenshot.png]]
+
+* 用 bibtex 排版时
+
+#+DOWNLOADED: screenshot @ 2021-05-07 10:20:39
+#+attr_html: scale=0.8 :align center
+#+attr_latex: :width 400cm
+#+attr_org: :width 400px
+[[file:img/latex-compile/用_bibtex_排版时/2021-05-07_10-20-39_screenshot.png]]
+
+* Ref
+[[https://mp.weixin.qq.com/s/MR94nk_gJIvOPl7kmJ1biA][Latex 编译过程]]
+
+
+# Local Variables:
+# org-download-image-dir: "./img/latex-compile/"
+# End:

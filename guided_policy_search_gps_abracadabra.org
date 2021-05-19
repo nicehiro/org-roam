@@ -1,0 +1,5 @@
+#+title: Guided Policy Search(GPS) | Abracadabra
+#+roam_key: https://tomaxent.com/2019/04/06/Guided-Policy-Search-GPS/
+#+roam_tags: blog gps
+
+GPS 算法介绍。

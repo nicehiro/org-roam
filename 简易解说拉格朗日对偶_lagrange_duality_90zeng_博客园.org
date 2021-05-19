@@ -1,0 +1,4 @@
+#+title: 简易解说拉格朗日对偶（Lagrange duality） - 90Zeng - 博客园
+#+roam_key: https://www.cnblogs.com/90zeng/p/Lagrange_duality.html
+
+虽然排版看起来让人不舒服，但这是唯一一篇让我理解了拉格朗日对偶性质的文章。

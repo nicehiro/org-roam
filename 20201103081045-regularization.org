@@ -1,0 +1,9 @@
+#+title: Regularization
+#+filed: Machine-Learning
+#+OPTIONS: toc:nil
+#+roam_alias:
+#+roam_tags: regularization
+
+* Description
+
+对参数做正则化惩罚处理。

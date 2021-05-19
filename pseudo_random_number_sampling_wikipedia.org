@@ -1,0 +1,2 @@
+#+title: Pseudo-random number sampling - Wikipedia
+#+roam_key: https://en.wikipedia.org/wiki/Pseudo-random_number_sampling#Continuous_distributions

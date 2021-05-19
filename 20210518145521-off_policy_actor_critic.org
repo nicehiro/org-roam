@@ -1,0 +1,44 @@
+#+title: Off Policy Actor Critic
+#+roam_alias:
+#+roam_tags: rl off-policy
+
+* Preliminary
+One disadvantage of [[file:20210107162935-reinforce.org][REINFORCE]] is low data utilization.
+
+
+The advantages of off-policy methods:
+1. Learning about an optimal policy while executing an exploratory policy.
+2. Learning from demonstration.
+3. Learn multiple tasks in parallel.
+
+
+The objective function is
+\begin{equation*}
+J_{\gamma}(\mu) = \sum_{s \in S} d^{b}(s)V^{\pi_{u},\gamma}(s)
+\end{equation*}
+
+where $d^{b}(s)$ is the limiting distribution of states under $b$ and
+$P(s_t = s | s_0, b)$ is the probability that $s_t = s$ when starting
+in $s_0$ and executing $b$. In the off-policy settings, data is obtained
+according to this behavior distribution $b$.
+
+In this paper, we consider the version of off-PAC that update its critic
+weights by the [[file:20210519152943-gradient_temporal_difference.org][Gradient Temporal-Difference]].
+
+* Off-PAC policy gradient estimation
+\begin{aligned}
+&\nabla_{u} J_{\gamma}(u) \\
+&= \nabla_{u} \left[ \sum_{s\in S} d^{b}(s) \sum_{a\in A} \pi(a|s) Q^{\pi,\gamma}(s,a) \right] \\
+&= \sum_{s\in S}d^{b}(s) \sum_{a\in A} \left[ \nabla_{u}\pi(a|s)Q^{\pi,\gamma}(s,a) + \pi(a|s)\nabla_{u}Q^{\pi,\gamma}(s,a) \right] \\
+&\approx \sum_{s\in S}d^{b}(s) \sum_{a\in A} \nabla_{u}\pi(a|s)Q^{\pi,\gamma}(s,a) \\
+&= \mathbb{E}_{s\sim d^{b}} \sum_{a\in A} \nabla_{u}\pi(a|s)Q^{\pi,\gamma}(s,a) \\
+&= \mathbb{E}_{s\sim d^{b}} \sum_{a\in A} b(a|s) \frac{\pi(a|s)}{b(a|s)}\frac{\nabla_{u}\pi(a|s)}{\pi(a|s)}Q^{\pi,\gamma}(s,a) \\
+&= \mathbb{E}_{s\sim d^{b},a\sim b} \frac{\pi(a|s)}{b(a|s)}\frac{\nabla_{u}\pi(a|s)}{\pi(a|s)}Q^{\pi,\gamma}(s,a) \\
+&= \mathbb{E}_{b} \frac{\pi(a|s)}{b(a|s)}\frac{\nabla_{u}\pi(a|s)}{\pi(a|s)}Q^{\pi,\gamma}(s,a) \\
+\end{aligned}
+
+The derivation above use [[file:20201031155429-importance_sampling.org][Importance Sampling]].
+
+
+* Reference
+- [[ebib:degrisOffPolicyActorCritic2013][Degris, Thomas and White, Martha and Sutton, Richard S. (2013)]]

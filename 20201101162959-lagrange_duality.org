@@ -1,0 +1,148 @@
+#+title: Lagrange duality
+#+filed: Math
+#+OPTIONS: toc:nil
+#+roam_alias:
+#+roam_tags: math lagrange duality
+#+startup: latexpreview
+
+* Description
+在约束最优化问题中，常常利用拉格朗日对偶性将原始问题转换为对偶问题，通过解对偶问题而得到原始问题的解。
+
+** 原始问题
+假设 $f(x),c_i(x),h_j(x)$ 是定义在 $\mathbf{R}^n$ 上的连续可微函数。
+考虑约束最优化问题：
+
+\begin{aligned}
+\min\limits_{x\in\mathbf{R}^n} \quad & f(x) \\
+s.t. \quad & c_i(x)\leq 0, i=1,2,\cdots,k \\
+& h_{j}(x)=0, j=1,2,\cdots,l
+\end{aligned}
+
+称此最优化问题为原始最优化问题或原始问题。
+
+首先，引入广义拉格朗日函数（generalized Lagrange function）
+$$
+L(x,\alpha,\beta)=f(x)+\sum_{i=1}^{k}\alpha_{i}c_{i}(x)+\sum_{j=1}^{l}\beta_{j}h_{j}(x)
+$$
+
+这里， $x=(x^{(1)},x^{(2)},\cdots,x^{(n)})^T\in\mathbf{R}^n,\alpha_i,\beta_j$ 是[[file:20201101162755-lagrange_multiplier.org][拉格朗日乘子]]，
+$\alpha_i\geq0$ 。考虑 $x$ 的函数：
+
+$$
+\theta_{P}(x) = \max_{\alpha,\beta:\alpha\geq0}L(x,\alpha,\beta)
+$$
+
+这里， $P$ 表示原始问题。 $\max$ 下标只有 $\alpha,\beta$ ，可以理解为，
+先保持 $x$ 不变， $\alpha,\beta$ 是使得 $L$ 最大的参数。
+
+假设给定某个 $x$ 。如果 $x$ 违反原始问题的约束条件，即存在某个 $i$ 使得 $c_i(x)>0$
+或者存在某个 $j$ 使得 $h_{j}(x)\neq0$ ，那么就有：
+$$
+\theta_{P}(x)=\max_{\alpha,\beta:\alpha_i\geq0}\left[
+f(x)+\sum_{i=1}^{k}\alpha_{i}c_{i}(x)+\sum_{j=1}^{l}\beta_{j}h_{j}(x)
+\right]=+\infty
+$$
+
+因为如果某个 $i$ 使约束 $c_{i}(x)>0$ ，则可令 $\alpha_{i}\rightarrow+\infty$ ；
+若某个 $j$ 使 $h_{j}(x)\neq0$ ，则可令 $\beta_{j}$ 使 $\beta_{j}h_{j}(x)\rightarrow+\infty$ ，
+而将其余各 $\alpha_i,\beta_j$ 均取 0 。
+
+相反地，如果 $x$ 满足约束条件，则此问题和原始问题等价。即：
+
+\begin{aligned}
+\theta_{P}(x)= \quad & f(x), &x s.t. Constrain \\
+&+\infty, & others \\
+\end{aligned}
+
+所以，如果考虑极小化问题
+
+$$
+\min_{x}\theta_{P}(x)=\min_{x}\max_{\alpha,\beta:\alpha_{i}\geq0}L(x,\alpha,\beta)
+$$
+
+它是与原始问题等价的，即它们有相同的解。
+问题 $\min_{x}\max_{\alpha,\beta:\alpha_{i}\geq0}L(x,\alpha,\beta)$ 称为广义拉格朗日函数的极小极大问题。
+为了方便，定义原始问题的最优值
+
+$$
+p^{*}=\min_{x}\theta_{P}(x)
+$$
+
+称为原始问题的值。
+
+** 对偶问题
+定义
+$$
+\theta_{D}(\alpha,\beta)=\min_{x}L(x,\alpha,\beta)
+$$
+
+这里 $\theta_{D}$ 是关于 $\alpha,\beta$ 的函数，
+$\min$ 的下标为 $x$ 可以理解为在给定 $\alpha,\beta$ 不变的条件下，
+$x$ 是使得 $L$ 最小的参数。
+再考虑极大化 $\theta_D$ ，即
+$$
+\max_{\alpha,\beta:\alpha_{i}\geq0}\theta_{D}(\alpha,\beta)=\max_{\alpha,\beta:\alpha_{i}\geq0}\min_{x}L(x,\alpha,\beta)
+$$
+
+此问题被称为广义拉格朗日函数的极大极小问题。
+
+定义对偶问题的最优值
+$$
+d^{*}=\max_{\alpha,\beta:\alpha_{i}\geq0}\theta_{D}(\alpha,\beta)
+$$
+
+称为对偶问题的值。
+
+** 原始问题和对偶问题的关系
+#+begin_theorem
+若原始问题和对偶问题都有最优值，则
+$$
+d^{*} = \max_{\alpha,\beta:\alpha_{i}\geq0}\min_{x}L(x,\alpha,\beta)\leq\min_{x}\max_{\alpha,\beta:\alpha_{i}\geq0}L(x,\alpha,\beta)=p^{*}
+$$
+#+end_theorem
+
+#+begin_proof
+易知：
+$$
+\theta_{D}(\alpha,\beta)=\min_{x}L(x,\alpha,\beta)\leq L(x,\alpha,\beta)\leq\max_{\alpha,\beta:\alpha_{i}\geq0}L(x,\alpha,\beta)=\theta_{P}(x)
+$$
+
+即
+$\theta_{D}(\alpha,\beta)\leq\theta_{P}(x)$
+
+由于原始问题和对偶问题均有最优值，所以，
+$$
+\max_{\alpha,\beta:\alpha_{i}\geq0}\theta_{D}(\alpha,\beta)\leq\min_{x}\theta_{P}(x)
+$$
+
+即
+$$
+d^{*} = \max_{\alpha,\beta:\alpha_{i}\geq0}\min_{x}L(x,\alpha,\beta)\leq\min_{x}\max_{\alpha,\beta:\alpha_{i}\geq0}L(x,\alpha,\beta)=p^{*}
+$$
+#+end_proof
+
+*** 定理
+考虑原始问题和对偶问题。假设函数 $f(x)$ 和 $c_i(x)$ 是凸函数， $h_j(x)$ 是[[file:20201230112703-affine_function.org][仿射函数]]；
+并且假设不等式约束 $c_i(x)$ 是严格执行的，即存在 $x$ ，对所有 $i$ 有 $c_i(x)<0$ ，
+则存在 $x^*,\alpha^*,\beta^*$ ，使 $x^*$ 是原始问题的解， $\alpha^*,\beta^*$ 是对偶问题的解，
+并且
+
+$$
+p^*=d^*=L(x^*,\alpha^*,\beta^*)
+$$
+
+*** KKT 条件
+对原始问题和对偶问题，假设函数 $f(x)$ 和 $c_i(x)$ 是凸函数， $h_j(x)$ 是仿射函数，
+并且不等式约束 $c_i(x)$ 是严格执行的，则 $x^{*},\alpha^{*},\beta^*$ 被称为是原始问题和对偶问题的解
+的充分必要条件是其满足：
+\begin{align}
+\nabla_xL(x^*,\alpha^*,\beta^*)=0 \\
+\alpha_i^*c_i(x^*)=0 \\
+c_i(x^*)\leq0 \\
+\alpha_i^*\geq0 \\
+h_j(x^*)=0 \\
+\end{align}
+
+* 相关文章
+- [[file:简易解说拉格朗日对偶_lagrange_duality_90zeng_博客园.org][简易解说拉格朗日对偶（Lagrange duality） - 90Zeng - 博客园]]
+- 《统计学习方法》附录 C ：拉格朗日对偶性

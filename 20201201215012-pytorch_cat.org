@@ -1,0 +1,8 @@
+#+title: Pytorch Cat
+#+roam_alias:
+#+roam_tags: torch cat
+
+Concatenates the given sequence of seq tensors in the given dimensions.
+All tensors must either have the same shape or be empty.
+
+沿着某个维度将一组同维数的数据组合。和[[file:20201201214950-pytorch_stack.org][Pytorch Stack]]不同， =cat= 不会新产生维度。

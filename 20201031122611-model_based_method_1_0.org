@@ -1,0 +1,13 @@
+#+title: Model Based Method 1.0
+#+filed: Reinforcement Learning
+#+OPTIONS: toc:nil
+#+roam_alias:
+#+roam_tags: rl mbrl algos
+
+* Description
+引入 DAgger 算法，通过人工对数据标记，更新模型，来保证模型的准确性。
+#+BEGIN_CENTER
+#+ATTR_ORG: :width 600
+#+ATTR_HTML: :width 100%
+[[file:./img/rl-sergey/lec-11-2.png]]
+#+END_CENTER

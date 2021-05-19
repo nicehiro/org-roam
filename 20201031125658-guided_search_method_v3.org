@@ -1,0 +1,12 @@
+#+title: Guided Search Method V3
+#+filed: Reinforcement Learning
+#+OPTIONS: toc:nil
+#+roam_alias:
+#+roam_tags: rl mbrl algos gps
+
+* Description
+
+- [[file:20201031125537-guided_search_method_v1.org][Guided Search Method V1]]
+
+* 相关文章
+- [[file:guided_policy_search_gps_abracadabra.org][Guided Policy Search(GPS) | Abracadabra]]

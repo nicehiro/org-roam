@@ -1,0 +1,21 @@
+#+title: Model Free RL
+#+filed: rl
+#+OPTIONS: toc:nil
+#+startup: latexpreview
+#+roam_alias:
+#+roam_tags: model-free
+
+* Description
+免模型强化学习算法。
+
+* Algorithms
+
+- DQN
+
+- Policy Gradient
+
+- Deep Deterministic Policy Gradient
+
+- [[file:20201119214853-trust_region_policy_optimization.org][Trust Region Policy Optimization]]
+
+- [[file:20201119214427-proximal_policy_optimization.org][Proximal Policy Optimization]]

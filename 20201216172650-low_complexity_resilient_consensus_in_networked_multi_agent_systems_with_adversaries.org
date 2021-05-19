@@ -1,0 +1,15 @@
+#+title: Low Complexity Resilient Consensus in Networked Multi-Agent Systems with Adversaries
+#+startup: latexpreview
+#+roam_alias:
+#+roam_tags: w-msr consensus control
+
+* Related Works
+
+
+* Views
+
+* Methods
+
+* Experiments
+
+* Conclusion

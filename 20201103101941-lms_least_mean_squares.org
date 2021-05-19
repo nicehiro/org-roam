@@ -1,0 +1,7 @@
+#+title: LMS(Least Mean Squares)
+#+filed: Machine-Learning
+#+OPTIONS: toc:nil
+#+roam_alias:
+#+roam_tags: machine-learning lms
+
+* Description

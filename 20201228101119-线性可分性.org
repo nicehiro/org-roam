@@ -1,0 +1,19 @@
+#+title: 线性可分性
+#+filed: math
+#+OPTIONS: toc:nil
+#+startup: latexpreview
+#+roam_alias: linearly separable data set
+#+roam_tags: math
+
+* Description
+给定一个数据集
+$$
+T={(x_1,y_1),(x_2,y_2),\cdots,(x_N,y_N)}
+$$
+其中，$x_i\in\mathcal{X}=\mathbf{R}^n$ ， $y_i\in\mathcal{Y}={+1,-1},i=1,2,\cdots,N$ ，
+如果存在某个超平面 $S$
+$$
+w\cdot x+b=0
+$$
+能够将数据集的正实例点和负实例点完全正确的划分到超平面的两侧，
+称数据集 $T$ 为线性可分数据集。

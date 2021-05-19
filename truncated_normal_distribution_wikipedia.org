@@ -1,0 +1,2 @@
+#+title: Truncated normal distribution - Wikipedia
+#+roam_key: https://en.wikipedia.org/wiki/Truncated_normal_distribution

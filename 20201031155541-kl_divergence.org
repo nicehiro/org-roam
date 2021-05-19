@@ -1,0 +1,29 @@
+#+title: KL Divergence
+#+filed: Math
+#+OPTIONS: toc:nil
+#+roam_alias:
+#+roam_tags: kl-divergence
+
+* Description
+KL 散度是两个概率分布 $P$ 和 $Q$ 差别的非对称性度量。
+KL 散度是用来度量使用基于 $Q$ 的分布来编码服从 $P$ 的分布的样本 所需的 *额外* 的平均比特数。
+典型情况下， $P$ 表示数据的真实分布， $Q$ 表示数据的理论分布或 $P$ 的近似分布。
+
+$$
+D_{KL}(P||Q)=-\sum_{i}P(i)\log{Q_{i}}-(-\sum_{i}P(i)\log{P(i)})
+$$
+
+$$
+D_{KL}(P||Q)=-\sum_{i}P(i)\log\frac{Q(i)}{P(i)}
+$$
+
+[[file:20201117092705-cross_entropy.org][交叉熵]]和 KL 散度之间的关系：
+$$
+\mathcal{H}(p,q)=E_{p}[-\log q]=\mathcal{p}+D_{KL}(p||q)
+$$
+
+
+* 相关文章
+#+begin_quote
+[[file:20201101153127-kullback_leibler_divergence_explained.org][Kullback-Leibler Divergence Explained]]
+#+end_quote

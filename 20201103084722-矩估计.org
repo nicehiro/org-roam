@@ -1,0 +1,9 @@
+#+title: 矩估计
+#+filed: Statistics
+#+OPTIONS: toc:nil
+#+roam_alias:
+#+roam_tags: statistics moment
+
+* Description
+利用样本矩去估计分布参数。
+样本矩有 [[file:20201103084828-k_阶样本原点矩.org][k 阶样本原点矩]] 和 [[file:20201103084958-k_阶样本中心矩.org][k 阶样本中心矩]] 。

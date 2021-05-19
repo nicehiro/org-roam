@@ -1,0 +1,8 @@
+#+title: Positive semi-definite matrix
+#+filed: math
+#+OPTIONS: toc:nil
+#+startup: latexpreview
+#+roam_alias:
+#+roam_tags: math
+
+* Description

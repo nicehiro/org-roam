@@ -1,0 +1,20 @@
+#+title: 边缘分布
+#+filed: Probability
+#+OPTIONS: toc:nil
+#+roam_alias:
+#+roam_tags: probability
+
+* Description
+设 $X=(X_1,X_2,\dots,X_n)$ 为一个 $n$ 维随机变量， $X$ 有一定的分布 $F$ ，其每个分量 $X_i$ 都是一维随机变量，有各自的分布 $F_i$ 。
+
+对于离散型随机变量：
+$$
+P(X_1=a_{ik})=\sum_{j_2,\dots,j_n}p(k,j_2,\dots,j_n)
+$$
+
+对于连续型随机变量：
+$$
+f_1(x_1)=\int_{-\infty}^{\infty}\cdots\int_{-\infty}^{\infty}f(x_1,x_2,\dots,x_n)dx_2\cdots dx_n
+$$
+
+一个随机变量 $X=(X_1,\cdots,X_n)$ 的分布函数 $F$ 决定了每一个分量 $X_i$ 的边缘分布 $F_i$ ，但反过来不对。

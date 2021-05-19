@@ -1,0 +1,30 @@
+#+title: Partial Derivative
+#+filed:
+#+OPTIONS: toc:nil
+#+roam_alias:
+#+roam_tags:
+#+startup: latexpreview
+
+* Description
+一个多元函数，对其中一个变量微分，而保持其他变量恒定（相对于全导数，其所有变量都允许变化）。
+
+设函数 $z=f(x,y)$ 在点 $(x_0,y_0)$ 的某一邻域内有定义，
+当 $y$ 固定在 $y_0$ 而 $x$ 在 $x_0$ 处有增量 $\delta x$ 时，相应的函数有增量
+
+$$
+f(x_0+\delta x,y_0)-f(x_0,y_0)
+$$
+
+如果
+
+$$
+\lim_{\delta x\rightarrow 0} \frac{f(x_0+\delta x,y_0)-f(x_0,y_0)}{\delta x}
+$$
+
+存在，则称此极限为函数 $f(x,y)$ 在点 $(x_0,y_0)$ 处对 $x$ 的偏导数。
+
+* 几何意义
+函数 $z=f(x,y)$ 对 $x$ 的偏导数，就是其在 $xoz$ 平面上的投影对 $x$ 的导数。
+
+* Ref
+- [[https://www.zhihu.com/question/26966355/answer/154857139]]

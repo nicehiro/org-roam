@@ -1,0 +1,7 @@
+#+title: Softmax
+#+filed: Machine-learning
+#+OPTIONS: toc:nil
+#+roam_alias:
+#+roam_tags: softmax
+
+* Description

@@ -1,0 +1,27 @@
+#+title: Maximum likelihood Estimation
+#+filed: Statistics
+#+OPTIONS: toc:nil
+#+roam_alias:
+#+roam_tags: statistics maximum-likelihood-estimation
+#+STARTUP: latexpreview
+
+* Description
+设总体有分布 $f(x;\theta_1,\dots,\theta_k)$ ， $X_1,\dots,X_n$ 为自这个总体中抽出的样本，
+则样本 $(X_1,\dots,X_n)$ 的分布（即其概率密度函数或概率函数）为：
+$$
+f(x_1;\theta_1,\dots,\theta_k)f(x_2;\theta_1,\dots,\theta_k)\dots f(x_n;\theta_1,\dots,\theta_k)
+$$
+记为 $L(x_1,\dots,x_n;\theta_1,\dots,\theta_k)$ 。
+
+当参数 $\theta_1,\dots,\theta_k$ 固定时，函数 $L$ 是一个概率密度函数。
+其意义为，样本 $X_1,\dots,X_n$ 出现的概率。反过来理解，当 $X_1,\dots,X_n$ 固定时，函数 $L$ 的意义为，
+给定样本，生成样本的参数为 $\theta_1,\dots,\theta_k$ 的概率。但参数没有概率这个说法，就选用了“似然”这个词。
+
+因此，我们要找的参数，其实就是使得 $L$ 最大的参数，即：
+$$
+L(X_1,\dots,X_n;\theta_1,\dots,\theta_n) = \max_{\theta_1,\dots,\theta_n}L(X_1,\dots,X_n;\theta_1,\dots,\theta_k)
+$$
+若 $f$ 连续可导，
+$$
+\ln L=\sum_{i=1}^{n}\ln f(X_i;\theta_1,\dots,\theta_k)
+$$

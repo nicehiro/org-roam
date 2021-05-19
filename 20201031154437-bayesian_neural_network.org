@@ -1,0 +1,7 @@
+#+title: Bayesian neural network
+#+filed: Math
+#+OPTIONS: toc:nil
+#+roam_alias:
+#+roam_tags:
+
+* Description

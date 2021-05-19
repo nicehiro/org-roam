@@ -1,0 +1,7 @@
+#+title: Gradient Descent
+#+filed: Machine Learning
+#+OPTIONS: toc:nil
+#+roam_alias:
+#+roam_tags: machine-learning
+
+* Description

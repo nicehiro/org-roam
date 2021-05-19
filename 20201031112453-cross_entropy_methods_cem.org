@@ -1,0 +1,12 @@
+#+title: Cross Entropy Methods(CEM)
+#+filed: Reinforcement Learning
+#+OPTIONS: toc:nil
+#+roam_alias:
+#+roam_tags: rl mbrl sto-open
+
+* Description
+交叉熵方法一般适用于状态空间连续的环境，分布函数一般选择高斯分布。
+1. 使用高斯分布 $p(A)$ 生成动作序列 $A_1,\dots,A_N$
+2. 计算 $J(A_1),\dots,J(A_N)$
+3. 选取上诉计算结果中表现最好（$J(A_i)$ 值最高）的几组动作序列 $A_{i_1},\dots,A_{i_M}$ ，其中 $M<N$
+4. 修改高斯分布参数，使得此高斯分布更加贴合 $A_{i_1},\dots,A_{i_M}$ ，返回 1 步继续执行

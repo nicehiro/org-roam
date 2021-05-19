@@ -1,0 +1,12 @@
+#+title: Lagrange multiplier
+#+filed: Math
+#+OPTIONS: toc:nil
+#+roam_alias:
+#+roam_tags: math lagrange
+
+* Description
+在极值点，原始问题和约束的梯度向量平行。
+
+* Ref
+- https://www.zhihu.com/question/38586401
+- http://www.slimy.com/~steuard/teaching/tutorials/Lagrange.html

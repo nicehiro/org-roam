@@ -1,0 +1,12 @@
+#+title: SOLAR
+#+filed: Reinforcement Learning
+#+OPTIONS: toc:nil
+#+roam_alias:
+#+roam_tags: rl mbrl
+
+* Description
+
+
+- [[file:20201031123814-latent_model.org][Latent Model]]
+
+- [[file:20201031125658-guided_search_method_v3.org][Guided Search Method V3]]

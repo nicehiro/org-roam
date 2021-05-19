@@ -1,0 +1,7 @@
+#+title: Gaussian Process
+#+filed: Optimization
+#+OPTIONS: toc:nil
+#+roam_alias:
+#+roam_tags: math gaussian-process
+
+* Description

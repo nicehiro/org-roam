@@ -1,0 +1,62 @@
+#+title: Model Based RL
+#+roam_alias:
+#+roam_tags: rl mbrl
+#+filed: Reinforcement Learning
+#+OPTIONS: toc:nil
+
+* Description
+:PROPERTIES:
+:ID:       B5219D07-BCEB-435F-9AA9-445317AF0092
+:END:
+无模型的强化学习不需要知道环境动力学方程，只要不断的进行试错和更新策略的过程就可以很好的进行训练了。
+但基于模型的强化学习需要用到环境动力学方程，
+在此基础上，对未来进行规划，从而达到加速训练和提高训练结果的效果。
+
+** 分类
+基于模型的强化学习按照环境的状态空间类型和 Plan 的方式可以分为以下三类：
+Deterministic Case, Stochastic Open Loop, Stochastic Close Loop 。
+
+- [[file:20201031110620-deterministic_case.org][Deterministic Case]]
+- [[file:20201031110723-stochastic_open_loop_case.org][Stochastic Open Loop Case]]
+- [[file:20201031110853-stochastic_close_loop_case.org][Stochastic Close Loop Case]]
+
+** 如何利用模型
+假设我们有模型，如何利用模型来求解最优路径呢？
+
+- [[file:20201031112228-random_shooting_methods.org][Random Shooting Methods]]
+
+- [[file:20201031112453-cross_entropy_methods_cem.org][Cross Entropy Methods(CEM)]]
+
+- [[file:20201031112627-monte_carlo_tree_search_mcts.org][Monte Carlo Tree Search(MCTS)]]
+
+- [[file:20201031112847-linear_quadratic_regression.org][Linear Quadratic Regression]]
+
+- [[file:20201031113807-iterative_linear_quadratic_regression.org][Iterative Linear Quadratic Regression]]
+
+** 基于模型的强化学习算法
+如果要利用模型去生成最优路径，那如何来生成一个好的模型？
+
+- [[file:20201031122450-model_based_method_0_5.org][Model Based Method 0.5]]
+
+- [[file:20201031122611-model_based_method_1_0.org][Model Based Method 1.0]]
+
+- [[file:20201031122745-model_based_method_1_5.org][Model Based Method 1.5]]
+
+- [[file:20201031123333-with_model_uncertainty.org][With Model Uncertainty]]
+
+- [[file:20201031123814-latent_model.org][Latent Model]]
+
+** 与策略相结合
+能不能把模型和策略的方法结合起来呢？
+
+- [[file:20201031124503-backpropagate_gradient.org][Backpropagate Gradient]]
+
+- [[file:20201031124856-model_free_with_model.org][Model Free with Model]]
+
+- [[file:20201031125537-guided_search_method_v1.org][Guided Search Method V1]]
+
+- [[file:20201031125622-guided_search_method_v2.org][Guided Search Method V2]]
+
+- [[file:20201031125658-guided_search_method_v3.org][Guided Search Method V3]]
+
+- [[file:20201031161623-solar.org][SOLAR]]

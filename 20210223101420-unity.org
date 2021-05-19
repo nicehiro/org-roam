@@ -1,0 +1,6 @@
+#+title: Unity
+#+roam_alias:
+#+roam_tags:
+
+1. 帧率是不固定的，可以指定，Unity 会尽量按指定帧率刷新。
+2. 只有 =public= 属性的变量才可以在 Inspect 窗口中显示。

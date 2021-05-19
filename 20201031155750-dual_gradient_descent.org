@@ -1,0 +1,11 @@
+#+title: Dual Gradient Descent
+#+filed: Math
+#+OPTIONS: toc:nil
+#+roam_alias:
+#+roam_tags: dual-gradient-descent lagrange
+
+* Description
+
+- [[file:20201101162755-lagrange_multiplier.org][Lagrange multiplier]]
+
+- [[file:20201101162959-lagrange_duality.org][Lagrange duality]]

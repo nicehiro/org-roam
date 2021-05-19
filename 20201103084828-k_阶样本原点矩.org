@@ -1,0 +1,8 @@
+#+title: k 阶样本原点矩
+#+filed: Statistics
+#+OPTIONS: toc:nil
+#+roam_alias:
+#+roam_tags: statistics moment
+
+* Description:
+$a_k=(X_{1}^{k}+\dots+X_{n}^{k})/n$

@@ -1,0 +1,16 @@
+#+title: Collocation Method
+#+filed: Optimization
+#+OPTIONS: toc:nil
+#+roam_alias:
+#+roam_tags: collocation-method
+
+* Description
+=Collocation method= 对状态和动作求导，有约束性。
+$$
+\min _{\mathbf{u}_{1}, \ldots, \mathbf{u}_{T}, \mathbf{x}_{1}, \ldots, \mathbf{x}_{T}} \sum_{t=1}^{T} c\left(\mathbf{x}_{t}, \mathbf{u}_{t}\right) \text { s.t. } \mathbf{x}_{t}=f\left(\mathbf{x}_{t-1}, \mathbf{u}_{t-1}\right)
+$$
+
+#+BEGIN_CENTER
+#+ATTR_HTML: :width 100%
+[[file:./img/rl-sergey/lec-10-5.png]]
+#+END_CENTER

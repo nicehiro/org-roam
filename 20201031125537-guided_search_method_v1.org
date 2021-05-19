@@ -1,0 +1,21 @@
+#+title: Guided Search Method V1
+#+filed: Reinforcement Learning
+#+OPTIONS: toc:nil
+#+roam_alias:
+#+roam_tags: rl mbrl algos gps
+
+* Description
+:PROPERTIES:
+:ID:       57D2A98B-E283-4925-96F4-A584DB5909F8
+:END:
+
+- [[file:20201031155429-importance_sampling.org][Importance Sampling]]
+
+- [[file:20201031155541-kl_divergence.org][KL Divergence]]
+
+- [[file:20201031113807-iterative_linear_quadratic_regression.org][Iterative Linear Quadratic Regression]]
+
+- [[file:20201031155750-dual_gradient_descent.org][Dual Gradient Descent]]
+
+* 相关文章
+- [[file:guided_policy_search_gps_abracadabra.org][Guided Policy Search(GPS) | Abracadabra]]
