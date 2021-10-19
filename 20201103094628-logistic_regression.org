@@ -1,12 +1,11 @@
 :PROPERTIES:
-:ID:       82C8F1D3-2526-4684-B635-FAFD10C227E6
+:id: 82C8F1D3-2526-4684-B635-FAFD10C227E6
 :END:
 #+title: Logistic Regression
 #+filed: Machine-Learning
 #+OPTIONS: toc:nil
 #+STARTUP: latexpreview
-#+filetags: :machine_learning:classfication:Users:wangfangyuan:Documents:roam:org_roam:
-#+hugo_section: ml
+#+filetags: :ml:
 
 * Description
 逻辑回归虽然叫做是回归，但其实是分类算法。
