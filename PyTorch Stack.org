@@ -1,5 +1,6 @@
 :PROPERTIES:
 :id: BA95B180-730F-43EA-B355-1CE00A580635
+:title: PyTorch Stack
 :END:
 #+title: Pytorch Stack
 #+filetags: :pytorch:
