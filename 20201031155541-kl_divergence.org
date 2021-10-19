@@ -1,10 +1,9 @@
 :PROPERTIES:
-:ID:       D9E34E77-F4CF-441F-AE95-00184F8A1E31
+:id: D9E34E77-F4CF-441F-AE95-00184F8A1E31
 :END:
 #+title: KL Divergence
-#+filed: Math
 #+OPTIONS: toc:nil
-#+filetags: :kl_divergence:Users:wangfangyuan:Documents:roam:org_roam:
+#+filetags: :math:
 #+startup: latex_preview
 
 * Description
@@ -24,8 +23,6 @@ $$
 $$
 \mathcal{H}(p,q)=E_{p}[-\log q]=\mathcal{P}+D_{KL}(p||q)
 $$
-
-
 * 相关文章
 #+begin_quote
 [[id:25377A39-9506-4CCC-B604-3F8BD8BC1E9B][Kullback-Leibler Divergence Explained]]
