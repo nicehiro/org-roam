@@ -1,8 +1,8 @@
 :PROPERTIES:
-:ID:       25377A39-9506-4CCC-B604-3F8BD8BC1E9B
+:id: 25377A39-9506-4CCC-B604-3F8BD8BC1E9B
 :END:
 #+title: Kullback-Leibler Divergence Explained
-#+filetags: :kl_divergence:translate:Users:wangfangyuan:Documents:roam:org_roam:
+#+filetags: :ml:
 
 #+begin_quote
 此篇文章翻译自 [[https://www.countbayesie.com/blog/2017/5/9/kullback-leibler-divergence-explained][Kullback-Leibler Divergence Explained]] 。
@@ -61,7 +61,6 @@ H = - \sum_{i=1}^{N} p(x_i) \cdot \log p(x_i)
 但是熵值没有给出压缩到最小信息的方法，压缩信息是个非常有趣的话题，
 但不了解它并不影响我们理解 KL 散度。交叉熵的关键之处在于，从理论上给出了加密信息的最小位数。
 理解了熵，我们就知道了有多少信息存储在数据中。接下来我们要分析使用近似分布来替代原始数据分布之后，损失了多少信息？
-
 ** 使用 KL 散度衡量信息损失程度
 KL 散度的公式就是在交叉熵的公式上做了一些小小的改动，公式中不仅有原数据概率\(p\)还有近似分布的概率\(q\)。
 \begin{equation*}
@@ -81,7 +80,6 @@ D_{KL}(p \mid\mid q) = \sum_{i=1}^{N} p(x_i) \cdot \log \frac{p(x_i)}{q(x_i)}
 \end{equation*}
 
 有了 KL 散度，就可以计算在近似过程种有多少信息损失了。
-
 ** 比较两次近似分布
 我们分别计算两次近似分布的 KL 散度。
 
@@ -97,7 +95,6 @@ D_{KL}(Observaed \mid\mid Binomial) = 0.447
 
 可以看到，二项分布的 KL 散度大于均分布的 KL 散度，说明二项分布损失的信息要比均分布多，
 因此如果要选一种分布代表观察到的具体信息，那么应该选择均分布。
-
 ** 散度 非 距离
 你可能会想要把 KL 散度理解为距离这个概念，但其实散度并非距离。
 这是由于 KL 散度是发散不对称的。假如我们使用观察到的原始数据分布来近似二项分布，其散度为：
@@ -106,7 +103,6 @@ D_{KL}(Binomial \mid\mid Observed) = 0.330
 \end{equation*}
 
 结果完全不同。
-
 ** 使用 KL 散度优化
 当我们使用二项分布近似原始观察数据时，我们使用期望作为二项分布的参数。
 现在我们希望优化参数，使得 KL 散度值最小。从\(0 \sim 1\)选取参数，计算 KL 散度值，做图如下：
@@ -138,7 +134,6 @@ D_{KL}(Binomial \mid\mid Observed) = 0.330
 #+END_CENTER
 
 从上面可以看出，我们可以通过 KL 散度优化模型，找到模型的最优解。
-
 ** 变分自动编码器和变分贝叶斯方法
 如果你熟悉神经网络，你或许应该可以猜到上一节之后该去学什么。
 神经网络，在最一般的意义上，可以看作是函数逼近器，这意味着可以使用神经网络去逼近很多复杂的函数。
