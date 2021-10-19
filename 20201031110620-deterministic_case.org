@@ -1,11 +1,10 @@
 :PROPERTIES:
-:ID:       3CE07996-CC60-4A6C-9BAE-85F9EE0B47F7
+:id: 3CE07996-CC60-4A6C-9BAE-85F9EE0B47F7
 :END:
 #+title: Deterministic Case
-#+filed: Reinforcement Learning
 #+OPTIONS: toc:nil
 #+startup: latexpreview
-#+filetags: :rl:mbrl:Users:wangfangyuan:Documents:roam:org_roam:
+#+filetags: :rl:mbrl:
 
 * Description:
 当状态和动作确定时，下一状态也是确定的。即下一状态是由当前状态和动作相关的函数所确定的。

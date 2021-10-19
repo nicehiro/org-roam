@@ -1,8 +1,8 @@
 :PROPERTIES:
-:ID:       7B2BFBFD-53F6-4934-AE11-DD51EA0C0FF8
+:id: 7B2BFBFD-53F6-4934-AE11-DD51EA0C0FF8
 :END:
 #+title: Python How To Sort
-#+filetags: :python:sort:cmp:Users:wangfangyuan:Documents:roam:org_roam:
+#+filetags: :python:
 
 * Python 排序机制
 ** =cmp=
@@ -15,13 +15,11 @@ Python 2.x 的版本中，所有的排序函数（ =sorted()= ）都支持 =cmp=
 然后作为 =sorted()= 的 =key= 参数传进去。
 
 但这种方法并不建议，只是为了让来不及做出改变的人继续适应的妥协方法。
-
 ** =key=
 =key= 参数是一个输入为一个值的函数，输出为用来比较的值。其输出的值自身是 *可比较* 的。
 这种方法之所以要快捷，是因为在比较过程中， =key= 函数只需要被调用一次。
 
 它还可以和 =operator= 中的方法结合起来，让代码看起来更加简洁，执行起来更高效。
-
 * Ref
 - https://docs.python.org/3/howto/sorting.html
 - https://stackoverflow.com/questions/20202418/why-is-the-cmp-parameter-removed-from-sort-sorted-in-python3-0
