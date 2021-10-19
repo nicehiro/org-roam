@@ -1,15 +1,13 @@
 :PROPERTIES:
-:ID:       D325DDD5-45DB-41F7-8074-56B72B9B0627
+:id: D325DDD5-45DB-41F7-8074-56B72B9B0627
 :END:
 #+title: Lagrange duality
-#+filed: Math
 #+OPTIONS: toc:nil
 #+startup: latexpreview
-#+filetags: :math:lagrange:duality:Users:wangfangyuan:Documents:roam:org_roam:
+#+filetags: :math:
 
 * Description
 在约束最优化问题中，常常利用拉格朗日对偶性将原始问题转换为对偶问题，通过解对偶问题而得到原始问题的解。
-
 ** 原始问题
 假设 $f(x),c_i(x),h_j(x)$ 是定义在 $\mathbf{R}^n$ 上的连续可微函数。
 考虑约束最优化问题：
@@ -71,7 +69,6 @@ p^{*}=\min_{x}\theta_{P}(x)
 $$
 
 称为原始问题的值。
-
 ** 对偶问题
 定义
 $$
@@ -94,7 +91,6 @@ d^{*}=\max_{\alpha,\beta:\alpha_{i}\geq0}\theta_{D}(\alpha,\beta)
 $$
 
 称为对偶问题的值。
-
 ** 原始问题和对偶问题的关系
 #+begin_theorem
 若原始问题和对偶问题都有最优值，则
@@ -122,7 +118,6 @@ $$
 d^{*} = \max_{\alpha,\beta:\alpha_{i}\geq0}\min_{x}L(x,\alpha,\beta)\leq\min_{x}\max_{\alpha,\beta:\alpha_{i}\geq0}L(x,\alpha,\beta)=p^{*}
 $$
 #+end_proof
-
 *** 定理
 考虑原始问题和对偶问题。假设函数 $f(x)$ 和 $c_i(x)$ 是凸函数， $h_j(x)$ 是[[id:413C832B-5F3D-4A6A-911B-93026A484E09][仿射函数]]；
 并且假设不等式约束 $c_i(x)$ 是严格执行的，即存在 $x$ ，对所有 $i$ 有 $c_i(x)<0$ ，
@@ -132,7 +127,6 @@ $$
 $$
 p^*=d^*=L(x^*,\alpha^*,\beta^*)
 $$
-
 *** KKT 条件
 对原始问题和对偶问题，假设函数 $f(x)$ 和 $c_i(x)$ 是凸函数， $h_j(x)$ 是仿射函数，
 并且不等式约束 $c_i(x)$ 是严格执行的，则 $x^{*},\alpha^{*},\beta^*$ 被称为是原始问题和对偶问题的解
@@ -144,7 +138,6 @@ c_i(x^*)\leq0 \\
 \alpha_i^*\geq0 \\
 h_j(x^*)=0 \\
 \end{align}
-
 * 相关文章
 - [[id:2050C750-2954-4D27-B86F-1B5F635BC366][简易解说拉格朗日对偶（Lagrange duality） - 90Zeng - 博客园]]
 - 《统计学习方法》附录 C ：拉格朗日对偶性
