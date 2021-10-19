@@ -1,9 +1,9 @@
 :PROPERTIES:
-:ID:       17838CD8-5F69-4433-9BAA-F4E1DA02B071
+:id: 17838CD8-5F69-4433-9BAA-F4E1DA02B071
 :END:
 #+title: Softmax
 #+filed: Machine-learning
 #+OPTIONS: toc:nil
-#+filetags: :softmax:Users:wangfangyuan:Documents:roam:org_roam:
+#+filetags: :ml:
 
 * Description

@@ -1,11 +1,10 @@
 :PROPERTIES:
-:ID:       B7214290-5ACB-420F-88C2-26CCD1AA7437
+:id: B7214290-5ACB-420F-88C2-26CCD1AA7437
 :END:
 #+title: Text classification
-#+filed: machine-learning
 #+OPTIONS: toc:nil
 #+startup: latexpreview
-#+filetags: :text:classification:Users:wangfangyuan:Documents:roam:org_roam:
+#+filetags: :text:classification:
 
 * Description
 文本分类。
