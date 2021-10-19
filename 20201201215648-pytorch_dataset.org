@@ -1,14 +1,12 @@
 :PROPERTIES:
-:ID:       93928F23-4C8F-4341-BE48-1034C1D1C005
+:id: 93928F23-4C8F-4341-BE48-1034C1D1C005
 :END:
 #+title: PyTorch Dataset
-#+filetags: :Users:wangfangyuan:Documents:roam:org_roam:
+#+filetags: :pytorch:
 
 How dose the PyTorch design the Dataset and Subset for easily using?
 
 * Dataset
-
-
 * Subset
 1. Each subset is also a Dataset. So it must inherit the
    =Dataset= base class.
