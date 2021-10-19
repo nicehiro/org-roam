@@ -1,16 +1,16 @@
 :PROPERTIES:
-:ID:       02AFFBE2-6414-42BF-A31F-3A8161AD0E37
+:id: 02AFFBE2-6414-42BF-A31F-3A8161AD0E37
 :END:
 #+title: With Model Uncertainty
 #+filed: Reinforecement Learning
 #+OPTIONS: toc:nil
-#+filetags: :rl:mbrl:algos:model_uncertainty:Users:wangfangyuan:Documents:roam:org_roam:
+#+filetags: :rl:mbrl:
 
 * Description
 训练模型时，很容易就会陷入 overfit 的问题中。如下图所示，
 #+BEGIN_CENTER
 #+ATTR_HTML: :width 100%
-[[file:./img/rl-sergey/lec-11-5.png]]
+[[file:img/rl-sergey/lec-11-5.png]]
 #+END_CENTER
 真正的轨迹应该是黑色线条，我们用数据预测出来的模型是蓝色线条。
 可以看出来，有些地方的奖励预测过高，导致会在某些地方的选择与正确动作相差巨大。
@@ -20,9 +20,8 @@
 但模型无法知道到底在蓝色区间内的什么地方。
 #+BEGIN_CENTER
 #+ATTR_HTML: :width 100%
-[[file:./img/rl-sergey/lec-11-6.png]]
+[[file:img/rl-sergey/lec-11-6.png]]
 #+END_CENTER
-
 ** 模型不确定性
 *** Idea 1. 计算输出动作的交叉熵。熵越高，模型越不稳定。
 这种想法是不可行的。下图中蓝线表示生成的模型，可以看出，模型的方差基本上为 0，即模型输出的熵为 0，
@@ -30,11 +29,10 @@
 “Model is certain about the data, but we are not certain about the model.”
 #+BEGIN_CENTER
 #+ATTR_HTML: :width 100%
-[[file:./img/rl-sergey/lec-11-7.png]]
+[[file:img/rl-sergey/lec-11-7.png]]{:height 202, :width 276}
 #+END_CENTER
 模型的不确定性其实体现在两个方面，一是数据的不确定性，二是模型本身的不确定性。
 计算交叉熵解决的只是数据的不确定性。
-
 *** Idea 2. 计算模型本身的不确定性
 :PROPERTIES:
 :ID:       C968E95D-D9F5-4FC9-9942-ADB14C96E2C0
