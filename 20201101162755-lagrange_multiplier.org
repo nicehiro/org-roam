@@ -1,14 +1,13 @@
 :PROPERTIES:
-:ID:       3EDC1383-2A9D-45CD-8D75-F99CC6694705
+:id: 3EDC1383-2A9D-45CD-8D75-F99CC6694705
 :END:
 #+title: Lagrange multiplier
 #+filed: Math
 #+OPTIONS: toc:nil
-#+filetags: :math:lagrange:Users:wangfangyuan:Documents:roam:org_roam:
+#+filetags: :math:
 
 * Description
 在极值点，原始问题和约束的梯度向量平行。
-
 * Ref
 - https://www.zhihu.com/question/38586401
 - http://www.slimy.com/~steuard/teaching/tutorials/Lagrange.html
