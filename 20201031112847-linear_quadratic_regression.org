@@ -1,10 +1,10 @@
 :PROPERTIES:
-:ID:       31B3EBF2-915A-44A2-B331-7E049D718C31
+:id: 31B3EBF2-915A-44A2-B331-7E049D718C31
 :END:
 #+title: Linear Quadratic Regression
 #+filed: Reinforcement Learning
 #+OPTIONS: toc:nil
-#+filetags: :rl:mbrl:sto_open:Users:wangfangyuan:Documents:roam:org_roam:
+#+filetags: :rl:mbrl:
 
 * Description
 一般来说，强化学习很少有问题可以使用导数来求解，因为我们无法知道它的状态转移方程（环境动力学函数），
@@ -198,10 +198,10 @@ $$
 通过上面的分析，我们可以得到 LQR 算法中反向传播部分的算法：
 #+BEGIN_CENTER
 #+ATTR_HTML: :width 100%
-[[file:./img/rl-sergey/lec-10-6.png]]
+[[file:img/rl-sergey/lec-10-6.png]]
 #+END_CENTER
 
 反向传播计算出 =k= 之后，正向传播就简单了：
 #+BEGIN_CENTER
-[[file:./img/rl-sergey/lec-10-7.png]]
+[[file:img/rl-sergey/lec-10-7.png]]
 #+END_CENTER
