@@ -1,10 +1,10 @@
 :PROPERTIES:
-:ID:       D56B0801-4B58-42E1-B9B0-4CDE76A5B657
+:id: D56B0801-4B58-42E1-B9B0-4CDE76A5B657
 :ROAM_ALIASES: Monte-Carlo-Policy-Gradient
 :END:
 #+title: REINFORCE
 #+startup: latexpreview
-#+filetags: :algo:rl:Users:wangfangyuan:Documents:roam:org_roam:
+#+filetags: :rl:
 
 * Description
 在[[id:A84D656F-B4D8-4BBA-B20E-9416230D05CF][策略梯度]]中，我们提到了策略梯度的目标函数，即：
@@ -43,8 +43,6 @@ $\pi_{\theta}(a_t|s_t)$ 表示策略在 $s_t$ 状态执行 $a_t$ 的概率。
 2. 循环
    - 使用策略 $\pi_{\theta}$ 生成一条轨迹 $\tau$ ，计算其奖励 $R(\tau)$
    - 更新参数 $\theta\leftarrow\theta+\alpha[R(\tau)\cdot\nabla_{\theta}\sum_{t=0}^{T}\log\pi_{\theta}(a_t|s_t)]$
-
-
 * Summary
 *优点* ：
 1. 如果当前奖励很大，那么当前轨迹的的概率（或者是当前一连串动作生成的概率）就会变大。
@@ -62,6 +60,5 @@ the effects of past and future actions.
 
 From GAE paper.
 #+end_quote
-
 * Reference
 - [[https://towardsdatascience.com/policy-gradient-methods-104c783251e0]]
