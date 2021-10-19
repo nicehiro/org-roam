@@ -1,10 +1,9 @@
 :PROPERTIES:
-:ID:       F3B935BD-D6DB-48D2-85E0-7DF7C3A329CE
+:id: F3B935BD-D6DB-48D2-85E0-7DF7C3A329CE
 :END:
 #+title: Moment
-#+filed: Probability
 #+OPTIONS: toc:nil
-#+filetags: :probability:moment:Users:wangfangyuan:Documents:roam:org_roam:
+#+filetags: :probability:
 
 * Description
 设 $X$ 为随机变量， $c$ 为常数， $k$ 为正整数，则量 $E[(X-c)^k]$ 为 $X$ 关于 $c$ 点的 $k$ 阶矩。

@@ -1,10 +1,10 @@
 :PROPERTIES:
-:ID:       64C7510F-AA77-4EC0-A299-C209A7DE5FF2
+:id: 64C7510F-AA77-4EC0-A299-C209A7DE5FF2
 :END:
 #+title: Cross Entropy Methods(CEM)
 #+filed: Reinforcement Learning
 #+OPTIONS: toc:nil
-#+filetags: :rl:mbrl:sto_open:Users:wangfangyuan:Documents:roam:org_roam:
+#+filetags: :rl:
 
 * Description
 交叉熵方法一般适用于状态空间连续的环境，分布函数一般选择高斯分布。

@@ -1,9 +1,9 @@
 :PROPERTIES:
-:ID:       2DBE58C1-DF2B-4484-9AEA-CC9AA4CA40BE
+:id: 2DBE58C1-DF2B-4484-9AEA-CC9AA4CA40BE
 :END:
 #+title: Actor Critic
 #+STARTUP: latexpreview
-#+filetags: :rl:ac:Users:wangfangyuan:Documents:roam:org_roam:
+#+filetags: :rl:
 
 * Algorithm
 In [[id:D56B0801-4B58-42E1-B9B0-4CDE76A5B657][REINFORCE]], we know that
@@ -25,7 +25,6 @@ parameters:
 
 2. *Actor* update the policy function parameters, in the direction suggested by
    the critic.
-
 * Implements
 1. Initialize initial state $s$, actor parameters $\theta$ and critic parameters
    $\mu$;
@@ -46,7 +45,6 @@ parameters:
       $\mu \leftarrow \mu + \alpha_{\mu} \sigma_{t} \nabla_{\mu} Q_{\mu}(s,a)$
 
    6. Update $a \leftarrow a^{\prime}$ and $s \leftarrow s^{\prime}$
-
 * Reference
 - https://lilianweng.github.io/lil-log/2018/04/08/policy-gradient-algorithms.html#actor-critic
 
