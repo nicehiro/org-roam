@@ -2,7 +2,7 @@
 :id: 7B2BFBFD-53F6-4934-AE11-DD51EA0C0FF8
 :END:
 #+title: Python How To Sort
-#+filetags: :python:
+#+filetags: :py:
 
 * Python 排序机制
 ** =cmp=
