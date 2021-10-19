@@ -1,10 +1,10 @@
 :PROPERTIES:
-:ID:       07C9DB83-DDDF-488F-8229-37AB5F190850
+:id: 07C9DB83-DDDF-488F-8229-37AB5F190850
 :END:
 #+title: Supervised Learning
 #+filed: Machine-Learning
 #+OPTIONS: toc:nil
-#+filetags: :machine_learning:supervised_learning:Users:wangfangyuan:Documents:roam:org_roam:
+#+filetags: :ml:
 
 * Description
 在拟合曲线的过程中，输入变量被称为特性（feature），输出变量被称为目标（target）。
@@ -15,13 +15,10 @@
 当需要预测的目标函数是连续的，那么称这个问题为回归问题（regression problem）。
 
 如果需要预测的目标函数是离散的，那么称这个问题为分类问题（classification problem）。
-
 ** 解决回归问题，常用的方法有：
 - [[id:AC44A370-31C9-4A08-9B33-13AB87279E01][Linear Regression]]
-
 ** 解决分类问题，常用的方法有：
 - [[id:82C8F1D3-2526-4684-B635-FAFD10C227E6][Logistic Regression]]
 - [[id:8550656B-713F-417E-8E19-4D94BB7E7580][Linear Classification]]
 - [[id:413C6561-F38A-490D-B350-93AF7FA6F224][Gaussian discriminant analysis]]
-
 ** [[id:BE3F666B-2051-4835-8531-338E426325D2][广义线性模型]]

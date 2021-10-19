@@ -1,9 +1,9 @@
 :PROPERTIES:
-:ID:       0B073D3F-F0F3-463D-A6A5-358708AEC466
+:id: 0B073D3F-F0F3-463D-A6A5-358708AEC466
 :END:
 #+title: LMS(Least Mean Squares)
 #+filed: Machine-Learning
 #+OPTIONS: toc:nil
-#+filetags: :machine_learning:lms:Users:wangfangyuan:Documents:roam:org_roam:
+#+filetags: :ml:
 
 * Description
