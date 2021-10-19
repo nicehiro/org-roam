@@ -27,9 +27,9 @@ different random variable $f^{*}(x)=\frac{p(x)}{q(x)}$ under $q$
 \end{equation}
 
 \begin{equation}
-\begin{array}
-\mu &= \mathbf{E}_{p}[f(x)]
-\end{array} 
+
+\mu = \mathbb{E}_{p}[f(x)]
+ 
 \end{equation}
 
 Technique condition: $q$ must have support everywhere $p$ dose.
