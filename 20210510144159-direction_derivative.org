@@ -1,11 +1,11 @@
 :PROPERTIES:
-:ID:       1DB2F907-5272-45A6-8B3A-3FC0572F860B
+:id: 1DB2F907-5272-45A6-8B3A-3FC0572F860B
 :END:
 #+title: Direction Derivative
 #+filed:
 #+OPTIONS: toc:nil
 #+startup: latexpreview
-#+filetags: :Users:wangfangyuan:Documents:roam:org_roam:
+#+filetags: :math:
 
 * Description
 [[id:E4803F23-52B8-4320-9DA5-FB5F7A79B5C9][Partial Derivative]] 反映的是函数沿坐标方向的变化率。

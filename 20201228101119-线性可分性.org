@@ -1,12 +1,12 @@
 :PROPERTIES:
-:ID:       6806EDB3-04D3-43E9-B013-A1E218D1AA2C
+:id: 6806EDB3-04D3-43E9-B013-A1E218D1AA2C
 :ROAM_ALIASES: linearly separable data set
 :END:
 #+title: 线性可分性
 #+filed: math
 #+OPTIONS: toc:nil
 #+startup: latexpreview
-#+filetags: :math:Users:wangfangyuan:Documents:roam:org_roam:
+#+filetags: :math:
 
 * Description
 给定一个数据集
