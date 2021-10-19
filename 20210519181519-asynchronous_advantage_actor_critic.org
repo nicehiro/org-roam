@@ -31,7 +31,6 @@ Methods
 #+attr_org: :width 800px
 [[file:img/a3c/Methods/2021-05-20_17-41-20_screenshot.png]]
 
-
 1. The policy and the value function are updated after every $t_{\max}$ actions or
    when a terminal state is reached.
 2. While the parameters $\theta$ of the policy and $\theta_{v}$ of the value
