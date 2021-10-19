@@ -1,10 +1,10 @@
 :PROPERTIES:
-:ID:       4F33A972-1F8C-4A59-9358-B13B28C6AB7D
+:id: 4F33A972-1F8C-4A59-9358-B13B28C6AB7D
 :END:
 #+title: Parametric algorithm
 #+filed: Machine-Laening
 #+OPTIONS: toc:nil
-#+filetags: :machine_learning:Users:wangfangyuan:Documents:roam:org_roam:
+#+filetags: :ml:
 
 * Description
 It has a fixed, finite number of parameters, which are fit to the data when the training finished.

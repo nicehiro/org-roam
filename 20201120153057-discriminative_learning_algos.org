@@ -1,11 +1,11 @@
 :PROPERTIES:
-:ID:       6ACE030F-E26C-45CA-BAB4-C8E968E96E1D
+:id: 6ACE030F-E26C-45CA-BAB4-C8E968E96E1D
 :END:
 #+title: Discriminative learning algos
 #+filed: machine-learning
 #+OPTIONS: toc:nil
 #+startup: latexpreview
-#+filetags: :machine_learning:Users:wangfangyuan:Documents:roam:org_roam:
+#+filetags: :ml:
 
 * Description
 直接学习 $p(y|x)$ 的算法（例如[[id:82C8F1D3-2526-4684-B635-FAFD10C227E6][Logistic Regression]]），

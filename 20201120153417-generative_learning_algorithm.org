@@ -1,11 +1,11 @@
 :PROPERTIES:
-:ID:       A8708783-0D61-4E09-8ABB-B28A12E6A716
+:id: A8708783-0D61-4E09-8ABB-B28A12E6A716
 :END:
 #+title: Generative learning algorithm
 #+filed: machine-learning
 #+OPTIONS: toc:nil
 #+startup: latexpreview
-#+filetags: :machine_learning:Users:wangfangyuan:Documents:roam:org_roam:
+#+filetags: :ml:
 
 * Description
 不直接学习 $p(y|x)$ ，而是去学习 $p(x|y)$ 的算法被称为
