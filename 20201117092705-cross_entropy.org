@@ -1,11 +1,11 @@
 :PROPERTIES:
-:ID:       A8041812-FA36-4448-A2F2-C791C8D9FE45
+:id: A8041812-FA36-4448-A2F2-C791C8D9FE45
 :END:
 #+title: Cross Entropy
 #+filed: math
 #+STARTUP: latexpreview
 #+OPTIONS: toc:nil
-#+filetags: :entropy:Users:wangfangyuan:Documents:roam:org_roam:
+#+filetags: :probability:
 
 * Description
 基于相同事件测度的两个概率分布 $p$ 和 $q$ 的交叉熵是指，
