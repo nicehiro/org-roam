@@ -1,10 +1,10 @@
 :PROPERTIES:
-:ID:       82E286B4-08E9-4627-B9C0-9483739B4342
+:id: 82E286B4-08E9-4627-B9C0-9483739B4342
 :END:
 #+title: Collocation Method
 #+filed: Optimization
 #+OPTIONS: toc:nil
-#+filetags: :collocation_method:Users:wangfangyuan:Documents:roam:org_roam:
+#+filetags: :rl:
 
 * Description
 =Collocation method= 对状态和动作求导，有约束性。

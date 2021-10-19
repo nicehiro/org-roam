@@ -1,10 +1,9 @@
 :PROPERTIES:
-:ID:       87818C78-A73C-4229-A444-861EC02E9AE1
+:id: 87818C78-A73C-4229-A444-861EC02E9AE1
 :END:
 #+title: Positive semi-definite matrix
-#+filed: math
 #+OPTIONS: toc:nil
 #+startup: latexpreview
-#+filetags: :math:Users:wangfangyuan:Documents:roam:org_roam:
+#+filetags: :math:
 
 * Description
