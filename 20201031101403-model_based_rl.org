@@ -1,10 +1,9 @@
 :PROPERTIES:
-:ID:       9C67A92B-1AFF-4B71-BE26-047C56F0C6FA
+:id: 9C67A92B-1AFF-4B71-BE26-047C56F0C6FA
 :END:
 #+title: Model Based RL
-#+filed: Reinforcement Learning
 #+OPTIONS: toc:nil
-#+filetags: :rl:mbrl:Users:wangfangyuan:Documents:roam:org_roam:
+#+filetags: :rl:mbrl:
 
 * Description
 :PROPERTIES:
@@ -13,7 +12,6 @@
 无模型的强化学习不需要知道环境动力学方程，只要不断的进行试错和更新策略的过程就可以很好的进行训练了。
 但基于模型的强化学习需要用到环境动力学方程，
 在此基础上，对未来进行规划，从而达到加速训练和提高训练结果的效果。
-
 ** 分类
 基于模型的强化学习按照环境的状态空间类型和 Plan 的方式可以分为以下三类：
 Deterministic Case, Stochastic Open Loop, Stochastic Close Loop 。
@@ -21,7 +19,6 @@ Deterministic Case, Stochastic Open Loop, Stochastic Close Loop 。
 - [[id:3CE07996-CC60-4A6C-9BAE-85F9EE0B47F7][Deterministic Case]]
 - [[id:075D6325-AC18-4A2A-8459-08BB3CB5C32B][Stochastic Open Loop Case]]
 - [[id:5964D90C-302C-4E3C-9236-6DF40100E4A7][Stochastic Close Loop Case]]
-
 ** 如何利用模型
 假设我们有模型，如何利用模型来求解最优路径呢？
 
@@ -34,7 +31,6 @@ Deterministic Case, Stochastic Open Loop, Stochastic Close Loop 。
 - [[id:31B3EBF2-915A-44A2-B331-7E049D718C31][Linear Quadratic Regression]]
 
 - [[id:2488C7F8-9E0B-4640-AC19-9163BEBF6F32][Iterative Linear Quadratic Regression]]
-
 ** 基于模型的强化学习算法
 如果要利用模型去生成最优路径，那如何来生成一个好的模型？
 
@@ -47,7 +43,6 @@ Deterministic Case, Stochastic Open Loop, Stochastic Close Loop 。
 - [[id:02AFFBE2-6414-42BF-A31F-3A8161AD0E37][With Model Uncertainty]]
 
 - [[id:4DA8FA5D-BF5D-4D63-81B9-017E708C26B9][Latent Model]]
-
 ** 与策略相结合
 能不能把模型和策略的方法结合起来呢？
 
