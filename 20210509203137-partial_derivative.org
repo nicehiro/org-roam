@@ -1,11 +1,11 @@
 :PROPERTIES:
-:ID:       E4803F23-52B8-4320-9DA5-FB5F7A79B5C9
+:id: E4803F23-52B8-4320-9DA5-FB5F7A79B5C9
 :END:
 #+title: Partial Derivative
 #+filed:
 #+OPTIONS: toc:nil
 #+startup: latexpreview
-#+filetags: :Users:wangfangyuan:Documents:roam:org_roam:
+#+filetags: :math:
 
 * Description
 一个多元函数，对其中一个变量微分，而保持其他变量恒定（相对于全导数，其所有变量都允许变化）。
@@ -24,9 +24,7 @@ $$
 $$
 
 存在，则称此极限为函数 $f(x,y)$ 在点 $(x_0,y_0)$ 处对 $x$ 的偏导数。
-
 * 几何意义
 函数 $z=f(x,y)$ 对 $x$ 的偏导数，就是其在 $xoz$ 平面上的投影对 $x$ 的导数。
-
 * Ref
 - [[https://www.zhihu.com/question/26966355/answer/154857139]]

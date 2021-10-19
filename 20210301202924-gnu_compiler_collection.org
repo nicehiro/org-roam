@@ -1,8 +1,8 @@
 :PROPERTIES:
-:ID:       BD6792A9-1EC6-40E5-AED2-211D4986CFD2
+:id: BD6792A9-1EC6-40E5-AED2-211D4986CFD2
 :END:
 #+title: GNU Compiler Collection
-#+filetags: :Users:wangfangyuan:Documents:roam:org_roam:
+#+filetags: :linux:
 
 是 GNU 对不同语言的编译器集合。
 

@@ -1,15 +1,13 @@
 :PROPERTIES:
-:ID:       5F8E758F-6D99-42A2-90B7-1E543E0EA8E2
+:id: 5F8E758F-6D99-42A2-90B7-1E543E0EA8E2
 :END:
 #+title: Reward Shaping
 #+startup: latexpreview
-#+filetags: :rl:Users:wangfangyuan:Documents:roam:org_roam:
-
+#+filetags: :rl:
 
 * Introduction
 Often, a very simple pattern of extra rewards suffices to render straightforward
 an otherwise completely intractable problem.
-
 ** Current Problems
 Consider the following example of bugs that can arise:
 
@@ -34,7 +32,6 @@ from the goal.
 
 Hence it's now better for the bicycle to try to go in a cycle than
 to go to the goal.
-
 * Preliminaries
 A finite-state *Markov decision process(MDP)* is a tuple $M=(S,A,T,\gamma,R)$,
 where:
@@ -68,7 +65,6 @@ The optimal policy is
 $$
 \pi^{*}_{M}(s) = \arg\max_{a\in A}Q^{*}_{M}(s,a)
 $$
-
 * Views
 We will run on a transformed MDP $M^{\prime}=(S,A,T,\gamma,R^{\prime})$
 where $R^{\prime}=R+F$, and $F:S \times A \times S \rightarrow \mathbb{R}$
@@ -94,12 +90,9 @@ If $F$ is a potential-based shaping function, then every optimal policy in
 $M^{\prime}$ will also be an optimal policy in $M$.
 
 Proof omission.
-
 * Conclusion
 This suggests that a way to define a good potential function might be to try
 to approximate $V^{*}_{M}(s)$.
-
-
 * Reference
 [[ebib:buhmannRewardShaping2011][Policy invariance under reward transformations: Theory and application to reward shaping]]
 
