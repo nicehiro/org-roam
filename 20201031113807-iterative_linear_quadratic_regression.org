@@ -1,10 +1,10 @@
 :PROPERTIES:
-:ID:       2488C7F8-9E0B-4640-AC19-9163BEBF6F32
+:id: 2488C7F8-9E0B-4640-AC19-9163BEBF6F32
 :END:
 #+title: Iterative Linear Quadratic Regression
 #+filed: Optimization
 #+OPTIONS: toc:nil
-#+filetags: :math:lqr:ilqr:Users:wangfangyuan:Documents:roam:org_roam:
+#+filetags: :math:lqr:ilqr:
 
 * Description
 [[id:31B3EBF2-915A-44A2-B331-7E049D718C31][LQR]] 方法适用于状态转移方程为线性的，损失函数为二次的环境中，但实际中很多问题都不满足这个条件。
@@ -72,5 +72,5 @@ $$
 我们将其转换成了一个 LQR 问题。至此，我们可以得到 iLQR 算法：
 #+BEGIN_CENTER
 #+ATTR_HTML: :width 100%
-[[file:./img/rl-sergey/lec-10-8.png]]
+[[file:img/rl-sergey/lec-10-8.png]]
 #+END_CENTER
