@@ -1,10 +1,10 @@
 :PROPERTIES:
-:ID:       0983D6A3-4F85-445E-A394-CCCBB68027B5
+:id: 0983D6A3-4F85-445E-A394-CCCBB68027B5
 :END:
 #+title: k 阶样本原点矩
 #+filed: Statistics
 #+OPTIONS: toc:nil
-#+filetags: :statistics:moment:Users:wangfangyuan:Documents:roam:org_roam:
+#+filetags: :statistics:
 
 * Description:
 $a_k=(X_{1}^{k}+\dots+X_{n}^{k})/n$

@@ -1,13 +1,12 @@
 :PROPERTIES:
-:ID:       26335102-FD54-4D75-9727-6F3CF0549D17
+:id: 26335102-FD54-4D75-9727-6F3CF0549D17
 :END:
 #+title: Probability Theory
 #+filed: Probability
 #+OPTIONS: toc:nil
-#+filetags: :probability:Users:wangfangyuan:Documents:roam:org_roam:
+#+filetags: :probability:
 
 * Description
-
 ** 事件的概率
 *事件的蕴含、包含和相等* ：在同一试验下的两个事件 A 和 B，如果当 A 发生时 B 必发生，则称 A 蕴含 B，或者说 B 包含 A，即为 $A \subset B$ 。
 若 A，B 互相蕴含，即 $A \subset B$ 且 $B \subset A$ ，则称 A，B 两事件相等，即为 $A=B$ 。
@@ -56,29 +55,19 @@ B_1+B_2+\dots &=\Omega
 *全概率公式* ： $P(A)=P(B_1)P(A|B_1)+P(B_2)P(A|B_2)+\dots$
 
 *贝叶斯公式* ： $P(B_i|A)=P(AB_i)/P(A)=P(A|B_i)P(B_i)/\sum_jP(B_j)P(A|B_j)$
-
 ** 随机变量和概率分布
 *随机变量* ：随机变量是“其值随机会而定”的变量，是关于试验结果的函数。
 *分布函数* ：设 $X$ 为一随机变量，则函数 $P(X\leq x)=F(x) (-\infty<x<\infty)$ 称为 $X$ 的分布函数。
 根据定义，很容易等到分布函数的两个性质：
 1. 单调递增不减
 2. 当 $x\rightarrow\infty$ ， $F(x)\rightarrow 1$ ；当 $x\rightarrow-\infty$ ， $F(X)\rightarrow0$
-
 *** [[id:E36EB788-02AF-4210-83A4-87A5D816E5E4][离散型随机变量]]
-
 *** [[id:42AB74B9-8C14-4E11-9D28-8C33AD2379FC][连续型随机变量]]
-
 *** [[id:DD4FA3F4-8EA3-4631-A548-119BA70347E0][多维随机变量]]
-
 *** [[id:A63D53AC-2A74-4A17-9119-2F8C7797D9FF][边缘分布]]
-
 *** [[id:C8E15EEE-D06E-4E2B-A06F-D6C0074F373D][条件概率分布]]
-
 ** 数学期望与中位数
 *** [[id:FA6A665C-1F21-4B3E-AF17-64CA611FB01D][数学期望]]
-
 *** [[id:C23F2A9B-055B-4110-8E44-7613B947C79D][方差]]
-
 *** [[id:F3B935BD-D6DB-48D2-85E0-7DF7C3A329CE][矩]]
-
 *** [[id:8577FC83-D221-4C84-A78C-42CCA0903818][协方差和相关系数]]
