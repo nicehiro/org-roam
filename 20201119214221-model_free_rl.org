@@ -1,15 +1,13 @@
 :PROPERTIES:
-:ID:       45D8C73D-2AEB-468E-A658-8E71C66AEFC7
+:id: 45D8C73D-2AEB-468E-A658-8E71C66AEFC7
 :END:
 #+title: Model Free RL
-#+filed: rl
 #+OPTIONS: toc:nil
 #+startup: latexpreview
-#+filetags: :model_free:Users:wangfangyuan:Documents:roam:org_roam:
+#+filetags: :rl:
 
 * Description
 免模型强化学习算法。
-
 * Algorithms
 
 - DQN
