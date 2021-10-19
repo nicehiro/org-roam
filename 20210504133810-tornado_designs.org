@@ -1,5 +1,5 @@
 :PROPERTIES:
-:ID:       FCB2EB87-9A6F-4C96-9C7E-1FA084E265F4
+:id: FCB2EB87-9A6F-4C96-9C7E-1FA084E265F4
 :END:
 #+title: tornado designs
-#+filetags: :Users:wangfangyuan:Documents:roam:org_roam:
+#+filetags: :tornado:
