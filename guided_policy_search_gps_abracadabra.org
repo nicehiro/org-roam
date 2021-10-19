@@ -1,8 +1,8 @@
 :PROPERTIES:
-:ID:       8392D838-D591-4523-A042-2A024E1FB309
+:id: 8392D838-D591-4523-A042-2A024E1FB309
 :ROAM_REFS: https://tomaxent.com/2019/04/06/Guided-Policy-Search-GPS/
 :END:
 #+title: Guided Policy Search(GPS) | Abracadabra
-#+filetags: :blog:gps:Users:wangfangyuan:Documents:roam:org_roam:
+#+filetags: :blog:rl:
 
 GPS 算法介绍。
