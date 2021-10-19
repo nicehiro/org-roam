@@ -1,8 +1,8 @@
 :PROPERTIES:
-:ID:       C07EF151-096C-4222-A7D0-A13056764218
+:id: C07EF151-096C-4222-A7D0-A13056764218
 :END:
 #+title: Towards Byzantine-resilient Learning in Decentralized Systems
-#+filetags: :decentralized:ml:byzantine_resilient:Users:wangfangyuan:Documents:roam:org_roam:
+#+filetags: :decentralized:ml:byzantine_resilient:
 
 * Related Works
 Past work have focused on the centralized distributed and federated learning with
@@ -22,7 +22,6 @@ Disadvantages of above two categories:
 1. Distance based defenses are vulnerable to elaborately designed Byzantine attack.
 2. Performance based defenses have large computation overhead and scalability issue
    when conducting performance evaluation for each update.
-
 * Views
 MOZI integrates both distance based and performance based stategies to detect Byzantine
 parameters.
@@ -34,6 +33,5 @@ the Euclidean distance of the estimate of each neighbor node with its own estima
 At second stage, each benign node performs a performance based strategy to pick the final
 nodes from the candidate pool for estimate update. It reuses the training sample as the
 validation data to test the performance of each estimate.
-
 * Ref
 - [[ebib:guoByzantineresilientLearningDecentralized2020][Towards Byzantine-resilient Learning in Decentralized Systems]]

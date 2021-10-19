@@ -1,10 +1,10 @@
 :PROPERTIES:
-:ID:       40367E42-4090-46D6-9DF5-D20F9ADB2755
+:id: 40367E42-4090-46D6-9DF5-D20F9ADB2755
 :END:
 #+title: A Synchronous Advantage Actor-Critic
 #+filed:
 #+OPTIONS: toc:nil
-#+filetags: :rl:a2c:Users:wangfangyuan:Documents:roam:org_roam:
+#+filetags: :rl:
 
 
 After reading the [[id:D34F35B3-BC69-463A-86F5-CE7CCF441065][Asynchronous Advantage Actor Critic]],
@@ -31,8 +31,6 @@ perform best with large batch sizes.
 #+attr_org: :width 600px
 #+CAPTION: The architecture of A3C versus A2C.(From liliweng's blog)
 [[file:../../../Pictures/org-download/2021-05-24_22-06-26_screenshot.png]]
-
-
 
 * Reference
 - https://openai.com/blog/baselines-acktr-a2c/
