@@ -1,8 +1,8 @@
 :PROPERTIES:
-:ID:       124D1757-FB0B-41AF-9660-8BB489CB1C62
+:id: 124D1757-FB0B-41AF-9660-8BB489CB1C62
 :END:
 #+title: Survey of Zero Shot Learning
-#+filetags: :zsl:Users:wangfangyuan:Documents:roam:org_roam:
+#+filetags: :zsl:
 #+STARTUP: latexpreview
 #+author: Fangyuan
 #+options: toc:nil
@@ -20,8 +20,6 @@ In zero-shot learning, the source feature space is the feature space of training
 and the target feature space is the feature space of testing instances. They are the same.
 However, the source label space is the seen class, while the target label space is the
 unseen class. They are different. So, zero-shot learning belongs to *heterogeneous transfer learning*.
-
-
 ** Learning Settings
 | Learning Settings | Involved in Model Learning     | Characteristic                        |
 |-------------------+--------------------------------+---------------------------------------|
@@ -39,7 +37,6 @@ unseen class. They are different. So, zero-shot learning belongs to *heterogeneo
    testing instances, when new unseen classes or testing instances need to be classified,
    the generalization ability of models learned is usually better than model learned
    under other settings.
-
 * Semantic Spaces
 Semantic spaces contain semantic information about /classes/ and are important part of
 zero-shot learning. According to how a semantic space is constructed, we categorize them
@@ -53,10 +50,8 @@ as engineered semantic spaces and learned semantic spaces.
 | Learned Semantic Spaces    | less labor intensive, contain more information | model's unpredictable and hard to understand |
 +----------------------------+------------------------------------------------+----------------------------------------------+
 #+TBLFM:
-
 ** Engineered Semantic Spaces
 In engineered semantic spaces, each dimension of the semantic space is designed by humans.
-
 *** Attribute Spaces
 Attribute spaces are kinds of semantic spaces that are constructed by a set of
 attributes of the classes. For example, in the problem of animal recognition in images,
@@ -64,45 +59,35 @@ there are three attributes: "having stripes", "living on land" and "plant eating
 For the class "tiger", it's semantic space is $[1, 1, 0]$, and for the class "horse",
 it's semantic space is $[0, 1, 1]$. The above attribute space is binary attribute space,
 there are also other attribute spaces, like continuous attribute spaces.
-
 *** Lexical Spaces
 Lexical spaces are based on the /labels/ of the classes and datasets that can provide
 semantic information. The dataset can be some structured lexical databases, such as
 WordNet. You can use the hierarchical relationships in WordNet to construct the
 semantic space by setting the prototype of label $i$ with label $j$ $t_{ij}$ to 1 if
 label i and j have a relationship else to 0.
-
 *** Text-keyword Spaces
 Text-keyword spaces are kinds of semantic spaces that are constructed by a set of
 keywords extracted from the text descriptions of each class. The most common source of
 the text descriptions is websites such as Wikipedia.
-
 ** Learned Semantic Spaces
 In learned semantic spaces, the prototypes of each class are obtained from the output of
 some machine-learning models. So each dimension does not have an explicit semantic
 meaning.
-
 *** Label-embedding Spaces
 This kind of space is introduced in view of the development and wide utilization of
 word embedding techniques in natural language processing. It's prototypes are obtained
 through the embedding of class labels.
-
 *** Text-embedding Spaces
 The prototypes of text-embedding spaces are obtained by embedding the text descriptions
 for each class.
-
 *** Image-embedding Spaces
 The prototype of image-embedding spaces are obtained from images belonging to each class.
-
-
 * Methods
-
 ** Classifier-Based Methods
 Existing classifier-based methods usually take a one-versus-rest solution for learning the
 multiclass zero-shot classifier. Therefor, the eventual zero-shot classifier $f^{u}(\cdot)$
 for the unseen classes consists of $N_u$ binary one-versus-rest classifiers
 $f_{i}^{u}|i=1,\cdots,N_u$.
-
 *** Correspondence Methods
 It's insight is to construct the classifier for unseen class via the correspondence between
 the binary one-versus-rest classifier for each class and its corresponding class prototype.
@@ -118,7 +103,6 @@ Then, for each unseen class $c_{i}^{u}$, with its prototype $t^{u}_{i}$ and the 
 correspondence function $\phi(\cdot;\theta)$, the classifier can be constructed.
 
 学习一个从 class 到 classifier 的映射。
-
 *** Relationship Methods
 It's insight is to construct the classifier for unseen class via the relationships among
 the seen and the unseen class as well as the binary one-versus-rest classifier of the
@@ -130,7 +114,6 @@ Then, the relationships among the seen and the unseen classes are calculated via
 corresponding class prototypes or obtained through other approaches.
 
 学习 unseen lable 和 seen lable 之间的关系，学习 seen label 的 classifier。
-
 *** Combination Methods
 Its insight is to construct the classifier for unseen class via the combination of classifiers
 for basic elements that are used to constitute the classes.
@@ -144,11 +127,9 @@ f^{u}(\cdot) = Fmk(f_{1}^{a}(\cdot),\cdots,f_{M}^{a}(\cdot))
 $$
 
 学习属性的分类器。
-
 ** Instance-Based Methods
 These methods aim to first obtain labeled instances for the unseen classes, then with these
 instances to learn the zero-shot classifier.
-
 *** Projection Methods
 Its insight is to obtain labeled instances for the unseen classes by projecting both the
 feature space instances and the semantic space prototypes into a common space.
@@ -160,14 +141,11 @@ difficult to learn classifier like SVM or logistic regression classifiers with s
 instances.
 As a result, in existing projection methods, the classification is usually performed by
 nearest neighbor classification or some variants of it.
-
 *** Instance-Borrowing Methods
 Its insight is to obtain labeled instances for the unseen classes by borrowing from the
 training instances.
-
 *** Synthesizing Methods
 Its insight is to obtain labeled instances for the unseen classes by synthesizing some
 pseudo instances.
-
 * Reference
 [[ebib:wangSurveyZeroShotLearning2019][Survery of Zero Shot Learning]]

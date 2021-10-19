@@ -1,8 +1,8 @@
 :PROPERTIES:
-:ID:       10054405-C642-45FE-85DE-6954C6FCF038
+:id: 10054405-C642-45FE-85DE-6954C6FCF038
 :END:
 #+title: Pytorch Cross Entropy Loss
-#+filetags: :pytorch:Users:wangfangyuan:Documents:roam:org_roam:
+#+filetags: :pytorch:
 
 
 Preknowledges:

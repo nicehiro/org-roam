@@ -1,8 +1,0 @@
-:PROPERTIES:
-:ID:       C9F4D71D-97AF-40FC-BC1F-594D0E6C0553
-:END:
-#+title: Blackbox in AI
-#+filetags: :Users:wangfangyuan:Documents:roam:org_roam:
-
-* old
-- Architecture + dataset + objective
