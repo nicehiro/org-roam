@@ -1,18 +1,15 @@
 :PROPERTIES:
-:ID:       26C8E771-5BE6-4640-A8FF-5AD0CF8EE9B4
+:id: 26C8E771-5BE6-4640-A8FF-5AD0CF8EE9B4
 :END:
 #+title: Pseudo random number sampling
 #+filed: math
 #+OPTIONS: toc:nil
-#+filetags: :random:sampling:Users:wangfangyuan:Documents:roam:org_roam:
+#+filetags: :probability:
 
 * Description
 伪随机数采样。
-
 ** 有限离散分布
-
 ** 连续分布
-
 *** 生成独立样本
 - [[id:37961375-D4DC-4EF9-86EC-FFFE3E5F6628][Inverse transform sampling]]
 
@@ -23,7 +20,6 @@
 - Ziggurat algorithm
 
 - Convolution random number generator
-
 *** 生成相关样本
 - Markov chain Monte Carlo
 
@@ -36,13 +32,10 @@
 - Reversible-jump Markov chain Monte Carlo
 
 - Particle filters
-
 *** 生成正态分布
 - Box-Muller transform
 
 - Marsaglia polar method
-
 *** 生成泊松分布
-
 * Ref
 - [[id:5939BD84-9C46-4F99-B055-EA22CE124D1B][Pseudo-random number sampling - Wikipedia]]

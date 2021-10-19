@@ -1,9 +1,9 @@
 :PROPERTIES:
-:ID:       3CB03E6E-8136-4E4F-A12E-1C8B10A4CAAD
+:id: 3CB03E6E-8136-4E4F-A12E-1C8B10A4CAAD
 :ROAM_ALIASES: 作用域范围
 :END:
 #+title: Python Scope Resolution
-#+filetags: :Users:wangfangyuan:Documents:roam:org_roam:
+#+filetags: :py:
 
 作用域是 Python 程序可以直接访问[[id:1414561F-6793-4B36-8AD7-1A3C77F4ECD8][命名空间]]的正文区域。
 
