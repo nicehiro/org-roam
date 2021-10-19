@@ -1,9 +1,9 @@
 :PROPERTIES:
-:ID:       AC14EE40-D45F-461F-AACE-646B7CFF8BA8
+:id: AC14EE40-D45F-461F-AACE-646B7CFF8BA8
 :END:
 #+title: Generalized Advantage Estimate
 #+startup: latexpreview
-#+filetags: :GAE:Users:wangfangyuan:Documents:roam:org_roam:
+#+filetags: :GAE:
 
 * Preliminaries
 Policy gradient methods maximize the expected total reward by repeatedly
@@ -124,7 +124,6 @@ advantage estimators for $\hat{A_t}$:
 - $Q^{\pi,\gamma}(s_t,a_t)$
 - $A^{\pi,\gamma}(s_t,a_t)$
 - $r_t + \gamma V^{\pi,\gamma}(s_{t+1}) - V^{\pi,\gamma}(s_t)$
-
 * Advantage Function estimation
 Our estimator of policy gradient is
 $$
@@ -191,12 +190,9 @@ g^{\gamma} \approx \mathbb{E}\left[\sum_{t=0}^{\infty} \nabla_{\theta} \log \pi_
 \end{equation}
 
 where equality hold s when $\lambda=1$.
-
 ** Reward shaping
 [[id:5F8E758F-6D99-42A2-90B7-1E543E0EA8E2][Reward Shaping]]
-
 ** Value function estimation
-
 * Methods
 
 #+DOWNLOADED: screenshot @ 2021-05-13 11:54:31
@@ -204,10 +200,7 @@ where equality hold s when $\lambda=1$.
 #+attr_latex: :width 600cm
 #+attr_org: :width 800px
 [[file:img/gae/Methods/2021-05-13_11-54-31_screenshot.png]]
-
 * Conclusion
-
-
 * Reference
 [[ebib:schulmanHighDimensionalContinuousControl2018][Schulman, John and Moritz, Philipp and Levine, Sergey and Jordan, Michael and Abbeel, Pieter (2018)]]
 

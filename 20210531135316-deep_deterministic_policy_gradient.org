@@ -1,9 +1,9 @@
 :PROPERTIES:
-:ID:       5031EEE4-BF9E-4810-B2CE-CA6BCD8CA009
+:id: 5031EEE4-BF9E-4810-B2CE-CA6BCD8CA009
 :END:
 #+title: Deep Deterministic Policy Gradient
 #+STARTUP: latexpreview
-#+filetags: :Users:wangfangyuan:Documents:roam:org_roam:
+#+filetags: :rl:
 
 * Views
 DDPG, short for *Deep Deterministic Policy Gradient*, is a model-free off-policy
@@ -21,7 +21,6 @@ without divergence.
 
 And the other trick used here is that we construct an exploration policy by
 adding noise sampled from a noise process $\mathcal{N}$ to our actor policy.
-
 * Methods
 
 #+DOWNLOADED: screenshot @ 2021-05-31 14:20:28
@@ -29,7 +28,6 @@ adding noise sampled from a noise process $\mathcal{N}$ to our actor policy.
 #+attr_latex: :width 600cm
 #+attr_org: :width 600px
 [[file:img/ddpg/Methods/2021-05-31_14-20-28_screenshot.png]]
-
 * Reference
 - [[ebib:lillicrapContinuousControlDeep2019][Deep Deterministic Policy Gradient]]
 
