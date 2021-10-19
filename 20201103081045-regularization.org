@@ -1,10 +1,10 @@
 :PROPERTIES:
-:ID:       2FD1A90B-7ED4-4255-923B-E4F97E55EB7F
+:id: 2FD1A90B-7ED4-4255-923B-E4F97E55EB7F
 :END:
 #+title: Regularization
 #+filed: Machine-Learning
 #+OPTIONS: toc:nil
-#+filetags: :regularization:Users:wangfangyuan:Documents:roam:org_roam:
+#+filetags: :ml:
 
 * Description
 

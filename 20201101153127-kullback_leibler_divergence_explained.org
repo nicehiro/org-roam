@@ -18,7 +18,7 @@
 在收集了很多样本之后，我们得出了每种蠕虫的牙齿数的概率分布：
 #+BEGIN_CENTER
 #+ATTR_HTML: :width 100%
-[[file:./img/empirical-distribution-of-data.png]]
+[[file:.img/empirical-distribution-of-data.png]]
 #+END_CENTER
 
 尽管这个数据非常棒，但我们遇到了一些问题。
@@ -27,20 +27,20 @@
 一种简单的模型是均分布，即一共有 11 种牙齿数目，每个牙齿数目占   \(\frac{1}{11}\)。
 #+BEGIN_CENTER
 #+ATTR_HTML: :width 100%
-[[file:./img/uniform-approximation.png]]
+[[file:img/uniform-approximation.png]]
 #+END_CENTER
 
 显然，我们的数据不是均分布，但我们也看不出它是什么分布。
 我们尝试再使用二项分布建模。假设之前数据的期望为 5.7，那么二项分布中概率\(p = 0.57\)。
 #+BEGIN_CENTER
 #+ATTR_HTML: :width 100%
-[[file:./img/binomial-approximation.png]]
+[[file:img/binomial-approximation.png]]
 #+END_CENTER
 
 比较两次近似分布和原数据分布，发现二者都不是很好的表征原数据，但是那个相对来说更好呢？
 #+BEGIN_CENTER
 #+ATTR_HTML: :width 100%
-[[file:./img/all-approximations.png]]
+[[file:img/all-approximations.png]]
 #+END_CENTER
 
 有很多种差异度量标准，但我们主要关心的是发送最少的数据量。
@@ -109,7 +109,7 @@ D_{KL}(Binomial \mid\mid Observed) = 0.330
 
 #+BEGIN_CENTER
 #+ATTR_HTML: :width 100%
-[[file:./img/finding-the-optimal-parameter.png]]
+[[file:img/finding-the-optimal-parameter.png]]
 #+END_CENTER
 
 可以看出，使用期望作为参数，是使得二项分布近似的 KL 散度值最小的参数。
@@ -123,14 +123,14 @@ D_{KL}(Binomial \mid\mid Observed) = 0.330
 
 #+BEGIN_CENTER
 #+ATTR_HTML: :width 100%
-[[file:./img/optimizing-our-ad-hoc-function.png]]
+[[file:img/optimizing-our-ad-hoc-function.png]]
 #+END_CENTER
 
 当\(p = 0.47\)时，KL 散度值最小，为 0.338，这个值和均分布的 KL 散度相当接近，画出图之后我们可以看出这个分布和均分布差不多。
 
 #+BEGIN_CENTER
 #+ATTR_HTML: :width 100%
-[[file:./img/optimal-value-for-ad-hoc.png]]
+[[file:img/optimal-value-for-ad-hoc.png]]
 #+END_CENTER
 
 从上面可以看出，我们可以通过 KL 散度优化模型，找到模型的最优解。
