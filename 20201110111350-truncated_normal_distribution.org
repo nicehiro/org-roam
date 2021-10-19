@@ -1,10 +1,10 @@
 :PROPERTIES:
-:ID:       4E650D38-CE6E-4020-B4B3-DB6BD2FCB347
+:id: 4E650D38-CE6E-4020-B4B3-DB6BD2FCB347
 :END:
 #+title: Truncated normal distribution
 #+filed: math
 #+OPTIONS: toc:nil
-#+filetags: :math:distribution:normal:Users:wangfangyuan:Documents:roam:org_roam:
+#+filetags: :math:
 
 * Description
 
@@ -41,7 +41,6 @@ $erf(x)$ 为高斯误差函数，是一个非初等函数：
 $$
 erf(x)=\frac{1}{\sqrt{\pi}}\int_{-x}^{x}e^{-t^2}dt=\frac{2}{\sqrt{\pi}}\int_{0}^{x}e^{-t^2}dt
 $$
-
 * Computational methods
 那么一般在计算中如何实现这个分布呢？
 
@@ -70,6 +69,5 @@ CDF(x)&=\int_{a}^{x}f(x)dx \\
 \Phi(x-\mu)&=CDF(x)[\Phi(\beta)-\Phi(\alpha)]+\Phi(\alpha) \\
 CDF^{-1}(y)=x&=\mu+\sigma\Phi^{-1}[\Phi(\alpha)+y[\Phi(\beta)-\Phi(\alpha)]]
 \end{align*}
-
 * Ref
 - [[id:DEFEB330-B133-45AC-80CC-B1D90D31C602][Truncated normal distribution - Wikipedia]]

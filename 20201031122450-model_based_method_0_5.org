@@ -12,7 +12,7 @@
 #+BEGIN_CENTER
 #+ATTR_ORG: :width 600
 #+ATTR_HTML: :width 100%
-[[file:./img/rl-sergey/lec-11-1.png]]
+[[file:img/rl-sergey/lec-11-1.png]]
 #+END_CENTER
 
 如果有精心设计的初始策略，以及环境动力学函数（dynamics representation），将会大大提高这种方法的成功性。
@@ -23,5 +23,5 @@
 #+BEGIN_CENTER
 #+ATTR_ORG: :width 600
 #+ATTR_HTML: :width 100%
-[[file:./img/rl-sergey/lec-11-3.png]]
+[[file:img/rl-sergey/lec-11-3.png]]
 #+END_CENTER

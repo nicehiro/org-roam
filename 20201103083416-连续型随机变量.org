@@ -1,10 +1,9 @@
 :PROPERTIES:
-:ID:       42AB74B9-8C14-4E11-9D28-8C33AD2379FC
+:id: 42AB74B9-8C14-4E11-9D28-8C33AD2379FC
 :END:
 #+title: 连续型随机变量
-#+filed: Probability
 #+OPTIONS: toc:nil
-#+filetags: :probability:stochastic:Users:wangfangyuan:Documents:roam:org_roam:
+#+filetags: :probability:
 
 * Description
 
