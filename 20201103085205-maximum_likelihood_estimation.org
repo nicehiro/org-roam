@@ -1,11 +1,10 @@
 :PROPERTIES:
-:ID:       0863DAB5-25FA-42BD-A02F-9EF1FC11DA78
+:id: 0863DAB5-25FA-42BD-A02F-9EF1FC11DA78
 :END:
 #+title: Maximum likelihood Estimation
-#+filed: Statistics
 #+OPTIONS: toc:nil
 #+STARTUP: latexpreview
-#+filetags: :statistics:maximum_likelihood_estimation:Users:wangfangyuan:Documents:roam:org_roam:
+#+filetags: :probability:
 
 * Description
 设总体有分布 $f(x;\theta_1,\dots,\theta_k)$ ， $X_1,\dots,X_n$ 为自这个总体中抽出的样本，

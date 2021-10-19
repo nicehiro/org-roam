@@ -1,9 +1,9 @@
 :PROPERTIES:
-:ID:       388AB2A0-7456-4885-A12B-FB3CA09AD9BC
+:id: 388AB2A0-7456-4885-A12B-FB3CA09AD9BC
 :END:
 #+title: Off Policy Actor Critic
 #+STARTUP: latexpreview
-#+filetags: :rl:off_policy:Users:wangfangyuan:Documents:roam:org_roam:
+#+filetags: :rl:off_policy:
 
 * Preliminary
 One disadvantage of [[id:D56B0801-4B58-42E1-B9B0-4CDE76A5B657][REINFORCE]] is low data utilization.
@@ -27,7 +27,6 @@ according to this behavior distribution $b$.
 
 In this paper, we consider the version of off-PAC that update its critic
 weights by the [[id:B77C2531-01BC-4768-BF19-61958DA27AE5][Gradient Temporal-Difference]].
-
 * Off-PAC policy gradient estimation
 \begin{aligned}
 &\nabla_{u} J_{\gamma}(u) \\
@@ -42,7 +41,5 @@ weights by the [[id:B77C2531-01BC-4768-BF19-61958DA27AE5][Gradient Temporal-Diff
 \end{aligned}
 
 The derivation above use [[id:C94C5117-C048-4AE3-85EA-B01F4AB7D390][Importance Sampling]].
-
-
 * Reference
 - [[ebib:degrisOffPolicyActorCritic2013][Degris, Thomas and White, Martha and Sutton, Richard S. (2013)]]
