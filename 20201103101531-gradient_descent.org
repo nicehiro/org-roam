@@ -1,9 +1,7 @@
 :PROPERTIES:
-:ID:       24B04706-9D53-438E-9C99-4A9FB6AD763B
+:id: 24B04706-9D53-438E-9C99-4A9FB6AD763B
 :END:
 #+title: Gradient Descent
-#+filed: Machine Learning
 #+OPTIONS: toc:nil
-#+filetags: :machine_learning:Users:wangfangyuan:Documents:roam:org_roam:
 
 * Description

@@ -4,7 +4,6 @@
 #+title: Linear Classification
 #+STARTUP: latexpreview
 #+OPTIONS: toc:nil
-#+filetags: :machine_learning:linear_classification:
 
 #+begin_quote
 原文 [[https://cs231n.github.io/linear-classify/][Linear Classification]]
