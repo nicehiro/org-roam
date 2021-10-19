@@ -22,14 +22,8 @@ Experience replay has several drawbacks:
 In this paper, we asynchronously execute multiple agents in parallel instead of
 experience replay. This parallelism also decorrelates the agents' data into more
 stationary process. So A3C is a on-policy algorithm.
-*
-Methods
+* Methods
 
-
-#+DOWNLOADED: screenshot @ 2021-05-20 17:41:20
-#+attr_html: scale=0.8 :align center
-#+attr_latex: :width 800cm
-#+attr_org: :width 800px
 [[file:img/a3c/Methods/2021-05-20_17-41-20_screenshot.png]]
 
 1. The policy and the value function are updated after every $t_{\max}$ actions or
