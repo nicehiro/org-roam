@@ -1,10 +1,10 @@
 :PROPERTIES:
-:ID:       A63D53AC-2A74-4A17-9119-2F8C7797D9FF
+:id: A63D53AC-2A74-4A17-9119-2F8C7797D9FF
 :END:
 #+title: 边缘分布
 #+filed: Probability
 #+OPTIONS: toc:nil
-#+filetags: :probability:Users:wangfangyuan:Documents:roam:org_roam:
+#+filetags: :probability:
 
 * Description
 设 $X=(X_1,X_2,\dots,X_n)$ 为一个 $n$ 维随机变量， $X$ 有一定的分布 $F$ ，其每个分量 $X_i$ 都是一维随机变量，有各自的分布 $F_i$ 。

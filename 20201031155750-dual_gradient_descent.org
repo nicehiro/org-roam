@@ -1,10 +1,10 @@
 :PROPERTIES:
-:ID:       6EBC1707-4B41-4D94-8FA5-865D25834C9A
+:id: 6EBC1707-4B41-4D94-8FA5-865D25834C9A
 :END:
 #+title: Dual Gradient Descent
 #+filed: Math
 #+OPTIONS: toc:nil
-#+filetags: :dual_gradient_descent:lagrange:Users:wangfangyuan:Documents:roam:org_roam:
+#+filetags: :ml:
 
 * Description
 
