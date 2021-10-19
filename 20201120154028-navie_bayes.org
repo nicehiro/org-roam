@@ -1,11 +1,10 @@
 :PROPERTIES:
-:ID:       7032EB32-0E8D-4BF9-813B-FF36D5107698
+:id: 7032EB32-0E8D-4BF9-813B-FF36D5107698
 :END:
 #+title: Navie Bayes
-#+filed: machine-learning
 #+OPTIONS: toc:nil
 #+startup: latexpreview
-#+filetags: :machine_learning:Users:wangfangyuan:Documents:roam:org_roam:
+#+filetags: :ml:
 
 * Description
 朴素贝叶斯用来对离散随机变量进行分类。
@@ -59,7 +58,6 @@ $$
 p(y=1 \mid x) &=\frac{p(x \mid y=1) p(y=1)}{p(x)} \\
 &=\frac{\left(\prod_{j=1}^{d} p\left(x_{j} \mid y=1\right)\right) p(y=1)}{\left(\prod_{j=1}^{d} p\left(x_{j} \mid y=1\right)\right) p(y=1)+\left(\prod_{j=1}^{d} p\left(x_{j} \mid y=0\right)\right) p(y=0)}
 \end{aligned}
-
 ** Laplace smoothing
 虽然朴素贝叶斯具有很好的效果，但还存在一些问题。
 比如上诉的文本分类问题，如果测试集中出现了一个训练集中没有的单词，例如第 35000 个单词一次都没出现过：

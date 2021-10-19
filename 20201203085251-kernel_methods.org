@@ -1,11 +1,10 @@
 :PROPERTIES:
-:ID:       A6C88189-DB6C-49B1-A930-CAEA58A2AD5D
+:id: A6C88189-DB6C-49B1-A930-CAEA58A2AD5D
 :END:
 #+title: Kernel Methods
-#+filed: math
 #+OPTIONS: toc:nil
 #+startup: latexpreview
-#+filetags: :kernel:machine_learning:Users:wangfangyuan:Documents:roam:org_roam:
+#+filetags: :ml:
 
 * Description
 之前[[id:AC44A370-31C9-4A08-9B33-13AB87279E01][线性回归]]讲了如何用线性函数去拟合数据，那么当数据比较复杂，
@@ -33,7 +32,6 @@ $$
 因此，一个多项式方程可以被看作是关于 $\phi(x)$ 的线性方程。
 我们称原始输入为 =attributes= ， $\phi(x)$ 为 =features map= ，
 映射之后的新输入为 =features= 。
-
 ** LMS(least mean squares) with features
 之前 [[id:0B073D3F-F0F3-463D-A6A5-358708AEC466][LMS]] 更新方程如下：
 \begin{equation*}
@@ -50,7 +48,6 @@ $$
 $$
 \theta:=\theta+\alpha\sum_{i=1}^{n}(y^{(i)}-\theta^{T}\phi(x^{(i)}))\phi(x^{(i)})
 $$
-
 ** LMS with kernel skills
 直接使用 LMS 算法更新 $\theta$ 需要很大的计算量。
 举个例子，假设 $x\in\mathbb{R}^d$ ， =feature map= $\phi(x)$ 为最高次小于等于 3 的多项式：
@@ -209,7 +206,6 @@ $$
    $$
 
 更一般的， $K(x,z)=(x^{T}z+c)^k$ 也是一个 =Kernel= 。
-
 ** Kernel 作为衡量相似性的指标
 对于 $K(x,z)=\phi(x)^T\phi(z)$ ，如果 $\phi(x)$ 和 $\phi(z)$ 离得越远， $K$ 越小。
 因此，可以把 $K$ 看作是衡量 $\phi(x),\phi(z)$ （或者 $x,z$ ）相似性的标准。
@@ -223,7 +219,6 @@ $$
 
 这个函数满足上面提到的性质：当 $x,z$ 靠近， $K$ 变大，当 $x,z$ 离远， $K$ 变小。
 这个 =Kernel= 叫做 =Gaussian Kernel= ，之后我们会讨论它。
-
 ** Kernel 的必要条件
 定义 Kernel Maxtrix $K$ ， $K_{ij}=K(x^{(i)},x^{j})$ 。
 
@@ -246,7 +241,6 @@ $\sum_{ij}a_{i}a_{j}=(\sum_{i}a_{i})^2$ 。
 这表明 $K$ 是一个[[id:87818C78-A73C-4229-A444-861EC02E9AE1][半正定矩阵]]。
 
 综上，K 矩阵是一个半正定对称矩阵。
-
 ** Kernel 的充分条件
 事实上，上面的必要条件也是 Kernel 的充分条件。
 
