@@ -1,10 +1,9 @@
 :PROPERTIES:
-:ID:       C8E15EEE-D06E-4E2B-A06F-D6C0074F373D
+:id: C8E15EEE-D06E-4E2B-A06F-D6C0074F373D
 :END:
 #+title: 条件概率分布
-#+filed: Probability
 #+OPTIONS: toc:nil
-#+filetags: :probability:condition:Users:wangfangyuan:Documents:roam:org_roam:
+#+filetags: :probability:
 
 * Description
 对于离散型随机变量：
