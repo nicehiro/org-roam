@@ -154,7 +154,7 @@ $$
 #+BEGIN_CENTER
 #+ATTR_HTML: :width 100%
 #+ATTR_ORG: :width 800
-[[file:./img/cs231n/margin.jpg]]
+[[file:img/cs231n/margin.jpg]]
 #+END_CENTER
 
 *正则化* 我们上面的损失函数存在一个问题。假设我们有一个数据集，一组参数 $W$ 可以正确的对数据集中每个示例进行分类，
