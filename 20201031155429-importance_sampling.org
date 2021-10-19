@@ -25,7 +25,14 @@ different random variable $f^{*}(x)=\frac{p(x)}{q(x)}$ under $q$
 &= \mathbf{E}_{q} [f^{*}(x)]
 \end{array}
 \end{equation}
-* Technique condition: $q$ must have support everywhere $p$ dose.
+
+\begin{equation}
+\begin{array}
+\mu &= \mathbf{E}_{p}[f(x)]
+\end{array} 
+\end{equation}
+
+Technique condition: $q$ must have support everywhere $p$ dose.
 Without this condition, the equation is biased!
 Note: $q$ can support things that $p$ doesn't.
 * Reference
