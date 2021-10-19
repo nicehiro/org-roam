@@ -1,9 +1,9 @@
 :PROPERTIES:
-:ID:       D34F35B3-BC69-463A-86F5-CE7CCF441065
+:id: D34F35B3-BC69-463A-86F5-CE7CCF441065
 :END:
 #+title: Asynchronous Advantage Actor Critic
 #+STARTUP: latexpreview
-#+filetags: :rl:a3c:Users:wangfangyuan:Documents:roam:org_roam:
+#+filetags: :rl:
 
 * Related Works
 Experience replay buffer and the approximation of the real action(or state)
@@ -22,7 +22,6 @@ Experience replay has several drawbacks:
 In this paper, we asynchronously execute multiple agents in parallel instead of
 experience replay. This parallelism also decorrelates the agents' data into more
 stationary process. So A3C is a on-policy algorithm.
-
 * Methods
 
 #+DOWNLOADED: screenshot @ 2021-05-20 17:41:20
@@ -42,7 +41,6 @@ stationary process. So A3C is a on-policy algorithm.
 3. Adding the entropy of the policy $\pi$ to the objective function improved
    exploration by discouraging premature convergence to suboptimal deterministic
    policies.
-
 * Reference
 - [[ebib:mnihAsynchronousMethodsDeep2016][Asynchronous Methods for Deep Reinforcement Learning]]
 
