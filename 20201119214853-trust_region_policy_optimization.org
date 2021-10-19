@@ -1,11 +1,11 @@
 :PROPERTIES:
-:ID:       B994EAC2-A0F1-4FE0-8BFF-E0790743B276
+:id: B994EAC2-A0F1-4FE0-8BFF-E0790743B276
 :END:
 #+title: Trust Region Policy Optimization
 #+filed: rl
 #+OPTIONS: toc:nil
 #+startup: latexpreview
-#+filetags: :model_free:Users:wangfangyuan:Documents:roam:org_roam:
+#+filetags: :rl:
 
 * Preliminaries
 考虑一个无限长度的马尔科夫决策过程（MDP） $(\mathcal{S},\mathcal{A},P,r,\rho_0,\gamma)$ ,
@@ -141,8 +141,7 @@ $$
 #+attr_latex: scale=0.75
 #+attr_html: width 400
 #+attr_org: width 400
-
-[[file:./img/trpo/algo_1.png]]
+[[file:img/trpo/algo_1.png]]
 #+end_center
 
 使用算法 1 可以使策略回报随着时间变化而递增， $\eta(\pi_0)\leq\eta(\pi_2)\leq\dots$ ，
@@ -159,7 +158,6 @@ $$
 
 接下来介绍的 TRPO 算法是算法 1 的近似，通过对 KL 散度加约束而不是使用它作为惩罚项，
 来获得最大程度的更新。
-
 ** Optimization of Parameterized Policies
 对前面的标记做个简化： $\eta(\theta):=\eta(\pi_{\theta}),L_{\theta}(\tilde{\theta}),D_{KL}(\theta||\tilde{\theta}):=D_{KL}(\pi_{\theta}||\pi_{\tilde{\theta}})$ 。
 
@@ -170,7 +168,7 @@ $$
 $$
 
 在实际运算时，理论算法可能会有问题。
-**** 更新步长太小
+*** 更新步长太小
 如果我们使用推导的 $C$ 作为更新步长，更新步幅是很小的。
 但上诉问题可以转化为约束问题，把 KL 散度当成约束，这样更新步幅就会变大了：
 \begin{equation}
@@ -179,8 +177,7 @@ $$
 \text { subject to } D_{\mathrm{KL}}^{\max }\left(\theta_{\mathrm{old}}, \theta\right) \leq \delta
 \end{array}
 \end{equation}
-
-**** 计算复杂度很高
+*** 计算复杂度很高
 理论上的 KL 散度是对所有状态空间的策略都要进行计算，我们使用平均 KL 散度进行替代。
 
 $$
@@ -194,7 +191,6 @@ $$
 \text { subject to } \bar{D}_{\mathrm{KL}}^{\rho_{\theta \mathrm{old}}}\left(\theta_{\mathrm{old}}, \theta\right) \leq \delta
 \end{array}
 \end{equation}
-
 ** Sample-Based Estimation of the Objective and Constraint
 将上诉优化函数展开：
 \begin{equation}
@@ -205,7 +201,7 @@ $$
 \end{equation}
 
 接下来我们对上式做三处近似：
-1. 使用期望 \frac{1}{1-\gamma}\mathbb{E}_{s\sim\rho_{\theta_{old}}}[\dots] 来近似 $\sum_{s}\rho_{\theta_{old}}(s)[\dots]$
+1. 使用期望 $\frac{1}{1-\gamma}\mathbb{E}_{s\sim\rho_{\theta_{old}}}[\dots]$ 来近似 $\sum_{s}\rho_{\theta_{old}}(s)[\dots]$
 2. 使用 Q 值 $Q_{\theta_{old}}$ 近似 $A_{\theta_{old}}$
 3. 使用重要性采样估计 $\sum_{a}[\dots]$
 
@@ -220,18 +216,15 @@ $$
 \text { subject to } \mathbb{E}_{s \sim \rho_{\theta \mathrm{old}}}\left[D_{\mathrm{KL}}\left(\pi_{\theta_{\mathrm{old}}}(\cdot \mid s) \| \pi_{\theta}(\cdot \mid s)\right)\right] \leq \delta
 \end{array}
 \begin{equation}
-
-**** Single Path
+*** Single Path
 先取样第一个状态 $s_0\sim\rho_0$ ，然后用策略 $\pi_{\theta_{old}}$ 生成一条轨迹：
 $s_0,a_0,s_1,a_1,\dots,s_{T-1},a_{T-1},s_{T}$ 。
 因此 $q(a|s)=\pi_{\theta_{old}}(a|s)$ ，Q 值是在每次轨迹结束之后计算的折扣奖励和。
-
-**** Vine
+*** Vine
 先取样第一个状态 $s_0\sim\rho_0$ ，然后用策略 $\pi_{\theta_i}$ 生成一系列轨迹。
 然后，从这些轨迹中选 N 个状态 $s_1,s_2,\dots,s_N$ 组成 rollout 集。
 对 rollout 集中每一个状态 $s_n$ ，使用 $q$ 进行动作采样 $a_{n,k}\sim q(\cdot|s_n)$ 。
 对每个在 $s_n$ 采样到的动作 $a_{n,k}$ ，对其继续采样一个短的轨迹，来计算其 Q 值 $\hat{Q}(s_n,a_n,k)$ 。
-
 ** Practical Algorithm
 1. 使用 Single-Path 或 Vine 方法进行采样
 2. 计算最终优化函数中的目标值的期望
