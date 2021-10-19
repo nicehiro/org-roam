@@ -1,10 +1,10 @@
 :PROPERTIES:
-:ID:       158CDB63-EAF8-4C9E-9F69-3800BC32D30B
+:id: 158CDB63-EAF8-4C9E-9F69-3800BC32D30B
 :END:
 #+title: Git Submodules
 #+filed:
 #+OPTIONS: toc:nil
-#+filetags: :git:Users:wangfangyuan:Documents:roam:org_roam:
+#+filetags: :git:
 
 * Description
 在 Git 项目中，可以添加此主项目的子项目。这样做的好处有：
@@ -37,7 +37,5 @@ git submodule init
 git submodule update
 #+end_src
 更新子模块。
-
-
 * Ref
 - [[https://gist.github.com/gitaarik/8735255][Git submodules basic explanation]]

@@ -1,8 +1,8 @@
 :PROPERTIES:
-:ID:       FBE7E002-6A11-4519-870B-1DEFBF63AC0A
+:id: FBE7E002-6A11-4519-870B-1DEFBF63AC0A
 :END:
 #+title: Pytorch Cat
-#+filetags: :torch:cat:Users:wangfangyuan:Documents:roam:org_roam:
+#+filetags: :pytorch:
 
 Concatenates the given sequence of seq tensors in the given dimensions.
 All tensors must either have the same shape or be empty.

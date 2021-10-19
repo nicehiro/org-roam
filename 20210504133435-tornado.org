@@ -1,8 +1,8 @@
 :PROPERTIES:
-:ID:       50E41329-FA14-4DCC-BF4D-0932A57D7813
+:id: 50E41329-FA14-4DCC-BF4D-0932A57D7813
 :END:
 #+title: tornado
-#+filetags: :python:web:Users:wangfangyuan:Documents:roam:org_roam:
+#+filetags: :tornado:
 
 Python web 框架 tornado 源码阅读。
 

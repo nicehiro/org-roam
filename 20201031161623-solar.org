@@ -1,10 +1,9 @@
 :PROPERTIES:
-:ID:       CFBB6975-A743-4276-AF64-DDEEEB042B00
+:id: CFBB6975-A743-4276-AF64-DDEEEB042B00
 :END:
 #+title: SOLAR
-#+filed: Reinforcement Learning
 #+OPTIONS: toc:nil
-#+filetags: :rl:mbrl:Users:wangfangyuan:Documents:roam:org_roam:
+#+filetags: :rl:mbrl:
 
 * Description
 
