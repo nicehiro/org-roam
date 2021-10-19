@@ -1,11 +1,10 @@
 :PROPERTIES:
-:ID:       67641A19-3457-4043-BD87-893254443470
+:id: 67641A19-3457-4043-BD87-893254443470
 :END:
 #+title: 贝叶斯估计
-#+filed: Statistics
 #+OPTIONS: toc:nil
 #+startup: latexpreview
-#+filetags: :statistics:bayes:Users:wangfangyuan:Documents:roam:org_roam:
+#+filetags: :statistics:
 
 * Description
 设总体有概率密度 $f(X;\theta)$ ，从这个总体中抽样本 $X_1,\dots,X_n$ ，

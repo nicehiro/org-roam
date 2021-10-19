@@ -1,7 +1,7 @@
 :PROPERTIES:
-:ID:       E5254FDC-0383-44B7-86C5-62C35D044A9D
+:id: E5254FDC-0383-44B7-86C5-62C35D044A9D
 :END:
 #+title: JavaScript
-#+filetags: :javascript:js:Users:wangfangyuan:Documents:roam:org_roam:
+#+filetags: :js:
 
 ** Basic

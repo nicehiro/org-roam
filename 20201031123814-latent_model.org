@@ -1,10 +1,10 @@
 :PROPERTIES:
-:ID:       4DA8FA5D-BF5D-4D63-81B9-017E708C26B9
+:id: 4DA8FA5D-BF5D-4D63-81B9-017E708C26B9
 :END:
 #+title: Latent Model
 #+filed: Reinforcement Learning
 #+OPTIONS: toc:nil
-#+filetags: :rl:mbrl:latent_model:Users:wangfangyuan:Documents:roam:org_roam:
+#+filetags: :rl:mbrl:
 
 * Description
 模型学习的好坏还与环境的复杂性有关。有些环境是部分可观测的，状态是高维的且存在较多冗余信息。
@@ -12,7 +12,7 @@
 我们需要考虑训练的模型有：
 #+BEGIN_CENTER
 #+ATTR_HTML: :width 100%
-[[file:./img/rl-sergey/lec-11-9.png]]
+[[file:img/rl-sergey/lec-11-9.png]]
 #+END_CENTER
 
 在全部可观测模型中，我们通常做的是对网络的输出做最大似然化：
@@ -30,7 +30,7 @@ $$
 这个分布需要这么复杂吗？
 #+BEGIN_CENTER
 #+ATTR_HTML: :width 100%
-[[file:./img/rl-sergey/lec-11-10.png]]
+[[file:img/rl-sergey/lec-11-10.png]]
 #+END_CENTER
 这里我们使用简单的方法，使用：
 $$
@@ -51,5 +51,5 @@ $$
 整理一下，得到算法：
 #+BEGIN_CENTER
 #+ATTR_HTML: :width 100%
-[[file:./img/rl-sergey/lec-11-11.png]]
+[[file:img/rl-sergey/lec-11-11.png]]
 #+END_CENTER
