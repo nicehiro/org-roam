@@ -1,8 +1,8 @@
 :PROPERTIES:
-:ID:       FDE6A9F3-69C0-43B2-8C8E-AA74BD93A5BF
+:id: FDE6A9F3-69C0-43B2-8C8E-AA74BD93A5BF
 :END:
 #+title: Weight Initialization
-#+filetags: :machine_learning:
+#+filetags: :ml:
 
 权重初始化的目的是防止在训练过程中，神经网络经过激活函数的输出爆炸或者消失。
 当上诉二者任一发生时，损失函数的梯度要么太大，要么太小，以至于反向传播不能很好的进行，
@@ -22,7 +22,6 @@
 Xavier initialization 方法对 tanh 效果不错。
 
 Kaiming initialization 方法对 relu 效果不错。
-
 
 * Reference
 [[https://towardsdatascience.com/weight-initialization-in-neural-networks-a-journey-from-the-basics-to-kaiming-954fb9b47c79][Weight initialization in neural networks]]

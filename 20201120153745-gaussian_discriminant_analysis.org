@@ -1,11 +1,11 @@
 :PROPERTIES:
-:ID:       413C6561-F38A-490D-B350-93AF7FA6F224
+:id: 413C6561-F38A-490D-B350-93AF7FA6F224
 :END:
 #+title: Gaussian discriminant analysis
 #+filed: machine-learning
 #+OPTIONS: toc:nil
 #+startup: latexpreview
-#+filetags: :machine_learning:Users:wangfangyuan:Documents:roam:org_roam:
+#+filetags: :ml:
 
 * Description
 在一个分类问题中，如果输入特征 $x$ 是连续型随机变量，
@@ -58,7 +58,6 @@ p(x \mid y=1) &=\frac{1}{(2 \pi)^{d / 2}|\Sigma|^{1 / 2}} \exp \left(-\frac{1}{2
 [[file:img/cs229/2/gda.png]]
 #+end_center
 图中，训练集中的两类数据被两个高斯分布拟合，这两个高斯分布形状相同，只有中心位置不同。
-
 ** GDA 和 Logistic Regression 的关系
 仔细观察上诉的密度函数 $p(y=1|x;\phi,\mu_0,\mu_1,\Sigma)$ ，它可以展开成：
 
