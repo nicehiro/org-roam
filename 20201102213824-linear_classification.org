@@ -1,11 +1,10 @@
 :PROPERTIES:
-:ID:       8550656B-713F-417E-8E19-4D94BB7E7580
+:id: 8550656B-713F-417E-8E19-4D94BB7E7580
 :END:
 #+title: Linear Classification
 #+STARTUP: latexpreview
-#+filed: Machine Learning
 #+OPTIONS: toc:nil
-#+filetags: :machine_learning:linear_classification:Users:wangfangyuan:Documents:roam:org_roam:
+#+filetags: :machine_learning:linear_classification:
 
 #+begin_quote
 原文 [[https://cs231n.github.io/linear-classify/][Linear Classification]]
@@ -58,7 +57,7 @@ $W$ 维度为 $[10\times3072]$ ， $b$ 的维度为 $[10\times1]$ 。
 #+BEGIN_CENTER
 #+ATTR_ORG: :width 600
 #+ATTR_HTML: :width 100%
-[[file:./img/cs231n/imagemap.jpg]]
+[[file:img/cs231n/imagemap.jpg]]
 #+END_CENTER
 假设图片只有 4 个像素，不考虑颜色通道，且只有三个分类标签（红：猫，绿：狗和蓝：船）。
 我们将图片像素展开成 1 维，给定参数 $W,b$ ，计算各自的分值。
@@ -112,7 +111,7 @@ $$
 #+BEGIN_CENTER
 #+ATTR_ORG: :width 800
 #+ATTR_HTML: :width 100%
-[[file:./img/cs231n/wb.jpeg]]
+[[file:img/cs231n/wb.jpeg]]
 #+END_CENTER
 
 *图片数据处理* 上面的示例中，我们使用了原始像素值（范围为 0-255）。
