@@ -24,7 +24,8 @@ experience replay. This parallelism also decorrelates the agents' data into more
 stationary process. So A3C is a on-policy algorithm.
 *
 Methods
-tttt
+
+
 #+DOWNLOADED: screenshot @ 2021-05-20 17:41:20
 #+attr_html: scale=0.8 :align center
 #+attr_latex: :width 800cm
