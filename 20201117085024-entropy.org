@@ -1,11 +1,11 @@
 :PROPERTIES:
-:ID:       4EB6ADC8-0D35-4EBB-9BDA-4EEA8AD46FE1
+:id: 4EB6ADC8-0D35-4EBB-9BDA-4EEA8AD46FE1
 :END:
 #+title: Entropy
 #+filed: math
 #+OPTIONS: toc:nil
 #+startup: latexpreview
-#+filetags: :entropy:Users:wangfangyuan:Documents:roam:org_roam:
+#+filetags: :probability:
 
 * Description
 熵（Entropy）是接受的每条信息中包含的信息的平均量。

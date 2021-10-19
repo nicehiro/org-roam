@@ -1,8 +1,8 @@
 :PROPERTIES:
-:ID:       01D70788-5E33-481D-A93D-5DE7D507F629
+:id: 01D70788-5E33-481D-A93D-5DE7D507F629
 :END:
 #+title: Numpy Broadcast
-#+filetags: :python:numpy:Users:wangfangyuan:Documents:roam:org_roam:
+#+filetags: :python:
 
 * Numpy 广播规则
 1. 所有输入数组向输入中 =shape= 最长的数组看齐，不足的部分在 *前面* 加 1

@@ -1,10 +1,9 @@
 :PROPERTIES:
-:ID:       E2DB1558-D133-42C4-9E2E-15C646C8B2E0
+:id: E2DB1558-D133-42C4-9E2E-15C646C8B2E0
 :END:
 #+title: Model Based Method 1.5
-#+filed: Reinforcement Learning
 #+OPTIONS: toc:nil
-#+filetags: :rl:mbrl:algos:Users:wangfangyuan:Documents:roam:org_roam:
+#+filetags: :rl:mbrl:
 
 * Description
 现在还存在一个问题，之前的算法都是通过模型进行整个规划，
@@ -13,5 +12,5 @@
 #+BEGIN_CENTER
 #+ATTR_HTML: :width 100%
 #+ATTR_ORG: 80%
-[[file:./img/rl-sergey/lec-11-4.png]]
+[[file:img/rl-sergey/lec-11-4.png]]
 #+END_CENTER
