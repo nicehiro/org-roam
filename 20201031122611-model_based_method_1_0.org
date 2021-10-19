@@ -1,15 +1,15 @@
 :PROPERTIES:
-:ID:       6C30A09D-469B-463C-BC80-050F41660A42
+:id: 6C30A09D-469B-463C-BC80-050F41660A42
 :END:
 #+title: Model Based Method 1.0
 #+filed: Reinforcement Learning
 #+OPTIONS: toc:nil
-#+filetags: :rl:mbrl:algos:Users:wangfangyuan:Documents:roam:org_roam:
+#+filetags: :rl:mbrl:
 
 * Description
 引入 DAgger 算法，通过人工对数据标记，更新模型，来保证模型的准确性。
 #+BEGIN_CENTER
 #+ATTR_ORG: :width 600
 #+ATTR_HTML: :width 100%
-[[file:./img/rl-sergey/lec-11-2.png]]
+[[file:img/rl-sergey/lec-11-2.png]]
 #+END_CENTER
