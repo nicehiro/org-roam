@@ -1,10 +1,9 @@
 :PROPERTIES:
-:ID:       7B0C3FAE-D941-4AF5-B7EA-79C611DD3D61
+:id: 7B0C3FAE-D941-4AF5-B7EA-79C611DD3D61
 :END:
 #+title: Monte Carlo Tree Search(MCTS)
-#+filed: Reinforcement Learning
 #+OPTIONS: toc:nil
-#+filetags: :rl:mbrl:sto_open:Users:wangfangyuan:Documents:roam:org_roam:
+#+filetags: :rl:mbrl:
 
 * Description
 MCTS 适用于离散动作空间和连续动作空间，这里以离散动作空间举例。

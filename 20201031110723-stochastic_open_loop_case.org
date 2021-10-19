@@ -1,10 +1,10 @@
 :PROPERTIES:
-:ID:       075D6325-AC18-4A2A-8459-08BB3CB5C32B
+:id: 075D6325-AC18-4A2A-8459-08BB3CB5C32B
 :END:
 #+title: Stochastic Open Loop Case
 #+filed: Reinforcement Learning
 #+OPTIONS: toc:nil
-#+filetags: :rl:mbrl:Users:wangfangyuan:Documents:roam:org_roam:
+#+filetags: :rl:mbrl:
 
 * Description
 
@@ -12,7 +12,7 @@
 在已知状态转移方程的条件下，Agent 依据模型生成一系列的动作。
 #+BEGIN_CENTER
 #+ATTR_HTML: :width 100%
-[[file:./img/rl-sergey/lec-10-2.png]]
+[[file:img/rl-sergey/lec-10-2.png]]
 #+END_CENTER
 
 \begin{array}{c}
