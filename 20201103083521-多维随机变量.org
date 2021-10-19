@@ -1,10 +1,10 @@
 :PROPERTIES:
-:ID:       DD4FA3F4-8EA3-4631-A548-119BA70347E0
+:id: DD4FA3F4-8EA3-4631-A548-119BA70347E0
 :END:
 #+title: 多维随机变量
 #+filed: Probability
 #+OPTIONS: toc:nil
-#+filetags: :probability:Users:wangfangyuan:Documents:roam:org_roam:
+#+filetags: :probability:
 
 * Description
 连续型随机变量的分布中，若 $f(x_1,\dots,x_n)$ 是定义在 $R^n$ 上的非负函数，使对 $R^n$ 中的任何集合 $A$ ，有：
