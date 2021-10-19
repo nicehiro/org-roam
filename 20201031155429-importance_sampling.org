@@ -16,17 +16,6 @@ The key observation is that $\mu$ is can expressed as the expectation of a
 different random variable $f^{*}(x)=\frac{p(x)}{q(x)}$ under $q$ 
 
 \begin{equation}
-\begin{array}
-\mu &= \mathbf{E}_{p}[f(x)] \\
-&= \sum_{x} p(x)f(x) \\
-&= \sum_{x} \frac{q(x)}{q(x)}p(x)f(x) \\
-&= \sum_{x} \frac{p(x)}{q(x)} q(x)f(x) \\
-&= \mathbf{E}_{q} \frac{p(x)}{q(x)} f(x) \\
-&= \mathbf{E}_{q} [f^{*}(x)]
-\end{array}
-\end{equation}
-
-\begin{equation}
 \begin{aligned}
 \mu &= \mathbf{E}_{p}[f(x)] \\
 &= \sum_{x} p(x)f(x) \\
