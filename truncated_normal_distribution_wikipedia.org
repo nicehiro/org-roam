@@ -1,6 +1,6 @@
 :PROPERTIES:
-:ID:       DEFEB330-B133-45AC-80CC-B1D90D31C602
+:id: DEFEB330-B133-45AC-80CC-B1D90D31C602
 :ROAM_REFS: https://en.wikipedia.org/wiki/Truncated_normal_distribution
 :END:
 #+title: Truncated normal distribution - Wikipedia
-#+filetags: :Users:wangfangyuan:Documents:roam:org_roam:
+#+filetags: :probability:

@@ -1,6 +1,0 @@
-:PROPERTIES:
-:ID:       5939BD84-9C46-4F99-B055-EA22CE124D1B
-:ROAM_REFS: https://en.wikipedia.org/wiki/Pseudo-random_number_sampling#Continuous_distributions
-:END:
-#+title: Pseudo-random number sampling - Wikipedia
-#+filetags: :Users:wangfangyuan:Documents:roam:org_roam:
