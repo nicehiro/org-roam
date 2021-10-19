@@ -1,8 +1,10 @@
+:PROPERTIES:
+:ID:       31B3EBF2-915A-44A2-B331-7E049D718C31
+:END:
 #+title: Linear Quadratic Regression
 #+filed: Reinforcement Learning
 #+OPTIONS: toc:nil
-#+roam_alias:
-#+roam_tags: rl mbrl sto-open
+#+filetags: :rl:mbrl:sto_open:Users:wangfangyuan:Documents:roam:org_roam:
 
 * Description
 一般来说，强化学习很少有问题可以使用导数来求解，因为我们无法知道它的状态转移方程（环境动力学函数），
@@ -24,7 +26,7 @@ $$
 \frac{d f}{d \mathbf{x}_{t}}, \frac{d f}{d \mathbf{u}_{t}}, \frac{d c}{d \mathbf{x}_{t}}, \frac{d c}{d \mathbf{u}_{t}}
 $$
 
-求解上诉优化问题的两种方法又被称为 [[file:20201031113422-shooting_methods_i.org][Shooting Methods I]] 和 [[file:20201031113554-collocation_method.org][Collocation Method]] 。
+求解上诉优化问题的两种方法又被称为 [[id:28D202B6-D5B5-45E9-BF60-AD6488B1D91E][Shooting Methods I]] 和 [[id:82E286B4-08E9-4627-B9C0-9483739B4342][Collocation Method]] 。
 
 我们先使用 =Shooting method= 求解。
 目标是：

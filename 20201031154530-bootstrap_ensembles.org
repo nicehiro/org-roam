@@ -1,8 +1,10 @@
+:PROPERTIES:
+:ID:       CBA80E17-4DA3-4107-852C-6E0F3BAE7ADC
+:END:
 #+title: Bootstrap Ensembles
 #+filed: Reinforcement Learning
 #+OPTIONS: toc:nil
-#+roam_alias:
-#+roam_tags: rl mbrl
+#+filetags: :rl:mbrl:Users:wangfangyuan:Documents:roam:org_roam:
 
 * Description
 基于高斯过程的环境模型能够衡量环境的不确定性，

@@ -1,14 +1,16 @@
+:PROPERTIES:
+:ID:       413C6561-F38A-490D-B350-93AF7FA6F224
+:END:
 #+title: Gaussian discriminant analysis
 #+filed: machine-learning
 #+OPTIONS: toc:nil
 #+startup: latexpreview
-#+roam_alias:
-#+roam_tags: machine-learning
+#+filetags: :machine_learning:Users:wangfangyuan:Documents:roam:org_roam:
 
 * Description
 在一个分类问题中，如果输入特征 $x$ 是连续型随机变量，
 那么可以考虑使用 GDA(Gaussian Discriminant Analysis) 模型，
-它拟合的对象为 $p(x|y)$ ，并假设 $p(x|y)$ 服从[[file:20201118110534-multivariate_gaussian_distributiuon.org][多维正态分布]]。
+它拟合的对象为 $p(x|y)$ ，并假设 $p(x|y)$ 服从[[id:8AC0AC13-4BFB-48F4-8005-2C763BE9416D][多维正态分布]]。
 
 GDA 模型为：
 
@@ -29,7 +31,7 @@ p(x \mid y=1) &=\frac{1}{(2 \pi)^{d / 2}|\Sigma|^{1 / 2}} \exp \left(-\frac{1}{2
 请注意，此模型中两个随机变量分别有各自的均值 $\mu_0,\mu_1$ ，
 但二者的协方差矩阵都是 $\Sigma$ 。
 
-使用[[file:20201103085205-maximum_likelihood_estimation.org][极大似然法]]求解，计算其 log-likelihood
+使用[[id:0863DAB5-25FA-42BD-A02F-9EF1FC11DA78][极大似然法]]求解，计算其 log-likelihood
 
 \begin{aligned}
 \ell\left(\phi, \mu_{0}, \mu_{1}, \Sigma\right) &=\log \prod_{i=1}^{n} p\left(x^{(i)}, y^{(i)} ; \phi, \mu_{0}, \mu_{1}, \Sigma\right) \\
@@ -65,7 +67,7 @@ p\left(y=1 \mid x ; \phi, \Sigma, \mu_{0}, \mu_{1}\right)=\frac{1}{1+\exp \left(
 $$
 
 其中 $\theta$ 是关于 $\phi,\Sigma,\mu_0,\mu_1$ 的近似参数。
-这其实就是 [[file:20201103094628-logistic_regression.org][Logistic Regression]] $p(y=1|x)$ 的表达式。
+这其实就是 [[id:82C8F1D3-2526-4684-B635-FAFD10C227E6][Logistic Regression]] $p(y=1|x)$ 的表达式。
 
 前面我们提到，使用 GDA 需要在随机变量 $x$ 服从多维正态分布才行。
 而 Logistic Regression 没有这些限制。

@@ -1,13 +1,16 @@
+:PROPERTIES:
+:ID:       388AB2A0-7456-4885-A12B-FB3CA09AD9BC
+:END:
 #+title: Off Policy Actor Critic
-#+roam_alias:
-#+roam_tags: rl off-policy
+#+STARTUP: latexpreview
+#+filetags: :rl:off_policy:Users:wangfangyuan:Documents:roam:org_roam:
 
 * Preliminary
-One disadvantage of [[file:20210107162935-reinforce.org][REINFORCE]] is low data utilization.
+One disadvantage of [[id:D56B0801-4B58-42E1-B9B0-4CDE76A5B657][REINFORCE]] is low data utilization.
 
 
 The advantages of off-policy methods:
-1. Learning about an optimal policy while executing an exploratory policy.
+1. Learning about an optimal policy while executing an *exploratory* policy.
 2. Learning from demonstration.
 3. Learn multiple tasks in parallel.
 
@@ -23,7 +26,7 @@ in $s_0$ and executing $b$. In the off-policy settings, data is obtained
 according to this behavior distribution $b$.
 
 In this paper, we consider the version of off-PAC that update its critic
-weights by the [[file:20210519152943-gradient_temporal_difference.org][Gradient Temporal-Difference]].
+weights by the [[id:B77C2531-01BC-4768-BF19-61958DA27AE5][Gradient Temporal-Difference]].
 
 * Off-PAC policy gradient estimation
 \begin{aligned}
@@ -35,9 +38,10 @@ weights by the [[file:20210519152943-gradient_temporal_difference.org][Gradient 
 &= \mathbb{E}_{s\sim d^{b}} \sum_{a\in A} b(a|s) \frac{\pi(a|s)}{b(a|s)}\frac{\nabla_{u}\pi(a|s)}{\pi(a|s)}Q^{\pi,\gamma}(s,a) \\
 &= \mathbb{E}_{s\sim d^{b},a\sim b} \frac{\pi(a|s)}{b(a|s)}\frac{\nabla_{u}\pi(a|s)}{\pi(a|s)}Q^{\pi,\gamma}(s,a) \\
 &= \mathbb{E}_{b} \frac{\pi(a|s)}{b(a|s)}\frac{\nabla_{u}\pi(a|s)}{\pi(a|s)}Q^{\pi,\gamma}(s,a) \\
+&= \mathbb{E}_{b} \frac{\pi(a|s)}{b(a|s)}\nabla_{u}\log\pi(a|s)Q^{\pi,\gamma}(s,a) \\
 \end{aligned}
 
-The derivation above use [[file:20201031155429-importance_sampling.org][Importance Sampling]].
+The derivation above use [[id:C94C5117-C048-4AE3-85EA-B01F4AB7D390][Importance Sampling]].
 
 
 * Reference

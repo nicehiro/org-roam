@@ -1,8 +1,10 @@
+:PROPERTIES:
+:ID:       FA6A665C-1F21-4B3E-AF17-64CA611FB01D
+:END:
 #+title: Expectation
 #+filed: Probability
 #+OPTIONS: toc:nil
-#+roam_alias:
-#+roam_tags: probability expectation expect
+#+filetags: :probability:expectation:expect:Users:wangfangyuan:Documents:roam:org_roam:
 
 * Description
 1. 对于离散概率分布， $E(X)=a_{1}p_{1}+a_{2}p_{2}+\dots+a_{m}p_{m}$ ，此时，如果期望存在，要求 $\sum_{i=1}^{m}|a_i|p_i<\infty$ ，即绝对收敛。

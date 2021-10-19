@@ -1,8 +1,10 @@
+:PROPERTIES:
+:ID:       05A1BE28-4BED-48AC-A116-6F17ECF4CA9C
+:END:
 #+title: Model Free with Model
 #+filed: Reinforecement Learning
 #+OPTIONS: toc:nil
-#+roam_alias:
-#+roam_tags: rl mbrl
+#+filetags: :rl:mbrl:Users:wangfangyuan:Documents:roam:org_roam:
 
 * Description
 #+BEGIN_CENTER

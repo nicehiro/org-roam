@@ -1,9 +1,11 @@
+:PROPERTIES:
+:ID:       E4803F23-52B8-4320-9DA5-FB5F7A79B5C9
+:END:
 #+title: Partial Derivative
 #+filed:
 #+OPTIONS: toc:nil
-#+roam_alias:
-#+roam_tags:
 #+startup: latexpreview
+#+filetags: :Users:wangfangyuan:Documents:roam:org_roam:
 
 * Description
 一个多元函数，对其中一个变量微分，而保持其他变量恒定（相对于全导数，其所有变量都允许变化）。

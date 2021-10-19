@@ -1,7 +1,9 @@
+:PROPERTIES:
+:ID:       A6F9A9BE-B1C8-4CE4-A2E0-1DDDBFDF27CB
+:END:
 #+title: Hinge Loss
 #+filed: Machine-Learning
 #+OPTIONS: toc:nil
-#+roam_alias:
-#+roam_tags: hinge machine-learning
+#+filetags: :hinge:machine_learning:Users:wangfangyuan:Documents:roam:org_roam:
 
 * Description

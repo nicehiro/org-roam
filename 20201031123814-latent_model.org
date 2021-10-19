@@ -1,8 +1,10 @@
+:PROPERTIES:
+:ID:       4DA8FA5D-BF5D-4D63-81B9-017E708C26B9
+:END:
 #+title: Latent Model
 #+filed: Reinforcement Learning
 #+OPTIONS: toc:nil
-#+roam_alias:
-#+roam_tags: rl mbrl latent-model
+#+filetags: :rl:mbrl:latent_model:Users:wangfangyuan:Documents:roam:org_roam:
 
 * Description
 模型学习的好坏还与环境的复杂性有关。有些环境是部分可观测的，状态是高维的且存在较多冗余信息。

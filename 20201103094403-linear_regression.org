@@ -1,9 +1,11 @@
+:PROPERTIES:
+:ID:       AC44A370-31C9-4A08-9B33-13AB87279E01
+:END:
 #+title: Linear Regression
 #+filed: Machine-Learning
 #+OPTIONS: toc:nil
-#+roam_alias:
-#+roam_tags: machine-learning regression
 #+STARTUP: latexpreview
+#+filetags: :machine_learning:regression:Users:wangfangyuan:Documents:roam:org_roam:
 
 * Description
 在回归问题中，如果使用线性函数去拟合给定数据集，这种方法称为线性回归法。
@@ -27,8 +29,8 @@ J(\theta)=\frac{1}{2}\sum_{i=1}^{n}(h_{\theta}(x^{i})-y^{i})^2
 $$
 那么，我们的目标就转换成了让损失函数的值越小越好。
 
-** [[file:20201103101941-lms_least_mean_squares.org][LMS(Least Mean Squares)]]
-有了损失函数之后，我们可以[[file:20201103101531-gradient_descent.org][梯度下降法]]
+** [[id:0B073D3F-F0F3-463D-A6A5-358708AEC466][LMS(Least Mean Squares)]]
+有了损失函数之后，我们可以[[id:24B04706-9D53-438E-9C99-4A9FB6AD763B][梯度下降法]]
 （gradient decent）去更新参数 $\theta$ ，最后 $\theta$ 可以收敛。
 $$
 \theta_{j}:=\theta_{j}-\alpha \frac{\partial}{\partial \theta_{j}} J(\theta)
@@ -127,7 +129,7 @@ p\left(y^{(i)} \mid x^{(i)} ; \theta\right)=\frac{1}{\sqrt{2 \pi} \sigma} \exp \
 $$
 我们希望寻找一组参数 $\theta$ ，使得在给定输入 $x^{i}$ 的条件下，输出 $y^{i}$ 的概率最大。
 
-可以使用[[file:20201103085205-maximum_likelihood_estimation.org][最大似然法]]解决这个问题：
+可以使用[[id:0863DAB5-25FA-42BD-A02F-9EF1FC11DA78][最大似然法]]解决这个问题：
 \begin{aligned}
 L(\theta) &=L(\theta;X,\vec{y})=p(\vec{y}|X;\theta) \\
 &=\prod_{i=1}^{n} p\left(y^{(i)} \mid x^{(i)} ; \theta\right) \\
@@ -155,7 +157,7 @@ $$
 $$
 对 $\theta$ 求导之后，可以直接令导数为 0 计算出 $\theta$ 或者使用梯度下降法求解。
 
-** [[file:20201103085244-贝叶斯估计.org][贝叶斯]]
+** [[id:67641A19-3457-4043-BD87-893254443470][贝叶斯]]
 \begin{aligned}
 P(\theta|Y) &= \frac{P(Y|\theta)P(\theta)}{P(Y)} \\
 &= P(Y|\theta)P(\theta)
@@ -194,5 +196,5 @@ $$
 
 其实想想这样做也很合理。与输入的距离越近，对输出的结果影响越大，所以对应的权重需要加大，反之，亦然。
 
-这种方法是[[file:20201103150635-non_parametric_algorithm.org][Non-parametric algorithm]]。
-在进行预测的时候，需要使用训练集的数据。而之前训练好参数直接对数据进行预测的方法称为[[file:20201103151557-parametric_algorithm.org][Parametric algorithm]]。
+这种方法是[[id:014601D8-BBE2-4EDF-96C1-52ECD16E10D5][Non-parametric algorithm]]。
+在进行预测的时候，需要使用训练集的数据。而之前训练好参数直接对数据进行预测的方法称为[[id:4F33A972-1F8C-4A59-9358-B13B28C6AB7D][Parametric algorithm]]。

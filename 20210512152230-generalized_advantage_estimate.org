@@ -1,7 +1,9 @@
+:PROPERTIES:
+:ID:       AC14EE40-D45F-461F-AACE-646B7CFF8BA8
+:END:
 #+title: Generalized Advantage Estimate
-#+roam_alias:
-#+roam_tags: GAE
 #+startup: latexpreview
+#+filetags: :GAE:Users:wangfangyuan:Documents:roam:org_roam:
 
 * Preliminaries
 Policy gradient methods maximize the expected total reward by repeatedly
@@ -23,7 +25,7 @@ where $\Psi_{t}$ may be one of the follows(All unbiased):
 5. $A^{\pi}(s_{t}, a_{t})$ advantage function.
 6. $r_t + V^{\pi}(s_{t+1}) - V^{\pi}(s_{t})$: TD residual.
 
-The first three formulas are deduced in [[file:20210105204602-policy_gradient.org][Policy Gradient]].
+The first three formulas are deduced in [[id:A84D656F-B4D8-4BBA-B20E-9416230D05CF][Policy Gradient]].
 
 The latter formulas use the definitions:
 \begin{equation*}
@@ -176,9 +178,9 @@ $\lambda=0$ and $\lambda=1$.
 \operatorname{GAE}(\gamma, 1): & \hat{A}_{t}:=\sum_{l=0}^{\infty} \gamma^{l} \delta_{t+l}=\sum_{l=0}^{\infty} \gamma^{l} r_{t+l}-V\left(s_{t}\right)
 \end{array}
 
-$GAE(\gamma,0)$ is $\gamma$-just for $V=V^{\pi,\gamma}$ and otherwise induces
+$GAE(\gamma,0)$ is $\gamma$ -just for $V=V^{\pi,\gamma}$ and otherwise induces
 bias, but it typically has much lower variance.
-$GAE(\gamma,1)$ is $\gamma$-just regardless of the accuracy of $V$, but it has
+$GAE(\gamma,1)$ is $\gamma$ -just regardless of the accuracy of $V$, but it has
 high variance due to the sum of terms.
 Empirically, we find that the best value of $\lambda$ is much *lower* than the best
 value of $\gamma$, likely because $\lambda$ introduces far less bias than $\gamma$
@@ -191,7 +193,7 @@ g^{\gamma} \approx \mathbb{E}\left[\sum_{t=0}^{\infty} \nabla_{\theta} \log \pi_
 where equality hold s when $\lambda=1$.
 
 ** Reward shaping
-[[file:20210515145234-reward_shaping.org][Reward Shaping]]
+[[id:5F8E758F-6D99-42A2-90B7-1E543E0EA8E2][Reward Shaping]]
 
 ** Value function estimation
 

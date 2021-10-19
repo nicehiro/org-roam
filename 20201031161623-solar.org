@@ -1,12 +1,14 @@
+:PROPERTIES:
+:ID:       CFBB6975-A743-4276-AF64-DDEEEB042B00
+:END:
 #+title: SOLAR
 #+filed: Reinforcement Learning
 #+OPTIONS: toc:nil
-#+roam_alias:
-#+roam_tags: rl mbrl
+#+filetags: :rl:mbrl:Users:wangfangyuan:Documents:roam:org_roam:
 
 * Description
 
 
-- [[file:20201031123814-latent_model.org][Latent Model]]
+- [[id:4DA8FA5D-BF5D-4D63-81B9-017E708C26B9][Latent Model]]
 
-- [[file:20201031125658-guided_search_method_v3.org][Guided Search Method V3]]
+- [[id:9280208C-8631-4319-A1A4-FD2F4C8CF523][Guided Search Method V3]]

@@ -1,8 +1,10 @@
+:PROPERTIES:
+:ID:       9C67A92B-1AFF-4B71-BE26-047C56F0C6FA
+:END:
 #+title: Model Based RL
-#+roam_alias:
-#+roam_tags: rl mbrl
 #+filed: Reinforcement Learning
 #+OPTIONS: toc:nil
+#+filetags: :rl:mbrl:Users:wangfangyuan:Documents:roam:org_roam:
 
 * Description
 :PROPERTIES:
@@ -16,47 +18,47 @@
 基于模型的强化学习按照环境的状态空间类型和 Plan 的方式可以分为以下三类：
 Deterministic Case, Stochastic Open Loop, Stochastic Close Loop 。
 
-- [[file:20201031110620-deterministic_case.org][Deterministic Case]]
-- [[file:20201031110723-stochastic_open_loop_case.org][Stochastic Open Loop Case]]
-- [[file:20201031110853-stochastic_close_loop_case.org][Stochastic Close Loop Case]]
+- [[id:3CE07996-CC60-4A6C-9BAE-85F9EE0B47F7][Deterministic Case]]
+- [[id:075D6325-AC18-4A2A-8459-08BB3CB5C32B][Stochastic Open Loop Case]]
+- [[id:5964D90C-302C-4E3C-9236-6DF40100E4A7][Stochastic Close Loop Case]]
 
 ** 如何利用模型
 假设我们有模型，如何利用模型来求解最优路径呢？
 
-- [[file:20201031112228-random_shooting_methods.org][Random Shooting Methods]]
+- [[id:200B31CC-1D77-4351-BE75-014A9621D1C2][Random Shooting Methods]]
 
-- [[file:20201031112453-cross_entropy_methods_cem.org][Cross Entropy Methods(CEM)]]
+- [[id:64C7510F-AA77-4EC0-A299-C209A7DE5FF2][Cross Entropy Methods(CEM)]]
 
-- [[file:20201031112627-monte_carlo_tree_search_mcts.org][Monte Carlo Tree Search(MCTS)]]
+- [[id:7B0C3FAE-D941-4AF5-B7EA-79C611DD3D61][Monte Carlo Tree Search(MCTS)]]
 
-- [[file:20201031112847-linear_quadratic_regression.org][Linear Quadratic Regression]]
+- [[id:31B3EBF2-915A-44A2-B331-7E049D718C31][Linear Quadratic Regression]]
 
-- [[file:20201031113807-iterative_linear_quadratic_regression.org][Iterative Linear Quadratic Regression]]
+- [[id:2488C7F8-9E0B-4640-AC19-9163BEBF6F32][Iterative Linear Quadratic Regression]]
 
 ** 基于模型的强化学习算法
 如果要利用模型去生成最优路径，那如何来生成一个好的模型？
 
-- [[file:20201031122450-model_based_method_0_5.org][Model Based Method 0.5]]
+- [[id:6524A15F-06C3-4CD4-A350-EB0DC7AE740E][Model Based Method 0.5]]
 
-- [[file:20201031122611-model_based_method_1_0.org][Model Based Method 1.0]]
+- [[id:6C30A09D-469B-463C-BC80-050F41660A42][Model Based Method 1.0]]
 
-- [[file:20201031122745-model_based_method_1_5.org][Model Based Method 1.5]]
+- [[id:E2DB1558-D133-42C4-9E2E-15C646C8B2E0][Model Based Method 1.5]]
 
-- [[file:20201031123333-with_model_uncertainty.org][With Model Uncertainty]]
+- [[id:02AFFBE2-6414-42BF-A31F-3A8161AD0E37][With Model Uncertainty]]
 
-- [[file:20201031123814-latent_model.org][Latent Model]]
+- [[id:4DA8FA5D-BF5D-4D63-81B9-017E708C26B9][Latent Model]]
 
 ** 与策略相结合
 能不能把模型和策略的方法结合起来呢？
 
-- [[file:20201031124503-backpropagate_gradient.org][Backpropagate Gradient]]
+- [[id:C36A1D98-4060-4894-A1F8-6D6E0A8336A6][Backpropagate Gradient]]
 
-- [[file:20201031124856-model_free_with_model.org][Model Free with Model]]
+- [[id:05A1BE28-4BED-48AC-A116-6F17ECF4CA9C][Model Free with Model]]
 
-- [[file:20201031125537-guided_search_method_v1.org][Guided Search Method V1]]
+- [[id:5371726B-A5D8-4D7D-9AE6-908273AAE2C3][Guided Search Method V1]]
 
-- [[file:20201031125622-guided_search_method_v2.org][Guided Search Method V2]]
+- [[id:F2BCDF9A-D788-44C3-9011-F8F061628A2B][Guided Search Method V2]]
 
-- [[file:20201031125658-guided_search_method_v3.org][Guided Search Method V3]]
+- [[id:9280208C-8631-4319-A1A4-FD2F4C8CF523][Guided Search Method V3]]
 
-- [[file:20201031161623-solar.org][SOLAR]]
+- [[id:CFBB6975-A743-4276-AF64-DDEEEB042B00][SOLAR]]

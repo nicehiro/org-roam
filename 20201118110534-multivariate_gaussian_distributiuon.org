@@ -1,9 +1,11 @@
+:PROPERTIES:
+:ID:       8AC0AC13-4BFB-48F4-8005-2C763BE9416D
+:END:
 #+title: Multivariate Gaussian Distributiuon
 #+filed: math
 #+STARTUP: latexpreview
 #+OPTIONS: toc:nil
-#+roam_alias:
-#+roam_tags: gaussian normal
+#+filetags: :gaussian:normal:Users:wangfangyuan:Documents:roam:org_roam:
 
 * Description
 随机变量 $X=[X_1\cdots X_n]^T$ ，均值为 $\mu\in R^n$ ，协方差 $\Sigma\in S^{n}_{++}$ ，
@@ -26,7 +28,7 @@ $$
 \Sigma=E[(X-\mu)(X-\mu)^T]=E[XX^T]-\mu\mu^T
 $$
 
-当协方差矩阵是对角矩阵时，即两向量独立不相关时，多维正态分布和[[file:20201114212110-normal_distribution.org][正态分布]]之间的关系为：
+当协方差矩阵是对角矩阵时，即两向量独立不相关时，多维正态分布和[[id:038D4F23-4E14-4C4A-8720-2D98C67B7380][正态分布]]之间的关系为：
 $$
 p(x;\mu,\Sigma)=p(x_1;\mu_1,\Sigma_1)\cdot p(x_2;\mu_2,\Sigma_2) \cdots
 $$

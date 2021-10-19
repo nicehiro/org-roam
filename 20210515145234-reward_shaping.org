@@ -1,7 +1,9 @@
+:PROPERTIES:
+:ID:       5F8E758F-6D99-42A2-90B7-1E543E0EA8E2
+:END:
 #+title: Reward Shaping
-#+roam_alias:
-#+roam_tags: rl
 #+startup: latexpreview
+#+filetags: :rl:Users:wangfangyuan:Documents:roam:org_roam:
 
 
 * Introduction

@@ -1,7 +1,9 @@
+:PROPERTIES:
+:ID:       BE3F666B-2051-4835-8531-338E426325D2
+:END:
 #+title: Generalized Linear Models
 #+filed: Machine-Learning
 #+OPTIONS: toc:nil
-#+roam_alias:
-#+roam_tags: machine-learning
+#+filetags: :machine_learning:Users:wangfangyuan:Documents:roam:org_roam:
 
 * Description

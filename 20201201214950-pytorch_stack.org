@@ -1,6 +1,8 @@
+:PROPERTIES:
+:ID:       BA95B180-730F-43EA-B355-1CE00A580635
+:END:
 #+title: Pytorch Stack
-#+roam_alias:
-#+roam_tags: torch stack
+#+filetags: :torch:stack:Users:wangfangyuan:Documents:roam:org_roam:
 
 Concatenates a sequence of tensors along a new dimension.
 把一组向量沿新的维度组合。

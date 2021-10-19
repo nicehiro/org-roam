@@ -1,10 +1,12 @@
+:PROPERTIES:
+:ID:       2DBE58C1-DF2B-4484-9AEA-CC9AA4CA40BE
+:END:
 #+title: Actor Critic
-#+roam_alias:
-#+roam_tags:
 #+STARTUP: latexpreview
+#+filetags: :rl:ac:Users:wangfangyuan:Documents:roam:org_roam:
 
 * Algorithm
-In [[file:20210107162935-reinforce.org][REINFORCE]], we know that
+In [[id:D56B0801-4B58-42E1-B9B0-4CDE76A5B657][REINFORCE]], we know that
 
 #+begin_quote
 The variance of the gradient estimator scales unfavorably with the

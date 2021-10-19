@@ -1,3 +1,32 @@
-#+title: Pytorch Dataset
-#+roam_alias:
-#+roam_tags:
+:PROPERTIES:
+:ID:       93928F23-4C8F-4341-BE48-1034C1D1C005
+:END:
+#+title: PyTorch Dataset
+#+filetags: :Users:wangfangyuan:Documents:roam:org_roam:
+
+How dose the PyTorch design the Dataset and Subset for easily using?
+
+* Dataset
+
+
+* Subset
+1. Each subset is also a Dataset. So it must inherit the
+   =Dataset= base class.
+2. They are not 'actually' set the data of a Subset to the child
+   collection of the whole Dataset. They use a =indices= parameter
+   to store the position of the data in the whole Dataset.
+3. =__getitem()__=
+
+   #+DOWNLOADED: screenshot @ 2021-10-14 11:41:31
+   #+attr_html: scale=0.8 :align center
+   #+attr_latex: :width 400cm
+   #+attr_org: :width 400px
+   [[file:img/dataset/Subset/2021-10-14_11-41-31_screenshot.png]]
+
+
+#  LocalWords:  getitem
+
+
+# Local Variables:
+# org-download-image-dir: "./img/dataset/"
+# End:

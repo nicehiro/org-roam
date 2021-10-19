@@ -1,7 +1,9 @@
+:PROPERTIES:
+:ID:       35286037-323B-47C7-84A7-D1254AABF835
+:END:
 #+title: GAAvernor
 #+startup: latexpreview
-#+roam_alias:
-#+roam_tags: gaa gar
+#+filetags: :gaa:gar:Users:wangfangyuan:Documents:roam:org_roam:
 
 * Related Works
 **** GAR

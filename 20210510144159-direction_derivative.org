@@ -1,12 +1,14 @@
+:PROPERTIES:
+:ID:       1DB2F907-5272-45A6-8B3A-3FC0572F860B
+:END:
 #+title: Direction Derivative
 #+filed:
 #+OPTIONS: toc:nil
-#+roam_alias:
-#+roam_tags:
 #+startup: latexpreview
+#+filetags: :Users:wangfangyuan:Documents:roam:org_roam:
 
 * Description
-[[file:20210509203137-partial_derivative.org][Partial Derivative]] 反映的是函数沿坐标方向的变化率。
+[[id:E4803F23-52B8-4320-9DA5-FB5F7A79B5C9][Partial Derivative]] 反映的是函数沿坐标方向的变化率。
 而方向导数则是研究函数沿任一指定方向的变化率。
 
 如果函数 $f(x,y)$ 在点 $(x_0,y_0)$ 出可微分，那么函数在改点沿任一方向 $l$ 的方向导数存在，

@@ -1,6 +1,8 @@
+:PROPERTIES:
+:ID:       25377A39-9506-4CCC-B604-3F8BD8BC1E9B
+:END:
 #+title: Kullback-Leibler Divergence Explained
-#+roam_alias:
-#+roam_tags: kl-divergence translate
+#+filetags: :kl_divergence:translate:Users:wangfangyuan:Documents:roam:org_roam:
 
 #+begin_quote
 此篇文章翻译自 [[https://www.countbayesie.com/blog/2017/5/9/kullback-leibler-divergence-explained][Kullback-Leibler Divergence Explained]] 。

@@ -1,6 +1,8 @@
+:PROPERTIES:
+:ID:       B77C2531-01BC-4768-BF19-61958DA27AE5
+:END:
 #+title: Gradient Temporal-Difference
-#+roam_alias:
-#+roam_tags: rl
+#+filetags: :rl:Users:wangfangyuan:Documents:roam:org_roam:
 
 
 This method cannot be applied directly to neural network because they involve

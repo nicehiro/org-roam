@@ -1,21 +1,23 @@
+:PROPERTIES:
+:ID:       5371726B-A5D8-4D7D-9AE6-908273AAE2C3
+:END:
 #+title: Guided Search Method V1
 #+filed: Reinforcement Learning
 #+OPTIONS: toc:nil
-#+roam_alias:
-#+roam_tags: rl mbrl algos gps
+#+filetags: :rl:mbrl:algos:gps:Users:wangfangyuan:Documents:roam:org_roam:
 
 * Description
 :PROPERTIES:
 :ID:       57D2A98B-E283-4925-96F4-A584DB5909F8
 :END:
 
-- [[file:20201031155429-importance_sampling.org][Importance Sampling]]
+- [[id:C94C5117-C048-4AE3-85EA-B01F4AB7D390][Importance Sampling]]
 
-- [[file:20201031155541-kl_divergence.org][KL Divergence]]
+- [[id:D9E34E77-F4CF-441F-AE95-00184F8A1E31][KL Divergence]]
 
-- [[file:20201031113807-iterative_linear_quadratic_regression.org][Iterative Linear Quadratic Regression]]
+- [[id:2488C7F8-9E0B-4640-AC19-9163BEBF6F32][Iterative Linear Quadratic Regression]]
 
-- [[file:20201031155750-dual_gradient_descent.org][Dual Gradient Descent]]
+- [[id:6EBC1707-4B41-4D94-8FA5-865D25834C9A][Dual Gradient Descent]]
 
 * 相关文章
-- [[file:guided_policy_search_gps_abracadabra.org][Guided Policy Search(GPS) | Abracadabra]]
+- [[id:8392D838-D591-4523-A042-2A024E1FB309][Guided Policy Search(GPS) | Abracadabra]]

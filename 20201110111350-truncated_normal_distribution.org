@@ -1,12 +1,14 @@
+:PROPERTIES:
+:ID:       4E650D38-CE6E-4020-B4B3-DB6BD2FCB347
+:END:
 #+title: Truncated normal distribution
 #+filed: math
 #+OPTIONS: toc:nil
-#+roam_alias:
-#+roam_tags: math distribution normal
+#+filetags: :math:distribution:normal:Users:wangfangyuan:Documents:roam:org_roam:
 
 * Description
 
-需要先去了解[[file:20201114212110-normal_distribution.org][正态分布]]的相关知识。
+需要先去了解[[id:038D4F23-4E14-4C4A-8720-2D98C67B7380][正态分布]]的相关知识。
 
 假设随机变量 $X$ 在 $(a,b)$ 内服从均值为 $\mu$ 方差为 $\sigma^2$ 的正态分布，
 其中 $-\infty\leq a < b\leq\infty$ 。
@@ -43,7 +45,7 @@ $$
 * Computational methods
 那么一般在计算中如何实现这个分布呢？
 
-使用常见的采样方法 [[file:20201110111528-inverse_transform_sampling.org][Inverse transform sampling]] 即可获得截断正态分布的样本。
+使用常见的采样方法 [[id:37961375-D4DC-4EF9-86EC-FFFE3E5F6628][Inverse transform sampling]] 即可获得截断正态分布的样本。
 
 计算公式为：
 
@@ -70,4 +72,4 @@ CDF^{-1}(y)=x&=\mu+\sigma\Phi^{-1}[\Phi(\alpha)+y[\Phi(\beta)-\Phi(\alpha)]]
 \end{align*}
 
 * Ref
-- [[file:truncated_normal_distribution_wikipedia.org][Truncated normal distribution - Wikipedia]]
+- [[id:DEFEB330-B133-45AC-80CC-B1D90D31C602][Truncated normal distribution - Wikipedia]]

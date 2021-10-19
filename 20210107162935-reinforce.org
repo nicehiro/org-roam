@@ -1,10 +1,13 @@
+:PROPERTIES:
+:ID:       D56B0801-4B58-42E1-B9B0-4CDE76A5B657
+:ROAM_ALIASES: Monte-Carlo-Policy-Gradient
+:END:
 #+title: REINFORCE
-#+roam_alias: Monte-Carlo-Policy-Gradient
-#+roam_tags: algo rl
 #+startup: latexpreview
+#+filetags: :algo:rl:Users:wangfangyuan:Documents:roam:org_roam:
 
 * Description
-在[[file:20210105204602-policy_gradient.org][策略梯度]]中，我们提到了策略梯度的目标函数，即：
+在[[id:A84D656F-B4D8-4BBA-B20E-9416230D05CF][策略梯度]]中，我们提到了策略梯度的目标函数，即：
 
 $$
 J(\theta)=\mathbf{E}_{\tau\sim p(\tau)}[R(\tau)]
@@ -60,5 +63,5 @@ the effects of past and future actions.
 From GAE paper.
 #+end_quote
 
-* Ref
+* Reference
 - [[https://towardsdatascience.com/policy-gradient-methods-104c783251e0]]

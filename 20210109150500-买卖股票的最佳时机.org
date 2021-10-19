@@ -1,3 +1,5 @@
+:PROPERTIES:
+:ID:       44CD33D2-EE4C-4540-9239-8F557CC4FE0E
+:END:
 #+title: 买卖股票的最佳时机
-#+roam_alias:
-#+roam_tags: algos dp
+#+filetags: :algos:dp:Users:wangfangyuan:Documents:roam:org_roam:

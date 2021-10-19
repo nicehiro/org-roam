@@ -1,6 +1,8 @@
+:PROPERTIES:
+:ID:       2A131B33-B26B-4BDB-B432-DB24C2A74DEE
+:END:
 #+title: Python LEGB Rule
-#+roam_alias:
-#+roam_tags:
+#+filetags: :Users:wangfangyuan:Documents:roam:org_roam:
 
 在 Python 中，使用 LEGB 规则查找变量。
 即： =Local -> Enclosed -> Global -> Built-in=

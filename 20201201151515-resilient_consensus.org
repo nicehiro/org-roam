@@ -1,7 +1,9 @@
+:PROPERTIES:
+:ID:       0B526324-49AC-4D85-A4BA-0250862FE2D9
+:END:
 #+title: Resilient-Consensus
 #+startup: latexpreview
-#+roam_alias:
-#+roam_tags:
+#+filetags: :Users:wangfangyuan:Documents:roam:org_roam:
 
 * Related Works
 

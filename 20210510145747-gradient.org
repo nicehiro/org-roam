@@ -1,9 +1,11 @@
+:PROPERTIES:
+:ID:       CA60807C-ABF5-436D-B02C-11E4B459335A
+:END:
 #+title: Gradient
 #+filed:
 #+OPTIONS: toc:nil
-#+roam_alias:
-#+roam_tags:
 #+startup: latexpreview
+#+filetags: :Users:wangfangyuan:Documents:roam:org_roam:
 
 * Description
 在二元函数的情形中，设函数 $f(x,y)$ 在平面区域 $D$ 内具有一阶连续偏导数，

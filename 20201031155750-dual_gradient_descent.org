@@ -1,11 +1,13 @@
+:PROPERTIES:
+:ID:       6EBC1707-4B41-4D94-8FA5-865D25834C9A
+:END:
 #+title: Dual Gradient Descent
 #+filed: Math
 #+OPTIONS: toc:nil
-#+roam_alias:
-#+roam_tags: dual-gradient-descent lagrange
+#+filetags: :dual_gradient_descent:lagrange:Users:wangfangyuan:Documents:roam:org_roam:
 
 * Description
 
-- [[file:20201101162755-lagrange_multiplier.org][Lagrange multiplier]]
+- [[id:3EDC1383-2A9D-45CD-8D75-F99CC6694705][Lagrange multiplier]]
 
-- [[file:20201101162959-lagrange_duality.org][Lagrange duality]]
+- [[id:D325DDD5-45DB-41F7-8074-56B72B9B0627][Lagrange duality]]

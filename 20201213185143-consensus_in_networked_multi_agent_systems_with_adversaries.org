@@ -1,8 +1,10 @@
 # -*- org-download-image-dir: "./img/ARC-P/"; -*-
+:PROPERTIES:
+:ID:       EC505A42-6834-48E9-99C3-DF628FA45094
+:END:
 #+title: Consensus in Networked Multi-Agent Systems with Adversaries
 #+startup: latexpreview
-#+roam_alias:
-#+roam_tags: consensus control msr
+#+filetags: :consensus:control:msr:Users:wangfangyuan:Documents:roam:org_roam:
 
 * Views
 

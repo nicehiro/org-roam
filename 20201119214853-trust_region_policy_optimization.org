@@ -1,9 +1,11 @@
+:PROPERTIES:
+:ID:       B994EAC2-A0F1-4FE0-8BFF-E0790743B276
+:END:
 #+title: Trust Region Policy Optimization
 #+filed: rl
 #+OPTIONS: toc:nil
 #+startup: latexpreview
-#+roam_alias:
-#+roam_tags: model-free
+#+filetags: :model_free:Users:wangfangyuan:Documents:roam:org_roam:
 
 * Preliminaries
 考虑一个无限长度的马尔科夫决策过程（MDP） $(\mathcal{S},\mathcal{A},P,r,\rho_0,\gamma)$ ,

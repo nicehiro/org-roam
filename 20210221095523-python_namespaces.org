@@ -1,6 +1,9 @@
+:PROPERTIES:
+:ID:       1414561F-6793-4B36-8AD7-1A3C77F4ECD8
+:ROAM_ALIASES: 命名空间
+:END:
 #+title: Python Namespaces
-#+roam_alias: 命名空间
-#+roam_tags:
+#+filetags: :Users:wangfangyuan:Documents:roam:org_roam:
 
 Python 的命名空间是从对象名到对象的映射，大部分命名空间都是通过字典来实现的。
 

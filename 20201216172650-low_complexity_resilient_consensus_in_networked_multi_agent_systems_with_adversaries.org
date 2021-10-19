@@ -1,7 +1,9 @@
+:PROPERTIES:
+:ID:       771D9DCA-3422-4F8C-8D6F-96A14BD1E2AB
+:END:
 #+title: Low Complexity Resilient Consensus in Networked Multi-Agent Systems with Adversaries
 #+startup: latexpreview
-#+roam_alias:
-#+roam_tags: w-msr consensus control
+#+filetags: :w_msr:consensus:control:Users:wangfangyuan:Documents:roam:org_roam:
 
 * Related Works
 

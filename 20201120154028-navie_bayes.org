@@ -1,9 +1,11 @@
+:PROPERTIES:
+:ID:       7032EB32-0E8D-4BF9-813B-FF36D5107698
+:END:
 #+title: Navie Bayes
 #+filed: machine-learning
 #+OPTIONS: toc:nil
 #+startup: latexpreview
-#+roam_alias:
-#+roam_tags: machine-learning
+#+filetags: :machine_learning:Users:wangfangyuan:Documents:roam:org_roam:
 
 * Description
 朴素贝叶斯用来对离散随机变量进行分类。
@@ -15,7 +17,7 @@
 当某封邮件包含特定的词汇时，其对应位置的值为 1，否则为 0。
 包含所有特征向量单词的集合叫做 *vocabulary* ，因此， $x$ 的 shape 与 vocabulary 的 shape 相同。
 
-这里如果想要构建一个 [[file:20201120153417-generative_learning_algorithm.org][Generative model]]，即拟合 $p(x|y)$ 。
+这里如果想要构建一个 [[id:A8708783-0D61-4E09-8ABB-B28A12E6A716][Generative model]]，即拟合 $p(x|y)$ 。
 假设一个 vocabulary 有 50000 个单词，那么 $x\in\{0,1\}^{50000}$ ，
 那么预测的结果将会有 $2^{50000}$ 个，太复杂了。
 
@@ -34,7 +36,7 @@ p\left(x_{1}, \ldots, x_{50000} \mid y\right) \\
 
 给定训练集 ${x^{(i)},y^{(i)};i=1,\dots,n}$ ，
 令 $\phi_{j|y=1}=p(x_j=1|y=1),\phi_{j|y=0}=p(x=1|y=0),\phi_{y}=p(y=1)$ ，
-使用[[file:20201103085205-maximum_likelihood_estimation.org][极大似然法]]计算使得 $s(x^{(i)},y^{)i})$ 发生概率最大的参数：
+使用[[id:0863DAB5-25FA-42BD-A02F-9EF1FC11DA78][极大似然法]]计算使得 $s(x^{(i)},y^{)i})$ 发生概率最大的参数：
 
 $$
 \mathcal{L}(\phi_y,\phi_{j|y=0},\phi_{j|y=1})=\prod_{i=1}^{n}p(x^{(i)},y^{(i)})

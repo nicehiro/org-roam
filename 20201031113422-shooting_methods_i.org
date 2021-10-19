@@ -1,8 +1,10 @@
+:PROPERTIES:
+:ID:       28D202B6-D5B5-45E9-BF60-AD6488B1D91E
+:END:
 #+title: Shooting Method
 #+filed: Optimization
 #+OPTIONS: toc:nil
-#+roam_alias:
-#+roam_tags: shooting-method
+#+filetags: :shooting_method:Users:wangfangyuan:Documents:roam:org_roam:
 
 * Description
 前面提到的一阶优化方法被称作 =Shooting method= 。它只对动作进行求导，状态是关于动作的函数。

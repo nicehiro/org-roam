@@ -1,6 +1,8 @@
+:PROPERTIES:
+:ID:       7B2BFBFD-53F6-4934-AE11-DD51EA0C0FF8
+:END:
 #+title: Python How To Sort
-#+roam_alias:
-#+roam_tags: python sort cmp
+#+filetags: :python:sort:cmp:Users:wangfangyuan:Documents:roam:org_roam:
 
 * Python 排序机制
 ** =cmp=

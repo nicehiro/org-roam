@@ -1,8 +1,10 @@
+:PROPERTIES:
+:ID:       6122F350-455E-46B9-A820-360941B27354
+:END:
 #+title: Binomial Distribution
 #+filed: Probability
 #+OPTIONS: toc:nil
-#+roam_alias:
-#+roam_tags: probability binomial
+#+filetags: :probability:binomial:Users:wangfangyuan:Documents:roam:org_roam:
 
 * Description
 设某事件 $A$ 在一次试验中发生的概率为 $p$ 。

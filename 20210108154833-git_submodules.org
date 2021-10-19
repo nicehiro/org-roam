@@ -1,8 +1,10 @@
+:PROPERTIES:
+:ID:       158CDB63-EAF8-4C9E-9F69-3800BC32D30B
+:END:
 #+title: Git Submodules
 #+filed:
 #+OPTIONS: toc:nil
-#+roam_alias:
-#+roam_tags: git
+#+filetags: :git:Users:wangfangyuan:Documents:roam:org_roam:
 
 * Description
 在 Git 项目中，可以添加此主项目的子项目。这样做的好处有：

@@ -1,6 +1,8 @@
+:PROPERTIES:
+:ID:       9752017F-F9A6-4F43-B9F9-A8D796956C68
+:END:
 #+title: Latex Compile
-#+roam_alias:
-#+roam_tags: latex compile bib
+#+filetags: :latex:compile:bib:Users:wangfangyuan:Documents:roam:org_roam:
 
 找到三张图可以很好的解释这个过程，虽然没有设计太底层的设计，
 但可以基本的了解下 Latex 的编译过程。

@@ -1,15 +1,18 @@
+:PROPERTIES:
+:ID:       82C8F1D3-2526-4684-B635-FAFD10C227E6
+:END:
 #+title: Logistic Regression
 #+filed: Machine-Learning
 #+OPTIONS: toc:nil
-#+roam_alias:
-#+roam_tags: machine-learning classfication
 #+STARTUP: latexpreview
+#+filetags: :machine_learning:classfication:Users:wangfangyuan:Documents:roam:org_roam:
+#+hugo_section: ml
 
 * Description
 逻辑回归虽然叫做是回归，但其实是分类算法。
 为了简单，本节以二分类问题为例。
 
-我们可以忽略标签是离散的，然后直接将线性回归算法应用到分类问题上，例如[[file:20201102213824-linear_classification.org][Linear Classification]]。
+我们可以忽略标签是离散的，然后直接将线性回归算法应用到分类问题上，例如[[id:8550656B-713F-417E-8E19-4D94BB7E7580][Linear Classification]]。
 
 逻辑回归其实也是在线性回归的基础上改进的。
 
@@ -61,7 +64,7 @@ $$
 P(y|x;\theta)=h_{\theta}(x)^{y}(1-h_{\theta}(x))^{1-y}
 $$
 
-我们的目标是要使得真实分类的概率越大越好，运用[[file:20201103085205-maximum_likelihood_estimation.org][Maximum likelihood Estimation]]，得到：
+我们的目标是要使得真实分类的概率越大越好，运用[[id:0863DAB5-25FA-42BD-A02F-9EF1FC11DA78][Maximum likelihood Estimation]]，得到：
 
 \begin{aligned}
 L(\theta) &=p(\vec{y} \mid X ; \theta) \\
@@ -85,7 +88,7 @@ L(\theta) &=p(\vec{y} \mid X ; \theta) \\
 &=\left(y-h_{\theta}(x)\right) x_{j}
 \end{aligned}
 
-运用[[file:20201103101531-gradient_descent.org][Gradient Descent]]不断更新参数：
+运用[[id:24B04706-9D53-438E-9C99-4A9FB6AD763B][Gradient Descent]]不断更新参数：
 
 $$
 \theta_{j}:=\theta_{j}+\alpha(y^{(i)}-h_{\theta}(x^{(i)}))x_{j}^{(i)}

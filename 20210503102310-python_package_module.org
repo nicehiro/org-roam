@@ -1,6 +1,8 @@
+:PROPERTIES:
+:ID:       8F4AF933-27ED-47D5-B957-8CDA7B25695E
+:END:
 #+title: Python Package Module
-#+roam_alias:
-#+roam_tags: python package module
+#+filetags: :python:package:module:Users:wangfangyuan:Documents:roam:org_roam:
 
 * 模块 Modules
 一个模块是一个包含 Python 定义和函数的文件，其模块名就是文件名。
@@ -40,7 +42,7 @@ Python 定义了两种类型的包，常规包和命名空间包。
   from ttt import res
   import ttt as res
 #+end_src
-上诉三种导包都是将搜索到的包绑定到当前[[file:20210221095617-python_scope_resolution.org][作用域]]的 ~res~ 变量上。
+上诉三种导包都是将搜索到的包绑定到当前[[id:3CB03E6E-8136-4E4F-A12E-1C8B10A4CAAD][作用域]]的 ~res~ 变量上。
 
 当 ~import~ 语句被执行时，会调用内置函数 ~__import__()~ 函数。
 其他导包机制可以使用其自定义的方法实现导包。

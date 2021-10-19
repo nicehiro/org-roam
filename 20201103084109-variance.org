@@ -1,8 +1,10 @@
+:PROPERTIES:
+:ID:       C23F2A9B-055B-4110-8E44-7613B947C79D
+:END:
 #+title: Variance
 #+filed: Probability
 #+OPTIONS: toc:nil
-#+roam_alias:
-#+roam_tags: probability variance
+#+filetags: :probability:variance:Users:wangfangyuan:Documents:roam:org_roam:
 
 * Description
 $$

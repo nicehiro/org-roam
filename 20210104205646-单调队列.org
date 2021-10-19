@@ -1,6 +1,8 @@
+:PROPERTIES:
+:ID:       D435A17A-F82A-444B-ABDF-44FE93204A00
+:END:
 #+title: 单调队列
-#+roam_alias:
-#+roam_tags: algos
+#+filetags: :algos:Users:wangfangyuan:Documents:roam:org_roam:
 
 * 数据结构
 具有单调性的队列，分为两类：

@@ -1,8 +1,11 @@
+:PROPERTIES:
+:ID:       D9E34E77-F4CF-441F-AE95-00184F8A1E31
+:END:
 #+title: KL Divergence
 #+filed: Math
 #+OPTIONS: toc:nil
-#+roam_alias:
-#+roam_tags: kl-divergence
+#+filetags: :kl_divergence:Users:wangfangyuan:Documents:roam:org_roam:
+#+startup: latex_preview
 
 * Description
 KL 散度是两个概率分布 $P$ 和 $Q$ 差别的非对称性度量。
@@ -17,13 +20,13 @@ $$
 D_{KL}(P||Q)=-\sum_{i}P(i)\log\frac{Q(i)}{P(i)}
 $$
 
-[[file:20201117092705-cross_entropy.org][交叉熵]]和 KL 散度之间的关系：
+[[id:A8041812-FA36-4448-A2F2-C791C8D9FE45][交叉熵]]和 KL 散度之间的关系：
 $$
-\mathcal{H}(p,q)=E_{p}[-\log q]=\mathcal{p}+D_{KL}(p||q)
+\mathcal{H}(p,q)=E_{p}[-\log q]=\mathcal{P}+D_{KL}(p||q)
 $$
 
 
 * 相关文章
 #+begin_quote
-[[file:20201101153127-kullback_leibler_divergence_explained.org][Kullback-Leibler Divergence Explained]]
+[[id:25377A39-9506-4CCC-B604-3F8BD8BC1E9B][Kullback-Leibler Divergence Explained]]
 #+end_quote

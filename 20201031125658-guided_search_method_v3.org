@@ -1,12 +1,14 @@
+:PROPERTIES:
+:ID:       9280208C-8631-4319-A1A4-FD2F4C8CF523
+:END:
 #+title: Guided Search Method V3
 #+filed: Reinforcement Learning
 #+OPTIONS: toc:nil
-#+roam_alias:
-#+roam_tags: rl mbrl algos gps
+#+filetags: :rl:mbrl:algos:gps:Users:wangfangyuan:Documents:roam:org_roam:
 
 * Description
 
-- [[file:20201031125537-guided_search_method_v1.org][Guided Search Method V1]]
+- [[id:5371726B-A5D8-4D7D-9AE6-908273AAE2C3][Guided Search Method V1]]
 
 * 相关文章
-- [[file:guided_policy_search_gps_abracadabra.org][Guided Policy Search(GPS) | Abracadabra]]
+- [[id:8392D838-D591-4523-A042-2A024E1FB309][Guided Policy Search(GPS) | Abracadabra]]

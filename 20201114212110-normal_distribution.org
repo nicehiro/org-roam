@@ -1,9 +1,11 @@
+:PROPERTIES:
+:ID:       038D4F23-4E14-4C4A-8720-2D98C67B7380
+:END:
 #+title: Normal distribution
 #+filed: math
 #+OPTIONS: toc:nil
-#+roam_alias:
-#+roam_tags: normal math
 #+STARTUP: latexpreview
+#+filetags: :normal:math:Users:wangfangyuan:Documents:roam:org_roam:
 
 * Description
 如果一个连续型变量具有概率密度函数：

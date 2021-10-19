@@ -1,11 +1,13 @@
+:PROPERTIES:
+:ID:       2488C7F8-9E0B-4640-AC19-9163BEBF6F32
+:END:
 #+title: Iterative Linear Quadratic Regression
 #+filed: Optimization
 #+OPTIONS: toc:nil
-#+roam_alias:
-#+roam_tags: math lqr ilqr
+#+filetags: :math:lqr:ilqr:Users:wangfangyuan:Documents:roam:org_roam:
 
 * Description
-[[file:20201031112847-linear_quadratic_regression.org][LQR]] 方法适用于状态转移方程为线性的，损失函数为二次的环境中，但实际中很多问题都不满足这个条件。
+[[id:31B3EBF2-915A-44A2-B331-7E049D718C31][LQR]] 方法适用于状态转移方程为线性的，损失函数为二次的环境中，但实际中很多问题都不满足这个条件。
 那么我们用一个线性方程来近似拟合现实问题的非线性环境动力学方程吗？
 
 可以使用泰勒展开来近似。

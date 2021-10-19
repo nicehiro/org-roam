@@ -1,3 +1,5 @@
+:PROPERTIES:
+:ID:       DC9125C4-78B9-4A29-8392-2C560AFB41B0
+:END:
 #+title: PyTorch inplace operator
-#+roam_alias:
-#+roam_tags: pytorch
+#+filetags: :pytorch:Users:wangfangyuan:Documents:roam:org_roam:

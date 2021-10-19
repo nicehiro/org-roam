@@ -1,8 +1,10 @@
+:PROPERTIES:
+:ID:       25913476-F26C-4032-9C26-9E894F0B16A8
+:END:
 #+title: 点估计的优良准则
 #+filed: Statistics
 #+OPTIONS: toc:nil
-#+roam_alias:
-#+roam_tags: statistics
+#+filetags: :statistics:Users:wangfangyuan:Documents:roam:org_roam:
 
 * Description
 在考虑估计量的优劣时，必须从某种整体性能上去衡量它，而不是看它在个别样本之下的表现如何。

@@ -1,8 +1,10 @@
+:PROPERTIES:
+:ID:       69CE17DF-B52C-4D46-A822-143892CD647B
+:END:
 #+title: 区间估计
 #+filed: Statistics
 #+OPTIONS: toc:nil
-#+roam_alias:
-#+roam_tags: statistics interval-estimation
+#+filetags: :statistics:interval_estimation:Users:wangfangyuan:Documents:roam:org_roam:
 
 * Description
 设 $X_1,\dots,X_n$ 是从总体中抽出的样本， $\theta$ 的估计区间为 $[\hat{\theta_1}(X_1,\dots,X_n),\hat{\theta_2}(X_1,\dots,X_n)]$ 。

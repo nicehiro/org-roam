@@ -1,7 +1,9 @@
+:PROPERTIES:
+:ID:       F54889BA-6154-4520-B5EB-369A34DC1C4F
+:END:
 #+title: Bayesian neural network
 #+filed: Math
 #+OPTIONS: toc:nil
-#+roam_alias:
-#+roam_tags:
+#+filetags: :Users:wangfangyuan:Documents:roam:org_roam:
 
 * Description

@@ -1,8 +1,0 @@
-#+title: Autograd
-#+roam_alias:
-#+roam_tags:
-
-* Autograd
-
-* Ref
-- [[https://pytorch.org/docs/stable/notes/autograd.html#in-place-operations-with-autograd][Autograd mechanics]]

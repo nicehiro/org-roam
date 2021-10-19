@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       53ABE86D-48B3-43F8-8E04-7F3D66A99965
+:END:
+#+title: Record new words
+#+filetags: :idea:
+
+在其他地方阅读时，如果遇到生词，复制它，在 Emacs 中添加生词到生词表即可。
+
+目前 [[https://github.com/nicehiro/shengci.el][shengci]] 已经实现查词，记录词以及记忆的功能，现在我想改进的地方有：
+1. 使用 [[https://github.com/condy0919/fanyi.el][fanyi]] 作为查词后端
+2. 记录的内容更加丰富
+3. 直接读取剪切板

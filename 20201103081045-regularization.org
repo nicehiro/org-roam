@@ -1,8 +1,10 @@
+:PROPERTIES:
+:ID:       2FD1A90B-7ED4-4255-923B-E4F97E55EB7F
+:END:
 #+title: Regularization
 #+filed: Machine-Learning
 #+OPTIONS: toc:nil
-#+roam_alias:
-#+roam_tags: regularization
+#+filetags: :regularization:Users:wangfangyuan:Documents:roam:org_roam:
 
 * Description
 

@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       9D4F9936-A940-4CE4-888B-805C27862908
+:END:
+#+title: Rethinking Knowledge Graph Propagation for Zero-Shot Learning
+#+startup: latexpreview
+
+* Improvements
+- Use relation graph neural network
+
+CNN get features from images -> GCN -> output is the label
+
+* Reference
+[[ebib:kampffmeyerRethinkingKnowledgeGraph2019][Kampffmeyer, Michael and Chen, Yinbo and Liang, Xiaodan and Wang, Hao and Zhang, Yujia and Xing, Eric P. (2019)]]

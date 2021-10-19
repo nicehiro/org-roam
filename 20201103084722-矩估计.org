@@ -1,9 +1,11 @@
+:PROPERTIES:
+:ID:       A84343ED-A3C7-43A1-B9A2-0FF57C6916EB
+:END:
 #+title: 矩估计
 #+filed: Statistics
 #+OPTIONS: toc:nil
-#+roam_alias:
-#+roam_tags: statistics moment
+#+filetags: :statistics:moment:Users:wangfangyuan:Documents:roam:org_roam:
 
 * Description
 利用样本矩去估计分布参数。
-样本矩有 [[file:20201103084828-k_阶样本原点矩.org][k 阶样本原点矩]] 和 [[file:20201103084958-k_阶样本中心矩.org][k 阶样本中心矩]] 。
+样本矩有 [[id:0983D6A3-4F85-445E-A394-CCCBB68027B5][k 阶样本原点矩]] 和 [[id:BE62EB7A-5F9A-471D-93B7-BFB620C925D9][k 阶样本中心矩]] 。

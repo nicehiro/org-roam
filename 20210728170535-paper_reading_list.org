@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       5F8F1BBD-7DE7-4EB7-94D1-27BE2CEECA2B
+:END:
+#+title: Paper Reading List
+
+* Reinforcement Learning
+
+* Graph Neural Network
+
+* Zero Shot Learning
+
+* Machine Learning

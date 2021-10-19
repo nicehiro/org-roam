@@ -1,8 +1,10 @@
+:PROPERTIES:
+:ID:       6350FA34-31EB-43C3-9E2C-7A26A3CBD719
+:END:
 #+title: Proximal Policy Optimization
 #+filed: rl
 #+OPTIONS: toc:nil
 #+startup: latexpreview
-#+roam_alias:
-#+roam_tags: model-free ppo
+#+filetags: :model_free:ppo:Users:wangfangyuan:Documents:roam:org_roam:
 
 * Description

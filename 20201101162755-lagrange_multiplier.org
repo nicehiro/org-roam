@@ -1,8 +1,10 @@
+:PROPERTIES:
+:ID:       3EDC1383-2A9D-45CD-8D75-F99CC6694705
+:END:
 #+title: Lagrange multiplier
 #+filed: Math
 #+OPTIONS: toc:nil
-#+roam_alias:
-#+roam_tags: math lagrange
+#+filetags: :math:lagrange:Users:wangfangyuan:Documents:roam:org_roam:
 
 * Description
 在极值点，原始问题和约束的梯度向量平行。

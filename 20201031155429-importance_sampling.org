@@ -1,8 +1,10 @@
+:PROPERTIES:
+:ID:       C94C5117-C048-4AE3-85EA-B01F4AB7D390
+:END:
 #+title: Importance Sampling
 #+filed: Math
 #+OPTIONS: toc:nil
-#+roam_alias:
-#+roam_tags: importance-sampling
+#+filetags: :importance_sampling:Users:wangfangyuan:Documents:roam:org_roam:
 
 * Description
 Importance Sampling is a technique for estimating the expectation $\mu$ of a

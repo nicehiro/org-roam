@@ -1,8 +1,10 @@
+:PROPERTIES:
+:ID:       02AFFBE2-6414-42BF-A31F-3A8161AD0E37
+:END:
 #+title: With Model Uncertainty
 #+filed: Reinforecement Learning
 #+OPTIONS: toc:nil
-#+roam_alias:
-#+roam_tags: rl mbrl algos model-uncertainty
+#+filetags: :rl:mbrl:algos:model_uncertainty:Users:wangfangyuan:Documents:roam:org_roam:
 
 * Description
 训练模型时，很容易就会陷入 overfit 的问题中。如下图所示，
@@ -49,8 +51,8 @@ $$
 \int p(s_{t+1}|s_t,a_t,\theta)p(\theta|D)d\theta
 $$
 
-- [[file:20201031154315-gaussian_process.org][Gaussian Process]]
+- [[id:2BF3EF07-3DAD-4ACE-A74D-F647A180528C][Gaussian Process]]
 
-- [[file:20201031154437-bayesian_neural_network.org][Bayesian neural network]]
+- [[id:F54889BA-6154-4520-B5EB-369A34DC1C4F][Bayesian neural network]]
 
-- [[file:20201031154530-bootstrap_ensembles.org][Bootstrap Ensembles]]
+- [[id:CBA80E17-4DA3-4107-852C-6E0F3BAE7ADC][Bootstrap Ensembles]]

@@ -1,9 +1,12 @@
+:PROPERTIES:
+:ID:       A84D656F-B4D8-4BBA-B20E-9416230D05CF
+:ROAM_ALIASES: 策略梯度
+:END:
 #+title: Policy Gradient
-#+roam_alias: 策略梯度
-#+roam_tags: rl pg
 #+DATE: 2020-05-14
 #+startup: latexpreview
 #+LATEX_HEADER: \usepackage[long]{optidef}
+#+filetags: :rl:pg:Users:wangfangyuan:Documents:roam:org_roam:
 
 本篇文章翻译自 [[https://danieltakeshi.github.io/2017/03/28/going-deeper-into-reinforcement-learning-fundamentals-of-policy-gradients/][Going Deeper Into Reinforcement Learning: Fundamentals of Policy Gradients]]。
 作为自己强化学习策略梯度更新算法基础知识的总结。

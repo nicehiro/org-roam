@@ -1,0 +1,41 @@
+:PROPERTIES:
+:ID:       5031EEE4-BF9E-4810-B2CE-CA6BCD8CA009
+:END:
+#+title: Deep Deterministic Policy Gradient
+#+STARTUP: latexpreview
+#+filetags: :Users:wangfangyuan:Documents:roam:org_roam:
+
+* Views
+DDPG, short for *Deep Deterministic Policy Gradient*, is a model-free off-policy
+actor-critic algorithm, combining [[id:A8FBDBE5-1F67-4869-BAFB-C479A242A161][Deterministic Policy Gradient]]
+and [[id:F62D7A5B-7EDC-4DDA-A3D8-034A6C67F638][DQN]].
+Recall that DQN stabilizes learning of Q-function by experience replay buffer
+and the frozen target network. The original DQN works in discrete space, and
+DDPG extends it to continuous space with the actor-critic framework while
+learning a deterministic policy.
+
+One trick is similar to the target network used in DQN, but modified for actor-
+critic and using "soft" target updates. And having both a target actor and critic
+is required to have stable targets in order to consistently train the critic
+without divergence.
+
+And the other trick used here is that we construct an exploration policy by
+adding noise sampled from a noise process $\mathcal{N}$ to our actor policy.
+
+* Methods
+
+#+DOWNLOADED: screenshot @ 2021-05-31 14:20:28
+#+attr_html: scale=0.8 :align center
+#+attr_latex: :width 600cm
+#+attr_org: :width 600px
+[[file:img/ddpg/Methods/2021-05-31_14-20-28_screenshot.png]]
+
+* Reference
+- [[ebib:lillicrapContinuousControlDeep2019][Deep Deterministic Policy Gradient]]
+
+
+
+
+# Local Variables:
+# org-download-image-dir: "./img/ddpg/"
+# End:

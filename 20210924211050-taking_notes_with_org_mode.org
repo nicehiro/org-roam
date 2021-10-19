@@ -1,0 +1,4 @@
+:PROPERTIES:
+:ID:       116ECB92-9D2B-4B12-9554-C9E4659935E2
+:END:
+#+title: Taking notes with Org mode

@@ -1,10 +1,13 @@
+:PROPERTIES:
+:ID:       E7BC1967-1329-4096-981A-C3A0957752BB
+:ROAM_ALIASES: 动态规划
+:END:
 #+title: Dynamic Programming
 #+filed:
 #+OPTIONS: toc:nil
-#+roam_alias: 动态规划
-#+roam_tags: algos
+#+filetags: :algos:Users:wangfangyuan:Documents:roam:org_roam:
 
 * Description
 
 * 经典案例
-** [[file:20210109150500-买卖股票的最佳时机.org][买卖股票的最佳时机]]
+** [[id:44CD33D2-EE4C-4540-9239-8F557CC4FE0E][买卖股票的最佳时机]]

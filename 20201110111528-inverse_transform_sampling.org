@@ -1,8 +1,10 @@
+:PROPERTIES:
+:ID:       37961375-D4DC-4EF9-86EC-FFFE3E5F6628
+:END:
 #+title: Inverse transform sampling
 #+filed: math
 #+OPTIONS: toc:nil
-#+roam_alias:
-#+roam_tags: sample
+#+filetags: :sample:Users:wangfangyuan:Documents:roam:org_roam:
 
 * Description
 已知 $U\sim Unif[0,1]$ ，并且有随机变量 $X$ 的累积分布函数 $CDF F_{X}(x)$ ，如何生成一个随机数 $X$ ？

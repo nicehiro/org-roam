@@ -1,2 +1,6 @@
+:PROPERTIES:
+:ID:       32CF9AD1-3832-4478-8152-7350465A83B9
+:ROAM_REFS: https://www.zmonster.me/2020/06/27/org-roam-introduction.html#org6fd36c4
+:END:
 #+title: 使用 org-roam 构建自己的知识网络 · ZMonster's Blog
-#+roam_key: https://www.zmonster.me/2020/06/27/org-roam-introduction.html#org6fd36c4
+#+filetags: :Users:wangfangyuan:Documents:roam:org_roam:

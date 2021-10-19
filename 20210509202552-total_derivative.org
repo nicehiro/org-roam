@@ -1,13 +1,15 @@
+:PROPERTIES:
+:ID:       BC38A966-F51F-4373-8450-7331FD0019B2
+:END:
 #+title: Total Derivative
 #+filed:
 #+OPTIONS: toc:nil
-#+roam_alias:
-#+roam_tags:
 #+startup: latexpreview
+#+filetags: :Users:wangfangyuan:Documents:roam:org_roam:
 
 * Description
 在微积分中，函数 $f$ 在某一点的全微分是指：该函数在该点附近关于其自变量的最佳线性近似。
-与[[file:20210509203137-partial_derivative.org][Partial Derivative]]不同，全微分反映了函数关于其所有自变量的线性近似，而非单个自变量。
+与[[id:E4803F23-52B8-4320-9DA5-FB5F7A79B5C9][Partial Derivative]]不同，全微分反映了函数关于其所有自变量的线性近似，而非单个自变量。
 
 对于二元函数 $f(x,y)$ ，设 $f$ 在点 $(x_0,y_0)$ 的某个邻域内有定义，
 $(x_0+\delta x,y_0+\delta y)$ 为该邻域内的任意一点，

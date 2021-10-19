@@ -1,8 +1,11 @@
+:PROPERTIES:
+:ID:       3CB03E6E-8136-4E4F-A12E-1C8B10A4CAAD
+:ROAM_ALIASES: 作用域范围
+:END:
 #+title: Python Scope Resolution
-#+roam_alias: 作用域范围
-#+roam_tags:
+#+filetags: :Users:wangfangyuan:Documents:roam:org_roam:
 
-作用域是 Python 程序可以直接访问[[file:20210221095523-python_namespaces.org][命名空间]]的正文区域。
+作用域是 Python 程序可以直接访问[[id:1414561F-6793-4B36-8AD7-1A3C77F4ECD8][命名空间]]的正文区域。
 
 在一个 Python 程序中，直接访问一个变量，会从内到外依次访问所有的作用域，
 直到找到那个变量，否则就会报未定义的错误。

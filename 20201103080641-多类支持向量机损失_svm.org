@@ -1,9 +1,11 @@
+:PROPERTIES:
+:ID:       5A8B801C-ADFE-4C96-AE51-8672D2A5D5F9
+:END:
 #+title: 多类支持向量机损失（SVM）
 #+filed: Machine-Learning
 #+OPTIONS: toc:nil
-#+roam_alias:
-#+roam_tags: machine-learning svm
 #+STARTUP: latexpreview
+#+filetags: :machine_learning:svm:Users:wangfangyuan:Documents:roam:org_roam:
 
 * Description
 支持向量机（Support Vector Machine）是一种二类分类模型。
@@ -18,7 +20,7 @@ $$
 $x_i$ 表示第 $i$ 个实例， $y_i$ 是 $x_i$ 的类标记。
 当 $y=+1$ 时，称 $x_i$ 为正例；当 $y=-1$ 时，称 $x_i$ 为负例。
 $(x_i,y_1)$ 称为样本点。
-假设训练数据集是[[file:20201228101119-线性可分性.org][线性可分]]的。
+假设训练数据集是[[id:6806EDB3-04D3-43E9-B013-A1E218D1AA2C][线性可分]]的。
 
 我们的目标是在特征空间中找到一个分离超平面（Separating Hyperplane），能将实例分到不同的类。
 分离超平面 $w\dot x+b=0$ ，由法向量 $w$ 和截距 $b$ 决定。
@@ -126,9 +128,9 @@ s.t.\quad & y_{i}(w\cdot x_{i}+b)-1\geq 0,i=1,2\cdots,N
 在线性可分的情况下，训练数据集的样本点中与分离超平面距离最近的样本点的实例称为支持向量（Support Vector）。
 
 * 线性可分支持向量机的对偶算法
-为了求解线性可分支持向量机的最优化问题，将它作为原始最优化问题，应用[[file:20201101162959-lagrange_duality.org][拉格朗日对偶性]]，通过求解对偶问题
+为了求解线性可分支持向量机的最优化问题，将它作为原始最优化问题，应用[[id:D325DDD5-45DB-41F7-8074-56B72B9B0627][拉格朗日对偶性]]，通过求解对偶问题
 得到原始问题的最优解，这就是线性可分支持向量机的对偶算法。
-这样做的优点，一是对偶问题往往更容易求解；二是自然引入[[file:20201203085251-kernel_methods.org][核函数]]，进而推广到非线性分类问题。
+这样做的优点，一是对偶问题往往更容易求解；二是自然引入[[id:A6C88189-DB6C-49B1-A930-CAEA58A2AD5D][核函数]]，进而推广到非线性分类问题。
 
 构建拉格朗日函数，对每个约束引入拉格朗日乘子 $\alpha_i\geq0,i=1,2,\cdots,N$ 。
 定义拉格朗日函数得：
@@ -175,13 +177,13 @@ $$
    s.t.\quad &\sum_{i}^{N}\alpha_{i}y_i=0
    \end{aligned}
 
-   考虑原始优化问题和对偶最优化问题，原始问题满足[[file:20201101162959-lagrange_duality.org][定理]]的条件，
+   考虑原始优化问题和对偶最优化问题，原始问题满足[[id:D325DDD5-45DB-41F7-8074-56B72B9B0627][定理]]的条件，
    所以存在 $w^*,\alpha^*,\beta^*$ ，使 $w^*$ 是原始问题的解，
    $\alpha^*,\beta^*$ 为对偶问题的解，这意味着求解原始问题可以转换为求解对偶问题。
 
 
 假设上述优化问题的最优解为 $\alpha^*=(\alpha_1^*,\alpha_2^*,\cdots,\alpha_N^*)$ 。
-根据拉格朗日对偶定理，[[file:20201101162959-lagrange_duality.org][KKT 条件]]成立，即：
+根据拉格朗日对偶定理，[[id:D325DDD5-45DB-41F7-8074-56B72B9B0627][KKT 条件]]成立，即：
 \begin{aligned}
 \nabla_{w}L(w^*,b^*,\alpha^*)&=w^*-\sum_{i=1}^{N}\alpha_{i}^{N}y_ix_i=0 \\
 \nabla_{b}L(w^*,b^*,\alpha^*)&=-\sum_{i=1}^{N}\alpha_{i}^*y_i=0 \\

@@ -1,8 +1,10 @@
+:PROPERTIES:
+:ID:       CFFFB0C2-AC08-4B80-971B-227492F3B4B7
+:END:
 #+title: Poisson Distribution
 #+filed: Probability
 #+OPTIONS: toc:nil
-#+roam_alias:
-#+roam_tags: probability poisson
+#+filetags: :probability:poisson:Users:wangfangyuan:Documents:roam:org_roam:
 
 * Description
 若随机变量 $X$ 的可能取值为 $0,1,2,\dots$ ，其概率分布为：

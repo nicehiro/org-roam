@@ -1,9 +1,11 @@
+:PROPERTIES:
+:ID:       50E41329-FA14-4DCC-BF4D-0932A57D7813
+:END:
 #+title: tornado
-#+roam_alias:
-#+roam_tags: python web
+#+filetags: :python:web:Users:wangfangyuan:Documents:roam:org_roam:
 
 Python web 框架 tornado 源码阅读。
 
-- [[file:20210504133748-tornado_improvements.org][tornado improvements]]
+- [[id:2A73405B-87CA-4E20-86F0-61530DEC1FFB][tornado improvements]]
 
-- [[file:20210504133810-tornado_designs.org][tornado designs]]
+- [[id:FCB2EB87-9A6F-4C96-9C7E-1FA084E265F4][tornado designs]]

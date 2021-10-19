@@ -1,7 +1,9 @@
+:PROPERTIES:
+:ID:       2BF3EF07-3DAD-4ACE-A74D-F647A180528C
+:END:
 #+title: Gaussian Process
 #+filed: Optimization
 #+OPTIONS: toc:nil
-#+roam_alias:
-#+roam_tags: math gaussian-process
+#+filetags: :math:gaussian_process:Users:wangfangyuan:Documents:roam:org_roam:
 
 * Description

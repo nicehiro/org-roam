@@ -1,8 +1,10 @@
+:PROPERTIES:
+:ID:       CC981A86-8683-46BF-A742-3DCDF0F44D26
+:END:
 #+title: Mathematical Statistics
 #+filed: Statistics
 #+OPTIONS: toc:nil
-#+roam_alias:
-#+roam_tags: statistics
+#+filetags: :statistics:Users:wangfangyuan:Documents:roam:org_roam:
 
 * Description
 *统计量* ：完全有样本决定的量叫做统计量。统计量只依赖于样本，不能依赖与任何其他未知变量。
@@ -10,19 +12,19 @@
 
 *样本方差* ： $S^2=\sum_{i=1}^{n}(X_i-\bar{X})^2/(n-1)$
 
-- [[file:20201103084828-k_阶样本原点矩.org][k 阶样本原点矩]]
+- [[id:0983D6A3-4F85-445E-A394-CCCBB68027B5][k 阶样本原点矩]]
 
-- [[file:20201103084958-k_阶样本中心矩.org][k 阶样本中心矩]]
+- [[id:BE62EB7A-5F9A-471D-93B7-BFB620C925D9][k 阶样本中心矩]]
 
 *注意二阶样本中心矩和样本方差只有系数之差。*
 
-** [[file:20201103084722-矩估计.org][矩估计]]
+** [[id:A84343ED-A3C7-43A1-B9A2-0FF57C6916EB][矩估计]]
 利用样本矩去估计分布参数。
 
-** [[file:20201103085205-maximum_likelihood_estimation.org][Maximum likelihood Estimation]]
+** [[id:0863DAB5-25FA-42BD-A02F-9EF1FC11DA78][Maximum likelihood Estimation]]
 
-** [[file:20201103085244-贝叶斯估计.org][贝叶斯估计]]
+** [[id:67641A19-3457-4043-BD87-893254443470][贝叶斯估计]]
 
-** [[file:20201103085353-点估计的优良准则.org][点估计的优良准则]]
+** [[id:25913476-F26C-4032-9C26-9E894F0B16A8][点估计的优良准则]]
 
-** [[file:20201103085433-区间估计.org][区间估计]]
+** [[id:69CE17DF-B52C-4D46-A822-143892CD647B][区间估计]]

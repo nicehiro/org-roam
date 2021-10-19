@@ -1,8 +1,11 @@
+:PROPERTIES:
+:ID:       C36A1D98-4060-4894-A1F8-6D6E0A8336A6
+:ROAM_ALIASES: math
+:END:
 #+title: Backpropagate Gradient
 #+filed: Optimization
 #+OPTIONS: toc:nil
-#+roam_alias: math
-#+roam_tags:
+#+filetags: :Users:wangfangyuan:Documents:roam:org_roam:
 
 * Description
 之前学习了如何训练好的环境动力学模型，以及基于模型的强化学习的基本训练方法，

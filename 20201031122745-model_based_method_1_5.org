@@ -1,8 +1,10 @@
+:PROPERTIES:
+:ID:       E2DB1558-D133-42C4-9E2E-15C646C8B2E0
+:END:
 #+title: Model Based Method 1.5
 #+filed: Reinforcement Learning
 #+OPTIONS: toc:nil
-#+roam_alias:
-#+roam_tags: rl mbrl algos
+#+filetags: :rl:mbrl:algos:Users:wangfangyuan:Documents:roam:org_roam:
 
 * Description
 现在还存在一个问题，之前的算法都是通过模型进行整个规划，

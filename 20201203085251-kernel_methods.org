@@ -1,12 +1,14 @@
+:PROPERTIES:
+:ID:       A6C88189-DB6C-49B1-A930-CAEA58A2AD5D
+:END:
 #+title: Kernel Methods
 #+filed: math
 #+OPTIONS: toc:nil
 #+startup: latexpreview
-#+roam_alias:
-#+roam_tags: kernel machine-learning
+#+filetags: :kernel:machine_learning:Users:wangfangyuan:Documents:roam:org_roam:
 
 * Description
-之前[[file:20201103094403-linear_regression.org][线性回归]]讲了如何用线性函数去拟合数据，那么当数据比较复杂，
+之前[[id:AC44A370-31C9-4A08-9B33-13AB87279E01][线性回归]]讲了如何用线性函数去拟合数据，那么当数据比较复杂，
 不是线性关系时，线性函数拟合的效果就不会很好，
 我们就需要尝试使用非线性函数去拟合数据。
 
@@ -33,7 +35,7 @@ $$
 映射之后的新输入为 =features= 。
 
 ** LMS(least mean squares) with features
-之前 [[file:20201103101941-lms_least_mean_squares.org][LMS]] 更新方程如下：
+之前 [[id:0B073D3F-F0F3-463D-A6A5-358708AEC466][LMS]] 更新方程如下：
 \begin{equation*}
 \begin{aligned}
 \theta &:=\theta+\alpha \sum_{i=1}^{n}\left(y^{(i)}-h_{\theta}\left(x^{(i)}\right)\right) x^{(i)} \\
@@ -241,7 +243,7 @@ z^T K z&=\sum_{i}\sum_{j}z_{i}K_{ij}z_{j} \\
 
 其中， $\phi_{k}$ 是 $\phi(x)$ 的第 $k$ 个元素。
 $\sum_{ij}a_{i}a_{j}=(\sum_{i}a_{i})^2$ 。
-这表明 $K$ 是一个[[file:20201216113346-positive_semi_definite_matrix.org][半正定矩阵]]。
+这表明 $K$ 是一个[[id:87818C78-A73C-4229-A444-861EC02E9AE1][半正定矩阵]]。
 
 综上，K 矩阵是一个半正定对称矩阵。
 

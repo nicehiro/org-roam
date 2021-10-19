@@ -1,13 +1,15 @@
+:PROPERTIES:
+:ID:       B7214290-5ACB-420F-88C2-26CCD1AA7437
+:END:
 #+title: Text classification
 #+filed: machine-learning
 #+OPTIONS: toc:nil
 #+startup: latexpreview
-#+roam_alias:
-#+roam_tags: text classification
+#+filetags: :text:classification:Users:wangfangyuan:Documents:roam:org_roam:
 
 * Description
 文本分类。
 
-- [[file:20201120154028-navie_bayes.org][Navie Bayes]]
+- [[id:7032EB32-0E8D-4BF9-813B-FF36D5107698][Navie Bayes]]
 
-- [[file:20201121115208-multinomial_event_model.org][Multinomial event model]]
+- [[id:A7148292-59B1-4DE4-A7F2-FD2FA6692925][Multinomial event model]]

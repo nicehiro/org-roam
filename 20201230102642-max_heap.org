@@ -1,6 +1,9 @@
+:PROPERTIES:
+:ID:       E62D5212-5A6A-4F72-ABC2-0A5E545E3756
+:ROAM_ALIASES: 最大堆
+:END:
 #+title: Max Heap
-#+roam_alias: 最大堆
-#+roam_tags:
+#+filetags: :Users:wangfangyuan:Documents:roam:org_roam:
 
 * Algorithm
 堆算法分别两类，最大堆算法和最小堆算法。

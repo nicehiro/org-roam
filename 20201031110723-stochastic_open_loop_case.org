@@ -1,8 +1,10 @@
+:PROPERTIES:
+:ID:       075D6325-AC18-4A2A-8459-08BB3CB5C32B
+:END:
 #+title: Stochastic Open Loop Case
 #+filed: Reinforcement Learning
 #+OPTIONS: toc:nil
-#+roam_alias:
-#+roam_tags: rl mbrl
+#+filetags: :rl:mbrl:Users:wangfangyuan:Documents:roam:org_roam:
 
 * Description
 

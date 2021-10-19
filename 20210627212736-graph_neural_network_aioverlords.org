@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       66402F30-6580-4380-86DE-696C378027EE
+:END:
+#+title: Graph Neural Network -- AIOverlords
+#+filetags: :graph:
+
+* Label Propagation
+** Reference
+[[ebib:zhouLearningLocalGlobal][Learning with Local and Global Consistency]]
+[[http://tkipf.github.io/graph-convolutional-networks/][GCN official Blog]]
+[[https://github.com/zjost/blog_code/blob/master/gcn_numpy/gcn_from_scratch.ipynb][GCN from Scratch]]
+
+* Reference
+[[https://www.youtube.com/watch?v=OI0Jo-5d190&list=PLSgGvve8UweGx4_6hhrF3n4wpHf_RV76_&index=1][Graph Neural Networks]]

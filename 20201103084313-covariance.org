@@ -1,8 +1,10 @@
+:PROPERTIES:
+:ID:       8577FC83-D221-4C84-A78C-42CCA0903818
+:END:
 #+title: Covariance
 #+filed: Probability
 #+OPTIONS: toc:nil
-#+roam_alias:
-#+roam_tags: probability coovariance
+#+filetags: :probability:coovariance:Users:wangfangyuan:Documents:roam:org_roam:
 
 * Description
 $Cov(X,Y)=E[(X-EX)(Y-EY)]$ 称为协方差。

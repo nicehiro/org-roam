@@ -1,6 +1,9 @@
+:PROPERTIES:
+:ID:       C41174E3-900F-4EB0-AEB5-452D4C4E1BA5
+:ROAM_ALIASES: 位运算
+:END:
 #+title: Bit Operation
-#+roam_alias: 位运算
-#+roam_tags: bit
+#+filetags: :bit:Users:wangfangyuan:Documents:roam:org_roam:
 
 1. =2= 的幂整数的二进制特性： =x&(x-1)=0=
 2. 任意数的二进制特性： =x&(x-1)= 最后一个 1 为 0 。

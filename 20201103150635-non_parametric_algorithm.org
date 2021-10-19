@@ -1,8 +1,10 @@
+:PROPERTIES:
+:ID:       014601D8-BBE2-4EDF-96C1-52ECD16E10D5
+:END:
 #+title: Non-parametric algorithm
 #+filed: Machine-Learning
 #+OPTIONS: toc:nil
-#+roam_alias:
-#+roam_tags: machine-learning non-parametric
+#+filetags: :machine_learning:non_parametric:Users:wangfangyuan:Documents:roam:org_roam:
 
 * Description
 To make predictions using locally weighted linear regression,
