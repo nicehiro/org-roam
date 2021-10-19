@@ -2,7 +2,6 @@
 :id: 82C8F1D3-2526-4684-B635-FAFD10C227E6
 :END:
 #+title: Logistic Regression
-#+filed: Machine-Learning
 #+OPTIONS: toc:nil
 #+STARTUP: latexpreview
 #+filetags: :ml:
@@ -27,7 +26,7 @@ $$
 #+begin_center
 #+caption: CDF of Logistic distribution
 #+attr_org: :width 400
-[[file:./img/logistic-regression/cdf_logistic.png]]
+[[file:img/logistic-regression/cdf_logistic.png]]
 #+end_center
 
 #+begin_center
@@ -35,7 +34,7 @@ $$
 #+attr_latex: scale=0.75
 #+attr_html: :width 400
 #+attr_org: :width 400
-[[file:./img/logistic-regression/pdf_logistic.png]]
+[[file:img/logistic-regression/pdf_logistic.png]]
 #+end_center
 
 Sigmoid 方程就是 Logistic 函数在 $\mu=0,\gamma=1$ 时的函数。
