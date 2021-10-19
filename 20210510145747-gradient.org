@@ -1,11 +1,11 @@
 :PROPERTIES:
-:ID:       CA60807C-ABF5-436D-B02C-11E4B459335A
+:id: CA60807C-ABF5-436D-B02C-11E4B459335A
 :END:
 #+title: Gradient
 #+filed:
 #+OPTIONS: toc:nil
 #+startup: latexpreview
-#+filetags: :Users:wangfangyuan:Documents:roam:org_roam:
+#+filetags: :math:
 
 * Description
 在二元函数的情形中，设函数 $f(x,y)$ 在平面区域 $D$ 内具有一阶连续偏导数，
@@ -19,13 +19,9 @@ $$
 或 $\nabla f(x_0,y_0)$ 。
 
 梯度的方向是函数在这点的方向导数取得最大值的方向，它的模就是方向导数的最大值。
-
 * 几何意义
 
-#+attr_latex: scale=0.75
-#+attr_html: :width 400
-#+attr_org: :width 400
-[[./img/gradient/几何意义/gradient.jpg]]
+[[file:img/gradient/几何意义/gradient.jpg]]
 
 
 
