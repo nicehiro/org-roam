@@ -2,7 +2,6 @@
 :id: 64C7510F-AA77-4EC0-A299-C209A7DE5FF2
 :END:
 #+title: Cross Entropy Methods(CEM)
-#+filed: Reinforcement Learning
 #+OPTIONS: toc:nil
 #+filetags: :rl:
 

@@ -1,18 +1,18 @@
 :PROPERTIES:
-:ID:       5964D90C-302C-4E3C-9236-6DF40100E4A7
+:id: 5964D90C-302C-4E3C-9236-6DF40100E4A7
 :END:
 #+title: Stochastic Close Loop Case
 #+filed: Reinforcement Learning
 #+OPTIONS: toc:nil
 #+startup: latexpreview
-#+filetags: :rl:mbrl:Users:wangfangyuan:Documents:roam:org_roam:
+#+filetags: :rl:mbrl:
 
 * Description
 当状态和动作确定时，下一状态无法确定。Agent 可以依据模型生成一个策略，即每走一步，生成一步的动作。
 #+BEGIN_CENTER
 #+ATTR_ORG: :width 600
 #+ATTR_HTML: :width 100%
-[[file:./img/rl-sergey/lec-10-3.png]]
+[[file:img/rl-sergey/lec-10-3.png]]
 #+END_CENTER
 
 \begin{array}{c}

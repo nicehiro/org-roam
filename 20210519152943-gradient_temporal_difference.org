@@ -1,8 +1,8 @@
 :PROPERTIES:
-:ID:       B77C2531-01BC-4768-BF19-61958DA27AE5
+:id: B77C2531-01BC-4768-BF19-61958DA27AE5
 :END:
 #+title: Gradient Temporal-Difference
-#+filetags: :rl:Users:wangfangyuan:Documents:roam:org_roam:
+#+filetags: :rl:
 
 
 This method cannot be applied directly to neural network because they involve
@@ -13,7 +13,6 @@ not control.
 
 
 And the "semi-gradient" TD works faster in practice on almost all problems.
-
 
 * Reference
 - http://incompleteideas.net/Talks/gradient-TD-2011.pdf
