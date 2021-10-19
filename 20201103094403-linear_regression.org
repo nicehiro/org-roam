@@ -1,15 +1,13 @@
 :PROPERTIES:
-:ID:       AC44A370-31C9-4A08-9B33-13AB87279E01
+:id: AC44A370-31C9-4A08-9B33-13AB87279E01
 :END:
 #+title: Linear Regression
-#+filed: Machine-Learning
 #+OPTIONS: toc:nil
 #+STARTUP: latexpreview
-#+filetags: :machine_learning:regression:Users:wangfangyuan:Documents:roam:org_roam:
+#+filetags: :ml:
 
 * Description
 在回归问题中，如果使用线性函数去拟合给定数据集，这种方法称为线性回归法。
-
 ** 化简小技巧
 假设目前输入变量只有两维，使用线性回归去预测时，线性方程为：
 $$
@@ -19,7 +17,6 @@ $$
 $$
 h(x)=\sum_{i=0}^{d}\theta_{i}x_{i}=\theta^{T}x
 $$
-
 ** 损失函数
 在给定训练集之后，如何去训练来得到线性方程的参数 $\theta$ 呢？
 最直接的方法就是让预测函数的结果与真实值越接近越好。
@@ -28,7 +25,6 @@ $$
 J(\theta)=\frac{1}{2}\sum_{i=1}^{n}(h_{\theta}(x^{i})-y^{i})^2
 $$
 那么，我们的目标就转换成了让损失函数的值越小越好。
-
 ** [[id:0B073D3F-F0F3-463D-A6A5-358708AEC466][LMS(Least Mean Squares)]]
 有了损失函数之后，我们可以[[id:24B04706-9D53-438E-9C99-4A9FB6AD763B][梯度下降法]]
 （gradient decent）去更新参数 $\theta$ ，最后 $\theta$ 可以收敛。
@@ -48,7 +44,6 @@ $$
 $$
 
 这个更新方法我们称为 LMS。
-
 ** 训练方法
 给定数据集之后，我们如何利用数据集去更新参数呢？
 
@@ -57,17 +52,16 @@ $$
 #+BEGIN_CENTER
 #+ATTR_HTML: :width 100%
 #+ATTR_ORG: :width 800
-[[file:./img/cs229/1/1.png]]
+[[file:img/cs229/1/1.png]]
 #+END_CENTER
 随机更新法为：
 #+BEGIN_CENTER
 #+ATTR_HTML: :width 100%
 #+ATTR_ORG: :width 800
-[[file:./img/cs229/1/2.png]]
+[[file:img/cs229/1/2.png]]
 #+END_CENTER
 
 随机更新法要比批次更新更快收敛，因此一般推荐使用随机更新法。
-
 ** 多维向量下
 上诉推导都是在一维输入的情况下，如果特征值存在多维，那么结果是否会不同呢？
 这里给出一般情况下更新方法的推导。
@@ -110,7 +104,6 @@ $\theta$ 的更新方法为：
 $$
 \theta=\left(X^{T} X\right)^{-1} X^{T} \vec{y}^{3}
 $$
-
 ** 概率上的解释
 那么为什么要使用最小二乘作为损失函数呢？
 除了我们直观的理解：让预测函数和真实值越接近越好之外，能不能从概率的角度推导出来呢？
@@ -146,7 +139,6 @@ L(\theta) &=L(\theta;X,\vec{y})=p(\vec{y}|X;\theta) \\
 $$
 \frac{1}{2} \sum_{i=1}^{n}\left(y^{(i)}-\theta^{T} x^{(i)}\right)^{2}
 $$
-
 ** 正则化 Regulation
 为了防止参数过大，出现过拟合的现象，我们在之前的损失函数中加入对参数的正则化惩罚。
 惩罚有一般有两种：一范数和二范数。常用的是二范数。
@@ -156,7 +148,6 @@ $$
 \mathcal{L}(\theta) = ||\theta^{T}X-Y||_{2} + ||\theta^{T}\theta||_{2}
 $$
 对 $\theta$ 求导之后，可以直接令导数为 0 计算出 $\theta$ 或者使用梯度下降法求解。
-
 ** [[id:67641A19-3457-4043-BD87-893254443470][贝叶斯]]
 \begin{aligned}
 P(\theta|Y) &= \frac{P(Y|\theta)P(\theta)}{P(Y)} \\
@@ -174,7 +165,6 @@ P(\theta) \sim \mathcal{N}(0, \sigma_{2}^{2})
 $$
 
 对 $P(\theta|Y)$ 求其极大似然估计也可以得到和上诉类似的梯度更新方式。
-
 ** LWR(Locally Weighted Linear Regression)
 前面讲的去预测某个输入 $x$ 的输出，通用的流程是：
 1. 求使得 $\sum_{i}(y^{(i)}-\theta^{T}x^{(i)})^2$ 最小的参数 $\theta$
