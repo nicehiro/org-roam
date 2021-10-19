@@ -30,7 +30,7 @@ perform best with large batch sizes.
 #+attr_latex: :width 600cm
 #+attr_org: :width 600px
 #+CAPTION: The architecture of A3C versus A2C.(From liliweng's blog)
-[[file:../../../Pictures/org-download/2021-05-24_22-06-26_screenshot.png]]
+[[file:img/a2c/2021-05-24_22-06-26_screenshot.png]]
 
 * Reference
 - https://openai.com/blog/baselines-acktr-a2c/
