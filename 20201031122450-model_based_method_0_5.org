@@ -1,10 +1,10 @@
 :PROPERTIES:
-:ID:       6524A15F-06C3-4CD4-A350-EB0DC7AE740E
+:id: 6524A15F-06C3-4CD4-A350-EB0DC7AE740E
 :END:
 #+title: Model Based Method 0.5
 #+filed: Reinforcement Learning
 #+OPTIONS: toc:nil
-#+filetags: :rl:mbrl:algos:Users:wangfangyuan:Documents:roam:org_roam:
+#+filetags: :rl:mbrl:
 
 * Description
 一旦我们知道了环境动力学模型，那么我们就可以使用前面学到的知识进行动作的选择和规划了。

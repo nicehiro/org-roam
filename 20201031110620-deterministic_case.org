@@ -12,7 +12,7 @@
 #+BEGIN_CENTER
 #+ATTR_ORG: :width 600
 #+ATTR_HTML: :width 100%
-[[file:./img/rl-sergey/lec-10-1.png]]
+[[file:img/rl-sergey/lec-10-1.png]]
 #+END_CENTER
 $$
 \mathbf{a}_{1}, \ldots, \mathbf{a}_{T}=\arg \max _{\mathbf{a}_{1}, \ldots, \mathbf{a}_{T}} \sum_{t=1}^{T} r\left(\mathbf{s}_{t}, \mathbf{a}_{t}\right) \text { s.t. } \mathbf{a}_{t+1}=f\left(\mathbf{s}_{t}, \mathbf{a}_{t}\right)

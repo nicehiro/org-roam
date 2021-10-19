@@ -1,11 +1,11 @@
 :PROPERTIES:
-:ID:       A7148292-59B1-4DE4-A7F2-FD2FA6692925
+:id: A7148292-59B1-4DE4-A7F2-FD2FA6692925
 :END:
 #+title: Multinomial event model
 #+filed: machine-learning
 #+OPTIONS: toc:nil
 #+startup: latexpreview
-#+filetags: :text:classification:multinomial:Users:wangfangyuan:Documents:roam:org_roam:
+#+filetags: :text:classification:
 
 * Description
 多项式事件模型。
