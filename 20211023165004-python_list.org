@@ -2,3 +2,15 @@
 :ID:       F5078766-FFCC-463C-A9E5-5C04958C7BFC
 :END:
 #+title: Python List
+#+filetags: :py:
+
+#+begin_src python
+>>> a = [0, 0, 0]
+>>> b = [a] * 3
+>>> b
+[[0, 0, 0], [0, 0, 0], [0, 0, 0]]
+>>> b[0][0] = 1
+>>> b
+[[1, 0, 0], [1, 0, 0], [1, 0, 0]]
+>>>
+#+end_src
