@@ -14,3 +14,6 @@
 [[1, 0, 0], [1, 0, 0], [1, 0, 0]]
 >>>
 #+end_src
+
+=list= is mutable, and the multiplication with a scalar will copy the
+reference rather than the ~real~ memory.
