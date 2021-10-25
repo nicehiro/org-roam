@@ -8,6 +8,7 @@
 * Introduction
 Often, a very simple pattern of extra rewards suffices to render straightforward
 an otherwise completely intractable problem.
+
 ** Current Problems
 Consider the following example of bugs that can arise:
 
@@ -32,6 +33,7 @@ from the goal.
 
 Hence it's now better for the bicycle to try to go in a cycle than
 to go to the goal.
+
 * Preliminaries
 A finite-state *Markov decision process(MDP)* is a tuple $M=(S,A,T,\gamma,R)$,
 where:
@@ -90,9 +92,11 @@ If $F$ is a potential-based shaping function, then every optimal policy in
 $M^{\prime}$ will also be an optimal policy in $M$.
 
 Proof omission.
+
 * Conclusion
 This suggests that a way to define a good potential function might be to try
 to approximate $V^{*}_{M}(s)$.
+
 * Reference
 [[ebib:buhmannRewardShaping2011][Policy invariance under reward transformations: Theory and application to reward shaping]]
 
