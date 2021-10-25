@@ -67,6 +67,7 @@ The optimal policy is
 $$
 \pi^{*}_{M}(s) = \arg\max_{a\in A}Q^{*}_{M}(s,a)
 $$
+
 * Views
 We will run on a transformed MDP $M^{\prime}=(S,A,T,\gamma,R^{\prime})$
 where $R^{\prime}=R+F$, and $F:S \times A \times S \rightarrow \mathbb{R}$
