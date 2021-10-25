@@ -2,3 +2,8 @@
 :ID:       8337E48F-2E82-4117-9629-29C9D2AE7821
 :END:
 #+title: PyTorch Autograd
+
+
+
+* Reference
+[[https://pytorch.org/docs/stable/notes/autograd.html][Autograd Mechanics]]
