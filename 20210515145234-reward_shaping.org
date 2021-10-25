@@ -100,7 +100,7 @@ to approximate $V^{*}_{M}(s)$.
 
 * Reference
 [[ebib:buhmannRewardShaping2011][Policy invariance under reward transformations: Theory and application to reward shaping]]
-
+[[ebib:ngPolicyInvarianceReward][Ng, Andrew Y and Harada, Daishi and Russell, Stuart (XXXX)]]
 
 
 # Local Variables:
