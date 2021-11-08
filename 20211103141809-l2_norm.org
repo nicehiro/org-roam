@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       28DA4808-7D15-45D1-B08F-F58E657C7883
+:ROAM_ALIASES: "Euclidean Norm"
+:END:
+#+title: L2 Norm
+#+filetags: :math:
+
+The shortest distance to go from one point to another.
+
+For example, the L2 norm of the vector $X = (3, 4)$ is
+\begin{equation*}
+||X||_2 = \sqrt{|3|^2 + |4|^2} = 5
+\end{equation*}

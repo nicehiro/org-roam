@@ -1,0 +1,18 @@
+:PROPERTIES:
+:ID:       209CAC38-AD90-4B2B-BE97-7A9EA3C2E554
+:END:
+#+title: PyTorch Clone
+
+~torch.clone~ is differentiable, so gradients will flow back from the result
+of this operation to input.
+
+So if you clone the a tensor for backprop, there will have problem:
+#+begin_quote
+RuntimeError: Trying to backward through the graph a second time, but
+the buffers have already been freed. Specify retain_graph=True when
+calling backward the first time.
+#+end_quote
+
+To create a tensor without an autograd relationship to input see ~detach()~.
+
+See details in [[https://pytorch.org/docs/stable/generated/torch.clone.html][doc]].

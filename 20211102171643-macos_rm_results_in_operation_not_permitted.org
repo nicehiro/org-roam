@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       1EEE0294-0FD8-46A9-8BEF-3EF49C685CBC
+:END:
+#+title: MacOS rm results in "operation not permitted"
+#+filetags: :mac:
+
+
+* Reference
+https://developer.apple.com/forums/thread/115632

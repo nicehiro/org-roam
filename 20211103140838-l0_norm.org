@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       54CC5F5F-2510-45F9-A853-1CDF9CEC5F3E
+:END:
+#+title: L0 Norm
+#+filetags: :math:
+
+The total number of nonzero elements in a vector.
+
+For example, the L0 norm(distance) of the vectors ~(0, 0)~ and ~(0, 2)~ is 1.
+
+* Reference
+https://livebook.manning.com/concept/machine-learning/l0-norm

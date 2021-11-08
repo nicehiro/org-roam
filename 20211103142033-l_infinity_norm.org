@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       C4CE6715-ABA0-451A-9513-F44AC568906F
+:END:
+#+title: L-infinity Norm
+#+filetags: :math:
+
+The largest magnitude among each element of a vector.
+
+For example, the L-infinity norm of the vector $X = (-6, 4, 2)$ is 6.

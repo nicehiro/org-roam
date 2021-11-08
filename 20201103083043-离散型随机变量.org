@@ -2,9 +2,9 @@
 :id: E36EB788-02AF-4210-83A4-87A5D816E5E4
 :END:
 #+title: 离散型随机变量
-#+filed: Probability
 #+OPTIONS: toc:nil
 #+filetags: :probability:
+#+startup: latex_preview
 
 * Description
 

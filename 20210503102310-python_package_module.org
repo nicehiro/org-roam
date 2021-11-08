@@ -44,6 +44,7 @@ Python 定义了两种类型的包，常规包和命名空间包。
 
 当 ~import~ 语句被执行时，会调用内置函数 ~__import__()~ 函数。
 其他导包机制可以使用其自定义的方法实现导包。
+
 ** TODO 搜索路径（QUESTIONS）
 当我们要导入某个模块时，模块的搜索路径为：
 1. Python 内置（built-in）模块。
@@ -67,15 +68,19 @@ Python 定义了两种类型的包，常规包和命名空间包。
 而且这里 [[https://docs.python.org/3/tutorial/modules.html?highlight=module s][Modules]] 和 [[https://docs.python.org/zh-cn/3/reference/import.html][Importing]] 两个地方的描述并不相同，
 但我感觉是在描述同一个问题，只能等之后看源码理解了。
 #+end_quote
+
 ** 相对导入
 导入的起始模块未必是从包路径开始，使用 ~.~ 或者 ~..~ 的方式是显示相对导入，否则是隐式的。
 Python3 针对隐式相对导入会直接抛错。
+
 ** 绝对导入
 从包的根路径开始导入。
+
 * 开发 Lib 构建
 在开发的时候，可以通过执行 ~python setup.py develop~ 安装当前开发的包，
 这个命令会在当前环境的 ~site-packages~ 目录下创建 ~.egg-link~ 文件，指向当前开发的包，
 因此等价与将包安装到了当前环境，就可以直接使用脚本方式运行了。
+
 * Ref
 - [[https://docs.python.org/3/tutorial/modules.html][Modules]]
 - [[https://docs.python.org/zh-cn/3/reference/import.html][Importing]]
