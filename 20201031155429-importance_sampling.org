@@ -5,6 +5,7 @@
 #+filed: Math
 #+OPTIONS: toc:nil
 #+filetags: :probability:
+#+startup: latexpreview
 
 * Description
 Importance Sampling is a technique for estimating the expectation $\mu$ of a
@@ -13,7 +14,7 @@ distribution $q$.
 
 
 The key observation is that $\mu$ is can expressed as the expectation of a
-different random variable $f^{*}(x)=\frac{p(x)}{q(x)}$ under $q$ 
+different random variable $f^{*}(x)=\frac{p(x)}{q(x)}$ under $q$
 
 \begin{equation}
 \begin{aligned}

@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       7EDE4F66-3462-4E8C-89A8-F0C9B231F1F4
+:END:
+#+title: PyTorch Memory Leak
+#+filetags: :pytorch:
+
+- Use memory profiler tools to check which line of code is leaking memory.
+- Use ~.detach()~ and ~.copy()~ every time you want to save a copy of tensor.
+
+And what's so wired is that memory leaking happened every time after
+calling the Linear and ReLU modules. This is also addressed here:
+[[https://discuss.pytorch.org/t/memory-leak-with-linear-and-relu-layer/51999][Memory Leak with Linear and ReLU layer]]
+
+
+* Useful Resources
+- [[https://zhuanlan.zhihu.com/p/338232671]]
+- [[https://zhuanlan.zhihu.com/p/86286137]]
+- [[https://www.zhihu.com/question/67209417]]
+- [[https://github.com/pytorch/pytorch/issues/13246]]
