@@ -1,0 +1,51 @@
+:PROPERTIES:
+:ID:       9A95DDCB-5BAB-4C13-84E4-9E4ED8D333D7
+:END:
+#+title: Write idempotent Bash scripts
+#+filetags: :bash:
+
+* What is idempotency?
+Idempotent scripts can be called multiple times and each time it's
+called, it will have the save effects on the system. This means, a
+second call will exit with the same result and won't have any side
+effects.
+
+* Examples
+
+** Creating an empty file
+#+begin_src bash
+touch example.txt
+#+end_src
+
+** Creating a directory
+#+begin_src bash
+ mkdir -p mydir
+#+END_src
+
+** Creating a symbolic link
+#+begin_src bash
+  ln -sfn source target
+#+end_src
+
+** Removing a file
+#+begin_src bash
+  rm -f example.txt
+#+end_src
+
+** Check if variable, file or dir exists
+#+begin_src
+if [ ! -f "/etc/conf/foo.txt" ]; then
+  echo "ttt" > /etc/conf/foo.txt
+fi
+#+end_src
+
+Other flags:
+- =-f= file
+- =-d= directory
+- =-z= string of zero length
+- =-p= pipe
+- =-x= file and has execute permission, =-x "$(command -v op)"= check
+  =op= binary is or not installed in your machine
+
+* Reference
+- https://arslan.io/2019/07/03/how-to-write-idempotent-bash-scripts/
