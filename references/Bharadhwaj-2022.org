@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       6D2E5D7E-6235-4B27-80E0-79BF090A55F2
+:ROAM_REFS: Bharadhwaj-2022
+:END:
+#+title: Notes on Information Prioritization Through Empowerment in Visual Model-Based Rl

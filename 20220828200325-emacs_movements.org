@@ -1,0 +1,33 @@
+:PROPERTIES:
+:ID:       A16F288E-9C29-4402-AE3D-F0683D2040F3
+:END:
+#+title: Emacs Movements
+#+filetags: :emacs:
+
+| Key | Description                                       |
+| C-v | Move to next screen                               |
+| M-v | Move to previous screen                           |
+| C-l | Move area near the cursor to the center of screen |
+| C-b | Move backward                                     |
+| C-f | Move forward                                      |
+| C-n | Move to next line                                 |
+| C-p | Move to previous line                             |
+| M-b | Move backward a word                              |
+| M-f | Move forward a word                               |
+| C-a | Move to the beginning of line                     |
+| C-e | Move to the end of line                           |
+| M-a | Move to the beginning of sentence                 |
+| M-e | Move to the end of sentence                       |
+| M-> | Move to the end of whole text                     |
+| M-< | Move to the beginning of whole text               |
+| C-k | Kill to the end of line                           |
+| M-k | Kill to the end of sentence                       |
+| C-y | Yank the recent text                              |
+| M-y | Yank history                                      |
+| C-/ | Undo                                              |
+
+
+
+# Local Variables:
+# writeroom-width: 150
+# End:

@@ -1,0 +1,25 @@
+:PROPERTIES:
+:ID:       95744994-88B3-4AA1-B3C5-53EB9DFC0BB6
+:END:
+#+title: Hierarchical Reinforcement Learning for Zero-shot generalization with Subtask Dependencies
+#+filetags: :multi-task:zsl:rl:
+
+
+The method proposed is a hierarchical RL algorithm as the title said, but the main part is focus on the 'high' level, which is subtask option choice.
+
+So, the simple and basic solution is:
+
+1. build graph (not mentioned but I guess it's build by hand)
+2. use R3NN to construct policy model, which use the graph and observation as input, and subtask option as output
+3. use pre-trained(non parameterized) policy to accelerate the training process of R3NN model (hard to understand)
+4. use GAE to refine the policy model
+
+
+The most novel idea this paper proposed is the subtask graph, which consist of several basic but useful definition: precondition, eligibility and completion vector. It actually gives a clear solution for others to solve this problem.
+
+Hierarchical methods are easy to find out, is this the only method we can use to solve this problem?
+
+
+#+begin_quote
+[[zotero://select/items/1_3PLMIKSD][Sohn, Sungryull, Junhyuk Oh, and Honglak Lee. “Hierarchical Reinforcement Learning for Zero-Shot Generalization with Subtask Dependencies,” n.d., 11.]]
+#+end_quote

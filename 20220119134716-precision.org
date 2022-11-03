@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       8E76F734-0B56-42E5-863B-3B0CB4D61166
+:ROAM_ALIASES: 查准率
+:END:
+#+title: Precision
+
+首先构建[[id:6719D704-7CF6-45B4-9B79-30B39770D13E][混淆矩阵]]，查准率表示真正例占预测结果中正例的比率。即：
+
+\[
+P = \frac{TP}{TP + FP}
+\]

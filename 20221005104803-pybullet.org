@@ -1,0 +1,21 @@
+:PROPERTIES:
+:ID:       3FFE5D96-2BF9-47A7-B572-46072FB69F41
+:ROAM_REFS: https://mymodelrobot.appspot.com/5629499534213120 https://www.zhihu.com/column/c_1344639277142183936
+:END:
+#+title: PyBullet
+#+filetags: :simulation:py:
+
+
+- ~setTimeStep~ smaller means larger frequency, will impulse heavy load on CPU rendering.
+
+
+* Problems
+
+1. ~setJointMotorControl~ What's the means of different ~controlModel~?
+   - ~POSITION_CONTROL~
+   - ~VELOCITY_CONTROL~
+   - ~TORQUE_CONTROL~
+   - ~PD_CONTROL~
+
+ 2. ~r2d2~ walk backwards when given an positive force when drop from high position?
+

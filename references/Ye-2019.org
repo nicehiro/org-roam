@@ -1,0 +1,16 @@
+:PROPERTIES:
+:ID:       AC156BB1-B541-4E7D-8BB8-326C860EC9F5
+:END:
+#+title: Notes on Mastering Complex Control in Moba Games With Deep Reinforcement Learning
+#+filetags: :rl:
+
+The Tencent Lab use reinforcement learning to train an AI agent in Honor of Kings. This paper contains serveral novel strategies, consist of control dependency decoupling, action mask, target attention and dual-clip PPO.
+
+The RL learner is a distributed training environment. The gradients in the RL learners are averaged through the ring allreduce algorithm.
+And the experiences generation is decoupled from the parameter learning. That means they use an AI server to collect data from environment and update collector's parameter after a few updating timesteps.
+
+They use an attention mechanism to determine the target unit in action space. And for other actions, like move and skills, they treat each label in an action independently to decouple their inter-correlations. This will ease the model training, but I don't think it will increase the diversity of actions. It is a compromise, cause it will be best if we can train a model by using all informations together.
+
+They also use an action mask which incorporate the correlations between action elements at the final output layers of the policy. Like, physically forbidden areas on map, skill or attack availability and controlled by enemy.
+
+Due to the PPO is trained on an on policy data, but they use the off policy data to train the model. So they propose an dual-clip PPO which

@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       A2039278-620A-47CB-8735-47BFDE715FF6
+:ROAM_ALIASES: "Rotational Inertia"
+:END:
+#+title: Moment of Inertia
+#+STARTUP: latexpreview
+
+
+For a point mass the moment of inertia is simply the mass times the square of the perpendicular distance to the axis of rotation.
+
+\begin{equation*}
+I = m r^2
+\end{equation*}
+
+For a rigid composite system the moment of inertia is the sum of the moments of inertia of its component subsystems.
+
+\begin{equation*}
+I = \iint \rho r^2 dV
+\end{equation*}

@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       4BA294C5-3E0F-4968-A799-F41EA86EAFA6
+:END:
+#+title: GnuPG
+
+
+#+begin_src sh
+gpg --gen-key # generate new key
+gpg --list-keys # check all keys
+gpg --armor --export [user_ID] # check public key
+gpg --armor --export-secret-keys [user_ID] # check secret key
+#+end_src

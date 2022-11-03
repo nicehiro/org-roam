@@ -1,0 +1,18 @@
+:PROPERTIES:
+:ID:       419693BE-9810-49F1-A988-B636D3DB3DB7
+:END:
+#+title: Meta Reinforcement Learning with Aotonomous Inference of Subtask Dependencies
+#+filetags: :sequential:zsl:rl:multi-task:
+
+
+A future improvement of [[id:95744994-88B3-4AA1-B3C5-53EB9DFC0BB6][Hierarchical Reinforcement Learning for Zero-shot generalization with Subtask Dependencies]].
+
+
+This work is still focus on 'high' level of multi-task decision making problem, which is decide which subtask should be execute at time step \(t\).
+
+They use classification and regression tree to infer the precondition function, which can used to build the whole subtask tree. Once we have this subtask tree, we can use the policy training method mentioned before(previous work) to train a subtask decision policy.
+
+
+#+begin_quote
+[[zotero://select/items/1_BDFZIXUL][Sohn, Sungryull, Hyunjae Woo, Jongwook Choi, and Honglak Lee. “Meta Reinforcement Learning with Autonomous Inference of Subtask Dependencies.” arXiv, April 13, 2020. http://arxiv.org/abs/2001.00248.]]
+#+end_quote

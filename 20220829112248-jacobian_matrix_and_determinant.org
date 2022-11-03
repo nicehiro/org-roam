@@ -1,0 +1,53 @@
+:PROPERTIES:
+:ID:       B5472DE7-968C-4A96-89C7-ED31FA936D75
+:END:
+#+title: Jacobian Matrix and Determinant
+
+The Jacobian matrix of a vector-valued function of several variables is the matrix of all its first-order partial derivatives. When this matrix is square, that is, when the function takes the same number of variables as input as the number of vector components of its output, its determinant is referred to as the Jacobian determinant[fn:1].
+
+Suppose \(f: R^n \rightarrow R^m\) is a function such that each of the first-order partial derivatives exist on \(R^n\).
+
+\begin{equation*}
+f(
+\begin{bmatrix}
+x_1 \\
+x_2 \\
+\cdots \\
+x_n
+\end{bmatrix}
+) =
+\begin{bmatrix}
+f_1(x_1, x_2, \cdots, x_n) \\
+f_2(x_1, x_2, \cdots, x_n) \\
+\cdots \\
+f_m(x_1, x_2, \cdots, x_n) \\
+\end{bmatrix}
+\end{equation*}
+
+Then the Jacobian matrix of \(f\) is defined to be \(m\times n\) matrix, denoted by \(J\).
+
+\begin{equation*}
+J = \begin{bmatrix}
+\frac{\partial f_1}{x_1} & \frac{\partial f_1}{x_2} \cdots \frac{\partial f_1}{x_n} \\
+\frac{\partial f_2}{x_1} & \frac{\partial f_2}{x_2} \cdots \frac{\partial f_2}{x_n} \\
+\cdots \\
+\frac{\partial f_m}{x_1} & \frac{\partial f_m}{x_2} \cdots \frac{\partial f_m}{x_n} \\
+\end{bmatrix}
+\end{equation*}
+
+* Meaning
+Check here[fn:2].
+
+#+DOWNLOADED: screenshot @ 2022-08-30 10:41:32
+#+attr_html: scale=0.8 :align center
+#+attr_latex: :width 400cm
+#+attr_org: :width 800px
+[[file:img/jacobian/Meaning/2022-08-30_10-41-32_screenshot.png]]
+
+[fn:2] https://www.khanacademy.org/math/multivariable-calculus/multivariable-derivatives/jacobian/v/the-jacobian-matrix
+
+[fn:1] https://en.wikipedia.org/wiki/Jacobian_matrix_and_determinant
+
+# Local Variables:
+# org-download-image-dir: "~/Documents/roam/org-roam/img/jacobian/"
+# End:

@@ -1,0 +1,18 @@
+:PROPERTIES:
+:ID:       39870569-F387-403F-9E9C-D3AF825DCA82
+:END:
+#+title: Multi-Task Reinforcement Learning with Soft Modularization
+#+filetags: :multi-task:rl:
+
+
+This work proposes a new model which can share the trained policy model with all other task. It's based on the common sense that most of tasks can share the same policy decision part.
+
+Their work consists of two networks: a base policy network for all tasks and a routing network which can provide task specific information to base policy network and guide the base policy to generalized in different tasks.
+
+
+The paper did mention they can deal with the sequential tasks by routing network by given a sequence. But, still, this algorithm cannot determine the sequence.
+
+
+#+begin_quote
+[[zotero://select/items/1_894MM8BZ][Yang, Ruihan, Huazhe Xu, Yi Wu, and Xiaolong Wang. “Multi-Task Reinforcement Learning with Soft Modularization,” n.d., 11.]]
+#+end_quote

@@ -1,0 +1,17 @@
+:PROPERTIES:
+:ID:       DB3F5DED-8C45-4825-9240-E5FCCBCF5265
+:ROAM_REFS: https://en.wikipedia.org/wiki/Convex_function
+:END:
+#+title: Convex Function
+#+OPTIONS: toc:nil
+#+startup: latexpreview
+#+filetags: :probability:
+
+Let $X$ be a convex subset of a real vector space and let $f: X \rightarrow \mathcal{R}$
+be a function. Then $f$ is called *convex* if and only if
+
+For all $0 \leq t \leq 1$ and all $x_1, x_2 \in X$:
+
+\[
+f(tx_1 + (1-t)x_2) \leq tf(x_1) + (1-t)f(x_2)
+\]

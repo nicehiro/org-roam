@@ -3,7 +3,6 @@
 :ROAM_ALIASES: Monte-Carlo-Policy-Gradient
 :END:
 #+title: REINFORCE
-#+startup: latexpreview
 #+filetags: :rl:
 
 * Description

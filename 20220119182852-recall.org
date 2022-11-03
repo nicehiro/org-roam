@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       6BF6DAC8-C996-4D65-9EDB-495D1204672F
+:ROAM_ALIASES: 查全率
+:END:
+#+title: Recall
+
+首先构建[[id:6719D704-7CF6-45B4-9B79-30B39770D13E][混淆矩阵]]，查全率表示真正例占所有正例的比率。即：
+
+\[
+R = \frac{TP}{TP + FN}
+\]

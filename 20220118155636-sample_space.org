@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       2326F746-FBBE-496B-93AD-F7510C3A33C1
+:ROAM_ALIASES: "Input Space" "Attribute Space"
+:END:
+#+filetags: :ml:
+#+title: Sample Space
+
+由样本的属性（或特征）张成的空间被称为样本空间，或属性空间（输入空间）。

@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       9BA58ADB-1305-4DFD-AD12-1793C322E755
+:END:
+#+title: Ledger
+
+
+Remember the simple meanings of key elements of the ledger:
+
+1. ~Assets~: money you owned
+2. ~Liabilities~: money you owed
+3. ~Expenses~: money flowing out
+4. ~Revenue~: money flowing in, like incomes

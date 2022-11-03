@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       966E6337-4D40-4999-BBDE-EBDB89C74A0B
+:ROAM_ALIASES: 版本空间
+:END:
+#+title: Version Space
+
+在假设空间中，存在多个假设与训练集一致，这个集合被称为版本空间。

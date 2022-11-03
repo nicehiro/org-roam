@@ -20,7 +20,7 @@ from the goal.
 #+DOWNLOADED: screenshot @ 2021-05-15 15:08:24
 #+attr_html: scale=0.8 :align center
 #+attr_latex: :width 600cm
-#+attr_org: :width 600px
+#+attr_org: :width 400px
 #+caption: Original problem of riding bicycle
 [[file:img/reward-shaping/Introduction/2021-05-15_15-08-24_screenshot.png]]
 
@@ -105,6 +105,7 @@ to approximate $V^{*}_{M}(s)$.
 
 # Local Variables:
 # org-download-image-dir: "./img/reward-shaping"
+# writeroom-width: 100
 # End:
 
 #  LocalWords:  MDP

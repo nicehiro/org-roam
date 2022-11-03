@@ -1,0 +1,16 @@
+:PROPERTIES:
+:ID:       9DECE9F9-CD79-4DBC-95AE-C434AFF89C72
+:ROAM_REFS: https://www.youtube.com/watch?v=10xgmpG_uTs
+:END:
+#+title: Jensen's Inequality
+#+OPTIONS: toc:nil
+#+startup: latexpreview
+#+filetags: :probability:
+
+If $X$ is a random variable and $\phi$ is a [[id:DB3F5DED-8C45-4825-9240-E5FCCBCF5265][convex function]], then
+
+\[
+\mathbb{E}[\phi(X)] \geq \phi(\mathbb{E}(X))
+\]
+
+See the simple proof on ROAM_REF.

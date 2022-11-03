@@ -5,10 +5,7 @@
 #+OPTIONS: toc:nil
 #+filetags: :rl:mbrl:
 
-* Description
-:PROPERTIES:
-:ID:       B5219D07-BCEB-435F-9AA9-445317AF0092
-:END:
+* Model Based RL
 无模型的强化学习不需要知道环境动力学方程，只要不断的进行试错和更新策略的过程就可以很好的进行训练了。
 但基于模型的强化学习需要用到环境动力学方程，
 在此基础上，对未来进行规划，从而达到加速训练和提高训练结果的效果。

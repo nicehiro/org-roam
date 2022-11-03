@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       89674B5F-A571-4D7A-A587-7DA548E2190F
+:END:
+#+title: Nil Coalescing Operator
+#+filetags: :swift:
+
+The ~nil-coalescing~ operator =(a ?? b)= unwraps an optional =a= if it contains
+a value, or returns a default value b if a is nil.
+
+The ~nil-coalescing~ operator is shorthand for the code below:
+#+begin_src swift
+a != nil ? a! : b
+#+end_src
+
+Or we can simple consider it as ~or~ operator.

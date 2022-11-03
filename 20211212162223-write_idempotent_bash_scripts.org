@@ -47,5 +47,18 @@ Other flags:
 - =-x= file and has execute permission, =-x "$(command -v op)"= check
   =op= binary is or not installed in your machine
 
+** Use if for conditional choice
+#+begin_src
+if [ "$Name" != $USER] ...
+#+end_src
+
+Use ="$Name"= rather than =$Name=.
+If =$Name= is empty, bash sees the above condition as
+#+begin_src
+if [ != $USER] ...
+#+end_src
+
+Thus add =""= is the safe way to use variable in condition.
+
 * Reference
 - https://arslan.io/2019/07/03/how-to-write-idempotent-bash-scripts/

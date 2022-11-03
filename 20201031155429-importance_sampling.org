@@ -1,5 +1,6 @@
 :PROPERTIES:
 :id: C94C5117-C048-4AE3-85EA-B01F4AB7D390
+:ROAM_REFS: http://timvieira.github.io/blog/post/2014/12/21/importance-sampling/
 :END:
 #+title: Importance Sampling
 #+filed: Math
@@ -11,7 +12,6 @@
 Importance Sampling is a technique for estimating the expectation $\mu$ of a
 random variable $f(x)$ under distribution $p$ from samples of a different
 distribution $q$.
-
 
 The key observation is that $\mu$ is can expressed as the expectation of a
 different random variable $f^{*}(x)=\frac{p(x)}{q(x)}$ under $q$
@@ -30,5 +30,3 @@ different random variable $f^{*}(x)=\frac{p(x)}{q(x)}$ under $q$
 Technique condition: $q$ must have support everywhere $p$ dose.
 Without this condition, the equation is biased!
 Note: $q$ can support things that $p$ doesn't.
-* Reference
-- http://timvieira.github.io/blog/post/2014/12/21/importance-sampling/

@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       A9F200A3-785A-4AF0-8E96-E8676EE3D59B
+:ROAM_ALIASES: "Rotational Kinetic Energy"
+:END:
+#+title: Rotational Energy
+
+
+Rotational energy is kinetic energy due to the rotation of an object and is part of its total kinetic energy.
+
+\begin{equation*}
+\mathcal{E} = \frac{1}{2} I \omega^2
+\end{equation*}
+
+where \(I\) is the [[id:A2039278-620A-47CB-8735-47BFDE715FF6][Moment of Inertia]] and \(\omega\) is the angular velocity.

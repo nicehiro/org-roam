@@ -4,19 +4,9 @@
 #+title: Why Generalization in RL is Difficult
 #+filetags: :rl:
 
-The generalization to unseen test conditions from a limited number of
-training conditions induces implicit partial observability, effectively
-turning even fully-observed MDPs into POMDPs.
+The generalization to unseen test conditions from a limited number of training conditions induces implicit partial observability, effectively turning even fully-observed MDPs into POMDPs.
 
-The uncertainty about MDP parameters can be modelled as a POMDP is well-studied
-in Bayesian RL when training on a single task in an online setting, primarily
-in the context of exploration. However, as we will discuss, this POMDP
-interpretation has significant consequences for the generalization problem
-in RL, where an agent _cannot collect more data online_, and must instead
-_learn a fixed set of training contexts_ that generalizes to _new_ contexts
-at text-time. So they focus on generalization in contextual MDPs where
-the agent is only trained on a training set of contexts, and seeks to
-generalize well to new contexts.
+The uncertainty about MDP parameters can be modeled as a POMDP is well-studied in Bayesian RL when training on a single task in an online setting, primarily in the context of exploration. However, as we will discuss, this POMDP interpretation has significant consequences for the generalization problem in RL, where an agent _cannot collect more data online_, and must instead _learn a fixed set of training contexts_ that generalizes to _new_ contexts at text-time. So they focus on generalization in contextual MDPs where the agent is only trained on a training set of contexts, and seeks to generalize well to new contexts.
 
 Actually, we can never say we've collected enough data in the real life.
 

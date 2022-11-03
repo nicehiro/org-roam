@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       096116D7-85B0-4645-859D-5D81A44F881F
+:ROAM_REFS: https://en.wikipedia.org/wiki/Simple_harmonic_motion
+:END:
+#+title: Simple Harmonic Oscillators

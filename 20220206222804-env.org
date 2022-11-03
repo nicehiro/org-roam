@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       84995524-7CC8-4B47-A1EC-1EBC7698D6E6
+:ROAM_REFS: https://stackoverflow.com/questions/16365130/what-is-the-difference-between-usr-bin-env-bash-and-usr-bin-bash
+:END:
+#+title: env
+#+filetags: :bash:
+
+Using =#!/usr/bin/env Name= makes the shell search for the first match of
+=Name= in the =$PATH= environment variable.
+It can be useful if you aren't aware of the absolute path or don't want
+to search for it.

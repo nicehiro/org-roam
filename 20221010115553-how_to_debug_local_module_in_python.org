@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       770EC629-380B-49C0-86A3-93E52FF2B1C0
+:END:
+#+title: How to Debug Local Module in Python
+
+
+Just use ~pip install -e soruce/to/pkg~ and ~pip~ will install this module and link its source to ~site-packages~. You can debug it now!

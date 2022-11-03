@@ -4,6 +4,7 @@
 #+title: Cross Entropy Methods(CEM)
 #+OPTIONS: toc:nil
 #+filetags: :rl:
+#+startup: latexpreview
 
 * Description
 交叉熵方法一般适用于状态空间连续的环境，分布函数一般选择高斯分布。

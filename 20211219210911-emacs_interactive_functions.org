@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       97664ACA-1749-40C0-8B6C-E448B07F804B
+:END:
+#+title: Emacs interactive functions
+#+filetags: :emacs:
+
+We can use ~C-u argument(int)~ to call interactive function with arguments.

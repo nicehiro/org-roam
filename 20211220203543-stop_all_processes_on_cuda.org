@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       24BE452B-98A5-4F8B-B60A-D1B93224A0D5
+:END:
+#+title: Stop all processes on CUDA
+#+filetags: :cuda:
+
+
+https://stackoverflow.com/questions/4354257/can-i-stop-all-processes-using-cuda-in-linux-without-rebooting

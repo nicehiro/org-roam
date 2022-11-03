@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       3C50BFFD-391F-4EB5-8C76-ED215F39C6FD
+:END:
+#+title: Emacs window management
+#+filetags: :emacs:
+
+
+# Reference
+- https://github.com/daviwil/emacs-from-scratch/blob/aa344276b42f8abaf1fc7326c7ceda28ea5cf750/show-notes/Emacs-Tips-05.org
+- https://www.gnu.org/software/emacs/manual/html_node/elisp/Choosing-Window-Options.html

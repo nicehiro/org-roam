@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       5C0B9914-56CC-4629-B053-E38F720B568C
+:END:
+#+title: Zero-Shot Task Generalization with Multi-Task Deep Reinforcement Learning
+#+filetags: :zsl:rl:multi-task:
+
+
+This paper proposes a hierarchical RL architecture which consists of two modules: one meta controller for generate next subtask's parameters _by reading the subtask's instruction_; and one parameterized skill policy model to generalized in different picking tasks by using analogy-making methods.
+
+Still by giving an instruction or sequence to do all subtasks.
+
+
+#+begin_quote
+[[zotero://select/items/1_3SS53MGE][Oh, Junhyuk, Satinder Singh, Honglak Lee, and Pushmeet Kohli. “Zero-Shot Task Generalization with Multi-Task Deep Reinforcement Learning,” n.d., 10.]]
+#+end_quote

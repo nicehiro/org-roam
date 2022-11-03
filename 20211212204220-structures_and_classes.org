@@ -1,0 +1,32 @@
+:PROPERTIES:
+:ID:       91E6B5E2-C3C2-445D-BC7E-E55C9CBBDFC6
+:END:
+#+title: Structures and Classes
+#+filetags: :swift:
+
+Swift structures and classes are *much closer* in functionality than in
+other languages.
+
+* Comparing
+
+** Common
+- Properties to store values.
+- Methods to provide functionality.
+- Access to their values using subscript syntax(下标操作).
+- Initializers to set up their initial state.
+- Be *extended* to expand their functionality beyond a default implementation.
+- Conform to protocols to provide standard functionality of a certain kind.
+
+** Different
+
+*** Structures
+
+*** Classes
+- Reference counting allows *more than one* reference to a class instance.
+- Inheritance enables one class to inherit the characteristics of another.
+- Deinitializers(析构器) enable an instance of a class to free up any resources
+  it has assigned.
+
+
+* Reference
+- https://docs.swift.org/swift-book/LanguageGuide/ClassesAndStructures.html

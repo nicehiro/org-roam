@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       AADE8FDD-384C-41A4-8E30-ACC90C936627
+:END:
+#+title: Multi-Task Learning with Sequence-Conditioned Transporter Networks
+#+filetags: :imitation:sequential:multi-task:rl:
+
+
+This work is based on previous work [[id:2086792E-D3FB-46FE-BB17-829D27E6B8A6][Transporter Networks: Rearranging the Visual World for Robotic Manipulation]]. And like previous, they are focus on seen tasks.
+
+
+Complex manipulation can be formulated as sequencing multiple individual tasks over a long horizon. Understanding task structure may be a key ingredient in scaling reinforcement learning methods to compositional tasks.
+
+They collect demonstration images as ~v~ at every time step when the agent receive a reward, e.g., finish a subtask. And in the test process, they try to find a desired next step goal from ~v~.
+
+The subtask can be done by using Transporter Networks.
+
+
+#+begin_quote
+[[zotero://select/items/1_I6MAKXE5][Lim, Michael H., Andy Zeng, Brian Ichter, Maryam Bandari, Erwin Coumans, Claire Tomlin, Stefan Schaal, and Aleksandra Faust. “Multi-Task Learning with Sequence-Conditioned Transporter Networks.” In 2022 International Conference on Robotics and Automation (ICRA), 2489–96, 2022. https://doi.org/10.1109/ICRA46639.2022.9812096.]]
+#+end_quote

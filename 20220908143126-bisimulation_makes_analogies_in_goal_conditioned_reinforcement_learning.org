@@ -1,0 +1,43 @@
+:PROPERTIES:
+:ID:       4E2645A2-A34B-43DF-B6EB-B238928DFC17
+:END:
+#+title: Bisimulation Makes Analogies in Goal-Conditioned Reinforcement Learning
+#+filetags: :representation-learning:goal-conditioned:rl:
+
+#+begin_quote
+[[zotero://select/items/1_532PRCEA][Hansen-Estruch, Philippe, Amy Zhang, Ashvin Nair, Patrick Yin, and Sergey Levine. “Bisimulation Makes Analogies in Goal-Conditioned Reinforcement Learning,” May 16, 2022. http://arxiv.org/abs/2204.13060.]]
+#+end_quote
+
+
+In traditional goal-conditioned RL, an agent is provided with exact goal they intend to reach. However it is not realistic to know the configuration of goal before performing a task.
+
+This paper propose a new representation learning algorithm, which can be used in goal-conditioned RL (also common RL), using bisimulation relation to use seen state-goal representation to replace unseen state.
+
+#+begin_quote
+Two states are bisimilar if they share both the same immediate reward and equivalent distributions over the next bisimilar states.
+#+end_quote
+
+
+Let \(\phi(s_i, g_i)\) as state-goal encoder, \(\psi(s_i)\) as state encoder.
+
+1. directly optimize \(\phi\)
+   The bisimulation relation can be described as the distance of two state \(s_i, s_j\):
+
+   \begin{equation*}
+   d = \phi(s_i, g_i) - \phi(s_j, g_j) = (R_i - R_j) + (P(s^{'}_i) - P(s^{'}_j)
+   \end{equation*}
+
+   The distance closer, the bisimulation relation stronger.
+
+2. state abstraction
+   The information \(\phi(s_i, g_i)\) contained only need to consist of the difference of goal state and current state, which is \(\phi(s_i, g_i) = \psi(g_i) - \psi(s_i)\). For any state \(s_j\) who has strong bisimulation relation with \(s_i\), \(\psi(g_j) - \psi(s_j) = \psi(g_i) - \psi(s_i)\).
+
+3. reinforcement learning algorithm update
+
+
+So, at test time the task goal g is unknown but instead specified by a separate state-goal pair \(s_a, g_a\) that achieves an analogous outcome with respect to another state.
+
+
+But how to find a bisimulation state?
+
+- Use value function to choose.

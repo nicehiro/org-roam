@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       21615171-83B1-436C-912E-5AC0D957AFE2
+:END:
+#+title: Debuger stucked in VSCode
+#+filetags: :vscode:
+
+
+The default ~console~ in ~launch.json~ is ~integratedTerminal~ which is works fine in most cases.
+
+But it might stuck when your program encounter some warnings.
+
+All things are fixed after I change ~console~ to ~integratedConsole~. But still don't know the different between these two parameters.

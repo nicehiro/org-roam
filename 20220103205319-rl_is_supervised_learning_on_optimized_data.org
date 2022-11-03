@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       1CD333A0-2A0B-4A1F-8E15-FAC62C026EE2
+:ROAM_REFS: https://bair.berkeley.edu/blog/2020/10/13/supervised-rl/
+:END:
+#+title: Reinforcement Learning is Supervised Learning on Optimized Data
+
+The whole article is interesting. It worth reading regularly.
+
+
+The two most common perspectives on Reinforcement learning (RL) are optimization
+and dynamic programming. Methods that compute the gradients of the non-differentiable
+expected reward objective, such as the [[id:D56B0801-4B58-42E1-B9B0-4CDE76A5B657][REINFORCE]] trick are commonly grouped
+into the optimization perspective, whereas methods that employ TD-learning
+or Q-learning are dynamic programming methods.

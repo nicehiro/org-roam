@@ -1,0 +1,34 @@
+:PROPERTIES:
+:ID:       8DD24DB9-F2D4-4242-AD33-D4716D764D06
+:END:
+#+title: Planning to Practice: Efficient Online Fine-Tuning by Composing Goals in Latent Space
+#+filetags: :rl:sequential:
+
+
+This paper is exactly what I what do and published recently. That gives me a lot of confidence to continue this work. At least this is not some simple or unnecessary work.(Jeffery do give me big help! The partial order idea!)
+
+
+This paper consists of two parts. First one to decompose the long-horizon tasks (maybe contains order, sequential) to goal-reaching problem, and use a high-level planner to generate subgoals for low-level policy. Another part try to train the low-level policy by using offline data and fine-tuned by online data which trained on a shorten task (subgoal reinforcement learning problem).
+
+
+#+begin_quote
+In the framework of goal-conditioned RL, solving long-horizon task can be reduced to the problem of optimization over a sequence of subgoals for the goal-conditioned policy, and this optimization over subgoals can be regarded as a kind of high-level planning, where the optimizer selects waypoints for achieving a distant goal.
+#+end_quote
+
+
+Previous methods either propose subgoals from the set of previously seen states, or directly optimize over subgoals, often by utilizing a latent variable model to obtain a concise representation of image-based states.
+
+
+1. Train low-level policy $\pi(a|s,s_g)$ by offline data. (Q: How to promise all goal has been trained? --> Exploration, Distribution of goal)
+
+2. Use ~conditional variational encoder~ to sample a set of subgoals, and choose the optimal subgoals as subgoals
+
+3. For each subgoals, use $\pi$ to generate actions and fine-tune it by online data
+
+
+Recommend to check the part how to generate a set of subgoals which I think is the most novel part of this paper.
+
+
+* Reference
+
+[[zotero://select/items/1_WP66ARJC][Fang, Kuan, Patrick Yin, Ashvin Nair, and Sergey Levine. “Planning to Practice: Efficient Online Fine-Tuning by Composing Goals in Latent Space.” arXiv, May 17, 2022. http://arxiv.org/abs/2205.08129.]]
