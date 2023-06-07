@@ -1,0 +1,31 @@
+:PROPERTIES:
+:ID:       55D6F5D5-54B3-4D39-BFBA-6B5C3EE1D97D
+:END:
+#+title: Master Kitty
+
+* Tabs and Windows
+The top level is _OS Windows_.
+Each os window contains one or more _Tabs_.
+Each tab consists of one or more _Kitty Windows_.
+
+The kitty windows can be arranged in multiple _layouts_, like tilling window manager did.
+
+** "Key" Key Bindings
+1. Tabs
+   | Action            | Shortcut       |
+   | New tab           | ~Meta t~         |
+   | Previous/Next tab | ~Meta Shift [/]~ |
+   | Next layout       | ~Meta Shift l~   |
+   | Set tab title     | ~Meta Shift i~   |
+
+2. Windows
+   | Action        | Shortcut   |
+   | New window    | ~Meta enter~ |
+   | New OS window | ~Meta n~     |
+
+3. Others
+   | Action             | Shortcut    |
+   | Increase font size | ~Meta +~      |
+   | Decrease font size | ~Meta -~      |
+   | Reload config      | ~Ctrl Meta ,~ |
+   | Edit config        | ~Meta ,~      |

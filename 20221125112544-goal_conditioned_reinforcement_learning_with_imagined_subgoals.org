@@ -1,0 +1,24 @@
+:PROPERTIES:
+:ID:       8DAEF7FC-81BE-432F-A056-BA9EBD1EE6D8
+:END:
+#+title: Goal-Conditioned Reinforcement Learning with Imagined Subgoals
+#+filetags: :sequential:
+
+
+This paper
+
+1. tries to find subgoal $s_g$ from initial state $s_i$ to final state $s_j$ which have the maximum distance to $s_i$ and $s_j$
+
+2. train policy $\pi(a|s,g)$ by minimize the [[id:D9E34E77-F4CF-441F-AE95-00184F8A1E31][KL Divergence]] between $\pi(a|s,g)$ and $\pi(a|s,s_g)$, and use $\pi(a|s,g)$ in test phase
+
+
+The second part increase the training time and difficulty cause it need to fit two policy. But it reduce the subgoal inference phase in test cases. This is a compromise, and I don't think it deserves it.
+
+Inferring subgoals and conducting subgoals are unsplitable in a complete task.
+
+Besides, a lot of subgoal searching algorithms are specifying the threshold between two subgoals. Is there some way to automatic do this job?
+
+
+#+begin_quote
+[[zotero://select/items/1_W94AAKF4][Chane-Sane, Elliot, Cordelia Schmid, and Ivan Laptev. “Goal-Conditioned Reinforcement Learning with Imagined Subgoals.” arXiv, July 1, 2021. https://doi.org/10.48550/arXiv.2107.00541.]]
+#+end_quote

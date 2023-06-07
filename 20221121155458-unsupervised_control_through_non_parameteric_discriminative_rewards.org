@@ -1,0 +1,16 @@
+:PROPERTIES:
+:ID:       C395745D-C68A-4598-A37E-B3A2802E37EC
+:END:
+#+title: Unsupervised Control Through Non-Parameteric Discriminative Rewards
+#+filetags: :sequential:
+
+
+They try to learn goal-conditioned policy and goal achievement reward policy by measuring how similar current state is to the goal state.
+
+
+But they only consider how to approach the goal state, but not take into consideration how to do more exploration, that is, how to far way from the initial state.
+
+
+#+begin_quote
+[[zotero://select/items/1_ZBFZE9A9][Warde-Farley, David, Tom Van de Wiele, Tejas Kulkarni, Catalin Ionescu, Steven Hansen, and Volodymyr Mnih. “Unsupervised Control Through Non-Parametric Discriminative Rewards.” arXiv, November 27, 2018. http://arxiv.org/abs/1811.11359.]]
+#+end_quote

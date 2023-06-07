@@ -13,7 +13,7 @@ Given a second order differential equation:
 a y^{''} + b y^{'} + c y = 0
 \end{equation*}
 
-Notice that the ~nth~ order differential of \(y = e^{rx}\) is \(d^n e^{rx}\), we can use this as the basic formation of \(y\),
+Notice that the ~nth~ order differential of \(y = e^{rx}\) is \(r^n e^{rx}\), we can use this as the basic formation of \(y\),
 
 \begin{equation*}
 (ar^2 + br + c) e^{rx} = 0

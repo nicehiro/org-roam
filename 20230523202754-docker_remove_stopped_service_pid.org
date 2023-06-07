@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       CB5FCFD8-0755-487F-BBEB-FF43542B7ACA
+:ROAM_REFS: https://stackoverflow.com/questions/68263759/remove-file-from-stopped-docker-container-without-create-new-image
+:END:
+#+title: Docker remove stopped service pid
+#+iletags: :docker:

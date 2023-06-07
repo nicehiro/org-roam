@@ -1,0 +1,22 @@
+:PROPERTIES:
+:ID:       0860FE58-6E2F-4BC9-954C-B391BF690C29
+:END:
+#+title: Makefile
+
+
+* Compile & Link
+
+#+begin_src
+Source file (C, C++) -> Object file (.o, .obj) -> Library (Archive) file (.a, .lib)
+#+end_src
+
+Source file can be *compiled* to object file, and the compiler only check grammer and definition of function. Then the linker will *link* object file to library file by finding all needed functions from object files.
+
+* Basic Rule
+
+#+begin_src makefile
+target ... : prerequisites ...
+    command
+    ...
+    ...
+#+end_src

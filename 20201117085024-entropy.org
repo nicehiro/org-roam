@@ -31,8 +31,14 @@ $$
 当取自有限样本时，熵的公式可以表示为：
 
 $$
-H(X)=\sum_{i}P(x_i)I(x_i)=-\sum_{i}P(x_i)\log_{b}P(x_i)
+H(X)= \mathbb{E}(I(x_i)) = \sum_{i}P(x_i)I(x_i)=-\sum_{i}P(x_i)\log_{b}P(x_i)
 $$
+
+当取自无限样本时，即非连续分布，熵的公式可以表示为：
+
+\begin{equation*}
+H(X) = \int_{P(x_i)} I(x_i)
+\end{equation*}
 
 为什么可以使用 $-\log_{b}P(x)$ 来表示信息量呢？
 我有一个直观未证明的解释。如上 *例二* ， $1=-\log_{2}\frac{1}{2}$ ， $2 = -\log_{2}\frac{1}{4}$ 。

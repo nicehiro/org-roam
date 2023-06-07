@@ -1,0 +1,26 @@
+:PROPERTIES:
+:ID:       E16E8A92-C645-4DE0-A936-5B6A48276F38
+:END:
+#+title: Skew-Fit: State-Covering Self-Supervised Reinforcement Learning
+#+filetags: :sequential:
+#+startup: latexpreview
+
+
+Try to find subgoals by maximizing the mutual information:
+$$
+I(S;G) = H(S) - H(S|G) = H(G) - H(G|S)
+$$
+that is trying to maximizing $H(S)$ and minimizing $H(S|G)$.
+
+To minimizing $H(S|G)$, we train a policy by maximizing the reward:
+$$
+r = log(G|S)
+$$
+which is also the distance between $G$ and $S$. This paper use [[id:64612DC9-6058-4E57-96CE-97705C040C5E][RIG]] to deal with it.
+
+To maximizing $H(S)$, they add a weight on each state to make the probability of less visited state become bigger.
+
+
+#+begin_quote
+[[zotero://select/items/1_9NALVPPE][Pong, Vitchyr H., Murtaza Dalal, Steven Lin, Ashvin Nair, Shikhar Bahl, and Sergey Levine. “Skew-Fit: State-Covering Self-Supervised Reinforcement Learning.” arXiv, August 4, 2020. http://arxiv.org/abs/1903.03698.]]
+#+end_quote

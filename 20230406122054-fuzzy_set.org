@@ -1,0 +1,23 @@
+:PROPERTIES:
+:ID:       8B3F3E25-EE7A-432D-98DC-994B871C1573
+:END:
+#+title: Fuzzy set
+
++ Definition: A _membership function_ ranges from =0-1=, with a larger vlue indicating a higher degree of truth.
+
++ Union: max
+
++ Intersection: min
+
++ Relation: a fuzzy set $R(X, Y)$ defined on the Cartesian product of crisp sets
+
++ Composition: $B(Y) = A(X) \circle R(X, Y)$
+  - $R(X, Y) \circle S(Y, Z) = \max \min [\mu_R(x, y), \mu_S(y, z)]$
+
++ General Extension Principle: max min
+
++ Mamdani Implication: $\sigma(a, b) = min[a, b]$
+
++ Represent of rules: For all inputs, take the "min" and "max" operation according to the rule statements
+
++ Defuzzification: center-of-area (COA) $= \frac{\sum u_i \mu(u_i)}{\sum \mu(u_i)}$

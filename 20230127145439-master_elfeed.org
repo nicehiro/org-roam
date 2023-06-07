@@ -1,0 +1,30 @@
+:PROPERTIES:
+:ID:       AB44DE10-F0FC-481B-B4E5-45C7034F90B1
+:END:
+#+title: Master Elfeed
+#+filetags: :elfeed:
+
+
+* Filter
+
+Use =elfeed-search-set-filter= to update the filter. Use =elfeed-search-clear-filter= to restore the filter.
+
+** Tag Filter
+
+Search string start with =+= or =-= is treaded as a tag. =+= means the tag is required, while =-= means the tag must not be present.
+
+** Date Filter
+
+Search string start with =@= is indicated as an date or date range. Date description accepts plain English connected by dashes =-=, for example, =@2-years-old=, =@3-days-ago= or =@2023-01-22=. Entries older than this are filtered out. A date range are two date connected by =--=.
+
+** Inverse Filter
+
+Search string start with =!= is treated as an inverse regular expression. Any entry matches this filter will be filtered out.
+
+** Number Filter
+
+=#20= limits the number of entries to =20=.
+
+** Regular Filter
+
+Search string start with ~=~ or =~= is treated as regular expression filter.

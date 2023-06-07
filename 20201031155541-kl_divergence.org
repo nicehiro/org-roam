@@ -11,15 +11,8 @@ KL 散度是两个概率分布 $P$ 和 $Q$ 差别的非对称性度量。
 KL 散度是用来度量使用基于 $Q$ 的分布来编码服从 $P$ 的分布的样本 所需的 *额外* 的平均比特数。
 典型情况下， $P$ 表示数据的真实分布， $Q$ 表示数据的理论分布或 $P$ 的近似分布。
 
-$$
-D_{KL}(P||Q)=-\sum_{i}P(i)\log{Q_{i}}-(-\sum_{i}P(i)\log{P(i)})
-$$
-$$
-D_{KL}(P||Q)=-\sum_{i}P(i)\log\frac{Q(i)}{P(i)}
-$$
-
-[[id:A8041812-FA36-4448-A2F2-C791C8D9FE45][交叉熵]]和 KL 散度之间的关系：
-
-$$
-\mathcal{H}(p,q)=E_{p}[-\log q]=\mathcal{P}+D_{KL}(p||q)
-$$
+\begin{align*}
+D_{KL}(P||Q)& = \mathcal{H}(P,Q) - H(P) \\
+&=-\sum_{i}P(i)\log{Q_{i}}-(-\sum_{i}P(i)\log{P(i)}) \\
+&=\sum_{i}P(i)\log\frac{P(i)}{Q(i)}
+\end{align*}

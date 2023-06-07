@@ -5,3 +5,4 @@ journals/
 logseq/
 *.org_archive
 .DS_Store
+*~

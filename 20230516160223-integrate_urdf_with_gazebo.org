@@ -1,0 +1,76 @@
+:PROPERTIES:
+:ID:       A4AD3DA7-9510-488F-94D2-FBE99CC6582F
+:END:
+#+title: Integrate URDF with Gazebo
+#+filetags: :urdf:ros:
+
+
+Some tips for integrate[[id:DE2C1A1F-6DA5-41B6-9B74-E3CC9D218B20][ URDF]] with Gazebo.
+
+1. URDF file should contain =<collision>= element.
+2. URDF file should contain =<inertial>= element.
+
+* material
+
+#+begin_src xml
+<gazebo reference="base_link">
+    <material>Gazebo/Black</material>
+</gazebo>
+#+end_src
+
+* inertial
+
+Standard inertial matrix implements using[[id:9A36DAE5-9ABD-4331-906F-64BCF7C1EE01][ Xacro]].
+
+#+begin_src xml
+<!-- Macro for inertia matrix -->
+<xacro:macro name="sphere_inertial_matrix" params="m r">
+    <inertial>
+        <mass value="${m}" />
+        <inertia ixx="${2*m*r*r/5}" ixy="0" ixz="0"
+                 iyy="${2*m*r*r/5}" iyz="0"
+                 izz="${2*m*r*r/5}" />
+    </inertial>
+</xacro:macro>
+<xacro:macro name="cylinder_inertial_matrix" params="m r h">
+    <inertial>
+        <mass value="${m}" />
+        <inertia ixx="${m*(3*r*r+h*h)/12}" ixy = "0" ixz = "0"
+                 iyy="${m*(3*r*r+h*h)/12}" iyz = "0"
+                 izz="${m*r*r/2}" />
+    </inertial>
+</xacro:macro>
+<xacro:macro name="Box_inertial_matrix" params="m l w h">
+    <inertial>
+        <mass value="${m}" />
+        <inertia ixx="${m*(h*h + l*l)/12}" ixy = "0" ixz = "0"
+                 iyy="${m*(w*w + l*l)/12}" iyz= "0"
+                 izz="${m*(w*w + h*h)/12}" />
+    </inertial>
+</xacro:macro>
+#+end_src
+
+* launch
+Load urdf data by using =param= element:
+
+#+begin_src xml
+<!-- For pure urdf file -->
+<param name="robot_description" command="$(find pkg)/urdf/xacro/test.xacro" />
+
+<!-- For xacro file -->
+<param name="robot_description" command="$(find xacro)/xacro $(find pkg)/urdf/xacro/test.urdf.xacro" />
+#+end_src
+
+Load Gazebo world:
+
+#+begin_src xml
+<include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(find pkg)/worlds/hello.world" />
+</include>
+#+end_src
+
+Start Gazebo node:
+
+#+begin_src xml
+<node pkg="gazebo_ros" type="spawn_model" name="model" args="-urdf -model mycar -param robot_description"  />
+#+end_src

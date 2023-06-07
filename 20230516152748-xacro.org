@@ -1,0 +1,41 @@
+:PROPERTIES:
+:ID:       9A36DAE5-9ABD-4331-906F-64BCF7C1EE01
+:END:
+#+title: Xacro
+#+filetags: :urdf:ros:
+
+
+* xacro
+=xacro= provide macro extension for original [[id:DE2C1A1F-6DA5-41B6-9B74-E3CC9D218B20][URDF]], including variables and functions. We need to include namespace at robot element.
+
+#+begin_src xml
+<robot name="test" xmlns:xacro="http://wiki.ros.org/xacro">
+...
+</robot>
+#+end_src
+
+** property
+
+#+begin_src xml
+<xacro:property name="xxxx" value="yyyy" />
+#+end_src
+
+** macro
+
+Define a macro,
+#+begin_src xml
+<xacro:macro name="my_macro" params="param1 param2 ...">
+...
+</xacro:macro>
+#+end_src
+
+Call macro,
+#+begin_src xml
+<xacro:my_macro param1=xxx param2=xxx .../>
+#+end_src
+
+** include
+
+#+begin_src xml
+<xacro:include filename="test.xacro" />
+#+end_src

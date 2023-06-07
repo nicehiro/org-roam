@@ -3,6 +3,7 @@
 :END:
 #+title: Moment
 #+OPTIONS: toc:nil
+#+startup: latexpreview
 #+filetags: :probability:
 
 * Description

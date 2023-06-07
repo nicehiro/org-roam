@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       f27e4c52-2c43-43a2-a0bd-9829173f6719
+:ROAM_REFS: https://gist.github.com/ioggstream/8f380d398aef989ac455b93b92d42048
+:END:
+#+title: Arch Linux xhci_hcd keep resuming
+#+filetags: :linux:
+
+
+The arch linux keep saying ~xhci_hcd xHC error in resume~ when I suspend the system. After chat with openai chatgpt and google, temporaly solve this problem by *disable* and *enable* the ~xhci_hcd~ module before and after suspending.

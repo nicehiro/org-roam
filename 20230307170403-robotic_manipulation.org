@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       9f8c80c7-4554-43c9-ba68-d7622ed0476c
+:END:
+#+title: Robotic Manipulation
+#+filetags: :robotic:
+
+Robotic manipulation refers to _the ways_ *robots* interact with the *objects* around them: grasping an object, opening a door, packing an order into a box, folding laundry… All these actions *require* robots to _plan and control_ the motion of their hands and arms in an intelligent way.
+
+
+* Is Ant Maze a robotic manipulation task?
+Yes. In ant maze task, robot -- Ant can interact with the object -- maze by plan and control the motion of his legs.

@@ -1,0 +1,127 @@
+:PROPERTIES:
+:ID:       31418AAE-92C6-4FF8-B9A9-8E322206C49A
+:ROAM_REFS: http://www.autolabor.com.cn/book/ROSTutorials/
+:END:
+#+title: ROS
+#+filetags: :ros:
+
+
+* Create ROS package
+#+begin_src shell
+# create workspace
+mkdir -p catkin_ws/src
+
+# create virtualenv
+cd catkin_ws/
+python3 -m virtualenv venv
+# activate python venv
+source venv/bin/activate
+
+# build workspace
+catkin build
+
+# create package
+cd src/
+catkin_create_pkg pkg dependencies
+#+end_src
+
+* ROS Elements
+** Node
+A node is an _executable_ that uses ROS to communicate with other nodes.
+
+** Message
+ROS _data type_ used when subscribing or publishing to a topic.
+
+=.msg= files are simple text files that describe the fields of a ROS message. They are used to generate source code for messages in different languages.
+
+#+begin_src shell
+# Add build and runtime dependence in package.xml
+<build_depend>message_generation</build_depend>
+<exec_depend>message_runtime</exec_depend>
+
+# Add build and runtime dependence in CMakeLists.txt
+find_package(catkin REQUIRED COMPONENTS
+   ...
+   message_generation
+)
+catkin_package(
+  ...
+  CATKIN_DEPENDS message_runtime ...
+  ...)
+
+# Add msg file
+add_message_files(
+  FILES
+  Num.msg
+)
+
+# uncomment generate_messages
+#+end_src
+
+** Service
+An =.srv= file describes a service. It is composed of two parts: a request and a response. The two parts are separated by "---".
+
+** Topic
+Nodes can _publish_ messages to a topic as well as _subscribe_ to a topic to receive messages.
+
+** Master
+_Name service_ for ROS.
+
+** Others
+ROS equivalent of =stdout/stderr=.
+Master + rosout + parameter server.
+
+* Q&A
+** How to avoid ros node duplication?
+1. =rosrun=
+#+begin_src shell
+# set different namespace
+rosrun turtlesim turtlesim_node __ns:=/xxx
+# set different alternative name
+rosrun turtlesim turtlesim_node __name:=t1
+#+end_src
+
+2. =roslaunch=
+set different ~name~ (~ns~) to node.
+
+3. code
+#+begin_src python
+# anonymous will add timestamp behind the original node name
+rospy.init_node("turtle_sim", anonymous=True)
+#+end_src
+
+** How to avoid ros topic duplication?
+1. =rosrun=
+#+begin_src shell
+# rename /cmd_vel topic to /turtle1/cmd_vel
+rosrun teleop_twist_keyboard teleop_twist_keyboard.py /cmd_vel:=/turtle1/cmd_vel
+#+end_src
+
+2. =roslaunch=
+#+begin_src nxml
+<launch>
+    <node pkg="turtlesim" type="turtlesim_node" name="t1" />
+    <node pkg="teleop_twist_keyboard" type="teleop_twist_keyboard.py" name="key">
+      <!-- remap topic -->
+      <remap from="/cmd_vel" to="/turtle1/cmd_vel" />
+    </node>
+</launch>
+#+end_src
+
+3. code
+#+begin_src python
+# init and start node with name "hello" and namespace "xxx"
+
+# global topic name
+# /chatter
+pub = rospy.Publisher("/chatter", String, queue_size=1000)
+
+# relative topic name
+# /xxx/chatter
+pub = rospy.Publisher("chatter",String,queue_size=1000)
+
+# private topic name
+# /xxx/hello/chatter
+pub = rospy.Publisher("~chatter",String,queue_size=1000)
+#+end_src
+

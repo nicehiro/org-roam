@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       820F5BC3-F6AE-43A9-A2D4-A066A7513D2D
+:ROAM_REFS: https://www.youtube.com/watch?v=C-FEVzI8oe8&t=175s
+:END:
+#+title: Shear Force
+#+filetags: :math:
+
+
+In solid mechanics, shearing forces are unaligned forces pushing one part of a body in one specific direction, and another part of the body in the opposite direction. When the forces are collinear (aligned into each other), they are called compression forces.
+

@@ -5,6 +5,7 @@
 #+filed: Probability
 #+OPTIONS: toc:nil
 #+filetags: :probability:
+#+startup: latexpreview
 
 * Description
 ** 事件的概率
@@ -55,6 +56,7 @@ B_1+B_2+\dots &=\Omega
 *全概率公式* ： $P(A)=P(B_1)P(A|B_1)+P(B_2)P(A|B_2)+\dots$
 
 *贝叶斯公式* ： $P(B_i|A)=P(AB_i)/P(A)=P(A|B_i)P(B_i)/\sum_jP(B_j)P(A|B_j)$
+
 ** 随机变量和概率分布
 *随机变量* ：随机变量是“其值随机会而定”的变量，是关于试验结果的函数。
 *分布函数* ：设 $X$ 为一随机变量，则函数 $P(X\leq x)=F(x) (-\infty<x<\infty)$ 称为 $X$ 的分布函数。

@@ -1,0 +1,80 @@
+:PROPERTIES:
+:ID:       DE2C1A1F-6DA5-41B6-9B74-E3CC9D218B20
+:ROAM_REFS: http://www.autolabor.com.cn/book/ROSTutorials/di-6-zhang-ji-qi-ren-xi-tong-fang-zhen/62-fang-zhen-urdf-ji-cheng-rviz/624-urdfyu-fa-xiang-jie-02-link.html http://wiki.ros.org/urdf/XML/robot
+:END:
+#+title: URDF
+#+filetags: :ros:urdf:
+
+
+Universial Robot Description File to describe robot in [[id:31418AAE-92C6-4FF8-B9A9-8E322206C49A][ROS]].
+
+
+#+begin_quote
+1. =title= are elements, and list =item= are attributes.
+2. =<>= is also elements.
+#+end_quote
+
+* robot
+Root element of a urdf file. All other elements should be contained in this element.
+
+- =name=: the name of robot
+
+** link
+Describe a rigid body with an inertia, visaual features, and collision properties.
+
+- =name=: the name of joint
+
+*** visual
+This element specifies the shape of the object for visualization purpose. Multiple instance _can_ exists and the _union_ of the geometry forms the visual representation of the link.
+
+- =name=: the name of link's geometry
+
+**** origin
+The reference frame of the visual element with respect to the reference frame of the link. Default is same as frame of the link.
+
+- =xyz=: represents the ~x,y,z~ offset, default is zero vector.
+- =rpy=: represents the fixed axis roll, pitch and yaw angles in radians.
+
+**** geometry
+The shape of the visual object. Can be one of the following: =<box>=, =<cylinder>=, =<sphere>=, =<mesh>=.
+
+**** material
+The =color= and =texture= of the link. The =color= is set of =rgba= numbers range from =[0,1]=.
+
+*** collision
+The collision properties of a link. Simple collision models can reduce computation time. And also, multiple instances can exist.
+
+- =name=: the name of collision model
+
+Two subelements =<origin>= and =<geometry>= are same as above.
+
+*** inertial
+The link's mass =<mass>=, positin of its center of mass =<origin>=, and its central inertia properties =<inertia>=.
+
+** joint
+Describes the kinematics and dynamics of the joint.
+
+- =name=
+- =type=: can be one of the following:
+  + revolute: rotates around the axis and has limits
+  + continuous: rotates around the axis and has no limits
+  + prismatic: sliding along the axis and has limits
+  + fixed: no motions
+  + floating: allows  motions for 6 DoF
+  + planar: allows motion in a plane perpendicular to the axis
+
+*** parent
+Parent link which can be defined by using =link= attribute.
+
+*** child
+Child link which also be defined by using =link= attribute.
+
+*** axis
+The joint axis normalized vector =xyz= specified for type of motion. Notice that =floating= and =fixed= do not use this field.
+
+*** limit
+The upper =upper= and =lower= motion limit for joint. Omit if joint is =continous=.
+
+*** origin
+The offset of position =xyz= and radians =rpy=.
+

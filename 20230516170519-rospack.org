@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       8F712D15-DBBF-4D39-92EE-4CAF12B17CD7
+:END:
+#+title: rospack
+#+filetags: :ros:
+
+
+In [[id:31418AAE-92C6-4FF8-B9A9-8E322206C49A][ROS]], we use =rospack= to review dependencies of ~pkg, which can also be viewed from ~pkg/package.xml~.
+
+#+begin_src shell
+rospack depends1 pkg
+# view all depends by passing depends args
+#+end_src

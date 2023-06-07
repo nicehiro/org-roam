@@ -1,7 +1,7 @@
 :PROPERTIES:
 :id: 0863DAB5-25FA-42BD-A02F-9EF1FC11DA78
 :END:
-#+title: Maximum likelihood Estimation
+#+title: Maximum Likelihood Estimation
 #+OPTIONS: toc:nil
 #+STARTUP: latexpreview
 #+filetags: :probability:

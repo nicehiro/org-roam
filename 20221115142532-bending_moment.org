@@ -1,0 +1,4 @@
+:PROPERTIES:
+:ID:       C8E1CB01-B890-4F70-BDF3-52CD2B69E5CB
+:END:
+#+title: Bending Moment

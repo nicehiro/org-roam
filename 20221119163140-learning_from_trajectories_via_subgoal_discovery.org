@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       7DE3538C-6EE6-4A7B-89DF-BD2C7D6AACCF
+:END:
+#+title: Learning from Trajectories via Subgoal Discovery
+#+filetags: :imitation:
+
+
+Train a subgoal policy $\pi(s_g|s_t)$ by using imitation learning. That is, by collecting a bunch of expert data.
+
+
+#+begin_quote
+[[zotero://select/items/1_FPXVAJ6Z][Paul, Sujoy, Jeroen Vanbaar, and Amit Roy-Chowdhury. “Learning from Trajectories via Subgoal Discovery,” n.d., 11.]]
+#+end_quote

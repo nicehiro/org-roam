@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       DAE1DA0C-4E98-433D-BCAF-B37D0D75E0A3
+:END:
+#+title: X11 Forwarding in MacOS
+#+filetags: :X11:
+
+
+1. Setup ~X11Forwarding yes~ on your sever
+2. ~export~ DISPLAY=:0 on your current terminal
+3. ~ssh username@hostname -Y~

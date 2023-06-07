@@ -1,0 +1,37 @@
+:PROPERTIES:
+:ID:       C7B2A00C-FEC1-47D2-8FE5-301A8E147D58
+:END:
+#+title: Mutual Information
+#+filetags: :probability:math:
+#+startup: latexpreview
+
+In probability theory and information theory, the mutual information (MI) of two random variables is a measure of the _mutual dependence between the two variables_. More specifically, it quantifies the "amount of information" (in units such as shannons (bits), nats or hartleys) obtained about one random variable _by observing the other random variable_. The concept of mutual information is intimately linked to that of entropy of a random variable, a fundamental notion in information theory that quantifies the expected "amount of information" held in a random variable.
+
+The mutual information can be defined as:
+
+\begin{equation*}
+I(X;Y) = D_{KL}( P_{X,Y} || P_{X} P_{Y} )
+\end{equation*}
+
+where $D_{KL}$ is the [[id:D9E34E77-F4CF-441F-AE95-00184F8A1E31][KL Divergence]].
+
+_If two variables are independent, $P_{X,Y} = P_{X} P_{Y}$, which means we can not obtain any information about $Y$ by observing $X$, and currently the KL divergence is 0. Thus mutual information is actually the distance between $P_{X,Y}$ and $P_{X}P_{Y}$._
+
+
+Specifically, For discrete distributions:
+
+$$
+\mathrm{I}(X ; Y)=\sum_{y \in \mathcal{Y}} \sum_{x \in \mathcal{X}} P_{(X, Y)}(x, y) \log \left(\frac{P_{(X, Y)}(x, y)}{P_X(x) P_Y(y)}\right)
+$$
+
+For continuous distributions:
+
+$$
+\mathrm{I}(X ; Y)=\int_{\mathcal{Y}} \int_{\mathcal{X}} P_{(X, Y)}(x, y) \log \left(\frac{P_{(X, Y)}(x, y)}{P_X(x) P_Y(y)}\right) d x d y
+$$
+
+The relation between mutual information and [[id:4EB6ADC8-0D35-4EBB-9BDA-4EEA8AD46FE1][Entropy]] and [[id:F7E10EFC-D1CB-45CF-86EF-8AFE9A32EF52][Conditional Entropy]] is:
+
+$$
+I(X;Y) = H(X) - H(X|Y) = H(Y) - H(Y|X) = I(Y;X)
+$$

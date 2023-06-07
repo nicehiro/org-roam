@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       B77A8E09-09B5-417A-888E-99B9F1B017C4
+:ROAM_REFS: http://bair.berkeley.edu/blog/2023/01/20/relmm/
+:END:
+#+title: Notes on Fully Autonomous Real-World Reinforcement Learning with Applications to Mobile Manipulation
+#+filetags: :rl:
+
+
+There are many levels of tasks people learn before they apply for a job as we start with the easier ones and build on them. In their work, they allow robots to train common-reusable skills, such as grasping, by first encouraging the robot to prioritize training these skills before training later skills, such as navigation.
+
+

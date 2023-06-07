@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       5644DE70-D344-4528-8DC6-530ECA7D5D97
+:END:
+#+title: CMake Install
+#+filetags: :cmake:
+
+
+* Description
+
+* Usage

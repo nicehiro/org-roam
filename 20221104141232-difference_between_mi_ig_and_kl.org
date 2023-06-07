@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       BFCB36FC-6093-406A-8210-F7211C850640
+:END:
+#+title: Difference between MI, IG and KL
+#+filetags: :math:probability:
+
+What's the difference between [[id:C7B2A00C-FEC1-47D2-8FE5-301A8E147D58][Mutual Information]], [[id:87C67C50-794B-4EDB-829F-3366306F52FA][Information Gain]] and [[id:D9E34E77-F4CF-441F-AE95-00184F8A1E31][KL Divergence]]?
