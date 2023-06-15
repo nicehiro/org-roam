@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       91da8e14-003c-4086-8e0a-943d1be9eea6
+:ROAM_REFS: https://www.cnblogs.com/zhangzhiwei122/p/15886433.html
+:END:
+#+title: ROS Time Sync
+#+filetags: :ros:
+
+It's better to use ~systemd-timesyncd~ service than original ~ntp~ service in Ubuntu.
