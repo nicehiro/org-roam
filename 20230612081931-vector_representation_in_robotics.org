@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       85e055a8-2bab-4ffc-8b1a-de6c10dfe9c0
+:END:
+#+title: Vector Representation in Robotics
+#+filetags: :robotic:

@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       dacfbbea-ebf7-4a67-bfe0-329f7f27920e
+:END:
+#+title: ROS play_motion Goal Status Reject
+#+filetags: :ros:

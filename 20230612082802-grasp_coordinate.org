@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       76fbe3a9-7b64-46c1-857c-3520d3e5f159
+:END:
+#+title: Grasp Coordinate
+#+filetags: :robotic:
