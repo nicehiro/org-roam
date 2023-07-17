@@ -1,0 +1,25 @@
+:PROPERTIES:
+:ID:       9293ff79-b147-4863-88a0-ad07d6eab11a
+:END:
+#+title: Notes on Deep rl at scale: sorting waste in office building with a fleet of mobile manipulators
+#+filetags: :off_policy:rl:
+
+#+begin_quote
+[[zotero://select/items/1_K3U738P3][Herzog, Alexander, Kanishka Rao, Karol Hausman, Yao Lu, Paul Wohlhart, Mengyuan Yan, Jessica Lin, et al. “Deep RL at Scale: Sorting Waste in Ofﬁce Buildings with a Fleet of Mobile Manipulators,” n.d.]]
+#+end_quote
+
+* Intro
+
+This paper describe a system to solve large-scale real-world task: sorting wastes in office buildings with a total training set of 9527 hours of robotic experience.
+
+* Highlights
+
+1. Hybrid data collecting system which contains simulated data and real-world data that is collected through a varity of policy bootstraping approaches.
+
+2. Learning complex tasks by first bootstraping from simulation, and then use of multi-task training to learn simple tasks as a stepping stone.
+
+3. RetinaGAN, a transformer which can transform simulated images to look more realistic.
+
+* Can be improved
+
+Not found yet.
