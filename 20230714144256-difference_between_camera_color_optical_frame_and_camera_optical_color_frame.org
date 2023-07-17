@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       98e5ccff-f105-4e6d-b8e2-98934e01e7d1
+:ROAM_REFS: https://github.com/IntelRealSense/realsense-ros/issues/743
+:END:
+#+title: Difference between camera_color_optical_frame and camera_optical_color_frame
+#+filetags: :camera:ros:realsense:
+
+
+~camera_link~ is the reference frame of the camera.
+
+~_optical_frame~ is the original frame coordinate system.
+
+In eye-hand calibration, we use ~_optical_frame~ as camera frame.
