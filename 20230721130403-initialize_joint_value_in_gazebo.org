@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       693fecbd-b33b-4267-ba5f-d4ebec091cbc
+:ROAM_REFS: https://answers.ros.org/question/216420/initial-joint-angles/
+:END:
+#+title: Initialize joint value in gazebo
+#+filetags: :gazebo:ros:
+
+There's two ways to initialize joint value of a give robot model:
+
+1. modify the ~origin~ attribute of ~<joint>~ in urdf file
+
+2. add ~-J JOINT_NAME JOINT_VALUE~ when spawn the robot
