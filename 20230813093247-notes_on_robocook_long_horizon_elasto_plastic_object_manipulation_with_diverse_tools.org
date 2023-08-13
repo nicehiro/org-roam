@@ -1,0 +1,21 @@
+:PROPERTIES:
+:ID:       849797bb-9354-444f-9c57-e03285fa8472
+:END:
+#+title: Notes on RoboCook: Long-horizon elasto-plastic object manipulation with diverse tools
+#+filetags: :gnn:
+
+#+begin_quote
+[[zotero://select/items/1_4UY6HH46][Shi, Haochen, Huazhe Xu, Samuel Clarke, Yunzhu Li, and Jiajun Wu. “RoboCook: Long-Horizon Elasto-Plastic Object Manipulation with Diverse Tools.” arXiv, June 26, 2023. http://arxiv.org/abs/2306.14447.]]
+#+end_quote
+
+* Key idea
+
+Didn't check.
+
+* What can you learn?
+
+1. Introduce topic by given an example, which contains all challenges you want to solve.
+
+* Future improvements
+
+- No subgoal generator. Given subgoal by human.
