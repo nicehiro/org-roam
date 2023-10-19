@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       c7a09bfb-55e9-445b-ab93-3ec69b8a4fb3
+:END:
+#+title: SuSIE: Subgoal Synthesis via Image Editing
+#+filetags: :diffusion:subgoal:
+
+#+begin_quote
+[[zotero://select/items/1_IICTDUH6][Black, Kevin, Mitsuhiko Nakamoto, Pranav Atreya, Homer Walke, Chelsea Finn, Aviral Kumar, and Sergey Levine. “ZERO-SHOT ROBOTIC MANIPULATION WITH PRETRAINED IMAGE-EDITING DIFFUSION MODELS,” n.d.]]
+#+end_quote
+
+SuSIE generates subgoals using an image-editing diffusion model and executes those subgoals using a languages-agnostic low-level policy.
+
+Since subgoal generateing process doesn't require robot actions, they replace the BridgeData (only robot demostrations) with a human manipulation dataset (Something-Something) to train the diffusion model.
