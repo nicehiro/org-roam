@@ -3,6 +3,7 @@
 :ROAM_ALIASES: RIG
 :END:
 #+title: Visual Reinforcement Learning with Imagined Goals
+#+STARTUP: latexpreview
 
 
 This paper uses [[id:C8865A5B-C340-48F5-86E0-19DBD9EC156B][VAE]] to map the state space to latent representation space, and then do goal-conditioned reinforcement learning in latent space.

@@ -6,10 +6,12 @@
 #+startup: latexpreview
 
 
-Try to find subgoals by maximizing the mutual information:
+Try to find subgoals by maximizing the [[id:C7B2A00C-FEC1-47D2-8FE5-301A8E147D58][mutual information]]:
+
 $$
 I(S;G) = H(S) - H(S|G) = H(G) - H(G|S)
 $$
+
 that is trying to maximizing $H(S)$ and minimizing $H(S|G)$.
 
 To minimizing $H(S|G)$, we train a policy by maximizing the reward:

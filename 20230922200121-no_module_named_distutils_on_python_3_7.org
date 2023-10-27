@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       b4854481-c2f8-4279-b1c5-1cf38761170e
+:ROAM_REFS: https://askubuntu.com/questions/1239829/modulenotfounderror-no-module-named-distutils-util
+:END:
+#+title: No module named distutils on python 3.7
+#+filetags: :py:
+
+
+It's the compatiable problem when we upgrade python 3.7 to 3.8. So the easiest way to solve this is:
+
+#+begin_src shell
+sudo apt install python3.7-distutils
+#+end_src

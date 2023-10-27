@@ -3,6 +3,7 @@
 :END:
 #+title: Goal-Conditioned Reinforcement Learning with Imagined Subgoals
 #+filetags: :sequential:
+#+startup: latexpreview
 
 
 This paper
@@ -17,6 +18,26 @@ The second part increase the training time and difficulty cause it need to fit t
 Inferring subgoals and conducting subgoals are unsplitable in a complete task.
 
 Besides, a lot of subgoal searching algorithms are specifying the threshold between two subgoals. Is there some way to automatic do this job?
+
+
+Update @<2023-08-26 Sat>
+
+1. What is the subgoal here?
+
+   Middle state between $s$ and $g$.
+
+2. How to generate subgoals?
+
+   By using $\pi^{H}(s_g|s,g)$.
+
+3. How to make sure subgoal is valid?
+
+   1. Log probability of real subgoal.
+   2. Weighted by advantage.
+
+4. How to use subgoal?
+
+   Minimize the $D_{KL}(\pi(s,g) || \pi(s,s_g))$. Transfer the knowledge in subgoal to final goal.
 
 
 #+begin_quote
