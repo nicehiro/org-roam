@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       74854f7f-e81b-4c79-ab03-cab87f0e14f2
+:END:
+#+title: Bipartite Graphs
+#+filetags: :graph:
+#+startup: latexpreview
+
+* Definition
+Let $G$ be a connected graph, and let $L_0, \cdots, L_k$ be the layers produced by BFS starting at node $s$. Exactly one of the following holds,
+1. No edge of $G$ joins two nodes of the same layer, and $G$ is bipartite.
+2. An edge of $G$ joins two nodes of the same layer, and $G$ contains an _odd_legth_ cycle.

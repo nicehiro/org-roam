@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       d97052f9-b882-4177-be35-aceb551c2650
+:END:
+#+title: Partition Problem
+#+startup: latexpreview
+
+* Problem Definition
+Given integers $v_1, \cdots, v_n$, is there a subset $S \subseteq \{1, \cdots, n\}$ such that $\sum_{i\in S} v_i = \sum_{i\notin S} v_i$.
+
+* Prove Partition problem is [[id:8b5526cc-58e9-4e41-aabd-2c070e0d2c6d][NP-complete]]
+1. Prove it is NP.
+2. Choose [[id:cfc08fc6-99c4-4dba-8910-4d810a70368f][Subset Sum Problem]].
+3. Prove that [[id:cfc08fc6-99c4-4dba-8910-4d810a70368f][Subset Sum Problem]] $\leq_P$ Partition problem.
+   Given Subset Sum instance $w_1, \cdots, w_n$ and an integer $W$, set $v_i = w_i$, and $W = \frac{1}{2} \sum_{i\in [n]} v_i$.

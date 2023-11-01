@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       47fe0924-4dca-4f75-96ab-dda25a1ae1eb
+:END:
+#+title: NP
+
+* Definition
+$NP=$ set of decision problems for which there exists a poly-time _certifier_.
+
+* How to verify problem Y is NP?
+Find a solution can solve problem Y in polynomial time.
+
+* Examples

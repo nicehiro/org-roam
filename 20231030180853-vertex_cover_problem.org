@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       a1866df0-1983-4314-9e56-268b3f0f013a
+:END:
+#+title: Vertex Cover Problem
+#+filetags: :np:
+
+* Problem Definition
+Given a graph $G = (V,E)$, and an integer $k$, is there a subset of $k$ vertices such that each edge is incident to at least one vertex in the subset?

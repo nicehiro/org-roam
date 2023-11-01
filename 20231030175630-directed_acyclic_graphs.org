@@ -1,0 +1,16 @@
+:PROPERTIES:
+:ID:       329dab76-a8c9-470b-a93a-a3ceee9ce661
+:ROAM_ALIASES: DAG
+:END:
+#+title: Directed Acyclic Graphs
+#+filetags: :graph:
+#+startup: latexpreview
+
+* Definition
+A directed acyclic graph (DAG) is a _directed graph_ that contains _no directed cycles_.
+
+If $G$ has a topological order, then $G$ is a DAG.
+
+If $G$ is a DAG, then $G$ has a node with no entering edges.
+
+If $G$ is a DAG, then $G$ has a topological order.

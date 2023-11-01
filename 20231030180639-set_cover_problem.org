@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       ae9e71d5-40b9-445a-8ed7-0061c9417bfe
+:END:
+#+title: Set Cover Problem
+#+filetags: :np:
+
+* Problem Definition
+Given a set $U$ of elements, a collection $S$ of subsets of $U$, and an integer $k$, are there $\leseq k$ of these subsets whose union is equal to $U$?

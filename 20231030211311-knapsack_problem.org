@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       717a10df-2c1c-40a1-95ff-2348d54adca5
+:END:
+#+title: Knapsack Problem
+#+startup: latexpreview
+
+* Problem Definition
+Given a set of $n$ items $X$, size $s_i \geq 0$, values $v_i \geq 0$, a weight limit $B$, and a target value $V$, is there a subset $S \subseteq X$ such that:
+$\sum_{i\in S} s_i \leq B$ and $\sum_{i \in S} v_i \geq V$
+
+* Prove Knapsack problem is [[id:8b5526cc-58e9-4e41-aabd-2c070e0d2c6d][NP-complete]]
+1. Prove Knapsack problem is NP.
+2. Choose [[id:cfc08fc6-99c4-4dba-8910-4d810a70368f][Subset Sum Problem]]
+3. Prove that [[id:cfc08fc6-99c4-4dba-8910-4d810a70368f][Subset Sum Problem]] $\leq_P$ Knapsack Problem.
+   Given Subset Sum instance $w_1, \cdots, w_n$ and an integer $W$, set $s_i = v_i = w_i$ and $B = V = W$.

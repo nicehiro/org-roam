@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       ebdac175-91c1-44fc-95a3-1b1b8396d9e5
+:ROAM_ALIASES: Satisfiability
+:END:
+#+title: SAT Problem
+#+filetags: :np:
+
+* Problem Definition
+Given a [[id:a15482a1-f986-4a45-9f2a-3c4754f14057][CNF]] formula $\Psi$, does it have a satisfying truth assignment?

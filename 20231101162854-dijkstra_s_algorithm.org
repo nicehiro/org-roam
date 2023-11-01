@@ -1,0 +1,16 @@
+:PROPERTIES:
+:ID:       35a9d3ff-9513-4522-b715-11be3858316e
+:END:
+#+title: Dijkstra's Algorithm
+#+filetags: :shortest path:
+#+startup:  latexpreview
+
+We want to get the shortest path starting from $s$ to other nodes.
+
+Let $S$ be the explored nodes. For $u \in S$, $d[u] = $ length of a shortest path from $s$ to $u$.
+
+For $x \notin S$, $d(x) = \min_{(r,x):r \in S}{d[r] + l(r,x)}$.
+
+It requires no negative values of vertex.
+
+Running time is $O(mn)$. Can be improved to $O(m\log n)$ via priority queue.

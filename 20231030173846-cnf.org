@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       a15482a1-f986-4a45-9f2a-3c4754f14057
+:ROAM_ALIASES: "Conjunctive Normal Form"
+:END:
+#+title: CNF
+#+startup: latexpreview
+
+A propositional formular $\Psi$ that is a conjunction of clauses.

@@ -1,0 +1,29 @@
+:PROPERTIES:
+:ID:       2f25d2db-626e-4164-8e55-f6bdecae83ed
+:END:
+#+title: Poly-Time Reductions
+#+filetags: :np:
+#+startup: latexpreview
+
+Problem $X$ polynomial-time reduces to problem $Y$ ($X \leq_p Y$) if arbitray instances of problem $X$ can be solved using
+1. Polynomial number of standard computational steps, and
+2. Polynomial number of calls to oracle that solves problem $Y$.
+
+* Prove $X \leq_p Y$
+1. Construct problem Y by using problem X
+2. Verify contruction is correct. $X \rightarrow Y$ and $Y \rightarrow X$
+3. Verify there's polynomial times contruction and calls.
+4. Done
+
+* Known reductions
+1. [[id:ebdac175-91c1-44fc-95a3-1b1b8396d9e5][SAT Problem]] $\leq_P$ [[id:9c719852-2b28-466a-80f8-665e6ab31c30][3-SAT Problem]] $\leq_P$ [[id:dd1e9a31-2122-48e6-a454-88e2444b1964][Independent Set Problem]] $\leq_P$[[id:a1866df0-1983-4314-9e56-268b3f0f013a][ Vertex Cover Problem]] $\leq_P$ [[id:ae9e71d5-40b9-445a-8ed7-0061c9417bfe][Set Cover Problem]]
+
+2. [[id:9c719852-2b28-466a-80f8-665e6ab31c30][3-SAT Problem]] $\leq_P$ [[id:cfc08fc6-99c4-4dba-8910-4d810a70368f][Subset Sum Problem]]
+
+3. [[id:cfc08fc6-99c4-4dba-8910-4d810a70368f][Subset Sum Problem]] $\leq_P$ [[id:717a10df-2c1c-40a1-95ff-2348d54adca5][Knapsack Problem]]
+
+4. [[id:cfc08fc6-99c4-4dba-8910-4d810a70368f][Subset Sum Problem]] $\leq_P$ [[id:d97052f9-b882-4177-be35-aceb551c2650][Partition Problem]]
+
+5. [[id:d97052f9-b882-4177-be35-aceb551c2650][Partition Problem]] $\leq_P$ [[id:cfc08fc6-99c4-4dba-8910-4d810a70368f][Subset Sum Problem]]
+
+6. [[id:283ed6ab-fbd8-4c74-91f5-1831e4773ec5][Hamiltonian Cycle]] $\leq_P$ [[id:70fbada4-b321-4b4d-9ad4-55b3dfb2ee4e][TSP]]

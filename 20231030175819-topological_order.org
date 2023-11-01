@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       0c3db032-7192-40e9-b3e6-c408a8f7cc65
+:END:
+#+title: Topological Order
+#+filetags: :graph:
+
+* Definition
+A topological order of a [[id:329dab76-a8c9-470b-a93a-a3ceee9ce661][Directed Acyclic Graphs]] is an ordering of its nodes so that for every edge $(v_i, v_j)$ we have $i < j$

@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       9c719852-2b28-466a-80f8-665e6ab31c30
+:END:
+#+title: 3-SAT Problem
+#+filetags: :np:
+
+* Problem Definition
+[[id:ebdac175-91c1-44fc-95a3-1b1b8396d9e5][SAT Problem]] where each clause contains exactly 3 literals (and each literal corresponds to a different variable).

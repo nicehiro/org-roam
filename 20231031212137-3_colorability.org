@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       771a394a-c847-45a8-ab1e-50d35a349969
+:END:
+#+title: 3-Colorability
+#+startup: latexpreview
+
+* Problem Definition
+ Given an undirected graph $G = (V, E)$, can the nodes be colored in three colors so that no adjacent nodes have the same color?
+
+* Prove 3-Colorability is [[id:8b5526cc-58e9-4e41-aabd-2c070e0d2c6d][NP-complete]]
+1. Prove its [[id:47fe0924-4dca-4f75-96ab-dda25a1ae1eb][NP]]
+2. Choose [[id:9c719852-2b28-466a-80f8-665e6ab31c30][3-SAT Problem]]
+3. Prove that [[id:9c719852-2b28-466a-80f8-665e6ab31c30][3-SAT Problem]] $\leq_P$ 3-Colorability
+   Given any 3-SAT instance $\Psi$, construct an instance $G$ of 3-Color that is 3-colorable if and only if $\Psi$ is satisfiable.

@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       dd1e9a31-2122-48e6-a454-88e2444b1964
+:END:
+#+title: Independent Set Problem
+
+* Problem Definition
+Given a graph $G=(V,E)$ and an integer $k$, is there a subset of $k$ vertices such that no two are adjacent?

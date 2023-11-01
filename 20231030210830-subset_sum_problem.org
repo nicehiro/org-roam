@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       cfc08fc6-99c4-4dba-8910-4d810a70368f
+:END:
+#+title: Subset Sum Problem
+#+startup: latexpreview
+
+* Problem Definition
+Given $n$ natural numbers $w_1, \cdots, w_n$ and an integer $W$, is there a subset that adds up to exactly $W$? ($\sum_1^n w_i > W$)

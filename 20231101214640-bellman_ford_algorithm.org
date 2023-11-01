@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       207e0e9c-deb0-4046-a777-ba6f9e2be161
+:END:
+#+title: Bellman-Ford Algorithm
+
+If $G$ has no negative cycles, then there is a shortest path from $s$ to $t$ that is simple (i.e., does not repeat nodes), and hence has at most $n-1$ edges.
+
+Let $OPT(i,v)$ to denote the minimum cost of a $v-t$ path using at most $i$ edges.
+Our problem is to compute $OPT(n-1,s)$.

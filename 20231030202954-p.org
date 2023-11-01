@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       9dd80b9c-59bf-40d9-9ce1-1877bdaf731b
+:ROAM_ALIASES: "Polynomial Time"
+:END:
+#+title: P
+
+* Definition
+$P=$ set of decision problems for which where exists a poly-time algorithm.

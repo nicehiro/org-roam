@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       283ed6ab-fbd8-4c74-91f5-1831e4773ec5
+:ROAM_ALIASES: HC
+:END:
+#+title: Hamiltonian Cycle
+
+* Problem Definition
+Given a unweighted and undirected graph $G = (V, E)$. Is there a cycle in $G$ that visits each node exactly once?

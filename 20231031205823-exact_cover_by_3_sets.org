@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       322ae40b-a6a4-41ae-8af3-4ce4770d8cc0
+:ROAM_ALIASES: X3C
+:END:
+#+title: Exact Cover by 3-Sets
+
+* Problem Definition
+Given a set $U$ with $|U| = 3n$ and a collection $C$ of 3-element subsets of $U$. Does $C$ contain an exact cover for $U$, that is, a subcollection $C^{\prime} \subset C$ such that every element of $U$ occurs in exactly one member of $C^{\prime}$?

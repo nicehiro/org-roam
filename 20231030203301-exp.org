@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       4b4f8e45-b7d3-4297-8949-b515427eca75
+:END:
+#+title: EXP
+
+* Definition
+$EXP=$ set of decision problems for which there exists an exponential-time algorithm.

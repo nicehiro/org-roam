@@ -1,0 +1,26 @@
+:PROPERTIES:
+:ID:       8b5526cc-58e9-4e41-aabd-2c070e0d2c6d
+:END:
+#+title: NP-complete
+
+* Definition
+A problem $Y \in NP$ with the property that for every problem $X \in NP$, $X \leq_P Y$.
+
+NP-complete problem is at least as hard as NP problem.
+
+* Prove problem $Y$ is $NP-complete$
+1. Show that Y is [[id:47fe0924-4dca-4f75-96ab-dda25a1ae1eb][NP]]
+   There exists at least one criteria that can solve problem Y in polynomial time. The problem is NP as given a solution, we only need to check ...
+2. Choose an NP-complete problem $X$
+3. Prove that $X \leq_P Y$
+
+* Known NP-complete problems
+1. [[id:9c719852-2b28-466a-80f8-665e6ab31c30][3-SAT Problem]]
+2. [[id:a1866df0-1983-4314-9e56-268b3f0f013a][Vertex Cover Problem]]
+3. [[id:ae9e71d5-40b9-445a-8ed7-0061c9417bfe][Set Cover Problem]]
+4. [[id:dd1e9a31-2122-48e6-a454-88e2444b1964][Independent Set Problem]]
+5. [[id:d97052f9-b882-4177-be35-aceb551c2650][Partition Problem]]
+6. [[id:8f65ae70-8c29-48b0-bda3-659780e93696][3-Dimensional Matching]]
+7. [[id:322ae40b-a6a4-41ae-8af3-4ce4770d8cc0][Exact Cover by 3-Sets]]
+8. [[id:283ed6ab-fbd8-4c74-91f5-1831e4773ec5][Hamiltonian Cycle]]
+9. [[id:70fbada4-b321-4b4d-9ad4-55b3dfb2ee4e][TSP]]
