@@ -1,0 +1,33 @@
+:PROPERTIES:
+:ID:       0ac7ae61-e6ed-40b1-abe4-0aa1c925e7da
+:END:
+#+title: Designing effective scientific presentations
+
+* What font to use?
+1. Sans Serif fonts like _Arial_, _Comic Sans_, _Trebuchet_
+2. *No* Serif fonts like _Times New Roman_
+3. Type size should be 18, 20, 24, 28, 36 and reference with 14 points
+4. Avoid using all capital letters
+
+* Color
+1. Dark letters against a light background
+
+* Layout
+1. Every slide should have a heading with a simple sentence
+2. Limit text blocks to no more than two lines
+3. Lists should contain no more than 3 items and use animation to show one by one
+4. Leave some space
+
+* Style
+1. Try best to include a simple image on every slide
+2. Each slide should make just 1 or 2 point
+3. Don't drown the audience with data. Less is more.
+
+* Bottom Line
+1. Make simple slides
+2. Build content progressively
+3. Leave it out if you don't wanna talk about it
+
+* Talk
+1. Start with a big question, introduce your work smoothly, then end with a conclusion to solve the start question
+2. Contains episodes, zoom in and zoom out

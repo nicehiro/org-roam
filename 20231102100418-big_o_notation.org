@@ -1,0 +1,28 @@
+:PROPERTIES:
+:ID:       a2b7b39d-cb10-4481-9c36-3e144a48e195
+:END:
+#+title: Big O Notation
+#+startup: latexpreview
+
+* Upper bounds
+$f(n)$ is $O(g(n))$ if there exist constants $c > 0$ and $n_0 \geq 0$ such that
+\begin{equation}
+0 \leq f(n) \leq c \cdot g(n) \text{for all } n \geq n_0
+\end{equation}
+
+* Lower bounds
+$f(n)$ is $\Omega(g(n))$ if there exist constants $c > 0$ and $n_0 \geq 0$ such that
+\begin{equation}
+0 \leq c \cdot g(n) \leq f(n) \text{for all } n \geq n_0
+\end{equation}
+
+* Tight bounds
+$f(n)$ is $\Theta(g(n))$ if there exist constants $c_1 > 0, c_2 > 0$ and $n_0 \geq 0$ such that
+\begin{equation}
+c_1 \cdot g(n) \leq f(n) \leq c_2 \cdot g(n) \text{for all } n \geq n_0
+\end{equation}
+
+* Asymptotic bounds and limits
+$$
+\lim_{n\rightarrow \infty} \frac{f(n)}{g(n)}
+$$

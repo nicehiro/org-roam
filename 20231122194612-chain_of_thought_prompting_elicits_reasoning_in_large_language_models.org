@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       dc79e111-6fe7-4d1e-8bcd-efe0667af4ea
+:ROAM_ALIASES: CoT
+:END:
+#+title: Chain-of-Thought Prompting Elicits Reasoning in Large Language Models
+#+filetags: :prompt:LLM:paper:
+
+#+begin_quote
+[[zotero://select/items/1_4TE4RFVZ][Wei, Jason, Xuezhi Wang, Dale Schuurmans, Maarten Bosma, Brian Ichter, Fei Xia, Ed Chi, Quoc Le, and Denny Zhou. “Chain-of-Thought Prompting Elicits Reasoning in Large Language Models.” arXiv, January 10, 2023. https://doi.org/10.48550/arXiv.2201.11903.]]
+#+end_quote
+
+_Chain-of-Thought (CoT)_ has become a standard prompting technique for enhancing model performance on complex tasks. The model is instructed to "think step by step" to utilize more test-time computation to decomposing hard tasks into smaller steps.
+
+For GPT3 (2022), users need to give prompts with details step-by-step thinkings for few-shot learning. While for GPT4 (2023), users only have to add "step-by-step" instruction in prompt for same performace.
