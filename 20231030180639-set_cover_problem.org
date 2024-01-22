@@ -5,4 +5,4 @@
 #+filetags: :np:
 
 * Problem Definition
-Given a set $U$ of elements, a collection $S$ of subsets of $U$, and an integer $k$, are there $\leseq k$ of these subsets whose union is equal to $U$?
+Given a set $U$ of elements, a collection $S$ of subsets of $U$, and an integer $k$, are there $\leq k$ of these subsets whose union is equal to $U$?

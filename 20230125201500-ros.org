@@ -7,6 +7,7 @@
 
 
 * Create ROS package
+
 #+begin_src shell
 # create workspace
 mkdir -p catkin_ws/src
@@ -26,6 +27,7 @@ catkin_create_pkg pkg dependencies
 #+end_src
 
 * ROS Elements
+
 ** Node
 A node is an _executable_ that uses ROS to communicate with other nodes.
 

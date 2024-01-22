@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       09566a19-e651-4ebb-8ddd-7f1ad1734a5e
+:ROAM_REFS: https://medium.com/@saschametzger/what-are-tokens-vectors-and-embeddings-how-do-you-create-them-e2a3e698e037
+:END:
+#+title: Transformers in Hugging Face
+
+
+* Tokenizers
+
+* Models
+
+* Pipeline

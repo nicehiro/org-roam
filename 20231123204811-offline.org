@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       96356e08-1ab8-495e-bdd1-73c5f55ef657
+:END:
+#+title: Offline Algorithm
+
+An algorithm that reads the input in a sequential manner, essentially reading from a steam. _Actions are taken while the input is read_.

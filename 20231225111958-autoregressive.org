@@ -1,0 +1,4 @@
+:PROPERTIES:
+:ID:       b478149f-3612-4231-95d8-5dabdd94c8a5
+:END:
+#+title: Autoregressive

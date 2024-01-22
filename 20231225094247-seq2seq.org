@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       741571b7-0c86-4e61-8218-b959665032bc
+:ROAM_REFS: https://www.youtube.com/watch?v=n9TlOhRjYoc&t=285s https://en.wikipedia.org/wiki/Seq2seq
+:END:
+#+title: Seq2Seq
+
+1. Input a sequence, output a sequence.
+2. The output length is determined by the model.

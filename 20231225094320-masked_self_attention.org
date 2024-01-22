@@ -1,0 +1,4 @@
+:PROPERTIES:
+:ID:       56c1709c-aeca-46a5-975a-f63de07fad77
+:END:
+#+title: Masked Self-attention
