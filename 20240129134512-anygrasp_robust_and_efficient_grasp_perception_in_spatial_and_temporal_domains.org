@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       9df9512c-71c7-4d18-9cd9-f6cbc4ea7148
+:END:
+#+title: AnyGrasp: Robust and Efficient Grasp Perception in Spatial and Temporal Domains
+
+
+Inputs the pointcloud and outputs the target poses.
