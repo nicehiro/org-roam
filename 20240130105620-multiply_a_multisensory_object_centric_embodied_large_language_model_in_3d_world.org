@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       b73b6fcd-cc44-4fbc-ba21-ff528c85e0c4
+:END:
+#+title: MultiPLY: A Multisensory Object-Centric Embodied Large Language Model in 3D World
+
+
+The structure of MultiPLY:
+
+- LLaVA (VLM) as backbone
+- Using lightweight adapter (one-layer linear projector) to project the sensor features into the text token embedding space
+- Modality Alighment for audio, tactile, sound, thermal data
+- Collecting data and finetune it
+
+
+Inputs contain RGBD data, tactile, sound sensors' data, and outputs Action tokens.

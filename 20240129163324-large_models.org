@@ -1,0 +1,29 @@
+:PROPERTIES:
+:ID:       3aa484a4-844f-4a72-95c9-464a69dfa5be
+:END:
+#+title: Large Models
+
+* Large Language Models (LLMs)
+
+Seq2Seq, Encoder-Decoder, Transformer based.
+
+- GPT3, GPT4
+- LLama2
+
+* Visual Language Models (VLMs)
+
+- GPT4-V
+- Language Segment Anything (Lang-SAM)
+- OWL-ViT
+- LLaVA
+
+* Large Robotics Models (LRMs)
+
+- PaLM
+- Octo
+- RT-1, RT-2, RT-X
+- VIMA
+
+* Visual Models
+
+- Segment Anything (SAM)

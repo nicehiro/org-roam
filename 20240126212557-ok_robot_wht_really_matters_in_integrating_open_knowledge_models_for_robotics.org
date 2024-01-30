@@ -5,7 +5,7 @@
 #+filetags: :robotic:
 
 
-By combining VLMs (CLIP, Lang-SAM) for object detection, navigation primitves (OWL-ViT) for movement, and grasping prmitives (AnyGrasp) for object manipulation, OK-Robot can achieve Pick-and-Place tasks in unseen scenes without any training.
+By combining VLMs (CLIP, Lang-SAM, OWL-ViT) for object detection, navigation primitves for movement, and grasping prmitives (AnyGrasp) for object manipulation, OK-Robot can achieve Pick-and-Place tasks in unseen scenes without any training.
 
 1. Using iPhone to scan RGB-D images for map building and object detection (OWL-ViT)
 2. Building VoxelMap of objects with CLIP embeddings
