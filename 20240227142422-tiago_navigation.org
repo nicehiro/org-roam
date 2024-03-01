@@ -1,0 +1,38 @@
+:PROPERTIES:
+:ID:       a7f24e5f-407c-4427-83d8-86880cfefb8e
+:END:
+#+title: Tiago: Navigation
+#+filetags: :navigation:tiago:
+
+* Pre-requirements
+
+1. Make sure =ROS_IP= of development machine is set correctly
+2. Navigation module is not paused.
+
+#+begin_src bash
+  # on development machine
+  rosservice call /pal_navigation_sm "input: 'LOC'"
+  rosrun rviz rviz -d `rospack find tiago_dual_2dnav` /config/rviz/navigation.rviz
+#+end_src
+
+* Problems
+
+** Navigation is paused!
+
+This warning keep shows in Diagnose page even there's no charger or docker connected to the robot. After asking PAL company, they give an alternative method to handle this:
+
+#+begin_src bash
+  # on tiago machine
+  rosparam set /docking/was_docked False
+  rostopic pub /pause_navigation std_msgs/Bool "data: false"
+#+end_src
+
+Check the diagnostics tb and when the navigation turns green press =Control C=.
+
+Then modify:
+
+#+begin_src bash
+  sudo vim ~/.pal/was_docked.yaml
+#+end_src
+
+and change the value from =True= to =False.=

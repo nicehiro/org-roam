@@ -1,7 +1,7 @@
 :PROPERTIES:
 :ID:       babe4301-ef41-4598-9414-329faf658720
 :END:
-#+title: OK-Robot: Wht Really Matters in Integrating Open-Knowledge Models for Robotics
+#+title: OK-Robot: What Really Matters in Integrating Open-Knowledge Models for Robotics
 #+filetags: :robotic:
 
 

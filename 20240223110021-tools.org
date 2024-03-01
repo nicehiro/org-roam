@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       87f8b56e-6213-4265-acc9-068a71da3499
+:END:
+#+title: Tools
+
+1. [[https://background-erase.xyz/#][Remove Background]] using local device

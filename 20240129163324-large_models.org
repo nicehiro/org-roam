@@ -27,3 +27,9 @@ Seq2Seq, Encoder-Decoder, Transformer based.
 * Visual Models
 
 - Segment Anything (SAM)
+
+* 3D Models
+
+- Segment Anything 3D
+- 3D-LLM
+- PointNet++

@@ -13,3 +13,5 @@ The structure of MultiPLY:
 
 
 Inputs contain RGBD data, tactile, sound sensors' data, and outputs Action tokens.
+
+They extract 3D features aggregated from 2D CLIP features and add position embeddings to the 3D features.
