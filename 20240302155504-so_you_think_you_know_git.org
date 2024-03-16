@@ -1,0 +1,34 @@
+:PROPERTIES:
+:ID:       d84d0ece-1890-499b-8905-400248998014
+:ROAM_REFS: https://www.youtube.com/watch?v=aolI_Rz0ZqY
+:END:
+#+title: So You Think You Know Git
+#+filetags: :git:
+
+
+Check the history of specific lines of code.
+
+#+begin_src sh
+  git blame -L 15,26 path/to/file
+  git log -L 15,2:path/to/file
+#+end_src
+
+REuse, REcorded, REsolution of merge conflicts.
+
+#+begin_src sh
+  git config --global rerere.enabld true
+#+end_src
+
+Use =force-with-lease= rather than =force=.
+
+Start =maintainance= of git will save a lot of time for pre-fetching and others.
+
+#+begin_src sh
+  git maintainance start
+#+end_src
+
+Pull or fetch from different heads (branches) directly.
+
+#+begin_src sh
+  git ls-remote
+#+end_src

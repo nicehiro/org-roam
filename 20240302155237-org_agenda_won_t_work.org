@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       0c5ad50d-bf13-43db-872b-1babcf8456c2
+:ROAM_REFS: https://www.reddit.com/r/orgmode/comments/u2vj6c/org_agenda_doesnt_work_anymore/
+:END:
+#+title: Org agenda won't work
+#+filetags: :bug:orgmode:emacs:
+
+#+begin_quote
+Any issues I have with my agenda seem to be fixed with a quick (org-reload)
+#+end_quote
