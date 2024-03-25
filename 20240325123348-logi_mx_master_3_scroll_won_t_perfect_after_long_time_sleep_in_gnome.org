@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       1344828d-a161-4a86-bada-9c914888831c
+:ROAM_REFS: https://askubuntu.com/questions/1163408/why-does-my-mouses-scroll-wheel-stop-working-after-resuming-from-suspend-in-xub
+:END:
+#+title: Logi MX Master 3 scroll won't perfect after long-time sleep in Gnome

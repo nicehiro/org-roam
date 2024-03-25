@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       5b428e92-fceb-433e-81fb-7fcb8cb6efde
+:ROAM_REFS: https://forum.manjaro.org/t/howto-use-wayland-with-proprietary-nvidia-drivers/36130
+:END:
+#+title: Use Wayland with proprietary Nvidia drivers
+#+filetags: :wayland:
