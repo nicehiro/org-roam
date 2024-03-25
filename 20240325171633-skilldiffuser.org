@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       dae3e613-7716-446e-be2f-533f7fe42e2c
+:END:
+#+title: SkillDiffuser
+#+filetags: :diffusion:
+
+
+Previous diffuser based subgoal model utilize the language and image embeddin directly, while this paper tries to first generate a skill embedding (using image and language), then use that embedding in diffusion model.
