@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       8c6c96c5-28c6-4203-8878-3f22b7f9247f
+:ROAM_ALIASES: SUSIE
+:END:
+#+title: Zero-Shot Robotic Manipulation with Pretrained Image-Editing Diffusion Models
+#+filetags: :diffusion:
+
+
+SuSIE generates subgoals using an image-editing diffusion model and executes those subgoals using a languages-agnostic low-level policy.
+
+Since subgoal generateing process doesn't require robot actions, they augment the BridgeData (only robot demostrations) with a human manipulation dataset (Something-Something) to train the diffusion model.

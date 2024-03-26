@@ -1,0 +1,4 @@
+:PROPERTIES:
+:ID:       4368678a-779b-44b9-b279-28b9bccb97fd
+:END:
+#+title: MOKA: Open-Vocabulary Robotic Manipulation throuh Mark-Based Visual Prompting
