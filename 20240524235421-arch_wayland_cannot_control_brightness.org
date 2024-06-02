@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       fa8c8702-58e4-4f06-bccb-538df34a7a8f
+:ROAM_REFS: https://forum.manjaro.org/t/cannot-control-brightness-wayland/151321/12
+:END:
+#+title: Arch Wayland cannot control brightness
