@@ -6,7 +6,6 @@
 #+filed: Math
 #+OPTIONS: toc:nil
 #+filetags: :probability:
-#+startup: latexpreview
 
 * Description
 Importance Sampling is a technique for estimating the expectation $\mu$ of a

@@ -2,7 +2,6 @@
 :ID:       a2b7b39d-cb10-4481-9c36-3e144a48e195
 :END:
 #+title: Big O Notation
-#+startup: latexpreview
 
 * Upper bounds
 $f(n)$ is $O(g(n))$ if there exist constants $c > 0$ and $n_0 \geq 0$ such that

@@ -4,7 +4,6 @@
 #+title: Partial Derivative
 #+filed:
 #+OPTIONS: toc:nil
-#+startup: latexpreview
 #+filetags: :math:
 
 * Description

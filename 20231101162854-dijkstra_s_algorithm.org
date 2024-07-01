@@ -3,7 +3,6 @@
 :END:
 #+title: Dijkstra's Algorithm
 #+filetags: :shortest path:
-#+startup:  latexpreview
 
 We want to get the shortest path starting from $s$ to other nodes.
 

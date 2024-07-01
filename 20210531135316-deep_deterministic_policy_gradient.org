@@ -2,7 +2,6 @@
 :id: 5031EEE4-BF9E-4810-B2CE-CA6BCD8CA009
 :END:
 #+title: Deep Deterministic Policy Gradient
-#+STARTUP: latexpreview
 #+filetags: :rl:
 
 * Views
@@ -28,8 +27,6 @@ adding noise sampled from a noise process $\mathcal{N}$ to our actor policy.
 #+attr_latex: :width 600cm
 #+attr_org: :width 600px
 [[file:img/ddpg/Methods/2021-05-31_14-20-28_screenshot.png]]
-* Reference
-- [[ebib:lillicrapContinuousControlDeep2019][Deep Deterministic Policy Gradient]]
 
 
 

@@ -33,5 +33,3 @@ the Euclidean distance of the estimate of each neighbor node with its own estima
 At second stage, each benign node performs a performance based strategy to pick the final
 nodes from the candidate pool for estimate update. It reuses the training sample as the
 validation data to test the performance of each estimate.
-* Ref
-- [[ebib:guoByzantineresilientLearningDecentralized2020][Towards Byzantine-resilient Learning in Decentralized Systems]]

@@ -5,4 +5,3 @@
 
 * Add subgoals to GRIF
 
-[[zotero://select/items/1_EMV9EHM3][Myers, Vivek, Andre He, Kuan Fang, Homer Walke, Philippe Hansen-Estruch, Ching-An Cheng, Mihai Jalobeanu, Andrey Kolobov, Anca Dragan, and Sergey Levine. “Goal Representations for Instruction Following: A Semi-Supervised Language Interface to Control.” arXiv, August 17, 2023. http://arxiv.org/abs/2307.00117.]]

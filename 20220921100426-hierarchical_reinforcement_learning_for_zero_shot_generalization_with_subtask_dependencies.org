@@ -20,6 +20,3 @@ The most novel idea this paper proposed is the subtask graph, which consist of s
 Hierarchical methods are easy to find out, is this the only method we can use to solve this problem?
 
 
-#+begin_quote
-[[zotero://select/items/1_3PLMIKSD][Sohn, Sungryull, Junhyuk Oh, and Honglak Lee. “Hierarchical Reinforcement Learning for Zero-Shot Generalization with Subtask Dependencies,” n.d., 11.]]
-#+end_quote

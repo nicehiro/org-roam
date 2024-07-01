@@ -3,7 +3,6 @@
 :ROAM_ALIASES: "Rotational Inertia"
 :END:
 #+title: Moment of Inertia
-#+STARTUP: latexpreview
 
 
 For a point mass the moment of inertia is simply the mass times the square of the perpendicular distance to the axis of rotation.

@@ -4,7 +4,6 @@
 #+title: Proximal Policy Optimization
 #+filed: rl
 #+OPTIONS: toc:nil
-#+startup: latexpreview
 #+filetags: :rl:
 
 * Description

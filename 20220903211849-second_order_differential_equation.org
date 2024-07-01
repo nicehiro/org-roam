@@ -4,7 +4,6 @@
 :END:
 #+title: Second Order Differential Equation
 #+filetags: :differential:math:
-#+STARTUP: latexpreview
 
 
 Given a second order differential equation:

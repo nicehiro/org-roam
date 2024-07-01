@@ -4,7 +4,6 @@
 :END:
 #+title: Policy Gradient
 #+DATE: 2020-05-14
-#+startup: latexpreview
 #+LATEX_HEADER: \usepackage[long]{optidef}
 #+filetags: :rl:pg:
 

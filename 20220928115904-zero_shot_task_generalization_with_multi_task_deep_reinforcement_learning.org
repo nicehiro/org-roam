@@ -10,6 +10,3 @@ This paper proposes a hierarchical RL architecture which consists of two modules
 Still by giving an instruction or sequence to do all subtasks.
 
 
-#+begin_quote
-[[zotero://select/items/1_3SS53MGE][Oh, Junhyuk, Satinder Singh, Honglak Lee, and Pushmeet Kohli. “Zero-Shot Task Generalization with Multi-Task Deep Reinforcement Learning,” n.d., 10.]]
-#+end_quote

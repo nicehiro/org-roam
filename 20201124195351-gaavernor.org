@@ -2,7 +2,6 @@
 :id: 35286037-323B-47C7-84A7-D1254AABF835
 :END:
 #+title: GAAvernor
-#+startup: latexpreview
 #+filetags: :paper:
 
 * Related Works

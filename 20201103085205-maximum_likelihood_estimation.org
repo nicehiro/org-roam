@@ -3,7 +3,6 @@
 :END:
 #+title: Maximum Likelihood Estimation
 #+OPTIONS: toc:nil
-#+STARTUP: latexpreview
 #+filetags: :probability:
 
 * Description

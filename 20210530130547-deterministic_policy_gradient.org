@@ -2,7 +2,6 @@
 :id: A8FBDBE5-1F67-4869-BAFB-C479A242A161
 :END:
 #+title: Deterministic Policy Gradient
-#+STARTUP: latexpreview
 #+filetags: :rl:dpg:
 
 * Related Works
@@ -157,5 +156,3 @@ w_{t+1} &=w_{t}+\alpha_{w} \delta_{t} \nabla_{w} Q^{w}\left(s_{t}, a_{t}\right) 
 Because the deterministic policy gradient _removes the integral over action_, we
 can avoid importance sampling in the actor; and by _using Q-learning_, we can
 avoid importance sampling in the critic.
-* Reference
-- [[ebib:silverDeterministicPolicyGradient][Deterministic Policy Gradient]]

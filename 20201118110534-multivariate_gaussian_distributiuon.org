@@ -2,7 +2,6 @@
 :id: 8AC0AC13-4BFB-48F4-8005-2C763BE9416D
 :END:
 #+title: Multivariate Gaussian Distributiuon
-#+STARTUP: latexpreview
 #+OPTIONS: toc:nil
 #+filetags: :probability:
 

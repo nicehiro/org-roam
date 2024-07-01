@@ -2,7 +2,6 @@
 :id: 2DBE58C1-DF2B-4484-9AEA-CC9AA4CA40BE
 :END:
 #+title: Actor Critic
-#+STARTUP: latexpreview
 #+filetags: :rl:
 
 * Algorithm

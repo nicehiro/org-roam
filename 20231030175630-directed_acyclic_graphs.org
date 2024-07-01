@@ -4,7 +4,6 @@
 :END:
 #+title: Directed Acyclic Graphs
 #+filetags: :graph:
-#+startup: latexpreview
 
 * Definition
 A directed acyclic graph (DAG) is a _directed graph_ that contains _no directed cycles_.

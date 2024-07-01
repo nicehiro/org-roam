@@ -3,7 +3,6 @@
 :END:
 #+title: Positive semi-definite matrix
 #+OPTIONS: toc:nil
-#+startup: latexpreview
 #+filetags: :math:
 
 * Description

@@ -3,7 +3,6 @@
 :ID:       EC505A42-6834-48E9-99C3-DF628FA45094
 :END:
 #+title: Consensus in Networked Multi-Agent Systems with Adversaries
-#+startup: latexpreview
 #+filetags: :consensus:control:msr:Users:wangfangyuan:Documents:roam:org_roam:
 
 * Views

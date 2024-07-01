@@ -4,7 +4,6 @@
 #+title: Entropy
 #+filed: math
 #+OPTIONS: toc:nil
-#+startup: latexpreview
 #+filetags: :probability:
 
 * Description

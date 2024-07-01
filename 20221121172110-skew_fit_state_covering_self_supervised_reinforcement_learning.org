@@ -3,7 +3,6 @@
 :END:
 #+title: Skew-Fit: State-Covering Self-Supervised Reinforcement Learning
 #+filetags: :sequential:
-#+startup: latexpreview
 
 
 Try to find subgoals by maximizing the [[id:C7B2A00C-FEC1-47D2-8FE5-301A8E147D58][mutual information]]:
@@ -23,6 +22,3 @@ which is also the distance between $G$ and $S$. This paper use [[id:64612DC9-605
 To maximizing $H(S)$, they add a weight on each state to make the probability of less visited state become bigger.
 
 
-#+begin_quote
-[[zotero://select/items/1_9NALVPPE][Pong, Vitchyr H., Murtaza Dalal, Steven Lin, Ashvin Nair, Shikhar Bahl, and Sergey Levine. “Skew-Fit: State-Covering Self-Supervised Reinforcement Learning.” arXiv, August 4, 2020. http://arxiv.org/abs/1903.03698.]]
-#+end_quote

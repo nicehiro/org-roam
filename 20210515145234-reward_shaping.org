@@ -2,7 +2,6 @@
 :id: 5F8E758F-6D99-42A2-90B7-1E543E0EA8E2
 :END:
 #+title: Reward Shaping
-#+startup: latexpreview
 #+filetags: :rl:
 
 * Introduction
@@ -97,11 +96,6 @@ Proof omission.
 * Conclusion
 This suggests that a way to define a good potential function might be to try
 to approximate $V^{*}_{M}(s)$.
-
-* Reference
-[[ebib:buhmannRewardShaping2011][Policy invariance under reward transformations: Theory and application to reward shaping]]
-[[ebib:ngPolicyInvarianceReward][Ng, Andrew Y and Harada, Daishi and Russell, Stuart (XXXX)]]
-
 
 # Local Variables:
 # org-download-image-dir: "./img/reward-shaping"

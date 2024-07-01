@@ -3,7 +3,6 @@
 :END:
 #+title: Conditional Entropy
 #+filetags: :probability:math:
-#+startup: latexpreview
 
 In information theory, the conditional entropy quantifies the amount of information needed to describe the outcome of a random variable Y given that the value of another random variable X, X is known. Here, information is measured in shannons, nats, or hartleys. The entropy of Y conditioned on X is written as $\mathcal{H}(Y|X)$.
 

@@ -5,4 +5,3 @@
 #+filetags: :goal-conditioned:
 
 
-[[zotero://select/items/1_XJU7UUTQ][Nasiriany, Soroush, Vitchyr H. Pong, Steven Lin, and Sergey Levine. “Planning with Goal-Conditioned Policies.” arXiv, November 19, 2019. http://arxiv.org/abs/1911.08453.]]

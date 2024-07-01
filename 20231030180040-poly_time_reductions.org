@@ -3,7 +3,6 @@
 :END:
 #+title: Poly-Time Reductions
 #+filetags: :np:
-#+startup: latexpreview
 
 Problem $X$ polynomial-time reduces to problem $Y$ ($X \leq_p Y$) if arbitray instances of problem $X$ can be solved using
 1. Polynomial number of standard computational steps, and

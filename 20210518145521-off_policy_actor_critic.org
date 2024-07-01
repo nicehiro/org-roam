@@ -2,7 +2,6 @@
 :id: 388AB2A0-7456-4885-A12B-FB3CA09AD9BC
 :END:
 #+title: Off Policy Actor Critic
-#+STARTUP: latexpreview
 #+filetags: :rl:off_policy:
 
 * Preliminary
@@ -41,5 +40,3 @@ weights by the [[id:B77C2531-01BC-4768-BF19-61958DA27AE5][Gradient Temporal-Diff
 \end{aligned}
 
 The derivation above use [[id:C94C5117-C048-4AE3-85EA-B01F4AB7D390][Importance Sampling]].
-* Reference
-- [[ebib:degrisOffPolicyActorCritic2013][Degris, Thomas and White, Martha and Sutton, Richard S. (2013)]]

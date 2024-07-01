@@ -4,7 +4,6 @@
 #+title: 多类支持向量机损失（SVM）
 #+filed: Machine-Learning
 #+OPTIONS: toc:nil
-#+STARTUP: latexpreview
 #+filetags: :ml:
 
 * Description

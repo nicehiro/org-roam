@@ -9,7 +9,3 @@ Same idea with [[id:E16E8A92-C645-4DE0-A936-5B6A48276F38][Skew-Fit: State-Coveri
 
 _But the structure of subgoal exploration algorithm organized by this paper is really great._
 
-
-#+begin_quote
-[[zotero://select/items/1_L7GJHJ42][Pitis, Silviu, Harris Chan, Stephen Zhao, and Bradly Stadie. “Maximum Entropy Gain Exploration for Long Horizon Multi-Goal Reinforcement Learning,” n.d., 12.]]
-#+end_quote

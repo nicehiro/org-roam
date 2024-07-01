@@ -4,7 +4,6 @@
 :END:
 #+title: Torque
 #+filetags: :math:
-#+STARTUP: latexpreview
 
 
 Torque is a measure of force that can cause an object to rotate about an axis. Just as force is what causes an object to accelerate in linear kinematics, torque is what causes an object to acquire angular acceleration.

@@ -4,7 +4,6 @@
 #+title: Gaussian discriminant analysis
 #+filed: machine-learning
 #+OPTIONS: toc:nil
-#+startup: latexpreview
 #+filetags: :ml:
 
 * Description

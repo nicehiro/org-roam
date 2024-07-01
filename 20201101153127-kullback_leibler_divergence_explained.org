@@ -4,7 +4,6 @@
 :END:
 #+title: Kullback-Leibler Divergence Explained
 #+filetags: :ml:
-#+startup:  latexpreview
 #+options: toc: nil
 
 Mathematics description can check [[id:D9E34E77-F4CF-441F-AE95-00184F8A1E31][KL Divergence]].

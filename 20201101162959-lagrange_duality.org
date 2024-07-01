@@ -4,7 +4,6 @@
 :END:
 #+title: Lagrange duality
 #+OPTIONS: toc:nil
-#+startup: latexpreview
 #+filetags: :math:
 
 在约束最优化问题中，常常利用拉格朗日对偶性将原始问题转换为对偶问题，通过解对偶问题而得到原始问题的解。

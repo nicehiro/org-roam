@@ -5,9 +5,5 @@
 #+title: Tree of Thoughts: Deliberate Problem Solving with Large Language Models
 #+filetags: :paper:LLM:prompt:
 
-#+begin_quote
-[[zotero://select/items/1_KZNDPHP4][Yao, Shunyu, Dian Yu, Jeffrey Zhao, Izhak Shafran, Thomas L. Griffiths, Yuan Cao, and Karthik Narasimhan. “Tree of Thoughts: Deliberate Problem Solving with Large Language Models.” arXiv, May 17, 2023. https://doi.org/10.48550/arXiv.2305.10601.]]
-#+end_quote
-
 
 Tree of Thoughts (ToT) extends [[id:dc79e111-6fe7-4d1e-8bcd-efe0667af4ea][CoT]] by exploring multiple reasoning possibilities at each step. It first decomposes the problem into multiple thought steps and generate multiple thoughts per step, creating a tree structure. The search process can be BFS or DFS with each state evaluated by a classifier (via a prompt) or majority vote.

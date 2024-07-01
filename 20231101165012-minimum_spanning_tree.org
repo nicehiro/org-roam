@@ -3,7 +3,6 @@
 :END:
 #+title: Minimum Spanning Tree
 #+filetags: :graph:
-#+startup: latexpreview
 
 * Spanning Tree
 Let $H = (V, T)$ be a subgraph of an _undirected_ graph $G=(V,E)$. $H$ is a spanning tree of $G$ if $H$ is both acyclic and _connected_.

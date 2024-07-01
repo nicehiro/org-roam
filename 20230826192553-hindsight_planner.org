@@ -2,10 +2,5 @@
 :ID:       e627256b-46fd-4fd5-bcc6-9b85559c96e7
 :END:
 #+title: Hindsight Planner
-#+startup: latexpreview
 #+filetags: :sequential:
 
-
-#+begin_quote
-[[zotero://select/items/1_D83TRUX9][Lai, Yaqing, Wufan Wang, Yunjie Yang, Jihong Zhu, and Minchi Kuang. “Hindsight Planner.” New Zealand, 2020, 9.]]
-#+end_quote

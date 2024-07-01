@@ -2,7 +2,6 @@
 :ID:       771a394a-c847-45a8-ab1e-50d35a349969
 :END:
 #+title: 3-Colorability
-#+startup: latexpreview
 
 * Problem Definition
  Given an undirected graph $G = (V, E)$, can the nodes be colored in three colors so that no adjacent nodes have the same color?

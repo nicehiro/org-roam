@@ -3,7 +3,6 @@
 :END:
 #+title: 贝叶斯估计
 #+OPTIONS: toc:nil
-#+startup: latexpreview
 #+filetags: :statistics:
 
 * Description

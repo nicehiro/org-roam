@@ -6,7 +6,3 @@
 #+filed:
 #+OPTIONS: toc:nil
 #+filetags: :algos:
-
-* Description
-* 经典案例
-** [[id:44CD33D2-EE4C-4540-9239-8F557CC4FE0E][买卖股票的最佳时机]]

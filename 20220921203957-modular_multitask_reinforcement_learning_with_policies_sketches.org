@@ -17,7 +17,3 @@ The idea is simple:
 The most novel idea of this paper is that they use a novel MDP, more specifically, a _novel state transition probability to describe the relationship_ in multi-task MDP.
 
 
-
-#+begin_quote
-[[zotero://select/items/1_YS6SU5P8][Andreas, Jacob, Dan Klein, and Sergey Levine. “Modular Multitask Reinforcement Learning with Policy Sketches,” n.d., 10.]]
-#+end_quote

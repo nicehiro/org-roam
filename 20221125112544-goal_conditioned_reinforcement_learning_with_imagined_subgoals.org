@@ -3,7 +3,6 @@
 :END:
 #+title: Goal-Conditioned Reinforcement Learning with Imagined Subgoals
 #+filetags: :sequential:
-#+startup: latexpreview
 
 
 This paper
@@ -39,7 +38,3 @@ Update @<2023-08-26 Sat>
 
    Minimize the $D_{KL}(\pi(s,g) || \pi(s,s_g))$. Transfer the knowledge in subgoal to final goal.
 
-
-#+begin_quote
-[[zotero://select/items/1_W94AAKF4][Chane-Sane, Elliot, Cordelia Schmid, and Ivan Laptev. “Goal-Conditioned Reinforcement Learning with Imagined Subgoals.” arXiv, July 1, 2021. https://doi.org/10.48550/arXiv.2107.00541.]]
-#+end_quote

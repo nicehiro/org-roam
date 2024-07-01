@@ -3,9 +3,6 @@
 :END:
 #+title: Learning of Long-Horizon Sparse-Reward Robotic Manipulator Tasks with Base Controllers
 
-[[zotero://select/items/1_LKLZANNU][Wang, Guangming, Minjian Xin, Wenhua Wu, Zhe Liu, and Hesheng Wang. “Learning of Long-Horizon Sparse-Reward Robotic Manipulator Tasks With Base Controllers.” IEEE Transactions on Neural Networks and Learning Systems, 2022, 1–10. https://doi.org/10.1109/TNNLS.2022.3201705.]]
-
-
 This is combine RL with "Base comtroller", which is a set of operations predefined by users, to accelerate training in sparse reward tasks.
 
 Tricks are useful, really, like, full of tricks.

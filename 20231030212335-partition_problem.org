@@ -2,7 +2,6 @@
 :ID:       d97052f9-b882-4177-be35-aceb551c2650
 :END:
 #+title: Partition Problem
-#+startup: latexpreview
 
 * Problem Definition
 Given integers $v_1, \cdots, v_n$, is there a subset $S \subseteq \{1, \cdots, n\}$ such that $\sum_{i\in S} v_i = \sum_{i\notin S} v_i$.

@@ -3,7 +3,6 @@
 :END:
 #+title: Survey of Zero Shot Learning
 #+filetags: :zsl:
-#+STARTUP: latexpreview
 #+author: Fangyuan
 #+options: toc:nil
 
@@ -147,5 +146,3 @@ training instances.
 *** Synthesizing Methods
 Its insight is to obtain labeled instances for the unseen classes by synthesizing some
 pseudo instances.
-* Reference
-[[ebib:wangSurveyZeroShotLearning2019][Survery of Zero Shot Learning]]

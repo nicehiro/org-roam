@@ -3,7 +3,6 @@
 :END:
 #+title: Linear Regression
 #+OPTIONS: toc:nil
-#+STARTUP: latexpreview
 #+filetags: :ml:
 
 * Description

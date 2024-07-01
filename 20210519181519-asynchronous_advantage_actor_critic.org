@@ -2,7 +2,6 @@
 :id: D34F35B3-BC69-463A-86F5-CE7CCF441065
 :END:
 #+title: Asynchronous Advantage Actor Critic
-#+STARTUP: latexpreview
 #+filetags: :rl:
 
 * Related Works
@@ -36,8 +35,6 @@ stationary process. So A3C is a on-policy algorithm.
 3. Adding the entropy of the policy $\pi$ to the objective function improved
    exploration by discouraging premature convergence to suboptimal deterministic
    policies.
-* Reference
-- [[ebib:mnihAsynchronousMethodsDeep2016][Asynchronous Methods for Deep Reinforcement Learning]]
 
 # Local Variables:
 # org-gtd-directory: "./img/a3c/"

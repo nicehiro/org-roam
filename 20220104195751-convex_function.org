@@ -4,7 +4,6 @@
 :END:
 #+title: Convex Function
 #+OPTIONS: toc:nil
-#+startup: latexpreview
 #+filetags: :probability:
 
 Let $X$ be a convex subset of a real vector space and let $f: X \rightarrow \mathcal{R}$

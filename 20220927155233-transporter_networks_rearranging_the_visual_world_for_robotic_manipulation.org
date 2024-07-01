@@ -14,7 +14,3 @@ Problems:
 1. train one model for each specific model
 2. imitation learning needs so much experts work
 
-
-#+begin_quote
-[[zotero://select/items/1_Q6DX6XND][Zeng, Andy, Pete Florence, Jonathan Tompson, Stefan Welker, Jonathan Chien, Maria Attarian, Travis Armstrong, et al. “Transporter Networks: Rearranging the Visual World for Robotic Manipulation.” arXiv, January 5, 2022. http://arxiv.org/abs/2010.14406.]]
-#+end_quote

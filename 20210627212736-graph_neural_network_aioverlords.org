@@ -6,7 +6,6 @@
 
 * Label Propagation
 ** Reference
-[[ebib:zhouLearningLocalGlobal][Learning with Local and Global Consistency]]
 [[http://tkipf.github.io/graph-convolutional-networks/][GCN official Blog]]
 [[https://github.com/zjost/blog_code/blob/master/gcn_numpy/gcn_from_scratch.ipynb][GCN from Scratch]]
 

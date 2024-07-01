@@ -3,10 +3,9 @@
 :ROAM_ALIASES: RIG
 :END:
 #+title: Visual Reinforcement Learning with Imagined Goals
-#+STARTUP: latexpreview
 
 
-This paper uses [[id:C8865A5B-C340-48F5-86E0-19DBD9EC156B][VAE]] to map the state space to latent representation space, and then do goal-conditioned reinforcement learning in latent space.
+This paper uses VAE to map the state space to latent representation space, and then do goal-conditioned reinforcement learning in latent space.
 
 
 *What's the contribution of VAE?*
@@ -29,6 +28,3 @@ We can sample latent goal directly from latent space z.
 5. use updated policy to collect data and refine the replay buffer
 
 
-#+begin_quote
-[[zotero://select/items/1_I74XULAZ][Nair, Ashvin V, Vitchyr Pong, Murtaza Dalal, Shikhar Bahl, Steven Lin, and Sergey Levine. “Visual Reinforcement Learning with Imagined Goals,” n.d., 10.]]
-#+end_quote

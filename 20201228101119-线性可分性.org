@@ -5,7 +5,6 @@
 #+title: 线性可分性
 #+filed: math
 #+OPTIONS: toc:nil
-#+startup: latexpreview
 #+filetags: :math:
 
 * Description

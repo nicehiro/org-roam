@@ -3,6 +3,5 @@
 :ROAM_ALIASES: "Conjunctive Normal Form"
 :END:
 #+title: CNF
-#+startup: latexpreview
 
 A propositional formular $\Psi$ that is a conjunction of clauses.

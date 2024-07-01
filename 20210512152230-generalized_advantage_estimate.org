@@ -2,7 +2,6 @@
 :id: AC14EE40-D45F-461F-AACE-646B7CFF8BA8
 :END:
 #+title: Generalized Advantage Estimate
-#+startup: latexpreview
 #+filetags: :GAE:
 
 * Preliminaries
@@ -201,8 +200,6 @@ where equality hold s when $\lambda=1$.
 #+attr_org: :width 800px
 [[file:img/gae/Methods/2021-05-13_11-54-31_screenshot.png]]
 * Conclusion
-* Reference
-[[ebib:schulmanHighDimensionalContinuousControl2018][Schulman, John and Moritz, Philipp and Levine, Sergey and Jordan, Michael and Abbeel, Pieter (2018)]]
 
 
 #  LocalWords:  downweighting LocalWords GAE
@@ -210,4 +207,3 @@ where equality hold s when $\lambda=1$.
 # Local Variables:
 # org-download-image-dir: "./img/gae/"
 # End:
-* ebib:schulmanHighDimensionalContinuousControl2018

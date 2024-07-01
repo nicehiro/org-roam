@@ -5,11 +5,6 @@
 #+filetags: :bc:
 
 
-#+begin_quote
-[[zotero://select/items/1_E6N7LHFZ][Florence, Pete, Corey Lynch, Andy Zeng, Oscar Ramirez, Ayzaan Wahid, Laura Downs, Adrian Wong, Johnny Lee, Igor Mordatch, and Jonathan Tompson. “Implicit Behavioral Cloning.” arXiv, August 31, 2021. http://arxiv.org/abs/2109.00137.]]
-#+end_quote
-
-
 * Key idea
 
 Behavioral cloning policies are often represented by explicit continuous feed-forward models that mappingg directly from input observations $o \in \mathcal{O}$ to output action $a \in \mathcal{A}$.

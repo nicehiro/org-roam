@@ -4,7 +4,6 @@
 #+title: 离散型随机变量
 #+OPTIONS: toc:nil
 #+filetags: :probability:
-#+startup: latex_preview
 
 * Description
 

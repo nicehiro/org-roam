@@ -37,5 +37,3 @@
 
 - Marsaglia polar method
 *** 生成泊松分布
-* Ref
-- [[id:5939BD84-9C46-4F99-B055-EA22CE124D1B][Pseudo-random number sampling - Wikipedia]]

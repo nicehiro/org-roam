@@ -4,10 +4,6 @@
 #+title: Notes on Decomposing the generalization gap in imitation learning for visual robotic manipulation
 #+filetags: :simu2real:imitation:
 
-#+begin_quote
-[[zotero://select/items/1_3TMEPGCE][Xie, Annie, Lisa Lee, Ted Xiao, and Chelsea Finn. “Decomposing the Generalization Gap in Imitation Learning for Visual Robotic Manipulation.” arXiv, July 7, 2023. http://arxiv.org/abs/2307.03659.]]
-#+end_quote
-
 * Intro
 
 What's are the *factors* that contribute most to the diffculty of *generalization* to new environment in vision-based robotic manipulation?

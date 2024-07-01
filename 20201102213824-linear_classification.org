@@ -2,7 +2,6 @@
 :id: 8550656B-713F-417E-8E19-4D94BB7E7580
 :END:
 #+title: Linear Classification
-#+STARTUP: latexpreview
 #+OPTIONS: toc:nil
 #+filetags: :ml:
 

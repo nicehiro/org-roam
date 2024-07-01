@@ -3,7 +3,6 @@
 :END:
 #+title: Mutual Information
 #+filetags: :probability:math:
-#+startup: latexpreview
 
 In probability theory and information theory, the mutual information (MI) of two random variables is a measure of the _mutual dependence between the two variables_. More specifically, it quantifies the "amount of information" (in units such as shannons (bits), nats or hartleys) obtained about one random variable _by observing the other random variable_. The concept of mutual information is intimately linked to that of entropy of a random variable, a fundamental notion in information theory that quantifies the expected "amount of information" held in a random variable.
 

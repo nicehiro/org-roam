@@ -13,6 +13,3 @@ Their work consists of two networks: a base policy network for all tasks and a r
 The paper did mention they can deal with the sequential tasks by routing network by given a sequence. But, still, this algorithm cannot determine the sequence.
 
 
-#+begin_quote
-[[zotero://select/items/1_894MM8BZ][Yang, Ruihan, Huazhe Xu, Yi Wu, and Xiaolong Wang. “Multi-Task Reinforcement Learning with Soft Modularization,” n.d., 11.]]
-#+end_quote

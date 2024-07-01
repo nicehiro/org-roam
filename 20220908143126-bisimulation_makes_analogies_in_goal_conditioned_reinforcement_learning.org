@@ -4,10 +4,6 @@
 #+title: Bisimulation Makes Analogies in Goal-Conditioned Reinforcement Learning
 #+filetags: :representation-learning:goal-conditioned:rl:
 
-#+begin_quote
-[[zotero://select/items/1_532PRCEA][Hansen-Estruch, Philippe, Amy Zhang, Ashvin Nair, Patrick Yin, and Sergey Levine. “Bisimulation Makes Analogies in Goal-Conditioned Reinforcement Learning,” May 16, 2022. http://arxiv.org/abs/2204.13060.]]
-#+end_quote
-
 
 In traditional goal-conditioned RL, an agent is provided with exact goal they intend to reach. However it is not realistic to know the configuration of goal before performing a task.
 

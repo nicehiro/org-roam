@@ -5,7 +5,6 @@
 #+filed: Probability
 #+OPTIONS: toc:nil
 #+filetags: :probability:
-#+startup: latexpreview
 
 * Description
 ** 事件的概率

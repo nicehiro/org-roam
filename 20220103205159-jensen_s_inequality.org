@@ -4,7 +4,6 @@
 :END:
 #+title: Jensen's Inequality
 #+OPTIONS: toc:nil
-#+startup: latexpreview
 #+filetags: :probability:
 
 If $X$ is a random variable and $\phi$ is a [[id:DB3F5DED-8C45-4825-9240-E5FCCBCF5265][convex function]], then
