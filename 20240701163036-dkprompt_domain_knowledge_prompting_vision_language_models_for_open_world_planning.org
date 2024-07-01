@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       ccef9713-e1d1-49f2-a0c0-ac3c643c343f
+:END:
+#+title: DKPROMPT: Domain Knowledge Prompting Vision-Language Models for Open-World Planning
+#+filetags: :OWMM:VLM:
+
+
+This paper mainly focus on using prompt to generate domain knowledge and then construct the [[id:e559b949-c90f-4dcd-a073-144350ad1bd1][PDDLStream]] to describe the environment.
+
+While purely PDDL doesn't work well in open world where unforeseen situations are common. Actually even we know all objects, it is still hard to extract useful information to describe current state in the real world.
