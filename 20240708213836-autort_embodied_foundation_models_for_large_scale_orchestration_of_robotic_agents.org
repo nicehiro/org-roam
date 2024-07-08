@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       8b35cb6f-c233-412b-9e5b-d56ef49eb43b
+:END:
+#+title: AutoRT: Embodied Foundation Models for Large Scale Orchestration of Robotic Agents
+#+filetags: :robotic:LLM:
+
+AutoRT leverages vision-language models (VLMs) for scene understanding and grounding, and further uses large language models (LLMs) for proposing diverse and novel instructions to be performed by a fleet of robots.
+
+It is the first system that LLM driven in real world settings, propose their own goals, and take actions toward those goals.
+
+For navigation, they are using almost same way as [[id:babe4301-ef41-4598-9414-329faf658720][OK-Robot: What Really Matters in Integrating Open-Knowledge Models for Robotics]].
+
+It also proposes some rules, called Robot Constitution, consisting of Foundational rules (Asimov's three laws), Safety rules and Embodiment rules. The idea is great.
