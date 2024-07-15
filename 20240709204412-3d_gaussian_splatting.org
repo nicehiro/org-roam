@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       40f8561a-b404-43fa-a8cd-3a45d6943fcc
+:END:
+#+title: 3D Gaussian Splatting
+
+3D Gaussian Splatting is a variation on point clouds where each point contains additional information representing the radiance being emitted in the spatial region around that point as an anisotropic 3D Gaussian 'blob'.

@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       3f2b36c5-9c22-4afa-ab56-85be2bed6d02
+:END:
+#+title: Voxel Grids
+
+Voxel is a abbrev of volumetric pixel. Like pixel grids in 2D images, voxel grids represents a value on 3D space, and can store properties, such as color, density, etc.

@@ -1,0 +1,22 @@
+:PROPERTIES:
+:ID:       c5428cd2-8018-4715-af77-71e92c5eab5a
+:END:
+#+title: From LLMs to Actions: Latent Codes as Bridges in Hierarchical Robot Control
+#+filetags: :robotic:LLM:
+
+
+This paper introduce a hierarchical robot control method, Latent Codes as Bridges, which uses a learnable latent code to act as a bridge between LLMs and low level polices.
+
+
+They category current LLMs based control system as two:
+1. calling a set of pre-defined skills or APIs.
+   - needs to have semantics attached to them that make linguistic sense.
+   - constrains the set of skills to a closed vocabulary and prevents any form of generalization to new skills or capability.
+   - tunes those pre-defined skills are challenging.
+
+2. language as interface: not directly use premitive skills but those simple language command as input of policy
+   - not all high level tasks can be decomposed into subtasks in simple language.
+   - end-to-end fine-tuning might erase reasoning capabilities that the LLM originally had.
+
+
+So LCB use latent code as input of policy, thus can overcome all the problems mentioned above.
