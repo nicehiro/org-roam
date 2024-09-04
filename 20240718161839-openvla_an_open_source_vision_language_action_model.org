@@ -1,0 +1,4 @@
+:PROPERTIES:
+:ID:       a8a38a72-f501-4ddc-b097-76f2c182e8cc
+:END:
+#+title: OpenVLA: An Open-Source Vision-Language-Action Model

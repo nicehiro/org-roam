@@ -1,0 +1,22 @@
+:PROPERTIES:
+:ID:       d8d54f06-4695-477b-b8a3-ed464c398b9b
+:END:
+#+title: AnyTeleop
+#+filetags: :teleop:
+
+
+* Hand pose detection
+
+Takeing RGB (minimal) or RGB-D as input, outputs:
+1. local finger keypoint positions in the wrist frame by using MediaPipe
+2. global 6D wrist pose in the camera frame by using Perspective-n-Point (PnP) algorithm
+
+
+* Hand pose retargeting
+Minimizing the difference between the keypoint vectors of the human and robot hand.
+
+\begin{equation*}
+\min_{q_t} \sum_{i=0}^N || \alpha v_t^i - f_i(q_t) ||^2 + \beta || q_t - q_{t-1} ||^2
+\end{equation*}
+
+where $q_t$ represents the joint positions of the robot hand at time step $t$, $v_t^i$ is the $i$-th keypoint vector for human hand computed from the detected finger keypoints, $f(q_t)$ is the $i$-th forward kinematics function which takes the robot hand joint positions $q_t$ as input and computes the $i$-th keypoint vector for therobot hand, $q_l$ and $q_u$ are the lower and upper limits of the joint position, $\alpha$ is a scaling factor to account for hand size difference.

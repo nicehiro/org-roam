@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       58c10fcd-edbe-4b15-bc42-04a2ae880a4d
+:END:
+#+title: Vision-Language-Action Models
+
+
+Differents between VLAs and other VLMs based robotic models are:
+1. VLMs based more focus on high-level planning, calling other models as API, while VLAs can directly generate low-level actions.
+
+
+Differents between VLAs and Tele-Operation are:
+
+
+VLAs are multi modal large language models that take image, language and other modals as input and output low-level action for executation. I categorize current off-the-shelf VLAs as 3:
+1. Transformer based. Build a totally large model based on transformer structure, trained with large robotics data collected in real world by different robots. Training from scratch. Action is generated together. Examples are: RT-1, Octo, SkillTransformer, [[id:e34e2ea0-3907-4033-a125-72c443f8f0d6][VIMA: General Robot Mnipulation with Multimodal Prompts]],
+
+2. VLM based. Combining a strong open VLM, LLama for example, as backbone with a richer robot pretraining dataset. Training from pretrained VLMs. Action is generated together. Examples are: [[id:a8a38a72-f501-4ddc-b097-76f2c182e8cc][OpenVLA: An Open-Source Vision-Language-Action Model]] (LLama2 7B), RT-2 (PaLM).
+
+3. Contact point and gripper direction are generated seperately. Action is generated in a VQA style. Examples are: [[id:e0c2dd81-4c95-4010-9d36-02a594e2ee3d][Autonomous Interactive Correction MLLM for Robust Robotic Manipulation]].

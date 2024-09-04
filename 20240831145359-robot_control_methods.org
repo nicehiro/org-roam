@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       c11b3ba1-278c-4065-ad8d-55d5dbf0e25d
+:END:
+#+title: Robot control methods
+
+
+* Position Control
+
+Send joint positions (angles / values) to the robot.
+
+* Torque sensoring Control

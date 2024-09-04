@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       b7b617b2-ef18-408c-9753-526e2847880d
+:END:
+#+title: What is Manipulation?
+
+
+Manipulation refers to an agent's control of its environment through selective contact.
+
+Even broader: "Open-World" manipulation requires:
+- rich perceptual understanding of the environment,
+- "common-sense" understanding of objects,
+- the ability to make long-term (task-level) plans, and combine them with fine (joint-level) motions

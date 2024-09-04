@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       99f899e0-970e-48e3-8a55-c9e3666a7b27
+:ROAM_REFS: https://x.com/xiaolonw/article/1827099797117194277
+:END:
+#+title: Teleoperation
+
+
+1. Hand poses can be captured well from the camera. There is no particular reason to use gloves if not considering haptics.
+
+2. Just a few small motors on fingers are enough for haptics.
+
+3. Immersive active visual feedback is important for more complex, dexterous tasks.
+
+4. For most tasks, _direct joint mapping_ gets around IK and can help you do tasks with high speed and highly dynamic.

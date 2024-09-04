@@ -1,0 +1,4 @@
+:PROPERTIES:
+:ID:       0c777bb8-0062-443d-927d-1dd715925beb
+:END:
+#+title: Survey of 3D Tasks via Multi-modal Large Language Models

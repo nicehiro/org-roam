@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       9285d869-22d8-45e6-9bf1-5193d163cf59
+:END:
+#+title: DexMV: Imitation learning for Dexterous Manipulation from Human Videos
+#+filetags: :imitation:
+
+
+This paper proposes a method to extract 3D hand and object poses from human videos, then convert to robot demonstrations. Then they perform imitation learning by augmenting the RL with the collected demonstrations.
+
+For object pose estimation, they use the PVN3D model trained on the YCB dataset to detect objects and estimate 6-DoF poses.
+
+For hand pose estimation, they use MANO model.
+
+For hand poses retargeting to robots, they preseve the Task Space Vectors (TSV) defined from finger tips position to the hand palm position, so that the human and robot hands will have same figer tip position relative to the palm. Besides that, they also includethe TSV from palm to middle phalanx.

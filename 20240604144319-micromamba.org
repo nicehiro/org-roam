@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       530b869f-d5e0-42f5-b936-c8f5c35f019a
+:ROAM_REFS: https://mamba.readthedocs.io/en/latest/user_guide/micromamba.html
+:END:
+#+title: Micromamba
+
+=micromamba= is a tiny version of the =mamba= package manager. It does not come with a default version of python (=base= in conda).
+
+*** Create new env
+
+#+begin_src shell
+#+end_src

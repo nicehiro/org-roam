@@ -1,0 +1,4 @@
+:PROPERTIES:
+:ID:       eb1718df-b529-4558-a746-a51c63f3333b
+:END:
+#+title: Open-vocabulary Queryable Scene Representations for Real World Planning
