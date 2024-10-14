@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       fa2ed1f3-6265-49ff-9a2b-1dd595ccc5f4
+:ROAM_REFS: https://github.com/tj/git-extras/issues/538#issuecomment-222312367
+:END:
+#+title: Problem: Tmux cursor disappear
+
+
+TL;DR:
+
+#+begin_src bash
+  tput cnorm
+#+end_src
