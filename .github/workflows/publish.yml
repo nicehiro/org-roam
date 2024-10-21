@@ -1,8 +1,15 @@
 name: Generate static org-roam-ui page
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 on:
   push:
     branches:
-      - main
+      - master
+
 jobs:
   main:
     runs-on: ubuntu-latest
@@ -11,3 +18,4 @@ jobs:
         uses: ikoamu/publish-org-roam-ui@main
         with:
           org-roam-db-filename: roam.db
+          deploy-to-pages: true
