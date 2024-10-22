@@ -2,7 +2,7 @@
 :ID:       b9ee42ad-f602-4a27-9a3d-3719782e4f0e
 :END:
 #+title: Robot Motion Diffusion Model: Motion Generation for Robotic Character
-#+filetags: :motion:humanoid:
+#+filetags: :diffusion:robotic:motion:humanoid:
 
 
 This paper leverages a pre-trained imitation policy (Actor) and a pre-trained Motion Diffusion Model (MDM) in a two-stage process. In the first stage, a Critic is trained using motions from the dataset to evaluate the Actor's performance, linking the kinematic inputs to physical feasibility. In the second stage, the learned Critic is used to fine-tune the MDM, aligning it with the charater's limits and ensuring physical feasbility.

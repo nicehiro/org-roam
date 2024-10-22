@@ -2,7 +2,7 @@
 :ID:       0acbfbb2-ab3a-4042-9ece-154bc3dafc62
 :END:
 #+title: ReKep: Spatio-Temporal Reasoning of Relational Keypoint Constrains for Robotic Manipulation
-#+filetags: :LLM:
+#+filetags: :robotic:LLM:
 
 
 This paper proposes a method, called Relational Keypoint Constraints (ReKep), to mapping a set of 3D keypoints in the environment to a numerical cost (formulate the constraints) by:

@@ -3,6 +3,7 @@
 :ROAM_REFS: https://github.com/tj/git-extras/issues/538#issuecomment-222312367
 :END:
 #+title: Problem: Tmux cursor disappear
+#+filetags: :tmux:
 
 
 TL;DR:

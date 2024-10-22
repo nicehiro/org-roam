@@ -2,7 +2,7 @@
 :ID:       63eb2295-7c12-4dd8-8e7c-6debba9e7c68
 :END:
 #+title: HumanPlus: Humanoid Shadowing and Limitation from Humans
-#+filetags: :humanoid:teleop:
+#+filetags: :robotic:transformer:imitation:humanoid:teleop:
 
 
 * Why humanoid robots?

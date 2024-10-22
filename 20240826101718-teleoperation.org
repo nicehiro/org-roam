@@ -3,6 +3,7 @@
 :ROAM_REFS: https://x.com/xiaolonw/article/1827099797117194277
 :END:
 #+title: Teleoperation
+#+filetags: :teleop:
 
 
 1. Hand poses can be captured well from the camera. There is no particular reason to use gloves if not considering haptics.

@@ -2,5 +2,6 @@
 :ID:       045c168e-92ae-4266-9ef3-09361d891977
 :END:
 #+title: Neural Fields
+#+filetags: :3D:
 
 Neural Fields is a mapping from spatial coordinates to scene properties, such as occupancy, color, radiance, etc, but unlike [[id:3f2b36c5-9c22-4afa-ab56-85be2bed6d02][Voxel Grids]] - in which the mapping is from a discrete cell to the value at that voxel - in a neural filed the mapping is a learned function, typically a multi-layer perceptron.

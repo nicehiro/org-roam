@@ -2,7 +2,7 @@
 :ID:       b66a8f56-a373-4f6a-ad7b-9618cfd2e7fb
 :END:
 #+title: Scaling proprioceptive-Visual Learning with heterogeneous Pre-trained Transformers
-#+filetags: :VLA:
+#+filetags: :robotic:VLA:
 
 
 This paper proposes a pre-training concept, which

@@ -1,8 +1,8 @@
 :PROPERTIES:
 :ID:       e48f8b60-e300-4777-a2fc-ae58756955ba
 :END:
-#+title: OmniH2O: Universal and Dexterous Human-to=Humanoid Whole-Body Teleoperation and Learning
-#+filetags: :humanoid:teleop:
+#+title: OmniH2O: Universal and Dexterous Human-to-Humanoid Whole-Body Teleoperation and Learning
+#+filetags: :robotic:transformer:humanoid:teleop:
 
 
 This paper proposes a learning-based system for whole-body humanoid teleoperation.

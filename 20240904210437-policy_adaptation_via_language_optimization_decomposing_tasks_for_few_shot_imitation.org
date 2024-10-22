@@ -2,6 +2,7 @@
 :ID:       e853170d-f1b8-449d-9806-918ac21cd2ae
 :END:
 #+title: Policy Adaptation via Language Optimization: Decomposing Tasks for Few-Shot Imitation
+#+filetags: :VLM:subgoal:imitation:robotic:
 
 
 This paper enables a learned language-conditioned robot policy to perform new tasks with only a few demonstrations by using a pre-trained VLM to determine the correct sequence of decomposed subtasks that are in-distribution for the robot policy.

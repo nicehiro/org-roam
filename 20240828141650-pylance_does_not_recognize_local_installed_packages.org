@@ -3,6 +3,7 @@
 :ROAM_REFS: https://stackoverflow.com/questions/76532312/pylance-does-not-recognize-local-packages-installed-with-pip-install-e
 :END:
 #+title: Pylance does not recognize local installed packages
+#+filetags: :python:
 
 
 Install it using:

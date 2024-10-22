@@ -2,6 +2,7 @@
 :ID:       b7b617b2-ef18-408c-9753-526e2847880d
 :END:
 #+title: What is Manipulation?
+#+filetags: :manipulation:
 
 
 Manipulation refers to an agent's control of its environment through selective contact.
