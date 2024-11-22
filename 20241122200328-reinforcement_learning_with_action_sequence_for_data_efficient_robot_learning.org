@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       B5DC69E2-E6CF-46F9-B77A-686185C7A292
+:END:
+#+title: Reinforcement Learning with Action Sequence for Data-Efficient Robot Learning
+#+filetags: :rl:
+
+
+This paper taking the idea from behavior-cloning algorithms that _predicting a sequence of actions_ enables policies to effectively approximate noisy, multi-modal distribution s of expert demonstrations, learns a critic network that outputs Q-values over a sequence of actions.
