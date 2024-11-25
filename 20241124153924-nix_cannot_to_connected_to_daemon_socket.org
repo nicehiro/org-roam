@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       D1D46EAB-F859-4299-8272-E194F2813E6B
+:ROAM_REFS: https://github.com/NixOS/nix/issues/1980
+:END:
+#+title: Nix cannot to connected to daemon socket
+#+filetags: :nix:
+
+
+TLDR;
+
+#+begin_src shell
+sudo chown -R user_name /nix
+#+end_src
