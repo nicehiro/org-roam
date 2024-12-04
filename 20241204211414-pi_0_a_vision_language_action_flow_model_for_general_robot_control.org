@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       205DE6FB-054E-418A-BC32-C05E82AF1CA0
+:END:
+#+title: $\pi_0$: A Vision-Language-Action Flow Model for General Robot Control
+#+filetags: :manipulation:VLA:
+
+
+This paper proposes a novel [[id:A6D90FE6-3E42-4C31-A7CD-C1898D821C89][Flow Matching]] architecture built on the top of a pre-trained vision-language model (paligemma) and introduces details of how to build and train on a large and diverse dataset from multiple robot platforms. The flow matching algorithm is a variant of diffusion, which allows to handle high-frequency action chunks and highly  dexterous tasks.
+
+
+Some interesting ideas from the paper:
+
+1. The axis along which human intelligence most outpaces machine intelligence is _versatility_: the ability to solve diverse tasks situated in varied physical environments.
+
+2. Three major challenges in developing generalist robot policies: (1) Large scale (model); (2) Right model structures; (3) Right training recipe.
+
+3. The training process contains 2 stages: (1) Pre-training phase for training a base model that exhibits broad capabilities and generalization, but is not necessarily specialized for high performance on any one task; (2) Post-training phase for specific downstream tasks by using high-quality curated data.
+
+4. They also mention that utilizing a high-level policy (such as [[id:c7a09bfb-55e9-445b-ab93-3ec69b8a4fb3][SuSIE: Subgoal Synthesis via Image Editing]]) that decomposes high-level tasks into more immediate subtasks to assist the proposed VLA to complete more complex tasks.
