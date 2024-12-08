@@ -11,3 +11,27 @@ TLDR;
 #+begin_src shell
 sudo chown -R user_name /nix
 #+end_src
+
+* Updated @2024-12-08
+
+!SHIT! The above answer is wrong!
+
+It's better not to change the permision of Nix Store by ourself.
+
+First, try to check if the nix-daemon is stared:
+
+#+begin_src shell
+  sudo launchctl list | grep org.nixos
+#+end_src
+
+If not, start it:
+
+#+begin_src shell
+  sudo launchctl kickstart -k system/org.nixos.nix-daemon
+#+end_src
+
+Then try to use `nix run` to rebuild the system (if you don't have `/run/current-system/` in your system.
+
+#+begin_src shell
+  nix run nix-darwin --extra-experimental-features "nix-command flakes" -- switch --flake /path/to/your/flake.nix
+#+end_src
