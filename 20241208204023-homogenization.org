@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       8D3827AB-31EF-4C4A-9F9E-922A7086A76E
+:END:
+#+title: Homogenization
+
+In NLP, the homogenization allows for certain foundation model architectures to handle diverse modalities in a unified manner.

@@ -1,0 +1,77 @@
+:PROPERTIES:
+:ID:       A000C46A-F2AC-4B16-A94A-F741BC67576E
+:ROAM_REFS: @kawaharazukaRealWorldRobotApplications2024
+:END:
+#+title: Kawaharazuka, Kento and Matsushima, Tatsuya and Gambardella, Andrew and Guo, Jiaxian and Paxton, Chris and Zeng, Andy - Real-World Robot Applications of Foundation Models: A Review
+#+filetags: :VLA:VLM:LLM:survey:embodied:
+
+This paper has a great organization of current various large models for robotics in real world.
+
+* Foundation Models
+
+Foundation models, mostly in NLP and CV and based on tranformer structure, are characterized by three main characteristics:
+
+1. [[id:E2EA1D4A-3991-4041-953F-AFC01620523D][In-Context Learning]]
+2. [[id:385A3FE5-DE84-4175-B611-92C60CAC963C][Scaling Law]]
+3. [[id:8D3827AB-31EF-4C4A-9F9E-922A7086A76E][Homogenization]]
+
+
+While this paper is not aims to comprehensively cover all foundation models by above rules, it focus on addressing differences in modalities and classification of foundation models. The following table discusses foundation models for modalities such as language, vision, audio and 3D presentations (point clouds or shapes).
+
++-----------------------------+-----------------+------------------------+
+|            From             |       To        |        Examples        |
++-----------------------------+-----------------+------------------------+
+|                             |    Language     |      GPT-3, LLaMA      |
+|          Language           +-----------------+------------------------+
+|                             |     Latent      |          BERT          |
++-----------------------------+-----------------+------------------------+
+|                             |     Latent      |       R3M, VC-1        |
+|           Vision            +-----------------+------------------------+
+|                             |   Recognition   |          SAM           |
++-----------------------------+-----------------+------------------------+
+|                             |     Latent      |          CLIP          |
+|                             +-----------------+------------------------+
+|                             |    Language     |         GPT-4V         |
+|      Vision + Language      +-----------------+------------------------+
+|                             |     Vision      |    Stable Diffusion    |
+|                             +-----------------+------------------------+
+|                             |   Recognition   |    OWL-ViT, DinoV2     |
++-----------------------------+-----------------+------------------------+
+|      Audio + Language       |    Language     |        Whisper         |
++-----------------------------+-----------------+------------------------+
+|                             |     Latent      |    AudioCLIP, CLAP     |
+|  Audio + Vision + Language  +-----------------+------------------------+
+|                             |      Audio      |    MusicLM, VALLE      |
++-----------------------------+-----------------+------------------------+
+|      Vision + Language      |       3D        |        Point-E         |
++-----------------------------+-----------------+------------------------+
+|                             |     Latent      |          ULIP          |
+|   3D + Vision + Language    +-----------------+------------------------+
+|                             |   Recognition   |         3D-LLM         |
++-----------------------------+-----------------+------------------------+
+
+Other modalities includes IMUs, heatmaps, object poses, and skeletal movements including gestures are not discussed so much recently.
+
+* Applications
+
++-------+------------+-------------------------------------------------------+
+| Level | Application|                        Details                        |
++-------+------------+-------------------------------------------------------+
+|       | Perception |      Feature extraction and scene recoginition.       |
+|  Low  +------------+-------------------------------------------------------+
+|       |  Planning  |                          IK.                          |
++-------+------------+-------------------------------------------------------+
+|       | Perception |          Map construction and reward design.          |
+| High  +------------+-------------------------------------------------------+
+|       |  Planning  |          Task planning and code generation.           |
++-------+------------+-------------------------------------------------------+
+
+* Robotic Foundation Models
+
+There are some works aiming to create foundation models for robotics, which can be referred to as robotic foundation models.
+
+1. Pre-trained visual representations for robotics. Some works use pre-trained CNN (ResNet) and vision transformer backbones to extract features from inputs and then use latent vector for later tasks.
+
+2. Vision language models for robotics. Some works train a multimodal language model, which allows multimodal inputs (image and text) to answer questions, such as PaLM.
+
+3. Vision-Language-Action (VLA) models for robotics. Some works train a multimodal language model, which takes multimodal inputs and outputs the joint values for robots to execute.

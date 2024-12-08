@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       385A3FE5-DE84-4175-B611-92C60CAC963C
+:END:
+#+title: Scaling Law
+#+filetags: :LLM:
+
+In NLP, the scaling law allows for continued performance improvements as data, computational resources, and model sizes are increased.

@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       E2EA1D4A-3991-4041-953F-AFC01620523D
+:END:
+#+title: In-Context Learning
+#+filetags: :LLM:
+
+In NLP, in-context learning enables the accomplishment of new tasks with just a few examples, without then need for retraining or fine-tuning.
