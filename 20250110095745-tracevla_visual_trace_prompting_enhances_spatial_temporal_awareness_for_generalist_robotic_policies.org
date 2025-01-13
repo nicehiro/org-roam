@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       0ceb13c2-ac2c-4e90-bb44-3d5506cb08e9
+:END:
+#+title: TraceVLA: Visual Trace Prompting Enhances Spatial-Temporal Awareness for Generalist Robotic Policiy
+#+filetags: :manipulation:VLA:
+
+
+Current VLA models often struggle to maintain awareness of their past movements, leading to decisions that are more reactive to current inputs rather than informed by spatial history. This paper introduces a fine-tuned model based on OpenVLA, equipping the VLA model with the necessary context to better understand both temporal and spatial dynamics.
+
+Specifically, they first use Co-tracker to extract dense point trajectories, and then overlay active point trajectories on robot's initial observation frame as visual trace prompting.

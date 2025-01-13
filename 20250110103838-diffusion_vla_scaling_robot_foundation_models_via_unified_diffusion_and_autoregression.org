@@ -1,0 +1,17 @@
+:PROPERTIES:
+:ID:       4d47b657-f192-40e5-8894-0070853731da
+:END:
+#+title: Diffusion-VLA: Scaling Robot Foundation Models via Unified Diffusion and Autoregression
+#+filetags: :diffusion:VLA:manipulation:
+
+
+This paper proposes a Diffusion-VLA model, taking the advatages of the reasoning power of autoregressive models with the robustness of high-frequency action generation offered by diffusion models.
+
+Specifically, it takes Qwen2-VL for vision-language processing to generate reasoning tokens and action tokens.
+For action generation, it takes action tokens into the diffusion model as conditional inputs for action decoding and the final embedding from the tokenized ouput of reasoning tokens through Feature-wise Linear Modulation (FiLM). The reasoning tokens function as an auxiliary enhancement to provide contextual depth without dominating the primary decision-making flow.
+
+
+The idea behind this paper is pretty same as [[id:0ceb13c2-ac2c-4e90-bb44-3d5506cb08e9][TraceVLA: Visual Trace Prompting Enhances Spatial-Temporal Awareness for Generalist Robotic Policiy]], which also takes the reasoning ability of VLM into VLA. The difference are:
+
+- TraceVLA uses reasoning ability of VLM in the input of VLA, and the action token directly used for action generation.
+- Di-VLA uses reasoning ability of VLM in the action generateion part, aka diffusion model.
