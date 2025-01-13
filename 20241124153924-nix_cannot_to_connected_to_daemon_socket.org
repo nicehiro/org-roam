@@ -35,3 +35,9 @@ Then try to use `nix run` to rebuild the system (if you don't have `/run/current
 #+begin_src shell
   nix run nix-darwin --extra-experimental-features "nix-command flakes" -- switch --flake /path/to/your/flake.nix
 #+end_src
+
+** Important Notes
+
+#+begin_quote
+When anything wired happend, remember to check if new nix command has permitted with Full Disk access.
+#+end_quote
