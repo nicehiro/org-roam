@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       5704fbb5-46d9-45c4-b4ba-87a6acfefa93
+:END:
+#+title: Embodied AI in Humanoid Robots
+#+filetags: :robotic:embodied:humanoid:

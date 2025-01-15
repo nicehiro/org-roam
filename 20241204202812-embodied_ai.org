@@ -2,30 +2,81 @@
 :ID:       14C478D3-225C-4171-B7F5-7056A42AF593
 :END:
 #+title: Embodied AI
-#+filetags: :humanoid:robotic:embodied:
+#+filetags: :robotic:embodied:
 
 
-Conclude all related works on Embodied AI and Humanoid Robots.
+For embodied ai specifically in humanoid robots, refer to [[id:5704fbb5-46d9-45c4-b4ba-87a6acfefa93][Embodied AI in Humanoid Robots]].
 
 
-* Embodied AI
+[[https://cacm.acm.org/blogcacm/a-brief-history-of-embodied-artificial-intelligence-and-its-future-outlook/][Writed in the Communications of the ACM]],
 
-** Foundation models
+#+begin_quote
+Embodied Artificial Intelligence (EAI) integrates artificial intelligence into physical entities like robots, endowing them with the ability to perceive, learn from, and dynamically interact with their environment.
+#+end_quote
 
-[[id:A000C46A-F2AC-4B16-A94A-F741BC67576E][Real-World Robot Applications of Foundation Models: A Review]]
+* Foundation Models
 
-** Vision-Language-Action Models
+[[id:A000C46A-F2AC-4B16-A94A-F741BC67576E][Real-World Robot Applications of Foundation Models: A Review]] lists fundation models can be used in robotic tasks divided by modalities.
 
-[[id:58c10fcd-edbe-4b15-bc42-04a2ae880a4d][Vision-Language-Action Models]]
 
-* Embodied AI on Humandoid Robots
+* Robotic Foundation Models
 
-** Teleoperation
+Robotic foundation models are models that consider inputs and outputs in robotic domain. It can be categorized into three:
 
-** Whole Body Control
+- pre-trained visual representations for robotics that takes images as input and output latent embeddings (low-level perception)
 
-** Manipulation
+- vision-language models (VLMs) for robotics (no robotics domain specific outputs)
 
-** Locomotion
+- dynamics models (learn system dynamics such as Q-value, state and reward)
 
-** Simulation
+- end-to-end control policies
+
+  + Transformer-based models (output actions directly)
+
+    - RT-1
+
+    - Octo
+
+    - SkillTransformer
+
+    - [[id:e34e2ea0-3907-4033-a125-72c443f8f0d6][VIMA: General Robot Mnipulation with Multimodal Prompts]]
+
+  + [[id:58c10fcd-edbe-4b15-bc42-04a2ae880a4d][Vision-Language-Action Models]]
+
+** Dataset Collection
+
+For the ease of collecting export demonstration datasets with real robots, robot [[id:99f899e0-970e-48e3-8a55-c9e3666a7b27][Teleoperation]] systems suitable for collecting dataset have been proposed.
+
+
+* Foundation Models Applications
+
+** Low-Level Perception
+
+Representative studies utilizing foundation models, such as CLIPort and REFLECT, to extract semantic information from images, texts and spatial information.
+
+** High-Level Perception
+
+Foundation models for high-level perception involve the transformation and utilization of results obtained from low-level perception into forms such as maps, rewards, and motion constrains.
+
+** High-Level Planning
+
+Foundation models for high-level planning execute higher-level abstract task planning, excluding direct control.
+
+** Low-Level Planning
+
+Foundation models for low-level planning execute low-level motion control, including joint and end effector control.
+
+** Data Augmentation
+
+Foundation models augment dataset by changing background, adding distractors and altering object textures to improve the robustness of the learning.
+
+
+* Robotic Tasks
+
+- Navigation
+
+- Manipulation
+
+- Mobile Manipulation (Navigation w/ Manipulation)
+
+- Locomotion
