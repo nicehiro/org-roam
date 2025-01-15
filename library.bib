@@ -60,7 +60,6 @@
   urldate = {2022-07-21},
   abstract = {We approach the problem of learning by watching humans in the wild. While traditional approaches in Imitation and Reinforcement Learning are promising for learning in the real world, they are either sample inefficient or are constrained to lab settings. Meanwhile, there has been a lot of success in processing passive, unstructured human data. We propose tackling this problem via an efficient one-shot robot learning algorithm, centered around learning from a third-person perspective. We call our method WHIRL: In-the-Wild Human Imitating Robot Learning. WHIRL extracts a prior over the intent of the human demonstrator, using it to initialize our agent's policy. We introduce an efficient real-world policy learning scheme that improves using interactions. Our key contributions are a simple sampling-based policy optimization approach, a novel objective function for aligning human and robot videos as well as an exploration method to boost sample efficiency. We show one-shot generalization and success in real-world settings, including 20 different manipulation tasks in the wild. Videos and talk at https://human2robot.github.io},
   archiveprefix = {arXiv},
-  keywords = {Electrical Engineering and Systems Science - Systems and Control},
   file = {/Users/fangyuan/Zotero/storage/Z4D4LLND/Bahl et al. - 2022 - Human-to-Robot Imitation in the Wild.pdf}
 }
 
@@ -79,6 +78,25 @@
   abstract = {Sample efficiency and exploration remain major challenges in online reinforcement learning (RL). A powerful approach that can be applied to address these issues is the inclusion of offline data, such as prior trajectories from a human expert or a sub-optimal exploration policy. Previous methods have relied on extensive modifications and additional complexity to ensure the effective use of this data. Instead, we ask: can we simply apply existing off-policy methods to leverage offline data when learning online? In this work, we demonstrate that the answer is yes; however, a set of minimal but important changes to existing off-policy RL algorithms are required to achieve reliable performance. We extensively ablate these design choices, demonstrating the key factors that most affect performance, and arrive at a set of recommendations that practitioners can readily apply, whether their data comprise a small number of expert demonstrations or large volumes of sub-optimal trajectories. We see that correct application of these simple recommendations can provide a \${\textbackslash}mathbf\{2.5{\textbackslash}times\}\$ improvement over existing approaches across a diverse set of competitive benchmarks, with no additional computational overhead.},
   archiveprefix = {arXiv},
   file = {/Users/fangyuan/Zotero/storage/8GB3C8MN/Ball et al. - 2023 - Efficient Online Reinforcement Learning with Offli.pdf;/Users/fangyuan/Zotero/storage/C2CRQNTD/2302.html}
+}
+
+@misc{baoHandsOnVLMVisionLanguageModels2024,
+  title = {{{HandsOnVLM}}: {{Vision-Language Models}} for {{Hand-Object Interaction Prediction}}},
+  shorttitle = {{{HandsOnVLM}}},
+  author = {Bao, Chen and Xu, Jiarui and Wang, Xiaolong and Gupta, Abhinav and Bharadhwaj, Homanga},
+  year = {2024},
+  month = dec,
+  number = {arXiv:2412.13187},
+  eprint = {2412.13187},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2412.13187},
+  url = {http://arxiv.org/abs/2412.13187},
+  urldate = {2024-12-18},
+  abstract = {How can we predict future interaction trajectories of human hands in a scene given high-level colloquial task specifications in the form of natural language? In this paper, we extend the classic hand trajectory prediction task to two tasks involving explicit or implicit language queries. Our proposed tasks require extensive understanding of human daily activities and reasoning abilities about what should be happening next given cues from the current scene. We also develop new benchmarks to evaluate the proposed two tasks, Vanilla Hand Prediction (VHP) and Reasoning-Based Hand Prediction (RBHP). We enable solving these tasks by integrating high-level world knowledge and reasoning capabilities of Vision-Language Models (VLMs) with the auto-regressive nature of low-level ego-centric hand trajectories. Our model, HandsOnVLM is a novel VLM that can generate textual responses and produce future hand trajectories through natural-language conversations. Our experiments show that HandsOnVLM outperforms existing task-specific methods and other VLM baselines on proposed tasks, and demonstrates its ability to effectively utilize world knowledge for reasoning about low-level human hand trajectories based on the provided context. Our website contains code and detailed video results {\textbackslash}url\{https://www.chenbao.tech/handsonvlm/\}},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Computer Vision and Pattern Recognition,Computer Science - Machine Learning},
+  file = {/Users/fangyuan/Zotero/storage/FJL5G9G8/Bao et al. - 2024 - HandsOnVLM Vision-Language Models for Hand-Object Interaction Prediction.pdf;/Users/fangyuan/Zotero/storage/U5U5L9I9/2412.html}
 }
 
 @misc{black$p_0$VisionLanguageActionFlow2024,
@@ -109,6 +127,7 @@
   urldate = {2024-12-07},
   abstract = {If generalist robots are to operate in truly unstructured environments, they need to be able to recognize and reason about novel objects and scenarios. Such objects and scenarios might not be present in the robot's own training data. We propose SuSIE, a method that leverages an image-editing diffusion model to act as a high-level planner by proposing intermediate subgoals that a low-level controller can accomplish. Specifically, we finetune InstructPix2Pix on video data, consisting of both human videos and robot rollouts, such that it outputs hypothetical future ``subgoal'' observations given the robot's current observation and a language command. We also use the robot data to train a low-level goal-conditioned policy to act as the aforementioned low-level controller. We find that the high-level subgoal predictions can utilize Internet scale pretraining and visual understanding to guide the low-level goal-conditioned policy, achieving significantly better generalization and precision than conventional language-conditioned policies. We achieve state-of-the-art results on the CALVIN benchmark, and also demonstrate robust generalization on real-world manipulation tasks, beating strong baselines that have access to privileged information or that utilize orders of magnitude more compute and training data. The project website can be found at http://rail-berkeley.github.io/susie.},
   langid = {english},
+  keywords = {Diffusion,Manipulation,Subgoal},
   file = {/Users/fangyuan/Zotero/storage/ZUC7LC93/Black et al. - 2023 - Zero-Shot Robotic Manipulation with Pre-Trained Image-Editing Diffusion Models.pdf}
 }
 
@@ -127,7 +146,7 @@
   urldate = {2022-12-15},
   abstract = {By transferring knowledge from large, diverse, task-agnostic datasets, modern machine learning models can solve specific downstream tasks either zero-shot or with small task-specific datasets to a high level of performance. While this capability has been demonstrated in other fields such as computer vision, natural language processing or speech recognition, it remains to be shown in robotics, where the generalization capabilities of the models are particularly critical due to the difficulty of collecting real-world robotic data. We argue that one of the keys to the success of such general robotic models lies with open-ended task-agnostic training, combined with high-capacity architectures that can absorb all of the diverse, robotic data. In this paper, we present a model class, dubbed Robotics Transformer, that exhibits promising scalable model properties. We verify our conclusions in a study of different model classes and their ability to generalize as a function of the data size, model size, and data diversity based on a large-scale data collection on real robots performing real-world tasks. The project's website and videos can be found at robotics-transformer.github.io},
   archiveprefix = {arXiv},
-  keywords = {Manipulation,VLA},
+  keywords = {Manipulation,Mobile Manipulation,VLA},
   file = {/Users/fangyuan/Zotero/storage/L4G8FUL2/Brohan et al. - 2022 - RT-1 Robotics Transformer for Real-World Control .pdf;/Users/fangyuan/Zotero/storage/UIP3792N/2212.html}
 }
 
@@ -135,7 +154,7 @@
   title = {{{RT-2}}: {{Vision-Language-Action Models Transfer Web Knowledge}} to {{Robotic Control}}},
   author = {Brohan, Anthony and Brown, Noah and Carbajal, Justice and Chebotar, Yevgen and Chen, Xi and Choromanski, Krzysztof and Ding, Tianli and Driess, Danny and Dubey, Avinava and Finn, Chelsea and Florence, Pete and Fu, Chuyuan and Arenas, Montse Gonzalez and Gopalakrishnan, Keerthana and Han, Kehang and Hausman, Karol and Herzog, Alexander and Hsu, Jasmine and Ichter, Brian and Irpan, Alex and Joshi, Nikhil and Julian, Ryan and Kalashnikov, Dmitry and Kuang, Yuheng and Leal, Isabel and Lee, Lisa and Lee, Tsang-Wei Edward and Levine, Sergey and Lu, Yao and Michalewski, Henryk and Mordatch, Igor and Pertsch, Karl and Rao, Kanishka and Reymann, Krista and Ryoo, Michael and Salazar, Grecia and Sanketi, Pannag and Sermanet, Pierre and Singh, Jaspiar and Singh, Anikait and Soricut, Radu and Tran, Huong and Vanhoucke, Vincent and Vuong, Quan and Wahid, Ayzaan and Welker, Stefan and Wohlhart, Paul and Wu, Jialin and Xia, Fei and Xiao, Ted and Xu, Peng and Xu, Sichun and Yu, Tianhe and Zitkovich, Brianna},
   langid = {english},
-  keywords = {Manipulation,VLA},
+  keywords = {Manipulation,Mobile Manipulation,VLA},
   file = {/Users/fangyuan/Zotero/storage/YFYA8ZTV/Brohan et al. - RT-2 Vision-Language-Action Models Transfer Web K.pdf}
 }
 
@@ -153,6 +172,7 @@
   urldate = {2024-12-06},
   abstract = {Towards the role of humanoid robots as squad mates in urban operations and other domains, we identified doors as a major area lacking capability development. In this paper, we focus on the ability of humanoid robots to navigate and deal with doors. Human-sized doors are ubiquitous in many environment domains and the humanoid form factor is uniquely suited to operate and traverse them. We present an architecture which incorporates GPU accelerated perception and a tree based interactive behavior coordination system with a whole body motion and walking controller. Our system is capable of performing door traversals on a variety of door types. It supports rapid authoring of behaviors for unseen door types and techniques to achieve re-usability of those authored behaviors. The behaviors are modelled using trees and feature logical reactivity and action sequences that can be executed with layered concurrency to increase speed. Primitive actions are built on top of our existing whole body controller which supports manipulation while walking. We include a perception system using both neural networks and classical computer vision for door mechanism detection outside of the lab environment. We present operator-robot interdependence analysis charts to explore how human cognition is combined with artificial intelligence to produce complex robot behavior. Finally, we present and discuss real robot performances of fast door traversals on our Nadia humanoid robot. Videos online at https://www.youtube.com/playlist?list=PLXuyT8w3JVgMPaB5nWNRNHtqzRK8i68dy.},
   archiveprefix = {arXiv},
+  keywords = {Whole Body Control},
   file = {/Users/fangyuan/Zotero/storage/6USCRYR7/Calvert et al. - 2024 - A Behavior Architecture for Fast Humanoid Robot Door Traversals.pdf;/Users/fangyuan/Zotero/storage/IFJ9N6XD/2411.html}
 }
 
@@ -280,6 +300,7 @@
   urldate = {2024-12-06},
   abstract = {Can we enable humanoid robots to generate rich, diverse, and expressive motions in the real world? We propose to learn a whole-body control policy on a human-sized robot to mimic human motions as realistic as possible. To train such a policy, we leverage the large-scale human motion capture data from the graphics community in a Reinforcement Learning framework. However, directly performing imitation learning with the motion capture dataset would not work on the real humanoid robot, given the large gap in degrees of freedom and physical capabilities. Our method Expressive Whole-Body Control (Exbody) tackles this problem by encouraging the upper humanoid body to imitate a reference motion, while relaxing the imitation constraint on its two legs and only requiring them to follow a given velocity robustly. With training in simulation and Sim2Real transfer, our policy can control a humanoid robot to walk in different styles, shake hands with humans, and even dance with a human in the real world. We conduct extensive studies and comparisons on diverse motions in both simulation and the real world to show the effectiveness of our approach.},
   archiveprefix = {arXiv},
+  keywords = {Unitree,Whole Body Control},
   file = {/Users/fangyuan/Zotero/storage/9VTPQR7S/Cheng et al. - 2024 - Expressive Whole-Body Control for Humanoid Robots.pdf;/Users/fangyuan/Zotero/storage/KTZ3UXVM/2402.html}
 }
 
@@ -298,6 +319,7 @@
   urldate = {2024-12-06},
   abstract = {This paper proposes to solve the problem of Vision-and-Language Navigation with legged robots, which not only provides a flexible way for humans to command but also allows the robot to navigate through more challenging and cluttered scenes. However, it is non-trivial to translate human language instructions all the way to low-level leg joint actions. We propose NaVILA, a 2-level framework that unifies a Vision-Language-Action model (VLA) with locomotion skills. Instead of directly predicting low-level actions from VLA, NaVILA first generates mid-level actions with spatial information in the form of language, (e.g., "moving forward 75cm"), which serves as an input for a visual locomotion RL policy for execution. NaVILA substantially improves previous approaches on existing benchmarks. The same advantages are demonstrated in our newly developed benchmarks with IsaacLab, featuring more realistic scenes, low-level controls, and real-world robot experiments. We show more results at https://navila-bot.github.io/},
   archiveprefix = {arXiv},
+  keywords = {Navigation,Unitree,VLA},
   file = {/Users/fangyuan/Zotero/storage/K6DV7W3E/Cheng et al. - 2024 - NaVILA Legged Robot Vision-Language-Action Model for Navigation.pdf;/Users/fangyuan/Zotero/storage/IAWWZQD7/2412.html}
 }
 
@@ -316,6 +338,7 @@
   urldate = {2024-12-06},
   abstract = {Teleoperation serves as a powerful method for collecting on-robot data essential for robot learning from demonstrations. The intuitiveness and ease of use of the teleoperation system are crucial for ensuring high-quality, diverse, and scalable data. To achieve this, we propose an immersive teleoperation system Open-TeleVision that allows operators to actively perceive the robot's surroundings in a stereoscopic manner. Additionally, the system mirrors the operator's arm and hand movements on the robot, creating an immersive experience as if the operator's mind is transmitted to a robot embodiment. We validate the effectiveness of our system by collecting data and training imitation learning policies on four long-horizon, precise tasks (Can Sorting, Can Insertion, Folding, and Unloading) for 2 different humanoid robots and deploy them in the real world. The system is open-sourced at: https://robot-tv.github.io/},
   archiveprefix = {arXiv},
+  keywords = {FFTAI,Manipulation,Teleoperation,Vision Pro},
   file = {/Users/fangyuan/Zotero/storage/DH8WNM5H/Cheng et al. - 2024 - Open-TeleVision Teleoperation with Immersive Active Visual Feedback.pdf;/Users/fangyuan/Zotero/storage/C8BPSGS6/2407.html}
 }
 
@@ -347,6 +370,7 @@
   urldate = {2024-12-06},
   abstract = {Reinforcement learning combined with sim-to-real transfer offers a general framework for developing locomotion controllers for legged robots. To facilitate successful deployment in the real world, smoothing techniques, such as low-pass filters and smoothness rewards, are often employed to develop policies with smooth behaviors. However, because these techniques are non-differentiable and usually require tedious tuning of a large set of hyperparameters, they tend to require extensive manual tuning for each robotic platform. To address this challenge and establish a general technique for enforcing smooth behaviors, we propose a simple and effective method that imposes a Lipschitz constraint on a learned policy, which we refer to as Lipschitz-Constrained Policies (LCP). We show that the Lipschitz constraint can be implemented in the form of a gradient penalty, which provides a differentiable objective that can be easily incorporated with automatic differentiation frameworks. We demonstrate that LCP effectively replaces the need for smoothing rewards or low-pass filters and can be easily integrated into training frameworks for many distinct humanoid robots. We extensively evaluate LCP in both simulation and real-world humanoid robots, producing smooth and robust locomotion controllers. All simulation and deployment code, along with complete checkpoints, is available on our project page: https://lipschitz-constrained-policy.github.io.},
   archiveprefix = {arXiv},
+  keywords = {FFTAI,Locomotion},
   file = {/Users/fangyuan/Zotero/storage/MVK39NBL/Chen et al. - 2024 - Learning Smooth Humanoid Locomotion through Lipschitz-Constrained Policies.pdf;/Users/fangyuan/Zotero/storage/EEVGACET/2410.html}
 }
 
@@ -364,6 +388,7 @@
   urldate = {2024-12-06},
   abstract = {Manipulating objects to achieve desired goal states is a basic but important skill for dexterous manipulation. Human hand motions demonstrate proficient manipulation capability, providing valuable data for training robots with multi-finger hands. Despite this potential, substantial challenges arise due to the embodiment gap between human and robot hands. In this work, we introduce a hierarchical policy learning framework that uses human hand motion data for training object-centric dexterous robot manipulation. At the core of our method is a high-level trajectory generative model, learned with a large-scale human hand motion capture dataset, to synthesize human-like wrist motions conditioned on the desired object goal states. Guided by the generated wrist motions, deep reinforcement learning is further used to train a low-level finger controller that is grounded in the robot's embodiment to physically interact with the object to achieve the goal. Through extensive evaluation across 10 household objects, our approach not only demonstrates superior performance but also showcases generalization capability to novel object geometries and goal states. Furthermore, we transfer the learned policies from simulation to a real-world bimanual dexterous robot system, further demonstrating its applicability in real-world scenarios. Project website: https://cypypccpy.github.io/obj-dex.github.io/.},
   archiveprefix = {arXiv},
+  keywords = {Dexterous Hand,Manipulation},
   file = {/Users/fangyuan/Zotero/storage/TTCBPQDZ/Chen et al. - 2024 - Object-Centric Dexterous Manipulation from Human Motion Data.pdf;/Users/fangyuan/Zotero/storage/RGHQEUUC/2411.html}
 }
 
@@ -382,6 +407,7 @@
   urldate = {2024-12-06},
   abstract = {We introduce BiGym, a new benchmark and learning environment for mobile bi-manual demo-driven robotic manipulation. BiGym features 40 diverse tasks set in home environments, ranging from simple target reaching to complex kitchen cleaning. To capture the real-world performance accurately, we provide human-collected demonstrations for each task, reflecting the diverse modalities found in real-world robot trajectories. BiGym supports a variety of observations, including proprioceptive data and visual inputs such as RGB, and depth from 3 camera views. To validate the usability of BiGym, we thoroughly benchmark the state-of-the-art imitation learning algorithms and demo-driven reinforcement learning algorithms within the environment and discuss the future opportunities.},
   archiveprefix = {arXiv},
+  keywords = {Benchmark},
   file = {/Users/fangyuan/Zotero/storage/4A8ABWZK/Chernyadev et al. - 2024 - BiGym A Demo-Driven Mobile Bi-Manual Manipulation Benchmark.pdf;/Users/fangyuan/Zotero/storage/E4I9YYUM/2407.html}
 }
 
@@ -435,6 +461,7 @@
   urldate = {2024-12-06},
   abstract = {Humanoid robots are a key focus in robotics, with their capacity to navigate tough terrains being essential for many uses. While strides have been made, creating adaptable locomotion for complex environments is still tough. Recent progress in learning-based systems offers hope for robust legged locomotion, but challenges persist, such as tracking accuracy at high speeds and on uneven ground, and joint oscillations in actual robots. This paper proposes a novel training framework to address these challenges by employing a two-phase training paradigm with reinforcement learning. The proposed framework is further enhanced through the integration of command curriculum learning, refining the precision and adaptability of our approach. Additionally, we adapt DreamWaQ to our humanoid locomotion system and improve it to mitigate joint oscillations. Finally, we achieve the sim-to-real transfer of our method. A series of empirical results demonstrate the superior performance of our proposed method compared to state-of-the-art methods.},
   langid = {english},
+  keywords = {Locomotion},
   file = {/Users/fangyuan/Zotero/storage/4PMUR7GG/Cui et al. - 2024 - Adapting Humanoid Locomotion over Challenging Terrain via Two-Phase Training.pdf}
 }
 
@@ -452,6 +479,7 @@
   urldate = {2024-12-06},
   abstract = {In this work we propose a learning-based approach to box loco-manipulation for a humanoid robot. This is a particularly challenging problem due to the need for whole-body coordination in order to lift boxes of varying weight, position, and orientation while maintaining balance. To address this challenge, we present a sim-to-real reinforcement learning approach for training general box pickup and carrying skills for the bipedal robot Digit. Our reward functions are designed to produce the desired interactions with the box while also valuing balance and gait quality. We combine the learned skills into a full system for box loco-manipulation to achieve the task of moving boxes from one table to another with a variety of sizes, weights, and initial configurations. In addition to quantitative simulation results, we demonstrate successful sim-to-real transfer on the humanoid r},
   archiveprefix = {arXiv},
+  keywords = {Digit,Whole Body Control},
   file = {/Users/fangyuan/Zotero/storage/3ZXM9XLV/Dao et al. - 2023 - Sim-to-Real Learning for Humanoid Box Loco-Manipulation.pdf;/Users/fangyuan/Zotero/storage/FZ9F65XW/2310.html}
 }
 
@@ -503,6 +531,7 @@
   urldate = {2024-12-06},
   abstract = {Many robot manipulation tasks require active or interactive exploration behavior in order to be performed successfully. Such tasks are ubiquitous in embodied domains, where agents must actively search for the information necessary for each stage of a task, e.g., moving the head of the robot to find information relevant to manipulation, or in multi-robot domains, where one scout robot may search for the information that another robot needs to make informed decisions. We identify these tasks with a new type of problem, factorized Contextual Markov Decision Processes, and propose DISaM, a dual-policy solution composed of an information-seeking policy that explores the environment to find the relevant contextual information and an information-receiving policy that exploits the context to achieve the manipulation goal. This factorization allows us to train both policies separately, using the information-receiving one to provide reward to train the information-seeking policy. At test time, the dual agent balances exploration and exploitation based on the uncertainty the manipulation policy has on what the next best action is. We demonstrate the capabilities of our dual policy solution in five manipulation tasks that require information-seeking behaviors, both in simulation and in the real-world, where DISaM significantly outperforms existing methods. More information at https://robin-lab.cs.utexas.edu/learning2look/.},
   archiveprefix = {arXiv},
+  keywords = {Manipulation,Tiago},
   file = {/Users/fangyuan/Zotero/storage/WCBQUVSX/Dass et al. - 2024 - Learning to Look Seeking Information for Decision Making via Policy Factorization.pdf;/Users/fangyuan/Zotero/storage/WCGU5ZFA/2410.html}
 }
 
@@ -526,28 +555,6 @@
   abstract = {Designing rewards for Reinforcement Learning (RL) is challenging because it needs to convey the desired task, be efficient to optimize, and be easy to compute. The latter is particularly problematic when applying RL to robotics, where detecting whether the desired configuration is reached might require considerable supervision and instrumentation. Furthermore, we are often interested in being able to reach a wide range of configurations, hence setting up a different reward every time might be unpractical. Methods like Hindsight Experience Replay (HER) have recently shown promise to learn policies able to reach many goals, without the need of a reward. Unfortunately, without tricks like resetting to points along the trajectory, HER might require many samples to discover how to reach certain areas of the state-space. In this work we propose a novel algorithm goalGAIL, which incorporates demonstrations to drastically speed up the convergence to a policy able to reach any goal, surpassing the performance of an agent trained with other Imitation Learning algorithms. Furthermore, we show our method can also be used when the available expert trajectories do not contain the actions or when the expert is suboptimal, which makes it applicable when only kinesthetic, third-person or noisy demonstrations are available. Our code is open-source 2.},
   langid = {english},
   file = {/Users/fangyuan/Zotero/storage/Z32C2LI8/Ding et al. - Goal-conditioned Imitation Learning.pdf}
-}
-
-@article{dingIntegratingActionKnowledge2023,
-  title = {Integrating {{Action Knowledge}} and {{LLMs}} for {{Task Planning}} and {{Situation Handling}} in {{Open Worlds}}},
-  author = {Ding, Yan and Zhang, Xiaohan and Amiri, Saeid and Cao, Nieqing and Yang, Hao and Kaminski, Andy and Esselink, Chad and Zhang, Shiqi},
-  year = {2023},
-  month = dec,
-  journal = {Auton Robot},
-  volume = {47},
-  number = {8},
-  eprint = {2305.17590},
-  primaryclass = {cs},
-  pages = {981--997},
-  issn = {0929-5593, 1573-7527},
-  doi = {10.1007/s10514-023-10133-5},
-  url = {http://arxiv.org/abs/2305.17590},
-  urldate = {2024-08-13},
-  abstract = {Task planning systems have been developed to help robots use human knowledge (about actions) to complete long-horizon tasks. Most of them have been developed for "closed worlds" while assuming the robot is provided with complete world knowledge. However, the real world is generally open, and the robots frequently encounter unforeseen situations that can potentially break the planner's completeness. Could we leverage the recent advances on pre-trained Large Language Models (LLMs) to enable classical planning systems to deal with novel situations? This paper introduces a novel framework, called COWP, for open-world task planning and situation handling. COWP dynamically augments the robot's action knowledge, including the preconditions and effects of actions, with task-oriented commonsense knowledge. COWP embraces the openness from LLMs, and is grounded to specific domains via action knowledge. For systematic evaluations, we collected a dataset that includes 1,085 execution-time situations. Each situation corresponds to a state instance wherein a robot is potentially unable to complete a task using a solution that normally works. Experimental results show that our approach outperforms competitive baselines from the literature in the success rate of service tasks. Additionally, we have demonstrated COWP using a mobile manipulator. Supplementary materials are available at: https://cowplanning.github.io/},
-  archiveprefix = {arXiv},
-  langid = {english},
-  keywords = {Open Vocabulary},
-  file = {/Users/fangyuan/Zotero/storage/7ENL7GJZ/Ding et al. - 2023 - Integrating Action Knowledge and LLMs for Task Planning and Situation Handling in Open Worlds.pdf}
 }
 
 @misc{doshiScalingCrossEmbodiedLearning2024,
@@ -623,7 +630,7 @@
   abstract = {The foundational capabilities of humanoid robots should include robustly standing, walking, and mimicry of whole and partial-body motions. This work introduces the Masked Humanoid Controller (MHC), which supports all of these capabilities by tracking target trajectories over selected subsets of humanoid state variables while ensuring balance and robustness against disturbances. The MHC is trained in simulation using a carefully designed curriculum that imitates partially masked motions from a library of behaviors spanning standing, walking, optimized reference trajectories, re-targeted video clips, and human motion capture data. It also allows for combining joystick-based control with partial-body motion mimicry. We showcase simulation experiments validating the MHC's ability to execute a wide variety of behaviors from partially-specified target motions. Moreover, we demonstrate sim-to-real transfer on the real-world Digit V3 humanoid robot. To our knowledge, this is the first instance of a learned controller that can realize whole-body control of a real-world humanoid for such diverse multi-modal targets.},
   archiveprefix = {arXiv},
   langid = {english},
-  keywords = {Whole Body Control},
+  keywords = {Digit,Whole Body Control},
   file = {/Users/fangyuan/Zotero/storage/MBRYARW8/Dugar et al. - 2024 - Learning Multi-Modal Whole-Body Control for Real-World Humanoid Robots.pdf}
 }
 
@@ -794,6 +801,7 @@
   urldate = {2024-12-07},
   abstract = {One of the key arguments for building robots that have similar form factors to human beings is that we can leverage the massive human data for training.Yet, doing so has remained challenging in practice due to the complexities in humanoid perception and control, lingering physical gaps between humanoids and humans in morphologies and actuation, and lack of a data pipeline for humanoids to learn autonomous skills from egocentric vision. In this paper, we introduce a full-stack system for humanoids to learn motion and autonomous skills from human data. We first train a low-level policy in simulation via reinforcement learning using existing 40-hour human motion datasets. This policy transfers to the real world and allows humanoid robots to follow human body and hand motion in real time using only a RGB camera, i.e. shadowing. Through shadowing, human operators can teleoperate humanoids to collect whole-body data for learning different tasks in the real world. Using the data collected, we then perform supervised behavior cloning to train skill policies using egocentric vision, allowing humanoids to complete different tasks autonomously by imitating human skills. We demonstrate the system on our customized 33-DoF 180cm humanoid, autonomously completing tasks such as wearing a shoe to stand up and walk, folding a sweatshirt, rearranging objects, typing, and greeting another robot with 60-100\% success rates using up to 40 demonstrations.},
   langid = {english},
+  keywords = {Imitation Learning,Manipulation,Retargeting,Unitree},
   file = {/Users/fangyuan/Zotero/storage/TL48JM22/Fu et al. - 2024 - HumanPlus Humanoid Shadowing and Imitation from Humans.pdf}
 }
 
@@ -846,6 +854,7 @@
   copyright = {https://doi.org/10.15223/policy-029},
   isbn = {979-8-3503-0129-8},
   langid = {english},
+  keywords = {Dataset,Manipulation,PointCloud},
   file = {/Users/fangyuan/Zotero/storage/4AKH7WGC/Geng et al. - 2023 - GAPartNet Cross-Category Domain-Generalizable Object Perception and Manipulation via Generalizable.pdf}
 }
 
@@ -872,7 +881,7 @@
   urldate = {2024-12-06},
   abstract = {Humanoid robots, with their human-like skeletal structure, are especially suited for tasks in human-centric environments. However, this structure is accompanied by additional challenges in locomotion controller design, especially in complex real-world environments. As a result, existing humanoid robots are limited to relatively simple terrains, either with model-based control or model-free reinforcement learning. In this work, we introduce Denoising World Model Learning (DWL), an end-to-end reinforcement learning framework for humanoid locomotion control, which demonstrates the world's first humanoid robot to master real-world challenging terrains such as snowy and inclined land in the wild, up and down stairs, and extremely uneven terrains. All scenarios run the same learned neural network with zero-shot sim-to-real transfer, indicating the superior robustness and generalization capability of the proposed method.},
   archiveprefix = {arXiv},
-  keywords = {Electrical Engineering and Systems Science - Systems and Control},
+  keywords = {Locomotion},
   file = {/Users/fangyuan/Zotero/storage/WHZGK75H/Gu et al. - 2024 - Advancing Humanoid Locomotion Mastering Challenging Terrains with Denoising World Model Learning.pdf;/Users/fangyuan/Zotero/storage/79V3XCDQ/2408.html}
 }
 
@@ -909,7 +918,7 @@
   urldate = {2024-12-06},
   abstract = {Humanoid-Gym is an easy-to-use reinforcement learning (RL) framework based on Nvidia Isaac Gym, designed to train locomotion skills for humanoid robots, emphasizing zero-shot transfer from simulation to the real-world environment. Humanoid-Gym also integrates a sim-to-sim framework from Isaac Gym to Mujoco that allows users to verify the trained policies in different physical simulations to ensure the robustness and generalization of the policies. This framework is verified by RobotEra's XBot-S (1.2-meter tall humanoid robot) and XBot-L (1.65-meter tall humanoid robot) in a real-world environment with zero-shot sim-to-real transfer. The project website and source code can be found at: https://sites.google.com/view/humanoid-gym/.},
   archiveprefix = {arXiv},
-  keywords = {Electrical Engineering and Systems Science - Systems and Control},
+  keywords = {Benchmark},
   file = {/Users/fangyuan/Zotero/storage/NJRVL53D/Gu et al. - 2024 - Humanoid-Gym Reinforcement Learning for Humanoid Robot with Zero-Shot Sim2Real Transfer.pdf;/Users/fangyuan/Zotero/storage/RDKMJW55/2404.html}
 }
 
@@ -1045,7 +1054,7 @@
   urldate = {2024-11-01},
   abstract = {Humanoid whole-body control requires adapting to diverse tasks such as navigation, loco-manipulation, and tabletop manipulation, each demanding a different mode of control. For example, navigation relies on root velocity tracking, while tabletop manipulation prioritizes upper-body joint angle tracking. Existing approaches typically train individual policies tailored to a specific command space, limiting their transferability across modes. We present the key insight that full-body kinematic motion imitation can serve as a common abstraction for all these tasks and provide general-purpose motor skills for learning multiple modes of whole-body control. Building on this, we propose HOVER (Humanoid Versatile Controller), a multi-mode policy distillation framework that consolidates diverse control modes into a unified policy. HOVER enables seamless transitions between control modes while preserving the distinct advantages of each, offering a robust and scalable solution for humanoid control across a wide range of modes. By eliminating the need for policy retraining for each control mode, our approach improves efficiency and flexibility for future humanoid applications.},
   archiveprefix = {arXiv},
-  keywords = {Whole Body Control},
+  keywords = {Motion Generation,Unitree,Whole Body Control},
   file = {/Users/fangyuan/Zotero/storage/F7Q8L4AS/He et al. - 2024 - HOVER Versatile Neural Whole-Body Controller for Humanoid Robots.pdf;/Users/fangyuan/Zotero/storage/BHLW4N7Q/2410.html}
 }
 
@@ -1063,7 +1072,7 @@
   urldate = {2024-12-06},
   abstract = {We present Human to Humanoid (H2O), a reinforcement learning (RL) based framework that enables real-time whole-body teleoperation of a full-sized humanoid robot with only an RGB camera. To create a large-scale retargeted motion dataset of human movements for humanoid robots, we propose a scalable "sim-to-data" process to filter and pick feasible motions using a privileged motion imitator. Afterwards, we train a robust real-time humanoid motion imitator in simulation using these refined motions and transfer it to the real humanoid robot in a zero-shot manner. We successfully achieve teleoperation of dynamic whole-body motions in real-world scenarios, including walking, back jumping, kicking, turning, waving, pushing, boxing, etc. To the best of our knowledge, this is the first demonstration to achieve learning-based real-time whole-body humanoid teleoperation.},
   archiveprefix = {arXiv},
-  keywords = {Electrical Engineering and Systems Science - Systems and Control},
+  keywords = {Teleoperation,Unitree,Whole Body Control},
   file = {/Users/fangyuan/Zotero/storage/27S7Y65H/He et al. - 2024 - Learning Human-to-Humanoid Real-Time Whole-Body Teleoperation.pdf;/Users/fangyuan/Zotero/storage/7LMBXDE5/2403.html}
 }
 
@@ -1082,7 +1091,7 @@
   abstract = {We present OmniH2O (Omni Human-to-Humanoid), a learning-based system for whole-body humanoid teleoperation and autonomy. Using kinematic pose as a universal control interface, OmniH2O enables various ways for a human to control a full-sized humanoid with dexterous hands, including using realtime teleoperation through VR headset, verbal instruction, and RGB camera. OmniH2O also enables full autonomy by learning from teleoperated demonstrations or integrating with frontier models such as GPT-4o. OmniH2O demonstrates versatility and dexterity in various real-world whole-body tasks through teleoperation or autonomy, such as playing multiple sports, moving and manipulating objects, and interacting with humans, as shown in Figure 1. We develop an RL-based sim-to-real pipeline, which involves large-scale retargeting and augmentation of human motion datasets, learning a real-world deployable policy with sparse sensor input by imitating a privileged teacher policy, and reward designs to enhance robustness and stability. We release the first humanoid whole-body control dataset, OmniH2O-6, containing six everyday tasks, and demonstrate humanoid wholebody skill learning from teleoperated datasets.},
   archiveprefix = {arXiv},
   langid = {english},
-  keywords = {Diffusion,Electrical Engineering and Systems Science - Systems and Control,Retargeting,Unitree,Whole Body Control},
+  keywords = {Diffusion,Retargeting,Unitree,Whole Body Control},
   file = {/Users/fangyuan/Zotero/storage/G2LHKIJ4/2406.pdf}
 }
 
@@ -1123,6 +1132,7 @@
   urldate = {2024-12-07},
   abstract = {Large language models (LLMs) and Vision-Language Models (VLMs) have been proved to excel at multiple tasks, such as commonsense reasoning. Powerful as these models can be, they are not grounded in the 3D physical world, which involves richer concepts such as spatial relationships, affordances, physics, layout, and so on. In this work, we propose to inject the 3D world into large language models, and introduce a whole new family of 3D-LLMs. Specifically, 3D-LLMs can take 3D point clouds and their features as input and perform a diverse set of 3D-related tasks, including captioning, dense captioning, 3D question answering, task decomposition, 3D grounding, 3D-assisted dialog, navigation, and so on. Using three types of prompting mechanisms that we design, we are able to collect over 300k 3D-language data covering these tasks. To efficiently train 3D-LLMs, we first utilize a 3D feature extractor that obtains 3D features from rendered multi-view images. Then, we use 2D VLMs as our backbones to train our 3D-LLMs. By introducing a 3D localization mechanism, 3D-LLMs could better capture 3D spatial information. Experiments on ScanQA show that our model outperforms state-of-the-art baselines by a large margin ({\textbackslash}textit\{e.g.\}, the BLEU-1 score surpasses state-of-the-art score by 9{\textbackslash}\%). Furthermore, experiments on our held-in datasets for 3D captioning, task composition, and 3D-assisted dialogue show that our model outperforms 2D VLMs. Qualitative examples also show that our model could perform more tasks beyond the scope of existing LLMs and VLMs. Our model and data will be publicly available.},
   langid = {english},
+  keywords = {Robotic VLM,Vision+Language+3D2Language},
   file = {/Users/fangyuan/Zotero/storage/TNE3IL2M/Hong et al. - 2023 - 3D-LLM Injecting the 3D World into Large Language Models.pdf}
 }
 
@@ -1130,6 +1140,7 @@
   title = {{{MultiPLY}}: {{A Multisensory Object-Centric Embodied Large Language Model}} in {{3D World}}},
   author = {Hong, Yining and Zheng, Zishuo and Chen, Peihao and Wang, Yian and Li, Junyan and Gan, Chuang},
   langid = {english},
+  keywords = {Robotic VLM,Vision+Language+3D+Audio+Thermal+Tactil2Language},
   file = {/Users/fangyuan/Zotero/storage/UP9V4J4A/Hong et al. - MultiPLY A Multisensory Object-Centric Embodied Large Language Model in 3D World.pdf}
 }
 
@@ -1216,6 +1227,7 @@
   urldate = {2024-12-06},
   abstract = {This paper introduces a framework, called EMOTION, for generating expressive motion sequences in humanoid robots, enhancing their ability to engage in humanlike non-verbal communication. Non-verbal cues such as facial expressions, gestures, and body movements play a crucial role in effective interpersonal interactions. Despite the advancements in robotic behaviors, existing methods often fall short in mimicking the diversity and subtlety of human non-verbal communication. To address this gap, our approach leverages the in-context learning capability of large language models (LLMs) to dynamically generate socially appropriate gesture motion sequences for human-robot interaction. We use this framework to generate 10 different expressive gestures and conduct online user studies comparing the naturalness and understandability of the motions generated by EMOTION and its human-feedback version, EMOTION++, against those by human operators. The results demonstrate that our approach either matches or surpasses human performance in generating understandable and natural robot motions under certain scenarios. We also provide design implications for future research to consider a set of variables when generating expressive robotic gestures.},
   archiveprefix = {arXiv},
+  keywords = {FFTAI,Motion Generation,Whole Body Control},
   file = {/Users/fangyuan/Zotero/storage/FXHDZP8X/Huang et al. - 2024 - EMOTION Expressive Motion Sequence Generation for Humanoid Robots with In-Context Learning.pdf;/Users/fangyuan/Zotero/storage/SBVY7PCA/2410.html}
 }
 
@@ -1247,7 +1259,7 @@
   urldate = {2024-01-29},
   abstract = {We present Skill Transformer, an approach for solving long-horizon robotic tasks by combining conditional sequence modeling and skill modularity. Conditioned on egocentric and proprioceptive observations of a robot, Skill Transformer is trained end-to-end to predict both a high-level skill (e.g., navigation, picking, placing), and a whole-body low-level action (e.g., base and arm motion), using a transformer architecture and demonstration trajectories that solve the full task. It retains the composability and modularity of the overall task through a skill predictor module while reasoning about low-level actions and avoiding hand-off errors, common in modular approaches. We test Skill Transformer on an embodied rearrangement benchmark and find it performs robust task planning and low-level control in new scenarios, achieving a 2.5x higher success rate than baselines in hard rearrangement problems.},
   archiveprefix = {arXiv},
-  keywords = {Manipulation,Navigation,VLA},
+  keywords = {Manipulation,Mobile Manipulation,VLA},
   file = {/Users/fangyuan/Zotero/storage/X8E8BD5F/Huang et al. - 2023 - Skill Transformer A Monolithic Policy for Mobile Manipulation.pdf;/Users/fangyuan/Zotero/storage/H3GQ83IK/2308.html}
 }
 
@@ -1285,6 +1297,7 @@
   abstract = {This paper studies close-loop task planning, which refers to the process of generating a sequence of skills (a plan) to accomplish a specific goal while adapting the plan based on real-time observations. Recently, prompting Large Language Models (LLMs) to generate actions iteratively has become a prevalent paradigm due to its superior performance and user-friendliness. However, this paradigm is plagued by two inefficiencies: high token consumption and redundant error correction, both of which hinder its scalability for large-scale testing and applications. To address these issues, we propose TREE-PLANNER, which reframes task planning with LLMs into three distinct phases: plan sampling, action tree construction, and grounded deciding. TREE-PLANNER starts by using an LLM to sample a set of potential plans before execution, followed by the aggregation of them to form an action tree. Finally, the LLM performs a top-down decision-making process on the tree, taking into account real-time environmental information. Experiments show that TREE-PLANNER achieves state-of-the-art performance while maintaining high efficiency. By decomposing LLM queries into a single plan-sampling call and multiple grounded-deciding calls, a considerable part of the prompt are less likely to be repeatedly consumed. As a result, token consumption is reduced by 92.2\% compared to the previously best-performing model. Additionally, by enabling backtracking on the action tree as needed, the correction process becomes more flexible, leading to a 40.5\% decrease in error corrections.},
   archiveprefix = {arXiv},
   langid = {english},
+  keywords = {Planning},
   file = {/Users/fangyuan/Zotero/storage/L6B4PWX6/Hu et al. - 2024 - Tree-Planner Efficient Close-loop Task Planning with Large Language Models.pdf}
 }
 
@@ -1326,6 +1339,7 @@
   urldate = {2024-12-06},
   abstract = {Imitation learning from human demonstrations is an effective means to teach robots manipulation skills. But data acquisition is a major bottleneck in applying this paradigm more broadly, due to the amount of cost and human effort involved. There has been significant interest in imitation learning for bimanual dexterous robots, like humanoids. Unfortunately, data collection is even more challenging here due to the challenges of simultaneously controlling multiple arms and multi-fingered hands. Automated data generation in simulation is a compelling, scalable alternative to fuel this need for data. To this end, we introduce DexMimicGen, a large-scale automated data generation system that synthesizes trajectories from a handful of human demonstrations for humanoid robots with dexterous hands. We present a collection of simulation environments in the setting of bimanual dexterous manipulation, spanning a range of manipulation behaviors and different requirements for coordination among the two arms. We generate 21K demos across these tasks from just 60 source human demos and study the effect of several data generation and policy learning decisions on agent performance. Finally, we present a real-to-sim-to-real pipeline and deploy it on a real-world humanoid can sorting task. Videos and more are at https://dexmimicgen.github.io/},
   archiveprefix = {arXiv},
+  keywords = {FFTAI,Manipulation,Real2Sim,Sim2Real,Teleoperation},
   file = {/Users/fangyuan/Zotero/storage/BHNMZKXC/Jiang et al. - 2024 - DexMimicGen Automated Data Generation for Bimanual Dexterous Manipulation via Imitation Learning.pdf;/Users/fangyuan/Zotero/storage/QGRCXDN7/2410.html}
 }
 
@@ -1344,6 +1358,7 @@
   urldate = {2024-12-06},
   abstract = {Humanoid robots, with their human-like embodiment, have the potential to integrate seamlessly into human environments. Critical to their coexistence and cooperation with humans is the ability to understand natural language communications and exhibit human-like behaviors. This work focuses on generating diverse whole-body motions for humanoid robots from language descriptions. We leverage human motion priors from extensive human motion datasets to initialize humanoid motions and employ the commonsense reasoning capabilities of Vision Language Models (VLMs) to edit and refine these motions. Our approach demonstrates the capability to produce natural, expressive, and text-aligned humanoid motions, validated through both simulated and real-world experiments. More videos can be found at https://ut-austin-rpl.github.io/Harmon/.},
   archiveprefix = {arXiv},
+  keywords = {FFTAI,Motion Generation,Whole Body Control},
   file = {/Users/fangyuan/Zotero/storage/BRJ52664/Jiang et al. - 2024 - Harmon Whole-Body Motion Generation of Humanoid Robots from Language Descriptions.pdf;/Users/fangyuan/Zotero/storage/BWI8288C/2410.html}
 }
 
@@ -1355,12 +1370,49 @@
   file = {/Users/fangyuan/Zotero/storage/ZCITK4CN/Jiang et al. - Simulation-Based Reinforcement Learning for Automatic Trajectory Planning in Conformal Needle-Based.pdf}
 }
 
+@misc{jiExBody2AdvancedExpressive2024,
+  title = {{{ExBody2}}: {{Advanced Expressive Humanoid Whole-Body Control}}},
+  shorttitle = {{{ExBody2}}},
+  author = {Ji, Mazeyu and Peng, Xuanbin and Liu, Fangchen and Li, Jialong and Yang, Ge and Cheng, Xuxin and Wang, Xiaolong},
+  year = {2024},
+  month = dec,
+  number = {arXiv:2412.13196},
+  eprint = {2412.13196},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2412.13196},
+  url = {http://arxiv.org/abs/2412.13196},
+  urldate = {2024-12-18},
+  abstract = {This paper enables real-world humanoid robots to maintain stability while performing expressive motions like humans do. We propose ExBody2, a generalized whole-body tracking framework that can take any reference motion inputs and control the humanoid to mimic the motion. The model is trained in simulation with Reinforcement Learning and then transferred to the real world. It decouples keypoint tracking with velocity control, and effectively leverages a privileged teacher policy to distill precise mimic skills into the target student policy, which enables high-fidelity replication of dynamic movements such as running, crouching, dancing, and other challenging motions. We present a comprehensive qualitative and quantitative analysis of crucial design factors in the paper. We conduct our experiments on two humanoid platforms and demonstrate the superiority of our approach against state-of-the-arts, providing practical guidelines to pursue the extreme of whole-body control for humanoid robots.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Artificial Intelligence,Computer Science - Machine Learning,Computer Science - Robotics},
+  file = {/Users/fangyuan/Zotero/storage/J9KCVB5N/Ji et al. - 2024 - ExBody2 Advanced Expressive Humanoid Whole-Body Control.pdf;/Users/fangyuan/Zotero/storage/BQW6Q4PV/2412.html}
+}
+
 @article{kalashnikovScalableDeepReinforcement,
   title = {Scalable {{Deep Reinforcement Learning}} for {{Vision-Based Robotic Manipulation}}},
   author = {Kalashnikov, Dmitry and Irpan, Alex and Pastor, Peter and Ibarz, Julian and Herzog, Alexander and Jang, Eric and Quillen, Deirdre and Holly, Ethan and Kalakrishnan, Mrinal and Vanhoucke, Vincent and Levine, Sergey},
   pages = {23},
   langid = {english},
   file = {/Users/fangyuan/Zotero/storage/UGH2PN5M/Kalashnikov et al. - Scalable Deep Reinforcement Learning for Vision-Ba.pdf}
+}
+
+@misc{kangIncorporatingTaskProgress2024,
+  title = {Incorporating {{Task Progress Knowledge}} for {{Subgoal Generation}} in {{Robotic Manipulation}} through {{Image Edits}}},
+  author = {Kang, Xuhui and Kuo, Yen-Ling},
+  year = {2024},
+  month = dec,
+  number = {arXiv:2410.11013},
+  eprint = {2410.11013},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2410.11013},
+  url = {http://arxiv.org/abs/2410.11013},
+  urldate = {2024-12-19},
+  abstract = {Understanding the progress of a task allows humans to not only track what has been done but also to better plan for future goals. We demonstrate TaKSIE, a novel framework that incorporates task progress knowledge into visual subgoal generation for robotic manipulation tasks. We jointly train a recurrent network with a latent diffusion model to generate the next visual subgoal based on the robot's current observation and the input language command. At execution time, the robot leverages a visual progress representation to monitor the task progress and adaptively samples the next visual subgoal from the model to guide the manipulation policy. We train and validate our model in simulated and real-world robotic tasks, achieving state-of-the-art performance on the CALVIN manipulation benchmark. We find that the inclusion of task progress knowledge can improve the robustness of trained policy for different initial robot poses or various movement speeds during demonstrations. The project website can be found at https://live-robotics-uva.github.io/TaKSIE/ .},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Robotics},
+  file = {/Users/fangyuan/Zotero/storage/WQM6SDHA/Kang and Kuo - 2024 - Incorporating Task Progress Knowledge for Subgoal Generation in Robotic Manipulation through Image E.pdf;/Users/fangyuan/Zotero/storage/2KP39PZD/2410.html}
 }
 
 @inproceedings{karatzoglouLearningRankRecommender2013,
@@ -1397,6 +1449,7 @@
   urldate = {2024-12-06},
   abstract = {The scale and diversity of demonstration data required for imitation learning is a significant challenge. We present EgoMimic, a full-stack framework which scales manipulation via human embodiment data, specifically egocentric human videos paired with 3D hand tracking. EgoMimic achieves this through: (1) a system to capture human embodiment data using the ergonomic Project Aria glasses, (2) a low-cost bimanual manipulator that minimizes the kinematic gap to human data, (3) cross-domain data alignment techniques, and (4) an imitation learning architecture that co-trains on human and robot data. Compared to prior works that only extract high-level intent from human videos, our approach treats human and robot data equally as embodied demonstration data and learns a unified policy from both data sources. EgoMimic achieves significant improvement on a diverse set of long-horizon, single-arm and bimanual manipulation tasks over state-of-the-art imitation learning methods and enables generalization to entirely new scenes. Finally, we show a favorable scaling trend for EgoMimic, where adding 1 hour of additional hand data is significantly more valuable than 1 hour of additional robot data. Videos and additional information can be found at https://egomimic.github.io/},
   archiveprefix = {arXiv},
+  keywords = {Imitation Learning,Manipulation},
   file = {/Users/fangyuan/Zotero/storage/VAKYME7Y/Kareer et al. - 2024 - EgoMimic Scaling Imitation Learning via Egocentric Video.pdf;/Users/fangyuan/Zotero/storage/IYHW8ULG/2410.html}
 }
 
@@ -1413,6 +1466,7 @@
   urldate = {2024-10-27},
   abstract = {Recent developments in foundation models, like Large Language Models (LLMs) and Vision-Language Models (VLMs), trained on extensive data, facilitate flexible application across different tasks and modalities. Their impact spans various fields, including healthcare, education, and robotics. This paper provides an overview of the practical application of foundation models in real-world robotics, with a primary emphasis on the replacement of specific components within existing robot systems. The summary encompasses the perspective of input-output relationships in foundation models, as well as their role in perception, motion planning, and control within the field of robotics. This paper concludes with a discussion of future challenges and implications for practical robot applications.},
   archiveprefix = {arXiv},
+  keywords = {Survey},
   file = {/Users/fangyuan/Zotero/storage/6PLKSSL9/Kawaharazuka et al. - 2024 - Real-World Robot Applications of Foundation Models A Review.pdf;/Users/fangyuan/Zotero/storage/SHAVJKXU/2402.html}
 }
 
@@ -1612,7 +1666,6 @@
   abstract = {We propose a framework to enable multipurpose assistive mobile robots to autonomously wipe tables to clean spills and crumbs. This problem is challenging, as it requires planning wiping actions while reasoning over uncertain latent dynamics of crumbs and spills captured via high-dimensional visual observations. Simultaneously, we must guarantee constraints satisfaction to enable safe deployment in unstructured cluttered environments. To tackle this problem, we first propose a stochastic differential equation to model crumbs and spill dynamics and absorption with a robot wiper. Using this model, we train a vision-based policy for planning wiping actions in simulation using reinforcement learning (RL). To enable zeroshot sim-to-real deployment, we dovetail the RL policy with a whole-body trajectory optimization framework to compute base and arm joint trajectories that execute the desired wiping motions while guaranteeing constraints satisfaction. We extensively validate our approach in simulation and on hardware.},
   archiveprefix = {arXiv},
   langid = {english},
-  keywords = {Electrical Engineering and Systems Science - Systems and Control},
   file = {/Users/fangyuan/Zotero/storage/UFS3CSPZ/Lew et al. - 2022 - Robotic Table Wiping via Reinforcement Learning an.pdf}
 }
 
@@ -1659,7 +1712,27 @@
   copyright = {https://doi.org/10.15223/policy-029},
   isbn = {979-8-3503-5300-6},
   langid = {english},
+  keywords = {Diffusion,Manipulation,Subgoal},
   file = {/Users/fangyuan/Zotero/storage/7ZLJKMPT/Liang et al. - 2024 - SkillDiffuser Interpretable Hierarchical Planning via Skill Abstractions in Diffusion-Based Task Ex.pdf}
+}
+
+@misc{liangSkillDiffuserInterpretableHierarchical2024a,
+  title = {{{SkillDiffuser}}: {{Interpretable Hierarchical Planning}} via {{Skill Abstractions}} in {{Diffusion-Based Task Execution}}},
+  shorttitle = {{{SkillDiffuser}}},
+  author = {Liang, Zhixuan and Mu, Yao and Ma, Hengbo and Tomizuka, Masayoshi and Ding, Mingyu and Luo, Ping},
+  year = {2024},
+  month = mar,
+  number = {arXiv:2312.11598},
+  eprint = {2312.11598},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2312.11598},
+  url = {http://arxiv.org/abs/2312.11598},
+  urldate = {2024-03-16},
+  abstract = {Diffusion models have demonstrated strong potential for robotic trajectory planning. However, generating coherent trajectories from high-level instructions remains challenging, especially for long-range composition tasks requiring multiple sequential skills. We propose SkillDiffuser, an end-to-end hierarchical planning framework integrating interpretable skill learning with conditional diffusion planning to address this problem. At the higher level, the skill abstraction module learns discrete, human-understandable skill representations from visual observations and language instructions. These learned skill embeddings are then used to condition the diffusion model to generate customized latent trajectories aligned with the skills. This allows generating diverse state trajectories that adhere to the learnable skills. By integrating skill learning with conditional trajectory generation, SkillDiffuser produces coherent behavior following abstract instructions across diverse tasks. Experiments on multi-task robotic manipulation benchmarks like Meta-World and LOReL demonstrate state-of-the-art performance and human-interpretable skill representations from SkillDiffuser. More visualization results and information could be found on our website.},
+  archiveprefix = {arXiv},
+  keywords = {Diffusion},
+  file = {/Users/fangyuan/Zotero/storage/UW5DZKWT/Liang et al. - 2024 - SkillDiffuser Interpretable Hierarchical Planning.pdf;/Users/fangyuan/Zotero/storage/RZ32P6L2/2312.html}
 }
 
 @misc{liDerivativeFreeGuidanceContinuous2024,
@@ -1699,6 +1772,7 @@
   urldate = {2024-12-07},
   abstract = {We study the problem of teaching humanoid robots manipulation skills by imitating from single video demonstrations. We introduce OKAMI, a method that generates a manipulation plan from a single RGB-D video and derives a policy for execution. At the heart of our approach is object-aware retargeting, which enables the humanoid robot to mimic the human motions in an RGB-D video while adjusting to different object locations during deployment. OKAMI uses open-world vision models to identify task-relevant objects and retarget the body motions and hand poses separately. Our experiments show that OKAMI achieves strong generalizations across varying visual and spatial conditions, outperforming the state-of-the-art baseline on open-world imitation from observation. Furthermore, OKAMI rollout trajectories are leveraged to train closed-loop visuomotor policies, which achieve an average success rate of \$79.2{\textbackslash}\%\$ without the need for labor-intensive teleoperation. More videos can be found on our website https://ut-austin-rpl.github.io/OKAMI/.},
   langid = {english},
+  keywords = {FFTAI,Manipulation,Retargeting},
   file = {/Users/fangyuan/Zotero/storage/MUP66L5W/Li et al. - 2024 - OKAMI Teaching Humanoid Robots Manipulation Skills through Single Video Imitation.pdf}
 }
 
@@ -1751,7 +1825,7 @@
   urldate = {2024-12-06},
   abstract = {This paper presents a comprehensive study on using deep reinforcement learning (RL) to create dynamic locomotion controllers for bipedal robots. Going beyond focusing on a single locomotion skill, we develop a general control solution that can be used for a range of dynamic bipedal skills, from periodic walking and running to aperiodic jumping and standing. Our RL-based controller incorporates a novel dual-history architecture, utilizing both a long-term and short-term input/output (I/O) history of the robot. This control architecture, when trained through the proposed end-to-end RL approach, consistently outperforms other methods across a diverse range of skills in both simulation and the real world. The study also delves into the adaptivity and robustness introduced by the proposed RL system in developing locomotion controllers. We demonstrate that the proposed architecture can adapt to both time-invariant dynamics shifts and time-variant changes, such as contact events, by effectively using the robot's I/O history. Additionally, we identify task randomization as another key source of robustness, fostering better task generalization and compliance to disturbances. The resulting control policies can be successfully deployed on Cassie, a torque-controlled human-sized bipedal robot. This work pushes the limits of agility for bipedal robots through extensive real-world experiments. We demonstrate a diverse range of locomotion skills, including: robust standing, versatile walking, fast running with a demonstration of a 400-meter dash, and a diverse set of jumping skills, such as standing long jumps and high jumps.},
   archiveprefix = {arXiv},
-  keywords = {Electrical Engineering and Systems Science - Systems and Control},
+  keywords = {Cassie,Locomotion},
   file = {/Users/fangyuan/Zotero/storage/XAJTKVTP/Li et al. - 2024 - Reinforcement Learning for Versatile, Dynamic, and Robust Bipedal Locomotion Control.pdf;/Users/fangyuan/Zotero/storage/D3U56NHL/2401.html}
 }
 
@@ -1769,7 +1843,6 @@
   urldate = {2024-12-07},
   abstract = {This paper presents a comprehensive study on using deep reinforcement learning (RL) to create dynamic locomotion controllers for bipedal robots. Going beyond focusing on a single locomotion skill, we develop a general control solution that can be used for a range of dynamic bipedal skills, from periodic walking and running to aperiodic jumping and standing. Our RL-based controller incorporates a novel dual-history architecture, utilizing both a long-term and short-term input/output (I/O) history of the robot. This control architecture, when trained through the proposed end-to-end RL approach, consistently outperforms other methods across a diverse range of skills in both simulation and the real world. The study also delves into the adaptivity and robustness introduced by the proposed RL system in developing locomotion controllers. We demonstrate that the proposed architecture can adapt to both time-invariant dynamics shifts and time-variant changes, such as contact events, by effectively using the robot's I/O history. Additionally, we identify task randomization as another key source of robustness, fostering better task generalization and compliance to disturbances. The resulting control policies can be successfully deployed on Cassie, a torque-controlled human-sized bipedal robot. This work pushes the limits of agility for bipedal robots through extensive real-world experiments. We demonstrate a diverse range of locomotion skills, including: robust standing, versatile walking, fast running with a demonstration of a 400-meter dash, and a diverse set of jumping skills, such as standing long jumps and high jumps.},
   archiveprefix = {arXiv},
-  keywords = {Electrical Engineering and Systems Science - Systems and Control},
   file = {/Users/fangyuan/Zotero/storage/IJXC9MX4/Li et al. - 2024 - Reinforcement Learning for Versatile, Dynamic, and Robust Bipedal Locomotion Control.pdf;/Users/fangyuan/Zotero/storage/L664I4N3/2401.html}
 }
 
@@ -1787,7 +1860,7 @@
   urldate = {2024-12-06},
   abstract = {This work aims to push the limits of agility for bipedal robots by enabling a torque-controlled bipedal robot to perform robust and versatile dynamic jumps in the real world. We present a reinforcement learning framework for training a robot to accomplish a large variety of jumping tasks, such as jumping to different locations and directions. To improve performance on these challenging tasks, we develop a new policy structure that encodes the robot's long-term input/output (I/O) history while also providing direct access to a short-term I/O history. In order to train a versatile jumping policy, we utilize a multi-stage training scheme that includes different training stages for different objectives. After multi-stage training, the policy can be directly transferred to a real bipedal Cassie robot. Training on different tasks and exploring more diverse scenarios lead to highly robust policies that can exploit the diverse set of learned maneuvers to recover from perturbations or poor landings during real-world deployment. Such robustness in the proposed policy enables Cassie to succeed in completing a variety of challenging jump tasks in the real world, such as standing long jumps, jumping onto elevated platforms, and multi-axes jumps.},
   archiveprefix = {arXiv},
-  keywords = {Electrical Engineering and Systems Science - Systems and Control},
+  keywords = {Cassie,Locomotion},
   file = {/Users/fangyuan/Zotero/storage/VHEJML6R/Li et al. - 2023 - Robust and Versatile Bipedal Jumping Control through Reinforcement Learning.pdf;/Users/fangyuan/Zotero/storage/4MUNZHM2/2302.html}
 }
 
@@ -1826,6 +1899,24 @@
   file = {/Users/fangyuan/Zotero/storage/2VS4LLCW/Liu et al. - 2022 - Goal-Conditioned Reinforcement Learning Problems .pdf}
 }
 
+@misc{liuHumanHumanoidRobotsCrossEmbodiment2024,
+  title = {Human-{{Humanoid Robots Cross-Embodiment Behavior-Skill Transfer Using Decomposed Adversarial Learning}} from {{Demonstration}}},
+  author = {Liu, Junjia and Li, Zhuo and Yu, Minghao and Dong, Zhipeng and Calinon, Sylvain and Caldwell, Darwin and Chen, Fei},
+  year = {2024},
+  month = dec,
+  number = {arXiv:2412.15166},
+  eprint = {2412.15166},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2412.15166},
+  url = {http://arxiv.org/abs/2412.15166},
+  urldate = {2024-12-22},
+  abstract = {Humanoid robots are envisioned as embodied intelligent agents capable of performing a wide range of human-level loco-manipulation tasks, particularly in scenarios requiring strenuous and repetitive labor. However, learning these skills is challenging due to the high degrees of freedom of humanoid robots, and collecting sufficient training data for humanoid is a laborious process. Given the rapid introduction of new humanoid platforms, a cross-embodiment framework that allows generalizable skill transfer is becoming increasingly critical. To address this, we propose a transferable framework that reduces the data bottleneck by using a unified digital human model as a common prototype and bypassing the need for re-training on every new robot platform. The model learns behavior primitives from human demonstrations through adversarial imitation, and the complex robot structures are decomposed into functional components, each trained independently and dynamically coordinated. Task generalization is achieved through a human-object interaction graph, and skills are transferred to different robots via embodiment-specific kinematic motion retargeting and dynamic fine-tuning. Our framework is validated on five humanoid robots with diverse configurations, demonstrating stable loco-manipulation and highlighting its effectiveness in reducing data requirements and increasing the efficiency of skill transfer across platforms.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Artificial Intelligence,Computer Science - Robotics},
+  file = {/Users/fangyuan/Zotero/storage/VHNFZC3H/Liu et al. - 2024 - Human-Humanoid Robots Cross-Embodiment Behavior-Skill Transfer Using Decomposed Adversarial Learning.pdf;/Users/fangyuan/Zotero/storage/GAFGTNPY/2412.html}
+}
+
 @misc{liuMAPPERMultiAgentPath2020,
   title = {{{MAPPER}}: {{Multi-Agent Path Planning}} with {{Evolutionary Reinforcement Learning}} in {{Mixed Dynamic Environments}}},
   shorttitle = {{{MAPPER}}},
@@ -1845,6 +1936,25 @@
   file = {/Users/fangyuan/Zotero/storage/MC7ZL7VY/Liu et al. - 2020 - MAPPER Multi-Agent Path Planning with Evolutionar.pdf}
 }
 
+@misc{liuMimickingBenchBenchmarkGeneralizable2024,
+  title = {Mimicking-{{Bench}}: {{A Benchmark}} for {{Generalizable Humanoid-Scene Interaction Learning}} via {{Human Mimicking}}},
+  shorttitle = {Mimicking-{{Bench}}},
+  author = {Liu, Yun and Yang, Bowen and Zhong, Licheng and Wang, He and Yi, Li},
+  year = {2024},
+  month = dec,
+  number = {arXiv:2412.17730},
+  eprint = {2412.17730},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2412.17730},
+  url = {http://arxiv.org/abs/2412.17730},
+  urldate = {2024-12-27},
+  abstract = {Learning generic skills for humanoid robots interacting with 3D scenes by mimicking human data is a key research challenge with significant implications for robotics and real-world applications. However, existing methodologies and benchmarks are constrained by the use of small-scale, manually collected demonstrations, lacking the general dataset and benchmark support necessary to explore scene geometry generalization effectively. To address this gap, we introduce Mimicking-Bench, the first comprehensive benchmark designed for generalizable humanoid-scene interaction learning through mimicking large-scale human animation references. Mimicking-Bench includes six household full-body humanoid-scene interaction tasks, covering 11K diverse object shapes, along with 20K synthetic and 3K real-world human interaction skill references. We construct a complete humanoid skill learning pipeline and benchmark approaches for motion retargeting, motion tracking, imitation learning, and their various combinations. Extensive experiments highlight the value of human mimicking for skill learning, revealing key challenges and research directions.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Computer Vision and Pattern Recognition,Computer Science - Robotics},
+  file = {/Users/fangyuan/Zotero/storage/ZWVDEPK6/Liu et al. - 2024 - Mimicking-Bench A Benchmark for Generalizable Humanoid-Scene Interaction Learning via Human Mimicki.pdf;/Users/fangyuan/Zotero/storage/P4YCTY7G/2412.html}
+}
+
 @misc{liuOKRobotWhatReally2024,
   title = {{{OK-Robot}}: {{What Really Matters}} in {{Integrating Open-Knowledge Models}} for {{Robotics}}},
   shorttitle = {{{OK-Robot}}},
@@ -1859,7 +1969,7 @@
   urldate = {2024-01-26},
   abstract = {Remarkable progress has been made in recent years in the fields of vision, language, and robotics. We now have vision models capable of recognizing objects based on language queries, navigation systems that can effectively control mobile systems, and grasping models that can handle a wide range of objects. Despite these advancements, general-purpose applications of robotics still lag behind, even though they rely on these fundamental capabilities of recognition, navigation, and grasping. In this paper, we adopt a systems-first approach to develop a new Open Knowledge-based robotics framework called OK-Robot. By combining Vision-Language Models (VLMs) for object detection, navigation primitives for movement, and grasping primitives for object manipulation, OK-Robot offers a integrated solution for pick-and-drop operations without requiring any training. To evaluate its performance, we run OK-Robot in 10 real-world home environments. The results demonstrate that OK-Robot achieves a 58.5\% success rate in open-ended pick-and-drop tasks, representing a new state-of-the-art in Open Vocabulary Mobile Manipulation (OVMM) with nearly 1.8x the performance of prior work. On cleaner, uncluttered environments, OK-Robot's performance increases to 82\%. However, the most important insight gained from OK-Robot is the critical role of nuanced details when combining Open Knowledge systems like VLMs with robotic modules. Videos of our experiments are available on our website: https://ok-robot.github.io},
   archiveprefix = {arXiv},
-  keywords = {Open Vocabulary},
+  keywords = {Manipulation,Mobile Manipulation,Open Vocabulary},
   file = {/Users/fangyuan/Zotero/storage/TINFIH7P/Liu et al. - 2024 - OK-Robot What Really Matters in Integrating Open-.pdf;/Users/fangyuan/Zotero/storage/W3XN5PUC/2401.html}
 }
 
@@ -1878,6 +1988,7 @@
   urldate = {2024-12-06},
   abstract = {Humanoid robots are designed to perform diverse loco-manipulation tasks. However, they face challenges due to their high-dimensional and unstable dynamics, as well as the complex contact-rich nature of the tasks. Model-based optimal control methods offer precise and systematic control but are limited by high computational complexity and accurate contact sensing. On the other hand, reinforcement learning (RL) provides robustness and handles high-dimensional spaces but suffers from inefficient learning, unnatural motion, and sim-to-real gaps. To address these challenges, we introduce Opt2Skill, an end-to-end pipeline that combines model-based trajectory optimization with RL to achieve robust whole-body loco-manipulation. We generate reference motions for the Digit humanoid robot using differential dynamic programming (DDP) and train RL policies to track these trajectories. Our results demonstrate that Opt2Skill outperforms pure RL methods in both training efficiency and task performance, with optimal trajectories that account for torque limits enhancing trajectory tracking. We successfully transfer our approach to real-world applications.},
   archiveprefix = {arXiv},
+  keywords = {Digit,Whole Body Control},
   file = {/Users/fangyuan/Zotero/storage/XBZNFBPU/Liu et al. - 2024 - Opt2Skill Imitating Dynamically-feasible Whole-Body Trajectories for Versatile Humanoid Loco-Manipu.pdf;/Users/fangyuan/Zotero/storage/PJ2Q975N/2409.html}
 }
 
@@ -1885,6 +1996,7 @@
   title = {{{TACO}}: {{Benchmarking Generalizable Bimanual Tool-ACtion-Object Understanding}}},
   author = {Liu, Yun and Yang, Haolin and Si, Xu and Liu, Ling and Li, Zipeng and Zhang, Yuxiang and Liu, Yebin and Yi, Li},
   langid = {english},
+  keywords = {Dataset,Manipulation},
   file = {/Users/fangyuan/Zotero/storage/3F7ZG7HP/Liu et al. - TACO Benchmarking Generalizable Bimanual Tool-ACtion-Object Understanding.pdf}
 }
 
@@ -1902,7 +2014,27 @@
   urldate = {2024-12-06},
   abstract = {In contrast to quadruped robots that can navigate diverse terrains using a "blind" policy, humanoid robots require accurate perception for stable locomotion due to their high degrees of freedom and inherently unstable morphology. However, incorporating perceptual signals often introduces additional disturbances to the system, potentially reducing its robustness, generalizability, and efficiency. This paper presents the Perceptive Internal Model (PIM), which relies on onboard, continuously updated elevation maps centered around the robot to perceive its surroundings. We train the policy using ground-truth obstacle heights surrounding the robot in simulation, optimizing it based on the Hybrid Internal Model (HIM), and perform inference with heights sampled from the constructed elevation map. Unlike previous methods that directly encode depth maps or raw point clouds, our approach allows the robot to perceive the terrain beneath its feet clearly and is less affected by camera movement or noise. Furthermore, since depth map rendering is not required in simulation, our method introduces minimal additional computational costs and can train the policy in 3 hours on an RTX 4090 GPU. We verify the effectiveness of our method across various humanoid robots, various indoor and outdoor terrains, stairs, and various sensor configurations. Our method can enable a humanoid robot to continuously climb stairs and has the potential to serve as a foundational algorithm for the development of future humanoid control methods.},
   archiveprefix = {arXiv},
+  keywords = {Locomotion,Unitree},
   file = {/Users/fangyuan/Zotero/storage/79QNZ4AI/Long et al. - 2024 - Learning Humanoid Locomotion with Perceptive Internal Model.pdf;/Users/fangyuan/Zotero/storage/VXUYSFQH/2411.html}
+}
+
+@misc{luMobileTeleVisionPredictiveMotion2024,
+  title = {Mobile-{{TeleVision}}: {{Predictive Motion Priors}} for {{Humanoid Whole-Body Control}}},
+  shorttitle = {Mobile-{{TeleVision}}},
+  author = {Lu, Chenhao and Cheng, Xuxin and Li, Jialong and Yang, Shiqi and Ji, Mazeyu and Yuan, Chengjing and Yang, Ge and Yi, Sha and Wang, Xiaolong},
+  year = {2024},
+  month = dec,
+  number = {arXiv:2412.07773},
+  eprint = {2412.07773},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2412.07773},
+  url = {http://arxiv.org/abs/2412.07773},
+  urldate = {2024-12-18},
+  abstract = {Humanoid robots require both robust lower-body locomotion and precise upper-body manipulation. While recent Reinforcement Learning (RL) approaches provide whole-body loco-manipulation policies, they lack precise manipulation with high DoF arms. In this paper, we propose decoupling upper-body control from locomotion, using inverse kinematics (IK) and motion retargeting for precise manipulation, while RL focuses on robust lower-body locomotion. We introduce PMP (Predictive Motion Priors), trained with Conditional Variational Autoencoder (CVAE) to effectively represent upper-body motions. The locomotion policy is trained conditioned on this upper-body motion representation, ensuring that the system remains robust with both manipulation and locomotion. We show that CVAE features are crucial for stability and robustness, and significantly outperforms RL-based whole-body control in precise manipulation. With precise upper-body motion and robust lower-body locomotion control, operators can remotely control the humanoid to walk around and explore different environments, while performing diverse manipulation tasks.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Artificial Intelligence,Computer Science - Machine Learning,Computer Science - Robotics},
+  file = {/Users/fangyuan/Zotero/storage/Q9VRKT3N/Lu et al. - 2024 - Mobile-TeleVision Predictive Motion Priors for Humanoid Whole-Body Control.pdf;/Users/fangyuan/Zotero/storage/WT4XLBU6/2412.html}
 }
 
 @misc{luoGraspingDiverseObjects2024,
@@ -1973,6 +2105,24 @@
   file = {/Users/fangyuan/Zotero/storage/KNF9HEXG/Lynch et al. - 2022 - Interactive Language Talking to Robots in Real Time.pdf}
 }
 
+@misc{maoLearningMassiveHuman2024,
+  title = {Learning from {{Massive Human Videos}} for {{Universal Humanoid Pose Control}}},
+  author = {Mao, Jiageng and Zhao, Siheng and Song, Siqi and Shi, Tianheng and Ye, Junjie and Zhang, Mingtong and Geng, Haoran and Malik, Jitendra and Guizilini, Vitor and Wang, Yue},
+  year = {2024},
+  month = dec,
+  number = {arXiv:2412.14172},
+  eprint = {2412.14172},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2412.14172},
+  url = {http://arxiv.org/abs/2412.14172},
+  urldate = {2024-12-19},
+  abstract = {Scalable learning of humanoid robots is crucial for their deployment in real-world applications. While traditional approaches primarily rely on reinforcement learning or teleoperation to achieve whole-body control, they are often limited by the diversity of simulated environments and the high costs of demonstration collection. In contrast, human videos are ubiquitous and present an untapped source of semantic and motion information that could significantly enhance the generalization capabilities of humanoid robots. This paper introduces Humanoid-X, a large-scale dataset of over 20 million humanoid robot poses with corresponding text-based motion descriptions, designed to leverage this abundant data. Humanoid-X is curated through a comprehensive pipeline: data mining from the Internet, video caption generation, motion retargeting of humans to humanoid robots, and policy learning for real-world deployment. With Humanoid-X, we further train a large humanoid model, UH-1, which takes text instructions as input and outputs corresponding actions to control a humanoid robot. Extensive simulated and real-world experiments validate that our scalable training approach leads to superior generalization in text-based humanoid control, marking a significant step toward adaptable, real-world-ready humanoid robots.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Artificial Intelligence,Computer Science - Computation and Language,Computer Science - Computer Vision and Pattern Recognition,Computer Science - Robotics},
+  file = {/Users/fangyuan/Zotero/storage/2Z98QW9X/Mao et al. - 2024 - Learning from Massive Human Videos for Universal Humanoid Pose Control.pdf;/Users/fangyuan/Zotero/storage/ANNDME8E/2412.html}
+}
+
 @misc{maSurveyVisionLanguageActionModels2024,
   title = {A {{Survey}} on {{Vision-Language-Action Models}} for {{Embodied AI}}},
   author = {Ma, Yueen and Song, Zixing and Zhuang, Yuzheng and Hao, Jianye and King, Irwin},
@@ -2006,6 +2156,7 @@
   urldate = {2024-12-07},
   abstract = {As large language models (LLMs) evolve, their integration with 3D spatial data (3D-LLMs) has seen rapid progress, offering unprecedented capabilities for understanding and interacting with physical spaces. This survey provides a comprehensive overview of the methodologies enabling LLMs to process, understand, and generate 3D data. Highlighting the unique advantages of LLMs, such as in-context learning, step-by-step reasoning, open-vocabulary capabilities, and extensive world knowledge, we underscore their potential to significantly advance spatial comprehension and interaction within embodied Artificial Intelligence (AI) systems. Our investigation spans various 3D data representations, from point clouds to Neural Radiance Fields (NeRFs). It examines their integration with LLMs for tasks such as 3D scene understanding, captioning, question-answering, and dialogue, as well as LLM-based agents for spatial reasoning, planning, and navigation. The paper also includes a brief review of other methods that integrate 3D and language. The meta-analysis presented in this paper reveals significant progress yet underscores the necessity for novel approaches to harness the full potential of 3D-LLMs. Hence, with this paper, we aim to chart a course for future research that explores and expands the capabilities of 3D-LLMs in understanding and interacting with the complex 3D world. To support this survey, we have established a project page where papers related to our topic are organized and listed: https://github.com/ActiveVisionLab/Awesome-LLM-3D.},
   archiveprefix = {arXiv},
+  keywords = {Robotic VLM,Survey},
   file = {/Users/fangyuan/Zotero/storage/V8FISLZS/Ma et al. - 2024 - When LLMs step into the 3D World A Survey and Meta-Analysis of 3D Tasks via Multi-modal Large Langu.pdf;/Users/fangyuan/Zotero/storage/NWDUX3CE/2405.html}
 }
 
@@ -2131,7 +2282,7 @@
   urldate = {2023-10-19},
   abstract = {Our goal is for robots to follow natural language instructions like "put the towel next to the microwave." But getting large amounts of labeled data, i.e. data that contains demonstrations of tasks labeled with the language instruction, is prohibitive. In contrast, obtaining policies that respond to image goals is much easier, because any autonomous trial or demonstration can be labeled in hindsight with its final state as the goal. In this work, we contribute a method that taps into joint image- and goal- conditioned policies with language using only a small amount of language data. Prior work has made progress on this using vision-language models or by jointly training language-goal-conditioned policies, but so far neither method has scaled effectively to real-world robot tasks without significant human annotation. Our method achieves robust performance in the real world by learning an embedding from the labeled data that aligns language not to the goal image, but rather to the desired change between the start and goal images that the instruction corresponds to. We then train a policy on this embedding: the policy benefits from all the unlabeled data, but the aligned embedding provides an interface for language to steer the policy. We show instruction following across a variety of manipulation tasks in different scenes, with generalization to language instructions outside of the labeled data. Videos and code for our approach can be found on our website: https://rail-berkeley.github.io/grif/ .},
   archiveprefix = {arXiv},
-  keywords = {Goal-Conditioned RL,LLM/VLM,Manipulation},
+  keywords = {Goal-Conditioned RL,Manipulation,Subgoal},
   file = {/Users/fangyuan/Zotero/storage/VCFNYX2J/Myers et al. - 2023 - Goal Representations for Instruction Following A .pdf;/Users/fangyuan/Zotero/storage/YN44XPM9/2307.html}
 }
 
@@ -2306,6 +2457,7 @@
   urldate = {2024-12-06},
   abstract = {Recent advancements in Artificial Intelligence (AI) have largely been propelled by scaling. In Robotics, scaling is hindered by the lack of access to massive robot datasets. We advocate using realistic physical simulation as a means to scale environments, tasks, and datasets for robot learning methods. We present RoboCasa, a large-scale simulation framework for training generalist robots in everyday environments. RoboCasa features realistic and diverse scenes focusing on kitchen environments. We provide thousands of 3D assets across over 150 object categories and dozens of interactable furniture and appliances. We enrich the realism and diversity of our simulation with generative AI tools, such as object assets from text-to-3D models and environment textures from text-to-image models. We design a set of 100 tasks for systematic evaluation, including composite tasks generated by the guidance of large language models. To facilitate learning, we provide high-quality human demonstrations and integrate automated trajectory generation methods to substantially enlarge our datasets with minimal human burden. Our experiments show a clear scaling trend in using synthetically generated robot data for large-scale imitation learning and show great promise in harnessing simulation data in real-world tasks. Videos and open-source code are available at https://robocasa.ai/},
   archiveprefix = {arXiv},
+  keywords = {Benchmark},
   file = {/Users/fangyuan/Zotero/storage/LTLGYAWA/Nasiriany et al. - 2024 - RoboCasa Large-Scale Simulation of Everyday Tasks for Generalist Robots.pdf;/Users/fangyuan/Zotero/storage/3U8QP5WV/2406.html}
 }
 
@@ -2350,6 +2502,7 @@
   urldate = {2024-12-06},
   abstract = {The quest to build a generalist robotic system is impeded by the scarcity of diverse and high-quality data. While real-world data collection effort exist, requirements for robot hardware, physical environment setups, and frequent resets significantly impede the scalability needed for modern learning frameworks. We introduce DART, a teleoperation platform designed for crowdsourcing that reimagines robotic data collection by leveraging cloud-based simulation and augmented reality (AR) to address many limitations of prior data collection efforts. Our user studies highlight that DART enables higher data collection throughput and lower physical fatigue compared to real-world teleoperation. We also demonstrate that policies trained using DART-collected datasets successfully transfer to reality and are robust to unseen visual disturbances. All data collected through DART is automatically stored in our cloud-hosted database, DexHub, which will be made publicly available upon curation, paving the path for DexHub to become an ever-growing data hub for robot learning. Videos are available at: https://dexhub.ai/project},
   archiveprefix = {arXiv},
+  keywords = {Manipulation,Teleoperation,Vision Pro},
   file = {/Users/fangyuan/Zotero/storage/SKM6N7UE/Park et al. - 2024 - DexHub and DART Towards Internet Scale Robot Data Collection.pdf;/Users/fangyuan/Zotero/storage/NPY6UID8/2411.html}
 }
 
@@ -2481,6 +2634,7 @@
   urldate = {2024-12-07},
   isbn = {978-0-9923747-9-2},
   langid = {english},
+  keywords = {Dexterous Hand,Manipulation,Teleoperation},
   file = {/Users/fangyuan/Zotero/storage/Y9M9QS3E/Qin et al. - 2023 - AnyTeleop A General Vision-Based Dexterous Robot Arm-Hand Teleoperation System.pdf}
 }
 
@@ -2512,6 +2666,7 @@
   urldate = {2024-11-28},
   abstract = {An open problem in mobile manipulation is how to represent objects and scenes in a unified manner so that robots can use both for navigation and manipulation. The latter requires capturing intricate geometry while understanding fine-grained semantics, whereas the former involves capturing the complexity inherent at an expansive physical scale. In this work, we present GeFF (Generalizable Feature Fields), a scene-level generalizable neural feature field that acts as a unified representation for both navigation and manipulation that performs in real-time. To do so, we treat generative novel view synthesis as a pre-training task, and then align the resulting rich scene priors with natural language via CLIP feature distillation. We demonstrate the effectiveness of this approach by deploying GeFF on a quadrupedal robot equipped with a manipulator. We quantitatively evaluate GeFF's ability for open-vocabulary object-/part-level manipulation and show that GeFF outperforms point-based baselines in runtime and storage-accuracy trade-offs, with qualitative examples of semantics-aware navigation and articulated object manipulation.},
   archiveprefix = {arXiv},
+  keywords = {Manipulation,Mobile Manipulation},
   file = {/Users/fangyuan/Zotero/storage/FKE8DZZU/Qiu et al. - 2024 - Learning Generalizable Feature Fields for Mobile Manipulation.pdf;/Users/fangyuan/Zotero/storage/VYMDVPM4/2403.html}
 }
 
@@ -2529,7 +2684,7 @@
   abstract = {Open-Vocabulary Mobile Manipulation (OVMM) is a crucial capability for autonomous robots, especially when faced with the challenges posed by unknown and dynamic environments. This task requires robots to explore and build a semantic understanding of their surroundings, generate feasible plans to achieve manipulation goals, adapt to environmental changes, and comprehend natural language instructions from humans. To address these challenges, we propose a novel framework that leverages the zero-shot detection and grounded recognition capabilities of pretraining visual-language models (VLMs) combined with dense 3D entity reconstruction to build 3D semantic maps. Additionally, we utilize large language models (LLMs) for spatial region abstraction and online planning, incorporating human instructions and spatial semantic context. We have built a 10-DoF mobile manipulation robotic platform JSR-1 and demonstrated in real-world robot experiments that our proposed framework can effectively capture spatial semantics and process natural language user instructions for zero-shot OVMM tasks under dynamic environment settings, with an overall navigation and task success rate of 80.95\% and 73.33\% over 105 episodes, and better SFT and SPL by 157.18\% and 19.53\% respectively compared to the baseline. Furthermore, the framework is capable of replanning towards the next most probable candidate location based on the spatial semantic context derived from the 3D semantic map when initial plans fail, keeping an average success rate of 76.67\%.},
   archiveprefix = {arXiv},
   langid = {english},
-  keywords = {Mobile Manipulation,Open Vocabulary},
+  keywords = {LLM,Manipulation,Mobile Manipulation,Open Vocabulary,VLM},
   file = {/Users/fangyuan/Zotero/storage/NR39I5VQ/Qiu et al. - 2024 - Open-vocabulary Mobile Manipulation in Unseen Dynamic Environments with 3D Semantic Maps.pdf}
 }
 
@@ -2564,6 +2719,7 @@
   urldate = {2024-12-06},
   abstract = {We cast real-world humanoid control as a next token prediction problem, akin to predicting the next word in language. Our model is a causal transformer trained via autoregressive prediction of sensorimotor trajectories. To account for the multi-modal nature of the data, we perform prediction in a modality-aligned way, and for each input token predict the next token from the same modality. This general formulation enables us to leverage data with missing modalities, like video trajectories without actions. We train our model on a collection of simulated trajectories coming from prior neural network policies, model-based controllers, motion capture data, and YouTube videos of humans. We show that our model enables a full-sized humanoid to walk in San Francisco zero-shot. Our model can transfer to the real world even when trained on only 27 hours of walking data, and can generalize to commands not seen during training like walking backward. These findings suggest a promising path toward learning challenging real-world control tasks by generative modeling of sensorimotor trajectories.},
   archiveprefix = {arXiv},
+  keywords = {Digit,Locomotion},
   file = {/Users/fangyuan/Zotero/storage/S9E6UPUH/Radosavovic et al. - 2024 - Humanoid Locomotion as Next Token Prediction.pdf;/Users/fangyuan/Zotero/storage/QNPAYCLM/2402.html}
 }
 
@@ -2581,6 +2737,7 @@
   urldate = {2024-12-06},
   abstract = {Humanoid robots can, in principle, use their legs to go almost anywhere. Developing controllers capable of traversing diverse terrains, however, remains a considerable challenge. Classical controllers are hard to generalize broadly while the learning-based methods have primarily focused on gentle terrains. Here, we present a learning-based approach for blind humanoid locomotion capable of traversing challenging natural and man-made terrain. Our method uses a transformer model to predict the next action based on the history of proprioceptive observations and actions. The model is first pre-trained on a dataset of flat-ground trajectories with sequence modeling, and then fine-tuned on uneven terrain using reinforcement learning. We evaluate our model on a real humanoid robot across a variety of terrains, including rough, deformable, and sloped surfaces. The model demonstrates robust performance, in-context adaptation, and emergent terrain representations. In real-world case studies, our humanoid robot successfully traversed over 4 miles of hiking trails in Berkeley and climbed some of the steepest streets in San Francisco.},
   archiveprefix = {arXiv},
+  keywords = {Digit,Locomotion},
   file = {/Users/fangyuan/Zotero/storage/EIBIFSV7/Radosavovic et al. - 2024 - Learning Humanoid Locomotion over Challenging Terrain.pdf;/Users/fangyuan/Zotero/storage/ZHXXYXK3/2410.html}
 }
 
@@ -2598,6 +2755,7 @@
   urldate = {2024-12-06},
   abstract = {Humanoid robots that can autonomously operate in diverse environments have the potential to help address labour shortages in factories, assist elderly at homes, and colonize new planets. While classical controllers for humanoid robots have shown impressive results in a number of settings, they are challenging to generalize and adapt to new environments. Here, we present a fully learning-based approach for real-world humanoid locomotion. Our controller is a causal transformer that takes the history of proprioceptive observations and actions as input and predicts the next action. We hypothesize that the observation-action history contains useful information about the world that a powerful transformer model can use to adapt its behavior in-context, without updating its weights. We train our model with large-scale model-free reinforcement learning on an ensemble of randomized environments in simulation and deploy it to the real world zero-shot. Our controller can walk over various outdoor terrains, is robust to external disturbances, and can adapt in context.},
   archiveprefix = {arXiv},
+  keywords = {Digit,Locomotion},
   file = {/Users/fangyuan/Zotero/storage/YYWAGVP3/Radosavovic et al. - 2023 - Real-World Humanoid Locomotion with Reinforcement Learning.pdf;/Users/fangyuan/Zotero/storage/EBMFWUG7/2303.html}
 }
 
@@ -2709,7 +2867,26 @@
   urldate = {2024-12-06},
   abstract = {Humanoid robots could benefit from using their upper bodies for support contacts, enhancing their workspace, stability, and ability to perform contact-rich and pushing tasks. In this paper, we propose a unified approach that combines an optimization-based multi-contact whole-body controller with Flow Matching, a recently introduced method capable of generating multi-modal trajectory distributions for imitation learning. In simulation, we show that Flow Matching is more appropriate for robotics than Diffusion and traditional behavior cloning. On a real full-size humanoid robot (Talos), we demonstrate that our approach can learn a whole-body non-prehensile box-pushing task and that the robot can close dishwasher drawers by adding contacts with its free hand when needed for balance. We also introduce a shared autonomy mode for assisted teleoperation, providing automatic contact placement for tasks not covered in the demonstrations. Full experimental videos are available at: https://hucebot.github.io/flow\_multisupport\_website/},
   archiveprefix = {arXiv},
+  keywords = {Flow Matching,Manipulation,Talos},
   file = {/Users/fangyuan/Zotero/storage/TQBMGIHN/Rouxel et al. - 2024 - Flow Matching Imitation Learning for Multi-Support Manipulation.pdf;/Users/fangyuan/Zotero/storage/G4MEEDN5/2407.html}
+}
+
+@misc{rozlivekHARMONIOUSHumanlikeReactive2024,
+  title = {{{HARMONIOUS}} -- {{Human-like}} Reactive Motion Control and Multimodal Perception for Humanoid Robots},
+  author = {Rozlivek, Jakub and Roncone, Alessandro and Pattacini, Ugo and Hoffmann, Matej},
+  year = {2024},
+  month = dec,
+  number = {arXiv:2312.02711},
+  eprint = {2312.02711},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2312.02711},
+  url = {http://arxiv.org/abs/2312.02711},
+  urldate = {2024-12-18},
+  abstract = {For safe and effective operation of humanoid robots in human-populated environments, the problem of commanding a large number of Degrees of Freedom (DoF) while simultaneously considering dynamic obstacles and human proximity has still not been solved. We present a new reactive motion controller that commands two arms of a humanoid robot and three torso joints (17 DoF in total). We formulate a quadratic program that seeks joint velocity commands respecting multiple constraints while minimizing the magnitude of the velocities. We introduce a new unified treatment of obstacles that dynamically maps visual and proximity (pre-collision) and tactile (post-collision) obstacles as additional constraints to the motion controller, in a distributed fashion over the surface of the upper body of the iCub robot (with 2000 pressure-sensitive receptors). This results in a bio-inspired controller that: (i) gives rise to a robot with whole-body visuo-tactile awareness, resembling peripersonal space representations, and (ii) produces human-like minimum jerk movement profiles. The controller was extensively experimentally validated, including a physical human-robot interaction scenario.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Robotics},
+  file = {/Users/fangyuan/Zotero/storage/4LESHNWH/Rozlivek et al. - 2024 - HARMONIOUS -- Human-like reactive motion control and multimodal perception for humanoid robots.pdf;/Users/fangyuan/Zotero/storage/ES3FFBKB/2312.html}
 }
 
 @article{schaulUniversalValueFunction,
@@ -2770,7 +2947,6 @@
   urldate = {2023-11-06},
   abstract = {Policy gradient methods are an appealing approach in reinforcement learning because they directly optimize the cumulative reward and can straightforwardly be used with nonlinear function approximators such as neural networks. The two main challenges are the large number of samples typically required, and the difficulty of obtaining stable and steady improvement despite the nonstationarity of the incoming data. We address the first challenge by using value functions to substantially reduce the variance of policy gradient estimates at the cost of some bias, with an exponentially-weighted estimator of the advantage function that is analogous to TD(lambda). We address the second challenge by using trust region optimization procedure for both the policy and the value function, which are represented by neural networks. Our approach yields strong empirical results on highly challenging 3D locomotion tasks, learning running gaits for bipedal and quadrupedal simulated robots, and learning a policy for getting the biped to stand up from starting out lying on the ground. In contrast to a body of prior work that uses hand-crafted policy representations, our neural network policies map directly from raw kinematics to joint torques. Our algorithm is fully model-free, and the amount of simulated experience required for the learning tasks on 3D bipeds corresponds to 1-2 weeks of real time.},
   archiveprefix = {arXiv},
-  keywords = {Electrical Engineering and Systems Science - Systems and Control},
   file = {/Users/fangyuan/Zotero/storage/XMB7N73S/Schulman et al. - 2018 - High-Dimensional Continuous Control Using Generali.pdf;/Users/fangyuan/Zotero/storage/BJSMJBFE/1506.html}
 }
 
@@ -2832,7 +3008,6 @@
   urldate = {2024-11-22},
   abstract = {Despite recent advances in improving the sample-efficiency of reinforcement learning (RL) algorithms, designing an RL algorithm that can be practically deployed in real-world environments remains a challenge. In this paper, we present Coarse-to-fine Reinforcement Learning (CRL), a framework that trains RL agents to zoom-into a continuous action space in a coarse-to-fine manner, enabling the use of stable, sample-efficient value-based RL algorithms for fine-grained continuous control tasks. Our key idea is to train agents that output actions by iterating the procedure of (i) discretizing the continuous action space into multiple intervals and (ii) selecting the interval with the highest Q-value to further discretize at the next level. We then introduce a concrete, value-based algorithm within the CRL framework called Coarse-to-fine Q-Network (CQN). Our experiments demonstrate that CQN significantly outperforms RL and behavior cloning baselines on 20 sparsely-rewarded RLBench manipulation tasks with a modest number of environment interactions and expert demonstrations. We also show that CQN robustly learns to solve real-world manipulation tasks within a few minutes of online training.},
   archiveprefix = {arXiv},
-  keywords = {Electrical Engineering and Systems Science - Systems and Control},
   file = {/Users/fangyuan/Zotero/storage/E7B5W5ZK/Seo et al. - 2024 - Continuous Control with Coarse-to-fine Reinforcement Learning.pdf;/Users/fangyuan/Zotero/storage/XRXSNU72/2407.html}
 }
 
@@ -2850,6 +3025,7 @@
   urldate = {2024-12-06},
   abstract = {We tackle the problem of developing humanoid loco-manipulation skills with deep imitation learning. The difficulty of collecting task demonstrations and training policies for humanoids with a high degree of freedom presents substantial challenges. We introduce TRILL, a data-efficient framework for training humanoid loco-manipulation policies from human demonstrations. In this framework, we collect human demonstration data through an intuitive Virtual Reality (VR) interface. We employ the whole-body control formulation to transform task-space commands by human operators into the robot's joint-torque actuation while stabilizing its dynamics. By employing high-level action abstractions tailored for humanoid loco-manipulation, our method can efficiently learn complex sensorimotor skills. We demonstrate the effectiveness of TRILL in simulation and on a real-world robot for performing various loco-manipulation tasks. Videos and additional materials can be found on the project page: https://ut-austin-rpl.github.io/TRILL.},
   archiveprefix = {arXiv},
+  keywords = {Imitation Learning,Manipulation,Teleoperation},
   file = {/Users/fangyuan/Zotero/storage/GS8W9GBL/Seo et al. - 2023 - Deep Imitation Learning for Humanoid Loco-manipulation through Human Teleoperation.pdf;/Users/fangyuan/Zotero/storage/WC5BNJM2/2309.html}
 }
 
@@ -2868,6 +3044,7 @@
   urldate = {2024-12-06},
   abstract = {Humanoid robots hold great promise in assisting humans in diverse environments and tasks, due to their flexibility and adaptability leveraging human-like morphology. However, research in humanoid robots is often bottlenecked by the costly and fragile hardware setups. To accelerate algorithmic research in humanoid robots, we present a high-dimensional, simulated robot learning benchmark, HumanoidBench, featuring a humanoid robot equipped with dexterous hands and a variety of challenging whole-body manipulation and locomotion tasks. Our findings reveal that state-of-the-art reinforcement learning algorithms struggle with most tasks, whereas a hierarchical learning approach achieves superior performance when supported by robust low-level policies, such as walking or reaching. With HumanoidBench, we provide the robotics community with a platform to identify the challenges arising when solving diverse tasks with humanoid robots, facilitating prompt verification of algorithms and ideas. The open-source code is available at https://humanoid-bench.github.io.},
   archiveprefix = {arXiv},
+  keywords = {Benchmark},
   file = {/Users/fangyuan/Zotero/storage/GZM5WVEP/Sferrazza et al. - 2024 - HumanoidBench Simulated Humanoid Benchmark for Whole-Body Locomotion and Manipulation.pdf;/Users/fangyuan/Zotero/storage/5VQKMUUC/2403.html}
 }
 
@@ -2881,6 +3058,7 @@
   urldate = {2024-12-06},
   abstract = {To train generalist robot policies, machine learning methods often require a substantial amount of expert human teleoperation data. An ideal robot for humans collecting data is one that closely mimics them: bimanual arms and dexterous hands. However, creating such a bimanual teleoperation system with over 50 DoF is a significant challenge. To address this, we introduce Bidex, an extremely dexterous, low-cost, low-latency and portable bimanual dexterous teleoperation system which relies on motion capture gloves and teacher arms. We compare Bidex to a Vision Pro teleoperation system and a SteamVR system and find Bidex to produce better quality data for more complex tasks at a faster rate. Additionally, we show Bidex operating a mobile bimanual robot for in the wild tasks. Please refer to https://bidex-teleop.github.io for video results and instructions to recreate Bidex. The robot hands (5k USD) and teleoperation system (7k USD) is readily reproducible and can be used on many robot arms including two xArms (\$16k USD).},
   langid = {english},
+  keywords = {Dexterous Hand,Manipulation,Teleoperation},
   file = {/Users/fangyuan/Zotero/storage/7VBS89GN/Shaw et al. - 2024 - Bimanual Dexterity for Complex Tasks.pdf}
 }
 
@@ -2899,7 +3077,7 @@
   abstract = {Hierarchical control for robotics has long been plagued by the need to have a well defined interface layer to communicate between high-level task planners and low-level policies. With the advent of LLMs, language has been emerging as a prospective interface layer. However, this has several limitations. Not all tasks can be decomposed into steps that are easily expressible in natural language (e.g. performing a dance routine). Further, it makes end-to-end finetuning on embodied data challenging due to domain shift and catastrophic forgetting. We introduce our method -- Learnable Latent Codes as Bridges (LCB) -- as an alternate architecture to overcome these limitations. {\textbackslash}method{\textasciitilde}uses a learnable latent code to act as a bridge between LLMs and low-level policies. This enables LLMs to flexibly communicate goals in the task plan without being entirely constrained by language limitations. Additionally, it enables end-to-end finetuning without destroying the embedding space of word tokens learned during pre-training. Through experiments on Language Table and Calvin, two common language based benchmarks for embodied agents, we find that {\textbackslash}method{\textasciitilde}outperforms baselines (including those w/ GPT-4V) that leverage pure language as the interface layer on tasks that require reasoning and multi-step behaviors.},
   archiveprefix = {arXiv},
   langid = {english},
-  keywords = {Manipulation,VLA},
+  keywords = {Manipulation,Robotic VLM,VLA},
   file = {/Users/fangyuan/Zotero/storage/L9SI7VR5/Shentu et al. - 2024 - From LLMs to Actions Latent Codes as Bridges in Hierarchical Robot Control.pdf}
 }
 
@@ -3144,6 +3322,44 @@
   file = {/Users/fangyuan/Zotero/storage/V2VNLJ5G/Stepputtis et al. - Language-Conditioned Imitation Learning for Robot .pdf}
 }
 
+@misc{sukhijaMaxInfoRLBoostingExploration2024,
+  title = {{{MaxInfoRL}}: {{Boosting}} Exploration in Reinforcement Learning through Information Gain Maximization},
+  shorttitle = {{{MaxInfoRL}}},
+  author = {Sukhija, Bhavya and Coros, Stelian and Krause, Andreas and Abbeel, Pieter and Sferrazza, Carmelo},
+  year = {2024},
+  month = dec,
+  number = {arXiv:2412.12098},
+  eprint = {2412.12098},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2412.12098},
+  url = {http://arxiv.org/abs/2412.12098},
+  urldate = {2024-12-18},
+  abstract = {Reinforcement learning (RL) algorithms aim to balance exploiting the current best strategy with exploring new options that could lead to higher rewards. Most common RL algorithms use undirected exploration, i.e., select random sequences of actions. Exploration can also be directed using intrinsic rewards, such as curiosity or model epistemic uncertainty. However, effectively balancing task and intrinsic rewards is challenging and often task-dependent. In this work, we introduce a framework, MaxInfoRL, for balancing intrinsic and extrinsic exploration. MaxInfoRL steers exploration towards informative transitions, by maximizing intrinsic rewards such as the information gain about the underlying task. When combined with Boltzmann exploration, this approach naturally trades off maximization of the value function with that of the entropy over states, rewards, and actions. We show that our approach achieves sublinear regret in the simplified setting of multi-armed bandits. We then apply this general formulation to a variety of off-policy model-free RL methods for continuous state-action spaces, yielding novel algorithms that achieve superior performance across hard exploration problems and complex scenarios such as visual control tasks.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Artificial Intelligence,Computer Science - Machine Learning,Computer Science - Robotics},
+  file = {/Users/fangyuan/Zotero/storage/6CH484WJ/Sukhija et al. - 2024 - MaxInfoRL Boosting exploration in reinforcement learning through information gain maximization.pdf;/Users/fangyuan/Zotero/storage/3H54DDII/2412.html}
+}
+
+@misc{sunEmmaXEmbodiedMultimodal2024,
+  title = {Emma-{{X}}: {{An Embodied Multimodal Action Model}} with {{Grounded Chain}} of {{Thought}} and {{Look-ahead Spatial Reasoning}}},
+  shorttitle = {Emma-{{X}}},
+  author = {Sun, Qi and Hong, Pengfei and Pala, Tej Deep and Toh, Vernon and Tan, U.-Xuan and Ghosal, Deepanway and Poria, Soujanya},
+  year = {2024},
+  month = dec,
+  number = {arXiv:2412.11974},
+  eprint = {2412.11974},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2412.11974},
+  url = {http://arxiv.org/abs/2412.11974},
+  urldate = {2024-12-18},
+  abstract = {Traditional reinforcement learning-based robotic control methods are often task-specific and fail to generalize across diverse environments or unseen objects and instructions. Visual Language Models (VLMs) demonstrate strong scene understanding and planning capabilities but lack the ability to generate actionable policies tailored to specific robotic embodiments. To address this, Visual-Language-Action (VLA) models have emerged, yet they face challenges in long-horizon spatial reasoning and grounded task planning. In this work, we propose the Embodied Multimodal Action Model with Grounded Chain of Thought and Look-ahead Spatial Reasoning, Emma-X. Emma-X leverages our constructed hierarchical embodiment dataset based on BridgeV2, containing 60,000 robot manipulation trajectories auto-annotated with grounded task reasoning and spatial guidance. Additionally, we introduce a trajectory segmentation strategy based on gripper states and motion trajectories, which can help mitigate hallucination in grounding subtask reasoning generation. Experimental results demonstrate that Emma-X achieves superior performance over competitive baselines, particularly in real-world robotic tasks requiring spatial reasoning.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Artificial Intelligence,Computer Science - Computation and Language,Computer Science - Computer Vision and Pattern Recognition,Computer Science - Robotics},
+  file = {/Users/fangyuan/Zotero/storage/GRFIX6E6/Sun et al. - 2024 - Emma-X An Embodied Multimodal Action Model with Grounded Chain of Thought and Look-ahead Spatial Re.pdf;/Users/fangyuan/Zotero/storage/9I55DEAI/2412.html}
+}
+
 @misc{sunFullyAutonomousRealWorld2021,
   title = {Fully {{Autonomous Real-World Reinforcement Learning}} with {{Applications}} to {{Mobile Manipulation}}},
   author = {Sun, Charles and Orbik, J{\k e}drzej and Devin, Coline and Yang, Brian and Gupta, Abhishek and Berseth, Glen and Levine, Sergey},
@@ -3176,6 +3392,7 @@
   author = {Sun, Yifan and Chen, Rui and Yun, Kai S and Fang, Yikuan and Jung, Sebin and Zhao, Weiye and Liu, Changliu},
   abstract = {This paper presents the Safe Protective and Assistive Robot Kit (SPARK), a comprehensive toolbox designed to ensure safety in humanoid autonomy and teleoperation. Humanoid robots have gained significant popularity due to their versatility in interacting with complex environments. It is critical to ensure that no harm is caused during those interactions since unsafe behaviors can pose serious risks to the environment and human safety, considering humanoids' physical capabilities. Therefore, robust safety measures are essential in general humanoid robotics research and deployment. The inherently complex physical structures of humanoid robots further complicate the design of task-specific safety solutions. To alleviate this challenge, we introduce SPARK, a modular toolbox that integrates state-ofthe-art safe control algorithms into a generic robot control framework. SPARK enables users to configure safety behaviors across multiple dimensions, such as defining safety criteria and sensitivity levels, allowing for optimized trade-offs between safety and performance. The toolbox is natively compatible with the Unitree G1 humanoid robot, utilizing Apple Vision Pro (AVP) for perception, while also offering interfaces for seamless customization with alternative hardware setups. By integrating SPARK as a fail-safe mechanism, users can significantly improve the safety of their existing humanoid systems.},
   langid = {english},
+  keywords = {Manipulation,Teleoperation},
   file = {/Users/fangyuan/Zotero/storage/ZG5IVH6L/Sun et al. - SPARK A Toolbox for Safe Humanoid Autonomy and Teleoperation.pdf}
 }
 
@@ -3245,6 +3462,7 @@
   urldate = {2024-12-06},
   abstract = {Simulation has enabled unprecedented compute-scalable approaches to robot learning. However, many existing simulation frameworks typically support a narrow range of scenes/tasks and lack features critical for scaling generalizable robotics and sim2real. We introduce and open source ManiSkill3, the fastest state-visual GPU parallelized robotics simulator with contact-rich physics targeting generalizable manipulation. ManiSkill3 supports GPU parallelization of many aspects including simulation+rendering, heterogeneous simulation, pointclouds/voxels visual input, and more. Simulation with rendering on ManiSkill3 can run 10-1000x faster with 2-3x less GPU memory usage than other platforms, achieving up to 30,000+ FPS in benchmarked environments due to minimal python/pytorch overhead in the system, simulation on the GPU, and the use of the SAPIEN parallel rendering system. Tasks that used to take hours to train can now take minutes. We further provide the most comprehensive range of GPU parallelized environments/tasks spanning 12 distinct domains including but not limited to mobile manipulation for tasks such as drawing, humanoids, and dextrous manipulation in realistic scenes designed by artists or real-world digital twins. In addition, millions of demonstration frames are provided from motion planning, RL, and teleoperation. ManiSkill3 also provides a comprehensive set of baselines that span popular RL and learning-from-demonstrations algorithms.},
   archiveprefix = {arXiv},
+  keywords = {Benchmark},
   file = {/Users/fangyuan/Zotero/storage/XMGJHLSF/Tao et al. - 2024 - ManiSkill3 GPU Parallelized Robotics Simulation and Rendering for Generalizable Embodied AI.pdf;/Users/fangyuan/Zotero/storage/T27EQ238/2410.html}
 }
 
@@ -3295,6 +3513,25 @@
   abstract = {In offline RL, constraining the learned policy to remain close to the data is essential to prevent the policy from outputting out-of-distribution (OOD) actions with erroneously overestimated values. In principle, generative adversarial networks (GAN) can provide an elegant solution to do so, with the discriminator directly providing a probability that quantifies distributional shift. However, in practice, GAN-based offline RL methods have not performed as well as alternative approaches, perhaps because the generator is trained to both fool the discriminator and maximize return -- two objectives that can be at odds with each other. In this paper, we show that the issue of conflicting objectives can be resolved by training two generators: one that maximizes return, with the other capturing the ``remainder'' of the data distribution in the offline dataset, such that the mixture of the two is close to the behavior policy. We show that not only does having two generators enable an effective GAN-based offline RL method, but also approximates a support constraint, where the policy does not need to match the entire data distribution, but only the slice of the data that leads to high long term performance. We name our method DASCO, for Dual-Generator Adversarial Support Constrained Offline RL. On benchmark tasks that require learning from sub-optimal data, DASCO significantly outperforms prior methods that enforce distribution constraint.},
   archiveprefix = {arXiv},
   file = {/Users/fangyuan/Zotero/storage/XMEPRG6M/Vuong et al. - 2022 - Dual Generator Offline Reinforcement Learning.pdf;/Users/fangyuan/Zotero/storage/X4W5YQVP/2211.html}
+}
+
+@misc{wangGraphToolInstructionRevolutionizingGraph2024,
+  title = {{{GraphTool-Instruction}}: {{Revolutionizing Graph Reasoning}} in {{LLMs}} through {{Decomposed Subtask Instruction}}},
+  shorttitle = {{{GraphTool-Instruction}}},
+  author = {Wang, Rongzheng and Liang, Shuang and Chen, Qizhi and Zhang, Jiasheng and Qin, Ke},
+  year = {2024},
+  month = dec,
+  number = {arXiv:2412.12152},
+  eprint = {2412.12152},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2412.12152},
+  url = {http://arxiv.org/abs/2412.12152},
+  urldate = {2024-12-18},
+  abstract = {Large language models (LLMs) have been demonstrated to possess the capabilities to understand fundamental graph properties and address various graph reasoning tasks. Existing methods fine-tune LLMs to understand and execute graph reasoning tasks by specially designed task instructions. However, these Text-Instruction methods generally exhibit poor performance. Inspired by tool learning, researchers propose Tool-Instruction methods to solve various graph problems by special tool calling (e.g., function, API and model), achieving significant improvements in graph reasoning tasks. Nevertheless, current Tool-Instruction approaches focus on the tool information and ignore the graph structure information, which leads to significantly inferior performance on small-scale LLMs (less than 13B). To tackle this issue, we propose GraphTool-Instruction, an innovative Instruction-tuning approach that decomposes the graph reasoning task into three distinct subtasks (i.e., graph extraction, tool name identification and tool parameter extraction), and design specialized instructions for each subtask. Our GraphTool-Instruction can be used as a plug-and-play prompt for different LLMs without fine-tuning. Moreover, building on GraphTool-Instruction, we develop GTools, a dataset that includes twenty graph reasoning tasks, and create a graph reasoning LLM called GraphForge based on Llama3-8B. We conduct extensive experiments on twenty graph reasoning tasks with different graph types (e.g., graph size or graph direction), and we find that GraphTool-Instruction achieves SOTA compared to Text-Instruction and Tool-Instruction methods. Fine-tuned on GTools, GraphForge gets further improvement of over 30\% compared to the Tool-Instruction enhanced GPT-3.5-turbo, and it performs comparably to the high-cost GPT-4o. Our codes and data are available at https://anonymous.4open.science/r/GraphTool-Instruction.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Artificial Intelligence,Computer Science - Machine Learning},
+  file = {/Users/fangyuan/Zotero/storage/93F4PXI5/Wang et al. - 2024 - GraphTool-Instruction Revolutionizing Graph Reasoning in LLMs through Decomposed Subtask Instructio.pdf;/Users/fangyuan/Zotero/storage/8WTAT2JN/2412.html}
 }
 
 @article{wangLearningLongHorizonSparseReward2022,
@@ -3461,6 +3698,25 @@
   file = {/Users/fangyuan/Zotero/storage/623K6CWY/Wei et al. - 2022 - Understanding via Exploration Discovery of Interp.pdf}
 }
 
+@misc{wenDiffusionVLAScalingRobot2024,
+  title = {Diffusion-{{VLA}}: {{Scaling Robot Foundation Models}} via {{Unified Diffusion}} and {{Autoregression}}},
+  shorttitle = {Diffusion-{{VLA}}},
+  author = {Wen, Junjie and Zhu, Minjie and Zhu, Yichen and Tang, Zhibin and Li, Jinming and Zhou, Zhongyi and Li, Chengmeng and Liu, Xiaoyu and Peng, Yaxin and Shen, Chaomin and Feng, Feifei},
+  year = {2024},
+  month = dec,
+  number = {arXiv:2412.03293},
+  eprint = {2412.03293},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2412.03293},
+  url = {http://arxiv.org/abs/2412.03293},
+  urldate = {2024-12-18},
+  abstract = {In this paper, we present DiffusionVLA, a novel framework that seamlessly combines the autoregression model with the diffusion model for learning visuomotor policy. Central to our approach is a next-token prediction objective, enabling the model to reason effectively over the user's query in the context of current observations. Subsequently, a diffusion model is attached to generate robust action outputs. To enhance policy learning through self-reasoning, we introduce a novel reasoning injection module that integrates reasoning phrases directly into the policy learning process. The whole framework is simple and flexible, making it easy to deploy and upgrade. We conduct extensive experiments using multiple real robots to validate the effectiveness of DiffusionVLA. Our tests include a challenging factory sorting task, where DiffusionVLA successfully categorizes objects, including those not seen during training. We observe that the reasoning module makes the model interpretable. It allows observers to understand the model thought process and identify potential causes of policy failures. Additionally, we test DiffusionVLA on a zero-shot bin-picking task, achieving 63.7{\textbackslash}\% accuracy on 102 previously unseen objects. Our method demonstrates robustness to visual changes, such as distractors and new backgrounds, and easily adapts to new embodiments. Furthermore, DiffusionVLA can follow novel instructions and retain conversational ability. Notably, DiffusionVLA is data-efficient and fast at inference; our smallest DiffusionVLA-2B runs 82Hz on a single A6000 GPU and can train from scratch on less than 50 demonstrations for a complex task. Finally, we scale the model from 2B to 72B parameters, showcasing improved generalization capabilities with increased model size.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Computer Vision and Pattern Recognition,Computer Science - Robotics},
+  file = {/Users/fangyuan/Zotero/storage/SHB7I3IL/Wen et al. - 2024 - Diffusion-VLA Scaling Robot Foundation Models via Unified Diffusion and Autoregression.pdf;/Users/fangyuan/Zotero/storage/T3HBD8WV/2412.html}
+}
+
 @misc{wenTinyVLAFastDataEfficient2024,
   title = {{{TinyVLA}}: {{Towards Fast}}, {{Data-Efficient Vision-Language-Action Models}} for {{Robotic Manipulation}}},
   shorttitle = {{{TinyVLA}}},
@@ -3539,6 +3795,25 @@
   file = {/Users/fangyuan/Zotero/storage/RF4WGR7E/Wu et al. - 2023 - Pairwise Proximal Policy Optimization Harnessing .pdf;/Users/fangyuan/Zotero/storage/SF7L5KEC/2310.html}
 }
 
+@misc{wuRoboMINDBenchmarkMultiembodiment2024,
+  title = {{{RoboMIND}}: {{Benchmark}} on {{Multi-embodiment Intelligence Normative Data}} for {{Robot Manipulation}}},
+  shorttitle = {{{RoboMIND}}},
+  author = {Wu, Kun and Hou, Chengkai and Liu, Jiaming and Che, Zhengping and Ju, Xiaozhu and Yang, Zhuqin and Li, Meng and Zhao, Yinuo and Xu, Zhiyuan and Yang, Guang and Zhao, Zhen and Li, Guangyu and Jin, Zhao and Wang, Lecheng and Mao, Jilei and Wang, Xinhua and Fan, Shichao and Liu, Ning and Ren, Pei and Zhang, Qiang and Lyu, Yaoxu and Liu, Mengzhen and He, Jingyang and Luo, Yulin and Gao, Zeyu and Li, Chenxuan and Gu, Chenyang and Fu, Yankai and Wu, Di and Wang, Xingyu and Chen, Sixiang and Wang, Zhenyu and An, Pengju and Qian, Siyuan and Zhang, Shanghang and Tang, Jian},
+  year = {2024},
+  month = dec,
+  number = {arXiv:2412.13877},
+  eprint = {2412.13877},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2412.13877},
+  url = {http://arxiv.org/abs/2412.13877},
+  urldate = {2024-12-19},
+  abstract = {Developing robust and general-purpose robotic manipulation policies is a key goal in the field of robotics. To achieve effective generalization, it is essential to construct comprehensive datasets that encompass a large number of demonstration trajectories and diverse tasks. Unlike vision or language data that can be collected from the Internet, robotic datasets require detailed observations and manipulation actions, necessitating significant investment in hardware-software infrastructure and human labor. While existing works have focused on assembling various individual robot datasets, there remains a lack of a unified data collection standard and insufficient diversity in tasks, scenarios, and robot types. In this paper, we introduce RoboMIND (Multi-embodiment Intelligence Normative Data for Robot manipulation), featuring 55k real-world demonstration trajectories across 279 diverse tasks involving 61 different object classes. RoboMIND is collected through human teleoperation and encompasses comprehensive robotic-related information, including multi-view RGB-D images, proprioceptive robot state information, end effector details, and linguistic task descriptions. To ensure dataset consistency and reliability during policy learning, RoboMIND is built on a unified data collection platform and standardized protocol, covering four distinct robotic embodiments. We provide a thorough quantitative and qualitative analysis of RoboMIND across multiple dimensions, offering detailed insights into the diversity of our datasets. In our experiments, we conduct extensive real-world testing with four state-of-the-art imitation learning methods, demonstrating that training with RoboMIND data results in a high manipulation success rate and strong generalization. Our project is at https://x-humanoid-robomind.github.io/.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Artificial Intelligence,Computer Science - Robotics},
+  file = {/Users/fangyuan/Zotero/storage/VSUR6DMQ/Wu et al. - 2024 - RoboMIND Benchmark on Multi-embodiment Intelligence Normative Data for Robot Manipulation.pdf;/Users/fangyuan/Zotero/storage/7JHX9QBM/2412.html}
+}
+
 @misc{wuScalableTrustregionMethod2017,
   title = {Scalable Trust-Region Method for Deep Reinforcement Learning Using {{Kronecker-factored}} Approximation},
   author = {Wu, Yuhuai and Mansimov, Elman and Liao, Shun and Grosse, Roger and Ba, Jimmy},
@@ -3613,7 +3888,7 @@
   abstract = {The ability to reflect on and correct failures is crucial for robotic systems to interact stably with real-life objects.Observing the generalization and reasoning capabilities of Multimodal Large Language Models (MLLMs), previous approaches have aimed to utilize these models to enhance robotic systems accordingly.However, these methods typically focus on high-level planning corrections using an additional MLLM, with limited utilization of failed samples to correct low-level contact poses. To address this gap, we propose an Autonomous Interactive Correction (AIC) MLLM, which makes use of previous low-level interaction experiences to correct SE(3) pose predictions. Specifically, AIC MLLM is initially fine-tuned to acquire both pose prediction and feedback prompt comprehension abilities.We carefully design two types of prompt instructions through interactions with objects: 1) visual masks to highlight unmovable parts for position correction, and 2)textual descriptions to indicate potential directions for rotation correction.During inference, a Feedback Information Extraction module is introduced to recognize the failure cause, allowing AIC MLLM to adaptively correct the pose prediction using the corresponding prompts.To further enhance manipulation stability, we devise a Test Time Adaptation strategy that enables AIC MLLM to better adapt to the current scene configuration.Finally, extensive experiments are conducted in both simulated and real-world environments to evaluate the proposed method. The results demonstrate that our AIC MLLM can efficiently correct failure samples by leveraging interaction experience prompts.Real-world demonstration can be found at https://sites.google.com/view/aic-mllm},
   archiveprefix = {arXiv},
   langid = {english},
-  keywords = {Manipulation,VLA},
+  keywords = {Manipulation,Robotic VLM},
   file = {/Users/fangyuan/Zotero/storage/INFJZSHQ/2406.pdf}
 }
 
@@ -3666,8 +3941,27 @@
   urldate = {2024-02-01},
   abstract = {The unprecedented advancements in Large Language Models (LLMs) have shown a profound impact on natural language processing but are yet to fully embrace the realm of 3D understanding. This paper introduces PointLLM, a preliminary effort to fill this gap, enabling LLMs to understand point clouds and offering a new avenue beyond 2D visual data. PointLLM understands colored object point clouds with human instructions and generates contextually appropriate responses, illustrating its grasp of point clouds and common sense. Specifically, it leverages a point cloud encoder with a powerful LLM to effectively fuse geometric, appearance, and linguistic information. We collect a novel dataset comprising 660K simple and 70K complex point-text instruction pairs to enable a two-stage training strategy: aligning latent spaces and subsequently instruction-tuning the unified model. To rigorously evaluate the perceptual and generalization capabilities of PointLLM, we establish two benchmarks: Generative 3D Object Classification and 3D Object Captioning, assessed through three different methods, including human evaluation, GPT-4/ChatGPT evaluation, and traditional metrics. Experimental results reveal PointLLM's superior performance over existing 2D and 3D baselines, with a notable achievement in human-evaluated object captioning tasks where it surpasses human annotators in over 50\% of the samples. Codes, datasets, and benchmarks are available at https://github.com/OpenRobotLab/PointLLM .},
   archiveprefix = {arXiv},
-  keywords = {LLM/VLM,PointCloud},
+  keywords = {PointCloud,Robotic VLM},
   file = {/Users/fangyuan/Zotero/storage/38N2P84W/Xu et al. - 2024 - PointLLM Empowering Large Language Models to Understand Point Clouds.pdf;/Users/fangyuan/Zotero/storage/6CBL3CJ4/2308.html}
+}
+
+@misc{xuRLDGRoboticGeneralist2024,
+  title = {{{RLDG}}: {{Robotic Generalist Policy Distillation}} via {{Reinforcement Learning}}},
+  shorttitle = {{{RLDG}}},
+  author = {Xu, Charles and Li, Qiyang and Luo, Jianlan and Levine, Sergey},
+  year = {2024},
+  month = dec,
+  number = {arXiv:2412.09858},
+  eprint = {2412.09858},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2412.09858},
+  url = {http://arxiv.org/abs/2412.09858},
+  urldate = {2024-12-18},
+  abstract = {Recent advances in robotic foundation models have enabled the development of generalist policies that can adapt to diverse tasks. While these models show impressive flexibility, their performance heavily depends on the quality of their training data. In this work, we propose Reinforcement Learning Distilled Generalists (RLDG), a method that leverages reinforcement learning to generate high-quality training data for finetuning generalist policies. Through extensive real-world experiments on precise manipulation tasks like connector insertion and assembly, we demonstrate that generalist policies trained with RL-generated data consistently outperform those trained with human demonstrations, achieving up to 40\% higher success rates while generalizing better to new tasks. We also provide a detailed analysis that reveals this performance gain stems from both optimized action distributions and improved state coverage. Our results suggest that combining task-specific RL with generalist policy distillation offers a promising approach for developing more capable and efficient robotic manipulation systems that maintain the flexibility of foundation models while achieving the performance of specialized controllers. Videos and code can be found on our project website https://generalist-distillation.github.io},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Artificial Intelligence,Computer Science - Machine Learning,Computer Science - Robotics},
+  file = {/Users/fangyuan/Zotero/storage/TDN8GQKJ/Xu et al. - 2024 - RLDG Robotic Generalist Policy Distillation via Reinforcement Learning.pdf;/Users/fangyuan/Zotero/storage/PCLWCR8D/2412.html}
 }
 
 @misc{xuSurveyRoboticsFoundation2024,
@@ -3697,6 +3991,7 @@
   urldate = {2024-12-07},
   abstract = {Bimanual robotic manipulation with dexterous hands has a large potential workability and a wide workspace as it follows the most natural human workflow. Learning from human demonstrations has proven highly effective for learning a dexterous manipulation policy. To collect such data, teleoperation serves as a straightforward and efficient way to do so. However, a cost-effective and easy-to-use teleoperation system is lacking for anthropomorphic robot hands. To fill the deficiency, we developed {\textbackslash}our, a cross-platform visual-exoskeleton system for low-cost dexterous teleoperation. Our system employs a hand-facing camera to capture 3D hand poses and an exoskeleton mounted on a base that can be easily carried on users' backs. ACE captures both the hand root end-effector and hand pose in real-time and enables cross-platform operations. We evaluate the key system parameters compared with previous teleoperation systems and show clear advantages of {\textbackslash}our. We then showcase the desktop and mobile versions of our system on six different robot platforms (including humanoid-hands, arm-hands, arm-gripper, and quadruped-gripper systems), and demonstrate the effectiveness of learning three difficult real-world tasks through the collected demonstration on two of them.},
   langid = {english},
+  keywords = {Manipulation,Teleoperation},
   file = {/Users/fangyuan/Zotero/storage/SQJJ5DTP/Yang et al. - 2024 - ACE A Cross-platform and visual-Exoskeletons System for Low-Cost Dexterous Teleoperation.pdf}
 }
 
@@ -3806,6 +4101,7 @@
   urldate = {2024-12-07},
   abstract = {Humanoid robots capable of autonomous operation in diverse environments have long been a goal for roboticists. However, autonomous manipulation by humanoid robots has largely been restricted to one specific scene, primarily due to the difficulty of acquiring generalizable skills. Recent advances in 3D visuomotor policies, such as the 3D Diffusion Policy (DP3), have shown promise in extending these capabilities to wilder environments. However, 3D visuomotor policies often rely on camera calibration and point-cloud segmentation, which present challenges for deployment on mobile robots like humanoids. In this work, we introduce the Improved 3D Diffusion Policy (iDP3), a novel 3D visuomotor policy that eliminates these constraints by leveraging egocentric 3D visual representations. We demonstrate that iDP3 enables a full-sized humanoid robot to autonomously perform skills in diverse real-world scenarios, using only data collected in the lab. Videos are available at: https://humanoid-manipulation.github.io},
   archiveprefix = {arXiv},
+  keywords = {Diffusion,FFTAI,Manipulation},
   file = {/Users/fangyuan/Zotero/storage/IWT6Y6JE/Ze et al. - 2024 - Generalizable Humanoid Manipulation with Improved 3D Diffusion Policies.pdf;/Users/fangyuan/Zotero/storage/87Y7H6KQ/2410.html}
 }
 
@@ -3922,6 +4218,7 @@
   urldate = {2024-12-06},
   abstract = {Recently, humanoid robots have made significant advances in their ability to perform challenging tasks due to the deployment of Reinforcement Learning (RL), however, the inherent complexity of humanoid robots, including the difficulty of designing complicated reward functions and training entire sophisticated systems, still poses a notable challenge. To conquer these challenges, after many iterations and in-depth investigations, we have meticulously developed a full-size humanoid robot, "Adam", whose innovative structural design greatly improves the efficiency and effectiveness of the imitation learning process. In addition, we have developed a novel imitation learning framework based on an adversarial motion prior, which applies not only to Adam but also to humanoid robots in general. Using the framework, Adam can exhibit unprecedented human-like characteristics in locomotion tasks. Our experimental results demonstrate that the proposed framework enables Adam to achieve human-comparable performance in complex locomotion tasks, marking the first time that human locomotion data has been used for imitation learning in a full-size humanoid robot.},
   archiveprefix = {arXiv},
+  keywords = {Adam,Locomotion},
   file = {/Users/fangyuan/Zotero/storage/QDHG3E3D/Zhang et al. - 2024 - Whole-body Humanoid Robot Locomotion with Human Reference.pdf;/Users/fangyuan/Zotero/storage/P37NFJQ4/2402.html}
 }
 
@@ -3939,8 +4236,27 @@
   urldate = {2024-11-10},
   abstract = {Humanoid activities involving sequential contacts are crucial for complex robotic interactions and operations in the real world and are traditionally solved by model-based motion planning, which is time-consuming and often relies on simplified dynamics models. Although model-free reinforcement learning (RL) has become a powerful tool for versatile and robust whole-body humanoid control, it still requires tedious task-specific tuning and state machine design and suffers from long-horizon exploration issues in tasks involving contact sequences. In this work, we propose WoCoCo (Whole-Body Control with Sequential Contacts), a unified framework to learn whole-body humanoid control with sequential contacts by naturally decomposing the tasks into separate contact stages. Such decomposition facilitates simple and general policy learning pipelines through task-agnostic reward and sim-to-real designs, requiring only one or two task-related terms to be specified for each task. We demonstrated that end-to-end RL-based controllers trained with WoCoCo enable four challenging whole-body humanoid tasks involving diverse contact sequences in the real world without any motion priors: 1) versatile parkour jumping, 2) box loco-manipulation, 3) dynamic clap-and-tap dancing, and 4) cliffside climbing. We further show that WoCoCo is a general framework beyond humanoid by applying it in 22-DoF dinosaur robot loco-manipulation tasks.},
   archiveprefix = {arXiv},
-  keywords = {Computer Science - Graphics,Electrical Engineering and Systems Science - Systems and Control},
+  keywords = {Computer Science - Graphics},
   file = {/Users/fangyuan/Zotero/storage/7SLMA8VE/Zhang et al. - 2024 - WoCoCo Learning Whole-Body Humanoid Control with Sequential Contacts.pdf;/Users/fangyuan/Zotero/storage/EMK94ZPJ/2406.html}
+}
+
+@misc{zhengTraceVLAVisualTrace2024,
+  title = {{{TraceVLA}}: {{Visual Trace Prompting Enhances Spatial-Temporal Awareness}} for {{Generalist Robotic Policies}}},
+  shorttitle = {{{TraceVLA}}},
+  author = {Zheng, Ruijie and Liang, Yongyuan and Huang, Shuaiyi and Gao, Jianfeng and III, Hal Daum{\'e} and Kolobov, Andrey and Huang, Furong and Yang, Jianwei},
+  year = {2024},
+  month = dec,
+  number = {arXiv:2412.10345},
+  eprint = {2412.10345},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2412.10345},
+  url = {http://arxiv.org/abs/2412.10345},
+  urldate = {2025-01-04},
+  abstract = {Although large vision-language-action (VLA) models pretrained on extensive robot datasets offer promising generalist policies for robotic learning, they still struggle with spatial-temporal dynamics in interactive robotics, making them less effective in handling complex tasks, such as manipulation. In this work, we introduce visual trace prompting, a simple yet effective approach to facilitate VLA models' spatial-temporal awareness for action prediction by encoding state-action trajectories visually. We develop a new TraceVLA model by finetuning OpenVLA on our own collected dataset of 150K robot manipulation trajectories using visual trace prompting. Evaluations of TraceVLA across 137 configurations in SimplerEnv and 4 tasks on a physical WidowX robot demonstrate state-of-the-art performance, outperforming OpenVLA by 10\% on SimplerEnv and 3.5x on real-robot tasks and exhibiting robust generalization across diverse embodiments and scenarios. To further validate the effectiveness and generality of our method, we present a compact VLA model based on 4B Phi-3-Vision, pretrained on the Open-X-Embodiment and finetuned on our dataset, rivals the 7B OpenVLA baseline while significantly improving inference efficiency.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Artificial Intelligence,Computer Science - Robotics},
+  file = {/Users/fangyuan/Zotero/storage/XHMSBM93/Zheng et al. - 2024 - TraceVLA Visual Trace Prompting Enhances Spatial-Temporal Awareness for Generalist Robotic Policies.pdf;/Users/fangyuan/Zotero/storage/2TWTI6V5/2412.html}
 }
 
 @misc{zhouLargeLanguageModels2023,
@@ -3960,6 +4276,25 @@
   file = {/Users/fangyuan/Zotero/storage/KBEKGVMX/Zhou et al. - 2023 - Large Language Models Are Human-Level Prompt Engin.pdf;/Users/fangyuan/Zotero/storage/SYSAR73H/2211.html}
 }
 
+@misc{zhouProposerAgentEvaluatorPAEAutonomousSkill2024,
+  title = {Proposer-{{Agent-Evaluator}}({{PAE}}): {{Autonomous Skill Discovery For Foundation Model Internet Agents}}},
+  shorttitle = {Proposer-{{Agent-Evaluator}}({{PAE}})},
+  author = {Zhou, Yifei and Yang, Qianlan and Lin, Kaixiang and Bai, Min and Zhou, Xiong and Wang, Yu-Xiong and Levine, Sergey and Li, Erran},
+  year = {2024},
+  month = dec,
+  number = {arXiv:2412.13194},
+  eprint = {2412.13194},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2412.13194},
+  url = {http://arxiv.org/abs/2412.13194},
+  urldate = {2024-12-18},
+  abstract = {The vision of a broadly capable and goal-directed agent, such as an Internet-browsing agent in the digital world and a household humanoid in the physical world, has rapidly advanced, thanks to the generalization capability of foundation models. Such a generalist agent needs to have a large and diverse skill repertoire, such as finding directions between two travel locations and buying specific items from the Internet. If each skill needs to be specified manually through a fixed set of human-annotated instructions, the agent's skill repertoire will necessarily be limited due to the quantity and diversity of human-annotated instructions. In this work, we address this challenge by proposing Proposer-Agent-Evaluator, an effective learning system that enables foundation model agents to autonomously discover and practice skills in the wild. At the heart of PAE is a context-aware task proposer that autonomously proposes tasks for the agent to practice with context information of the environment such as user demos or even just the name of the website itself for Internet-browsing agents. Then, the agent policy attempts those tasks with thoughts and actual grounded operations in the real world with resulting trajectories evaluated by an autonomous VLM-based success evaluator. The success evaluation serves as the reward signal for the agent to refine its policies through RL. We validate PAE on challenging vision-based web navigation, using both real-world and self-hosted websites from WebVoyager and WebArena.To the best of our knowledge, this work represents the first effective learning system to apply autonomous task proposal with RL for agents that generalizes real-world human-annotated benchmarks with SOTA performances. Our open-source checkpoints and code can be found in https://yanqval.github.io/PAE/},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Artificial Intelligence,Computer Science - Computer Vision and Pattern Recognition,Computer Science - Machine Learning},
+  file = {/Users/fangyuan/Zotero/storage/FEYBF8M8/Zhou et al. - 2024 - Proposer-Agent-Evaluator(PAE) Autonomous Skill Discovery For Foundation Model Internet Agents.pdf;/Users/fangyuan/Zotero/storage/ZWGIFWRI/2412.html}
+}
+
 @misc{zhuangHumanoidParkourLearning2024,
   title = {Humanoid {{Parkour Learning}}},
   author = {Zhuang, Ziwen and Yao, Shenzhe and Zhao, Hang},
@@ -3974,5 +4309,6 @@
   urldate = {2024-12-06},
   abstract = {Parkour is a grand challenge for legged locomotion, even for quadruped robots, requiring active perception and various maneuvers to overcome multiple challenging obstacles. Existing methods for humanoid locomotion either optimize a trajectory for a single parkour track or train a reinforcement learning policy only to walk with a significant amount of motion references. In this work, we propose a framework for learning an end-to-end vision-based whole-body-control parkour policy for humanoid robots that overcomes multiple parkour skills without any motion prior. Using the parkour policy, the humanoid robot can jump on a 0.42m platform, leap over hurdles, 0.8m gaps, and much more. It can also run at 1.8m/s in the wild and walk robustly on different terrains. We test our policy in indoor and outdoor environments to demonstrate that it can autonomously select parkour skills while following the rotation command of the joystick. We override the arm actions and show that this framework can easily transfer to humanoid mobile manipulation tasks. Videos can be found at https://humanoid4parkour.github.io},
   archiveprefix = {arXiv},
+  keywords = {Locomotion,Unitree},
   file = {/Users/fangyuan/Zotero/storage/YZEHT7PA/Zhuang et al. - 2024 - Humanoid Parkour Learning.pdf;/Users/fangyuan/Zotero/storage/FQ53RGIQ/2406.html}
 }

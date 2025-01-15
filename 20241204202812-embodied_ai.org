@@ -1,0 +1,31 @@
+:PROPERTIES:
+:ID:       14C478D3-225C-4171-B7F5-7056A42AF593
+:END:
+#+title: Embodied AI
+#+filetags: :humanoid:robotic:embodied:
+
+
+Conclude all related works on Embodied AI and Humanoid Robots.
+
+
+* Embodied AI
+
+** Foundation models
+
+[[id:A000C46A-F2AC-4B16-A94A-F741BC67576E][Real-World Robot Applications of Foundation Models: A Review]]
+
+** Vision-Language-Action Models
+
+[[id:58c10fcd-edbe-4b15-bc42-04a2ae880a4d][Vision-Language-Action Models]]
+
+* Embodied AI on Humandoid Robots
+
+** Teleoperation
+
+** Whole Body Control
+
+** Manipulation
+
+** Locomotion
+
+** Simulation

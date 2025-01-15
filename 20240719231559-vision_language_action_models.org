@@ -18,3 +18,8 @@ VLAs are multi modal large language models that take image, language and other m
 2. VLM based. Combining a strong open VLM, LLama for example, as backbone with a richer robot pretraining dataset. Training from pretrained VLMs. Action is generated together. Examples are: [[id:a8a38a72-f501-4ddc-b097-76f2c182e8cc][OpenVLA: An Open-Source Vision-Language-Action Model]] (LLama2 7B), RT-2 (PaLM).
 
 3. Contact point and gripper direction are generated seperately. Action is generated in a VQA style. Examples are: [[id:e0c2dd81-4c95-4010-9d36-02a594e2ee3d][Autonomous Interactive Correction MLLM for Robust Robotic Manipulation]].
+
+
+* Current VLAs
+
+[[id:a8a38a72-f501-4ddc-b097-76f2c182e8cc][OpenVLA: An Open-Source Vision-Language-Action Model]]
