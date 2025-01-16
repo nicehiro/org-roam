@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       b290da32-08f7-4ae4-9a75-1295104b0f53
+:ROAM_ALIASES: "Learning from Demonstration"
+:END:
+#+title: Imitation Learning
+
+
+Imitation Learning (IL), also know as Learning from Demonstration (LfD), is a method where robots learn to perform tasks by mimicking human behavior.
+
+Three essential steps exists in IL:
+
+- capture the expert demonstration
+
+- retarget demonstratiosns to robot motions
+
+- train using the retargeted data
+
+
+If the captured motion comes from the same robot, such as from [[id:99f899e0-970e-48e3-8a55-c9e3666a7b27][Teleoperation]], the retargeting step is unnecessary.
