@@ -29,17 +29,11 @@ Robotic foundation models are models that consider inputs and outputs in robotic
 
 - dynamics models (learn system dynamics such as Q-value, state and reward)
 
-- end-to-end control policies
+- end-to-end control policies (generate action for robots to execute directly)
 
-  + Transformer-based models (output actions directly)
+  The main difference between transformer-based and VLA models are: _transformer-based models do not contains any pre-trained VLMs_.
 
-    - RT-1
-
-    - Octo
-
-    - SkillTransformer
-
-    - [[id:e34e2ea0-3907-4033-a125-72c443f8f0d6][VIMA: General Robot Mnipulation with Multimodal Prompts]]
+  + [[id:4328AE94-C45D-49AA-A893-13129C19E31A][Transformer-based Robotic Models]]
 
   + [[id:58c10fcd-edbe-4b15-bc42-04a2ae880a4d][Vision-Language-Action Models]]
 
@@ -52,23 +46,23 @@ For the ease of collecting export demonstration datasets with real robots, robot
 
 ** Low-Level Perception
 
-Representative studies utilizing foundation models, such as CLIPort and REFLECT, to extract semantic information from images, texts and spatial information.
+Representative studies utilizing foundation models, such as CLIPort and REFLECT, to _extract semantic information from images, texts and spatial information_.
 
 ** High-Level Perception
 
-Foundation models for high-level perception involve the transformation and utilization of results obtained from low-level perception into forms such as maps, rewards, and motion constrains.
+Foundation models for high-level perception involve the _transformation and utilization of results obtained from low-level perception into forms such as maps, rewards, and motion constrains_.
 
 ** High-Level Planning
 
-Foundation models for high-level planning execute higher-level abstract task planning, excluding direct control.
+Foundation models for high-level planning execute higher-level _abstract task planning_, excluding direct control.
 
 ** Low-Level Planning
 
-Foundation models for low-level planning execute low-level motion control, including joint and end effector control.
+Foundation models for low-level planning execute low-level motion control, including _joint and end effector control_.
 
 ** Data Augmentation
 
-Foundation models augment dataset by changing background, adding distractors and altering object textures to improve the robustness of the learning.
+Foundation models augment dataset by _changing background, adding distractors and altering object textures to improve the robustness of the learning_.
 
 
 * Robotic Tasks

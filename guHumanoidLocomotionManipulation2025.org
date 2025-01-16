@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       B6A18EAC-937F-48B0-820D-F4B8A076462B
+:ROAM_REFS: @guHumanoidLocomotionManipulation2025
+:END:
+#+title: Humanoid Locomotion and Manipulation: Current Progress and Challenges in Control, Planning, and Learning
+#+filetags: :survey:humanoid:
+
+
+Humanoid robots are built to (ideally) replicate human motions in performing various human-level skills, such as _locomotion_, _manipulation_, and _cognitive capabilities_.
