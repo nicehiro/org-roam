@@ -65,13 +65,3 @@ Other modalities includes IMUs, heatmaps, object poses, and skeletal movements i
 | High  +------------+-------------------------------------------------------+
 |       |  Planning  |          Task planning and code generation.           |
 +-------+------------+-------------------------------------------------------+
-
-* Robotic Foundation Models
-
-There are some works aiming to create foundation models for robotics, which can be referred to as robotic foundation models.
-
-1. Pre-trained visual representations for robotics. Some works use pre-trained CNN (ResNet) and vision transformer backbones to extract features from inputs and then use latent vector for later tasks. This kind of researches are using above mentioned foundation models for robotics works. *And this survey is most about this.*
-
-2. Vision language models for robotics. Some works train a multimodal language model, which allows multimodal inputs (image and text) to answer questions, such as PaLM. *Training a VLM specifically for robotics now is not so popular.*
-
-3. Vision-Language-Action (VLA) models for robotics. Some works train a multimodal language model, which takes multimodal inputs and outputs the joint values for robots to execute. Check this [[id:58c10fcd-edbe-4b15-bc42-04a2ae880a4d][Vision-Language-Action Models]] for more details.

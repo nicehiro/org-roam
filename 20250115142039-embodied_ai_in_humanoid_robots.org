@@ -3,3 +3,63 @@
 :END:
 #+title: Embodied AI in Humanoid Robots
 #+filetags: :robotic:embodied:humanoid:
+
+
+From the perspective of application:
+
+#+begin_quote
+Humanoid robots are built to (ideally) replicate human motions in performing various human-level skills, such as _locomotion_, _manipulation_, and _cognitive capabilities_.
+#+end_quote
+
+From the perspective of composition:
+
+#+begin_quote
+A humanoid robot refers to any anthropomorphic robot that resembles the form of a human. Typically, a humanoid robot possesses a torso, two arms, and two legs, though the degree of anthropomorphism may vary.
+#+end_quote
+
+
+* Background
+
+[[id:B6A18EAC-937F-48B0-820D-F4B8A076462B][Humanoid Locomotion and Manipulation: Current Progress and Challenges in Control, Planning, and Learning]] lists background, i.e., definition of locomotion, manipulation, loco-manipulation, whole-body control.
+
+
+* Learning Loco-manipulation Skills
+
+** Reinforcement Learning from Scratch
+
+Refer to [[id:f7f8f6a3-7e36-47ae-b153-c769c02046d1][Reinforcement Learning for Humanoid Robots]].
+
+** Learning from Demonstration
+
+Refer to [[id:6ce43f3d-bd0f-478d-b268-39c1d8be2329][Imitation Learning for Humanoid Robots]].
+
+** Hybrid Models
+
+- A teacher policy trained from simulation using pure RL. Then a student policy clones the behavior of the teacher.
+
+- Using IL first to pre-train an policy from demonstration. Then a RL policy fine-tunes the policy.
+
+** Representaion of Skills
+
+- motion Representation
+
+- goal representation
+
+- state transition representation
+
+** Learning for Humanoid Loco-manipulation
+
+- most in simulation, the physical interactions with external environment or objects are often oversimplified
+
+- careful reward design using RL
+
+
+* Foundation Models for Humanoid Robots
+
+** Applying LLMs/VLMs to Humanoid Robots
+
+Refer to [[id:A000C46A-F2AC-4B16-A94A-F741BC67576E][Real-World Robot Applications of Foundation Models: A Review]].
+
+** Building Humanoid Foundation Models
+
+Refer to [[id:537643b3-ff99-4579-b3e7-0d7a691c001c][Robotic Foundation Models]] for robotic foundation models.

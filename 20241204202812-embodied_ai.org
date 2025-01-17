@@ -21,21 +21,7 @@ Embodied Artificial Intelligence (EAI) integrates artificial intelligence into p
 
 * Robotic Foundation Models
 
-Robotic foundation models are models that consider inputs and outputs in robotic domain. It can be categorized into three:
-
-- pre-trained visual representations for robotics that takes images as input and output latent embeddings (low-level perception)
-
-- vision-language models (VLMs) for robotics (no robotics domain specific outputs)
-
-- dynamics models (learn system dynamics such as Q-value, state and reward)
-
-- end-to-end control policies (generate action for robots to execute directly)
-
-  The main difference between transformer-based and VLA models are: _transformer-based models do not contains any pre-trained VLMs_.
-
-  + [[id:4328AE94-C45D-49AA-A893-13129C19E31A][Transformer-based Robotic Models]]
-
-  + [[id:58c10fcd-edbe-4b15-bc42-04a2ae880a4d][Vision-Language-Action Models]]
+Refer to [[id:537643b3-ff99-4579-b3e7-0d7a691c001c][Robotic Foundation Models]].
 
 ** Dataset Collection
 
