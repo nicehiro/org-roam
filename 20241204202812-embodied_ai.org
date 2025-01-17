@@ -25,7 +25,7 @@ Refer to [[id:537643b3-ff99-4579-b3e7-0d7a691c001c][Robotic Foundation Models]].
 
 ** Dataset Collection
 
-For the ease of collecting export demonstration datasets with real robots, robot [[id:99f899e0-970e-48e3-8a55-c9e3666a7b27][Teleoperation]] systems suitable for collecting dataset have been proposed.
+For the ease of collecting export demonstration datasets with real robots, robot teleoperation systems suitable for collecting dataset have been proposed.
 
 
 * Foundation Models Applications

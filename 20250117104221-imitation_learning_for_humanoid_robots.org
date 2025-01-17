@@ -15,7 +15,7 @@ Four possible source of demonstrations for humanoid robots:
 
   + collecting data in simulation (sim-to-real gap)
 
-- teleoperation (robot)
+- [[id:99f899e0-970e-48e3-8a55-c9e3666a7b27][Teleoperation]] (robot)
 
   Control flow for learning from teleoperated demonstrations:
 

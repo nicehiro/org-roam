@@ -16,4 +16,4 @@ Three essential steps exists in IL:
 - train using the retargeted data
 
 
-If the captured motion comes from the same robot, such as from [[id:99f899e0-970e-48e3-8a55-c9e3666a7b27][Teleoperation]], the retargeting step is unnecessary.
+If the captured motion comes from the same robot, the retargeting step is unnecessary.
