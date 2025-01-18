@@ -35,5 +35,3 @@ Humanoid whole-body loco-manipulation needs to schedule contact for all limbs to
 ** Tactile Sensing
 
 Tactile sensing is yet an underexplored modality for advancing humanoid loco-manipulation, providing direct contact information necessary for tasks involving complex interactions with environments and objects.
-
-* Learning Loco-manipulation Skills
