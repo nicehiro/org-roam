@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       FAE195DD-B4BD-49CD-A5A5-24249BCEBA99
+:ROAM_REFS: https://emacs.stackexchange.com/questions/57898/getting-latex-preview-to-work-with-org-mode-dvi-not-found
+:END:
+#+title: Emacs Org LaTeX Preview Error
+#+filetags: :latex:orgmode:emacs:
+
+
+Remember to check the ~*Org Preview LaTeX Output*~ buffer for detailed errors.
+
+In my case, it was that Emacs cannot find the ~latex~ and ~dvipng~ command in Emacs, even if I have use ~exec-path-from-shell~ to obtain ~PATH~ from the system.
+
+So the solution is to add symlinks of those two to ~/usr/local/bin~.
