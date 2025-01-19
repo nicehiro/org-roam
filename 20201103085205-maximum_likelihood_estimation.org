@@ -5,7 +5,7 @@
 #+OPTIONS: toc:nil
 #+filetags: :probability:
 
-* Description
+
 设总体有分布 $f(x;\theta_1,\dots,\theta_k)$ ， $X_1,\dots,X_n$ 为自这个总体中抽出的样本，
 则样本 $(X_1,\dots,X_n)$ 的分布（即其概率密度函数或概率函数）为：
 $$
