@@ -14,6 +14,7 @@ For embodied ai specifically in humanoid robots, refer to [[id:5704fbb5-46d9-45c
 Embodied Artificial Intelligence (EAI) integrates artificial intelligence into physical entities like robots, endowing them with the ability to perceive, learn from, and dynamically interact with their environment.
 #+end_quote
 
+
 * Foundation Models
 
 [[id:A000C46A-F2AC-4B16-A94A-F741BC67576E][Real-World Robot Applications of Foundation Models: A Review]] lists fundation models can be used in robotic tasks divided by modalities.

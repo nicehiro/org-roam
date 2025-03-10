@@ -7,13 +7,33 @@
 
 Vision-Language-Action models use _pre-trained VLMs_ as base model, and fine-tuned for robot control.
 
+* VLAs
 
-* Current VLAs
+- *ChatVLA*: ChatVLA: Unified Multimodal Understanding and Robot Control  with Vision-Language-Action Model, Midea Group & East China Normal University, arxiv, Feb 21 2025. [[[http://arxiv.org/abs/2502.14420][Paper]]] [[[https://chatvla.github.io/][Website]]]
 
-- [[id:a8a38a72-f501-4ddc-b097-76f2c182e8cc][OpenVLA: An Open-Source Vision-Language-Action Model]]
+- *VLAS*: [[id:E66B1947-8FE4-40AB-9BE8-B52C95B7CBB0][VLAS: Vision-Language-Action Model With Speech Instructions For Customized Robot Manipulation]], Westlake University, arxiv, Feb 21 2025. [[[http://arxiv.org/abs/2502.13508][Paper]]] [[[https://github.com/whichwhichgone/VLAS][Code]]]
 
-- [[id:4d47b657-f192-40e5-8894-0070853731da][Diffusion-VLA: Scaling Robot Foundation Models via Unified Diffusion and Autoregression]]
+- *DexVLA*: DexVLA: Vision-Language Model with Plug-In  Diffusion Expert for General Robot Control, Midea Group & East China Normal University, arxiv, Feb 9 2025. [[[http://arxiv.org/abs/2502.05855][Paper]]] [[[https://dex-vla.github.io/][Website]]] [[[https://github.com/lesjie-wen/dexvla][Code]]]
 
-- [[id:0ceb13c2-ac2c-4e90-bb44-3d5506cb08e9][TraceVLA: Visual Trace Prompting Enhances Spatial-Temporal Awareness for Generalist Robotic Policiy]]
+- *VLA-Cache*: Towards Efficient Vision-Language-Action Model via Adaptive  Token Caching in Robotic Manipulation, University of Sydney, arxiv, Feb 4 2025. [[[http://arxiv.org/abs/2502.02175][Paper]]]
 
-- [[id:205DE6FB-054E-418A-BC32-C05E82AF1CA0][$\pi_0$: A Vision-Language-Action Flow Model for General Robot Control]]
+- *UP-VLA*: A Unified Understanding and Prediction Model for Embodied Agent, Tsinghua University & Shanghai Qi Zhi Institute, arxiv, Feb 3 2025. [[[http://arxiv.org/abs/2501.18867][Paper]]]
+
+- *FAST*: FAST: Efficient Action Tokenization for  Vision-Language-Action Models, Physical Intelligence & UC Berkeley & Stanford, arxiv, Jan 16 2025. [[[https://pi.website/research/fast][Website]]] [[[http://arxiv.org/abs/2501.09747][Paper]]] [[[https://huggingface.co/physical-intelligence/fast][Tokenizer]]]
+
+- *FuSe*: Beyond Sight: Finetuning Generalist Robot Policies with  Heterogeneous Sensors via Language Grounding, UC Berkeley, arxiv, Jan 8 2025. [[[https://fuse-model.github.io/][Website]]] [[[http://arxiv.org/abs/2501.04693][Paper]]] [[[https://github.com/fuse-model/FuSe][Code]]] [[[https://huggingface.co/datasets/oier-mees/FuSe][Model]]]
+
+- *TRACEVLA*: [[id:0ceb13c2-ac2c-4e90-bb44-3d5506cb08e9][TraceVLA: Visual Trace Prompting Enhances Spatial-Temporal Awareness for Generalist Robotic Policiy]], University of Maryland, arxiv, Dec 25 2024. [[[http://arxiv.org/abs/2412.10345][Paper]]]
+
+- *EMMA-X*: EMMA-X: An Embodied Multimodal Action Model with Grounded Chain of Thought and Look-ahead Spatial Reasoning, Singapore University of Technology and Design, Dec 17 2024. [[[https: //declare-lab.github.io/Emma-X/][Website]]] [[[http://arxiv.org/abs/2412.11974][Paper]]] [[[https://github.com/declare-lab/Emma-X][Code]]]
+
+- *Diffusion-VLA*: [[id:4d47b657-f192-40e5-8894-0070853731da][Diffusion-VLA: Scaling Robot Foundation Models via Unified Diffusion and Autoregression]], East China Normal University, arxiv, Dec 4 2024. [[[https://diffusion-vla.github.io/][Website]]] [[[http://arxiv.org/abs/2412.03293][Paper]]]
+
+- $\pi_0$: [[id:205DE6FB-054E-418A-BC32-C05E82AF1CA0][$\pi_0$: A Vision-Language-Action Flow Model for General Robot Control]], Physical Intelligence, arxiv, Oct 31 2024. [[[https://physicalintelligence.company/blog/pi0][Website]]] [[[http://arxiv.org/abs/2410.24164][Paper]]] [[[https://github.com/Physical-Intelligence/openpi][Code]]]
+
+- *OpenVLA*: [[id:a8a38a72-f501-4ddc-b097-76f2c182e8cc][OpenVLA: An Open-Source Vision-Language-Action Model]], Stanford University & UC Berkeley & Toyota Research Insititute, arxiv, Jun 13 2024. [[[https://openvla.github.io][Website]]] [[[http://arxiv.org/abs/2412.03293][Paper]]] [[[https://github.com/openvla/openvla][Code]]] [[[https://huggingface.co/openvla][Model]]]
+
+
+** For Humanoid Robots
+
+- *NAVILA*: NAVILA: LEGGED ROBOT VISION-LANGUAGEACTION MODEL FOR NAVIGATION, UC San Diego, arxiv, Dec 5 2024. [[[https://navila-bot.github.io/][Website]]] [[[http://arxiv.org/abs/2412.04453][Paper]]]
