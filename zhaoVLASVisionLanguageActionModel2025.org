@@ -3,6 +3,7 @@
 :ROAM_REFS: @zhaoVLASVisionLanguageActionModel2025
 :END:
 #+title: VLAS: Vision-Language-Action Model With Speech Instructions For Customized Robot Manipulation
+#+filetags: :VLA:
 
 
 Existing VLAs rely heavily on vision-language models (VLMs) that only support text-based instructions, neglecting the more natural speech modality for human-robot interaction. Moreover, the transcription procesedure would lose non-semantic information in the raw speech, such as voiceprint, which may be crucial for robots to complete customized tasks.

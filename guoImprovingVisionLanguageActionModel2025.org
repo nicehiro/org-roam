@@ -3,6 +3,7 @@
 :ROAM_REFS: @guoImprovingVisionLanguageActionModel2025
 :END:
 #+title: Improving Vision-Language-Action Model with Online Reinforcement Learning
+#+filetags: :VLA:
 
 The fine-tuning of VLA models generally employs a supervised fine-tuning (SFT) approach. However, SFT depends on high-quality expert datasets that are costly and difficult to obtain in the robotic domain. And SFT may not fully align VLA models with physical environments due to distribution shif issues.
 
