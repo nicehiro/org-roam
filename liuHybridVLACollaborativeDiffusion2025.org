@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       245A08EC-B398-4A9F-8E59-E11D671F682E
+:ROAM_REFS: @liuHybridVLACollaborativeDiffusion2025
+:END:
+#+title: HybridVLA: Collaborative Diffusion and Autoregression in a Unified Vision-Language-Action Model
+#+filetags: :VLA:
+
+
+Existing autoregressive VLA methods ([[id:E66B1947-8FE4-40AB-9BE8-B52C95B7CBB0][VLAS: Vision-Language-Action Model With Speech Instructions For Customized Robot Manipulation]]) leverage large-scale pretrained knowledge, they disrupt the continuity of actions. Meanwhile, some VLA methods ([[id:4d47b657-f192-40e5-8894-0070853731da][Diffusion-VLA: Scaling Robot Foundation Models via Unified Diffusion and Autoregression]]) incorporate an additional diffusion head to predict continuous actions, relying solely on VLM-extracted features, which limits their reasoning capabilities. This paper introduces HybridVLA, which seamlessly integrates the strengths of both autoregressive and diffusion policies within a single large language model, rather than connecting them as additional head.

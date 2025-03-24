@@ -9,7 +9,7 @@ Vision-Language-Action models use _pre-trained VLMs_ as base model, and fine-tun
 
 * VLAs
 
-- *GO-1*: [[id:B08E190E-3101-4B2F-8A4D-2C0290016037][AgiBot World Colosseo: Large-scale Manipulation Platform for Scalable and Intelligent Embodied Systems]], AgiBot-World (Shanghai AI Lab & AgiBot Inc.), AgiBot World, Mar 10 2025. [[[https://agibot-world.com/blog/go1#:~:text=Paper:-,agibot_go1.pdf][Paper]]] [[[https://agibot-world.com][Website]]] [[[https://github.com/OpenDriveLab/Agibot-World][Code]]] [[[https://huggingface.co/agibot-world][Model]]]
+- *HybridVLA*: [[id:245A08EC-B398-4A9F-8E59-E11D671F682E][HybridVLA: Collaborative Diffusion and Autoregression in a Unified Vision-Language-Action Model]], Peking University, Mar 13 2025. [[[http://arxiv.org/abs/2503.10631][Paper]]] [[[https://hybrid-vla.github.io][Website]]] [[[https://github.com/PKU-HMI-Lab/Hybrid-VLA][Code]]]
 
 - *OTTER*: OTTER: A Vision-Language-Action Model with Text-Aware Visual Feature Extraction, UC Berkeley, arxiv, Mar 5 2025. [[[http://arxiv.org/abs/2503.03734][Paper]]] [[[https://ottervla.github.io/][Website]]] [[[https://github.com/FangchenLiu/otter_jax][Code JAX]]] [[[https://github.com/Max-Fu/otter][Code Torch]]]
 
@@ -47,3 +47,5 @@ Vision-Language-Action models use _pre-trained VLMs_ as base model, and fine-tun
 - *NAVILA*: NAVILA: LEGGED ROBOT VISION-LANGUAGEACTION MODEL FOR NAVIGATION, UC San Diego, arxiv, Dec 5 2024. [[[https://navila-bot.github.io/][Website]]] [[[http://arxiv.org/abs/2412.04453][Paper]]]
 
 - *Humanoid-VLA*: Humanoid-VLA: Towards Universal Humanoid Control with Visual Integration, Westlake University & Zhejiang University, arxiv, Feb 21 2025. [[[http://arxiv.org/abs/2502.14795][Paper]]]
+
+- *GO-1*: [[id:B08E190E-3101-4B2F-8A4D-2C0290016037][AgiBot World Colosseo: Large-scale Manipulation Platform for Scalable and Intelligent Embodied Systems]], AgiBot-World (Shanghai AI Lab & AgiBot Inc.), AgiBot World, Mar 10 2025. [[[https://agibot-world.com/blog/go1#:~:text=Paper:-,agibot_go1.pdf][Paper]]] [[[https://agibot-world.com][Website]]] [[[https://github.com/OpenDriveLab/Agibot-World][Code]]] [[[https://huggingface.co/agibot-world][Model]]]
