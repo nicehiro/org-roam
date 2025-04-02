@@ -9,7 +9,7 @@ Vision-Language-Action models use _pre-trained VLMs_ as base model, and fine-tun
 
 * VLAs
 
-- *MoLe-VLA*: MoLe-VLA: Dynamic Layer-skipping Vision Language Action Model via  Mixture-of-Layers for Efficient Robot Manipulation, Nanjing University & HK PolyU & Peking University, Mar 26 2025. [[[http://arxiv.org/abs/2503.20384][Paper]]] [[[https://sites.google.com/view/mole-vla][Website]]] [[[https://github.com/RoyZry98/MoLe-VLA-Pytorch/][Code]]]
+- *MoLe-VLA*: [[id:F4850CF2-B4D8-4832-B1B1-3D38DDB88864][MoLe-VLA: Dynamic Layer-skipping Vision Language Action Model via Mixture-of-Layers for Efficient Robot Manipulation]], Nanjing University & HK PolyU & Peking University, Mar 26 2025. [[[http://arxiv.org/abs/2503.20384][Paper]]] [[[https://sites.google.com/view/mole-vla][Website]]] [[[https://github.com/RoyZry98/MoLe-VLA-Pytorch/][Code]]]
 
 - *HybridVLA*: [[id:245A08EC-B398-4A9F-8E59-E11D671F682E][HybridVLA: Collaborative Diffusion and Autoregression in a Unified Vision-Language-Action Model]], Peking University, Mar 13 2025. [[[http://arxiv.org/abs/2503.10631][Paper]]] [[[https://hybrid-vla.github.io][Website]]] [[[https://github.com/PKU-HMI-Lab/Hybrid-VLA][Code]]]
 
@@ -45,6 +45,8 @@ Vision-Language-Action models use _pre-trained VLMs_ as base model, and fine-tun
 
 
 ** For Humanoid Robots
+
+- *GR00T N1*: [[id:2741ABC6-618E-4D10-A8DA-9A0E45204AF5][GR00T N1: An Open Foundation Model for Generalist Humanoid Robots]], NVIDIA, Mar 27 2025. [[[http://arxiv.org/abs/2503.14734][Paper]]] [[[https://developer.nvidia.com/isaac/gr00t][Website]]] [[[https://github.com/NVIDIA/Isaac-GR00T][Code]]] [[[https://huggingface.co/datasets/nvidia/PhysicalAI-Robotics-GR00T-X-Embodiment-Sim][Dataset]]]
 
 - *NAVILA*: NAVILA: LEGGED ROBOT VISION-LANGUAGEACTION MODEL FOR NAVIGATION, UC San Diego, arxiv, Dec 5 2024. [[[https://navila-bot.github.io/][Website]]] [[[http://arxiv.org/abs/2412.04453][Paper]]]
 
