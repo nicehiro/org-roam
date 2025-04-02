@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       2741ABC6-618E-4D10-A8DA-9A0E45204AF5
+:ROAM_REFS: @nvidiaGR00TN1Open2025a
+:END:
+#+title: GR00T N1: An Open Foundation Model for Generalist Humanoid Robots
+#+filetags: :humanoid:VLA:
+
+
+GR00T N1 is a vision-language-action model with a dual-system architecture. The vision-language module interprets the environment through vision and language instructions. The diffusion transformer module generates fluid motor actions in *real time*.
+
+Several key information of this model:
+
+1. Using an MLP per embodiment to project robot state and action (noise) to a shared embedding dimension _as input to the diffusion action head_.
+
+2. Using Eagle-2 VLM pretrained on Internet-scale data. The LLM and image encoder are aligned over a broad set of vision-language tasks pretrained.
+
+3. They freeze LLM backbone during training, and found that _using middle-layer instead of final-layer LLM embeddings resulted in both faster inference speed and higher downstream policy success rate_. They use the presentations from the 12th layer.
+
+4. By training action model using VQ-VAE, they obtain a model that can generate latent action by giving current state images obtained from internet (human videos). (But how to execute those latent actions?)
