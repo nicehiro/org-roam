@@ -5,15 +5,19 @@
 #+filetags: :VLA:
 
 
-Vision-Language-Action models use _pre-trained VLMs_ as base model, and fine-tuned for robot control.
+From RT-2 (Google DeepMind):
+
+#+begin_quote
+We propose to co-fine-tune state-of-the-art vision-language models on both robotic trajectory data and Internet-scale vision-language tasks, such as visual question answering. In contrast to other approaches, we propose a simple, general recipe to achieve this goal: in order to fit both natural language responses and robotic actions into the same format, _we express the actions as text tokens and incorporate them directly into the training set of the model in the same way as natural language tokens_. We refer to  such category of models as vision-language-action models (VLA) and instantiate an example of such a model, which we call RT-2.
+#+end_quote
+
+Vision-Language-Action models typically utilize pre-trained vision-language models (VLMs) as their base and are fine-tuned to predict robotic actions. The models that do not rely on pre-trained VLMs are referred to here as *Robotic Foundation Models*.
 
 * VLAs
 
 - *MoLe-VLA*: [[id:F4850CF2-B4D8-4832-B1B1-3D38DDB88864][MoLe-VLA: Dynamic Layer-skipping Vision Language Action Model via Mixture-of-Layers for Efficient Robot Manipulation]], Nanjing University & HK PolyU & Peking University, Mar 26 2025. [[[http://arxiv.org/abs/2503.20384][Paper]]] [[[https://sites.google.com/view/mole-vla][Website]]] [[[https://github.com/RoyZry98/MoLe-VLA-Pytorch/][Code]]]
 
 - *HybridVLA*: [[id:245A08EC-B398-4A9F-8E59-E11D671F682E][HybridVLA: Collaborative Diffusion and Autoregression in a Unified Vision-Language-Action Model]], Peking University, Mar 13 2025. [[[http://arxiv.org/abs/2503.10631][Paper]]] [[[https://hybrid-vla.github.io][Website]]] [[[https://github.com/PKU-HMI-Lab/Hybrid-VLA][Code]]]
-
-- *OTTER*: OTTER: A Vision-Language-Action Model with Text-Aware Visual Feature Extraction, UC Berkeley, arxiv, Mar 5 2025. [[[http://arxiv.org/abs/2503.03734][Paper]]] [[[https://ottervla.github.io/][Website]]] [[[https://github.com/FangchenLiu/otter_jax][Code JAX]]] [[[https://github.com/Max-Fu/otter][Code Torch]]]
 
 - *PD-VLA*: [[id:C52F3ECA-C717-42E5-B6E0-3B533EB58A09][Accelerating Vision-Language-Action Model Integrated with Action Chunking via Parallel Decoding]], HKUST (GZ), arxiv, Mar 4 2025. [[[http://arxiv.org/abs/2503.02310][Paper]]]
 
@@ -28,6 +32,8 @@ Vision-Language-Action models use _pre-trained VLMs_ as base model, and fine-tun
 - *UP-VLA*: A Unified Understanding and Prediction Model for Embodied Agent, Tsinghua University & Shanghai Qi Zhi Institute, arxiv, Feb 3 2025. [[[http://arxiv.org/abs/2501.18867][Paper]]]
 
 - *iRe-VLA*: [[id:45CCA4A2-FD55-4E7B-8471-8B3F80D9254F][Improving Vision-Language-Action Model with Online Reinforcement Learning]], Tsinghua University & Shanghai Qi Zhi Institute, arxiv, Jan 28 2025. [[[http://arxiv.org/abs/2501.16664][Paper]]]
+
+- *Spatial-VLA*: SpatialVLA: Exploring Spatial Representations for  Visual-Language-Action Models, Shanghai AI Lab, arxiv, Jan 28 2025. [[[https://arxiv.org/abs/2501.15830][Paper]]] [[[https://spatialvla.github.io][Website]]] [[[https://github.com/SpatialVLA/SpatialVLA][Code]]] [[[https://huggingface.co/collections/IPEC-COMMUNITY/foundation-vision-language-action-model-6795eb96a9c661f90236acbb][Model]]]
 
 - *FAST*: FAST: Efficient Action Tokenization for  Vision-Language-Action Models, Physical Intelligence & UC Berkeley & Stanford, arxiv, Jan 16 2025. [[[https://pi.website/research/fast][Website]]] [[[http://arxiv.org/abs/2501.09747][Paper]]] [[[https://huggingface.co/physical-intelligence/fast][Tokenizer]]]
 

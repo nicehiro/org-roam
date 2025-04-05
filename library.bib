@@ -181,7 +181,7 @@
   urldate = {2022-12-15},
   abstract = {By transferring knowledge from large, diverse, task-agnostic datasets, modern machine learning models can solve specific downstream tasks either zero-shot or with small task-specific datasets to a high level of performance. While this capability has been demonstrated in other fields such as computer vision, natural language processing or speech recognition, it remains to be shown in robotics, where the generalization capabilities of the models are particularly critical due to the difficulty of collecting real-world robotic data. We argue that one of the keys to the success of such general robotic models lies with open-ended task-agnostic training, combined with high-capacity architectures that can absorb all of the diverse, robotic data. In this paper, we present a model class, dubbed Robotics Transformer, that exhibits promising scalable model properties. We verify our conclusions in a study of different model classes and their ability to generalize as a function of the data size, model size, and data diversity based on a large-scale data collection on real robots performing real-world tasks. The project's website and videos can be found at robotics-transformer.github.io},
   archiveprefix = {arXiv},
-  keywords = {Manipulation,Mobile Manipulation,VLA},
+  keywords = {Manipulation,Mobile Manipulation,Robotic Foundation Model},
   file = {/Users/fangyuan/Zotero/storage/L4G8FUL2/Brohan et al. - 2022 - RT-1 Robotics Transformer for Real-World Control .pdf;/Users/fangyuan/Zotero/storage/UIP3792N/2212.html}
 }
 
@@ -312,7 +312,7 @@
   urldate = {2025-02-14},
   abstract = {Vision-Language-Action (VLA) models have shown substantial potential in real-world robotic manipulation. However, fine-tuning these models through supervised learning struggles to achieve robust performance due to limited, inconsistent demonstrations, especially in contact-rich environments. In this paper, we propose a reinforced fine-tuning approach for VLA models, named ConRFT, which consists of offline and online fine-tuning with a unified consistency-based training objective, to address these challenges. In the offline stage, our method integrates behavior cloning and Q-learning to effectively extract policy from a small set of demonstrations and stabilize value estimating. In the online stage, the VLA model is further fine-tuned via consistency policy, with human interventions to ensure safe exploration and high sample efficiency. We evaluate our approach on eight diverse real-world manipulation tasks. It achieves an average success rate of 96.3\% within 45-90 minutes of online fine-tuning, outperforming prior supervised methods with a 144\% improvement in success rate and 1.9x shorter episode length. This work highlights the potential of integrating reinforcement learning to enhance the performance of VLA models for real-world robotic applications.},
   archiveprefix = {arXiv},
-  keywords = {Manipulation,VLA},
+  keywords = {Manipulation},
   file = {/Users/fangyuan/Zotero/storage/IQ686P9Z/Chen et al. - 2025 - ConRFT A Reinforced Fine-tuning Method for VLA Models via Consistency Policy.pdf;/Users/fangyuan/Zotero/storage/MQ6KISDN/2502.html}
 }
 
@@ -727,7 +727,7 @@
   abstract = {Modern machine learning systems rely on large datasets to attain broad generalization, and this often poses a challenge in robot learning, where each robotic platform and task might have only a small dataset. By training a single policy across many different kinds of robots, a robot learning method can leverage much broader and more diverse datasets, which in turn can lead to better generalization and robustness. However, training a single policy on multi-robot data is challenging because robots can have widely varying sensors, actuators, and control frequencies. We propose CrossFormer, a scalable and flexible transformerbased policy that can consume data from any embodiment. We train CrossFormer on the largest and most diverse dataset to date, 900K trajectories across 20 different robot embodiments. We demonstrate that the same network weights can control vastly different robots, including single and dual arm manipulation systems, wheeled robots, quadcopters, and quadrupeds. Unlike prior work, our model does not require manual alignment of the observation or action spaces. Extensive experiments in the real world show that our method matches the performance of specialist policies tailored for each embodiment, while also significantly outperforming the prior state of the art in cross-embodiment learning.},
   archiveprefix = {arXiv},
   langid = {english},
-  keywords = {Manipulation,Navigation,VLA},
+  keywords = {Manipulation,Navigation,Robotic Foundation Model},
   file = {/Users/fangyuan/Zotero/storage/KBHLBUID/Doshi et al. - 2024 - Scaling Cross-Embodied Learning One Policy for Manipulation, Navigation, Locomotion and Aviation.pdf}
 }
 
@@ -1038,7 +1038,7 @@
   title = {Octo: {{An Open-Source Generalist Robot Policy}}},
   author = {Ghosh, Dibya and Walke, Homer and Pertsch, Karl and Black, Kevin and Mees, Oier and Dasari, Sudeep and Hejna, Joey and Kreiman, Tobias and Xu, Charles and Luo, Jianlan and Tan, You Liang and Sadigh, Dorsa and Finn, Chelsea and Levine, Sergey},
   langid = {english},
-  keywords = {Manipulation,VLA},
+  keywords = {Manipulation,Robotic Foundation Model},
   file = {/Users/fangyuan/Zotero/storage/Q7FQHGRZ/Ghosh et al. - Octo An Open-Source Generalist Robot Policy.pdf}
 }
 
@@ -1109,7 +1109,7 @@
   urldate = {2025-01-08},
   abstract = {Humanoid robots have great potential to perform various human-level skills. These skills involve locomotion, manipulation, and cognitive capabilities. Driven by advances in machine learning and the strength of existing model-based approaches, these capabilities have progressed rapidly, but often separately. Therefore, a timely overview of current progress and future trends in this fast-evolving field is essential. This survey first summarizes the model-based planning and control that have been the backbone of humanoid robotics for the past three decades. We then explore emerging learning-based methods, with a focus on reinforcement learning and imitation learning that enhance the versatility of loco-manipulation skills. We examine the potential of integrating foundation models with humanoid embodiments, assessing the prospects for developing generalist humanoid agents. In addition, this survey covers emerging research for whole-body tactile sensing that unlocks new humanoid skills that involve physical interactions. The survey concludes with a discussion of the challenges and future trends.},
   archiveprefix = {arXiv},
-  keywords = {Diffusion,Locomotion,Manipulation,Robotic VLM,Survey,VLA},
+  keywords = {Diffusion,Locomotion,Manipulation,Robotic Foundation Model,Survey,VLA},
   file = {/Users/fangyuan/Zotero/storage/4INGJFGP/Gu et al. - 2025 - Humanoid Locomotion and Manipulation Current Progress and Challenges in Control, Planning, and Lear.pdf;/Users/fangyuan/Zotero/storage/SIYVI4H7/2501.html}
 }
 
@@ -1126,7 +1126,7 @@
   urldate = {2025-02-01},
   abstract = {Recent studies have successfully integrated large vision-language models (VLMs) into low-level robotic control by supervised fine-tuning (SFT) with expert robotic datasets, resulting in what we term vision-language-action (VLA) models. Although the VLA models are powerful, how to improve these large models during interaction with environments remains an open question. In this paper, we explore how to further improve these VLA models via Reinforcement Learning (RL), a commonly used fine-tuning technique for large models. However, we find that directly applying online RL to large VLA models presents significant challenges, including training instability that severely impacts the performance of large models, and computing burdens that exceed the capabilities of most local machines. To address these challenges, we propose iRe-VLA framework, which iterates between Reinforcement Learning and Supervised Learning to effectively improve VLA models, leveraging the exploratory benefits of RL while maintaining the stability of supervised learning. Experiments in two simulated benchmarks and a real-world manipulation suite validate the effectiveness of our method.},
   archiveprefix = {arXiv},
-  keywords = {VLA},
+  keywords = {Manipulation,RL,VLA},
   file = {/Users/fangyuan/Zotero/storage/8XS2WHG3/Guo et al. - 2025 - Improving Vision-Language-Action Model with Online Reinforcement Learning.pdf;/Users/fangyuan/Zotero/storage/4H5SIRQ8/2501.html}
 }
 
@@ -1376,7 +1376,7 @@
   urldate = {2024-12-07},
   abstract = {Large language models (LLMs) and Vision-Language Models (VLMs) have been proved to excel at multiple tasks, such as commonsense reasoning. Powerful as these models can be, they are not grounded in the 3D physical world, which involves richer concepts such as spatial relationships, affordances, physics, layout, and so on. In this work, we propose to inject the 3D world into large language models, and introduce a whole new family of 3D-LLMs. Specifically, 3D-LLMs can take 3D point clouds and their features as input and perform a diverse set of 3D-related tasks, including captioning, dense captioning, 3D question answering, task decomposition, 3D grounding, 3D-assisted dialog, navigation, and so on. Using three types of prompting mechanisms that we design, we are able to collect over 300k 3D-language data covering these tasks. To efficiently train 3D-LLMs, we first utilize a 3D feature extractor that obtains 3D features from rendered multi-view images. Then, we use 2D VLMs as our backbones to train our 3D-LLMs. By introducing a 3D localization mechanism, 3D-LLMs could better capture 3D spatial information. Experiments on ScanQA show that our model outperforms state-of-the-art baselines by a large margin ({\textbackslash}textit\{e.g.\}, the BLEU-1 score surpasses state-of-the-art score by 9{\textbackslash}\%). Furthermore, experiments on our held-in datasets for 3D captioning, task composition, and 3D-assisted dialogue show that our model outperforms 2D VLMs. Qualitative examples also show that our model could perform more tasks beyond the scope of existing LLMs and VLMs. Our model and data will be publicly available.},
   langid = {english},
-  keywords = {Robotic VLM,Vision+Language+3D2Language},
+  keywords = {Robotic Foundation Model,Vision+Language+3D2Language},
   file = {/Users/fangyuan/Zotero/storage/TNE3IL2M/Hong et al. - 2023 - 3D-LLM Injecting the 3D World into Large Language Models.pdf}
 }
 
@@ -1384,7 +1384,7 @@
   title = {{{MultiPLY}}: {{A Multisensory Object-Centric Embodied Large Language Model}} in {{3D World}}},
   author = {Hong, Yining and Zheng, Zishuo and Chen, Peihao and Wang, Yian and Li, Junyan and Gan, Chuang},
   langid = {english},
-  keywords = {Robotic VLM,Vision+Language+3D+Audio+Thermal+Tactil2Language},
+  keywords = {Robotic Foundation Model,Vision+Language+3D+Audio+Thermal+Tactil2Language},
   file = {/Users/fangyuan/Zotero/storage/UP9V4J4A/Hong et al. - MultiPLY A Multisensory Object-Centric Embodied Large Language Model in 3D World.pdf}
 }
 
@@ -1497,7 +1497,7 @@
   urldate = {2025-03-06},
   abstract = {Vision-Language-Action (VLA) models aim to predict robotic actions based on visual observations and language instructions. Existing approaches require fine-tuning pre-trained visionlanguage models (VLMs) as visual and language features are independently fed into downstream policies, degrading the pre-trained semantic alignments. We propose OTTER, a novel VLA architecture that leverages these existing alignments through explicit, text-aware visual feature extraction. Instead of processing all visual features, OTTER selectively extracts and passes only task-relevant visual features that are semantically aligned with the language instruction to the policy transformer. This allows OTTER to keep the pre-trained vision-language encoders frozen. Thereby, OTTER preserves and utilizes the rich semantic understanding learned from large-scale pre-training, enabling strong zero-shot generalization capabilities. In simulation and real-world experiments, OTTER significantly outperforms existing VLA models, demonstrating strong zeroshot generalization to novel objects and environments. Video, code, checkpoints, and dataset: https://ottervla.github.io/.},
   archiveprefix = {arXiv},
-  keywords = {VLA},
+  keywords = {Manipulation,Robotic Foundation Model},
   file = {/Users/fangyuan/Zotero/storage/ZAGKNQAM/Huang et al. - 2025 - OTTER A Vision-Language-Action Model with Text-Aware Visual Feature Extraction.pdf;/Users/fangyuan/Zotero/storage/XADXNQHQ/2503.html}
 }
 
@@ -1515,7 +1515,7 @@
   urldate = {2024-01-29},
   abstract = {We present Skill Transformer, an approach for solving long-horizon robotic tasks by combining conditional sequence modeling and skill modularity. Conditioned on egocentric and proprioceptive observations of a robot, Skill Transformer is trained end-to-end to predict both a high-level skill (e.g., navigation, picking, placing), and a whole-body low-level action (e.g., base and arm motion), using a transformer architecture and demonstration trajectories that solve the full task. It retains the composability and modularity of the overall task through a skill predictor module while reasoning about low-level actions and avoiding hand-off errors, common in modular approaches. We test Skill Transformer on an embodied rearrangement benchmark and find it performs robust task planning and low-level control in new scenarios, achieving a 2.5x higher success rate than baselines in hard rearrangement problems.},
   archiveprefix = {arXiv},
-  keywords = {Manipulation,Mobile Manipulation,VLA},
+  keywords = {Manipulation,Mobile Manipulation,Robotic Foundation Model},
   file = {/Users/fangyuan/Zotero/storage/X8E8BD5F/Huang et al. - 2023 - Skill Transformer A Monolithic Policy for Mobile Manipulation.pdf;/Users/fangyuan/Zotero/storage/H3GQ83IK/2308.html}
 }
 
@@ -2325,7 +2325,7 @@
   urldate = {2025-03-17},
   abstract = {Recent advancements in vision-language models (VLMs) for common-sense reasoning have led to the development of vision-language-action (VLA) models, enabling robots to perform generalized manipulation. Although existing autoregressive VLA methods leverage large-scale pretrained knowledge, they disrupt the continuity of actions. Meanwhile, some VLA methods incorporate an additional diffusion head to predict continuous actions, relying solely on VLM-extracted features, which limits their reasoning capabilities. In this paper, we introduce HybridVLA, a unified framework that seamlessly integrates the strengths of both autoregressive and diffusion policies within a single large language model, rather than simply connecting them. To bridge the generation gap, a collaborative training recipe is proposed that injects the diffusion modeling directly into the next-token prediction. With this recipe, we find that these two forms of action prediction not only reinforce each other but also exhibit varying performance across different tasks. Therefore, we design a collaborative action ensemble mechanism that adaptively fuses these two predictions, leading to more robust control. In experiments, HybridVLA outperforms previous state-of-the-art VLA methods across various simulation and real-world tasks, including both single-arm and dual-arm robots, while demonstrating stable manipulation in previously unseen configurations.},
   archiveprefix = {arXiv},
-  keywords = {VLA},
+  keywords = {Autoregression,Diffusion,Manipulation,VLA},
   file = {/Users/fangyuan/Zotero/storage/VJS4SQ9F/Liu et al. - 2025 - HybridVLA Collaborative Diffusion and Autoregression in a Unified Vision-Language-Action Model.pdf;/Users/fangyuan/Zotero/storage/X5WPS5SA/2503.html}
 }
 
@@ -2627,7 +2627,7 @@
   urldate = {2024-12-07},
   abstract = {As large language models (LLMs) evolve, their integration with 3D spatial data (3D-LLMs) has seen rapid progress, offering unprecedented capabilities for understanding and interacting with physical spaces. This survey provides a comprehensive overview of the methodologies enabling LLMs to process, understand, and generate 3D data. Highlighting the unique advantages of LLMs, such as in-context learning, step-by-step reasoning, open-vocabulary capabilities, and extensive world knowledge, we underscore their potential to significantly advance spatial comprehension and interaction within embodied Artificial Intelligence (AI) systems. Our investigation spans various 3D data representations, from point clouds to Neural Radiance Fields (NeRFs). It examines their integration with LLMs for tasks such as 3D scene understanding, captioning, question-answering, and dialogue, as well as LLM-based agents for spatial reasoning, planning, and navigation. The paper also includes a brief review of other methods that integrate 3D and language. The meta-analysis presented in this paper reveals significant progress yet underscores the necessity for novel approaches to harness the full potential of 3D-LLMs. Hence, with this paper, we aim to chart a course for future research that explores and expands the capabilities of 3D-LLMs in understanding and interacting with the complex 3D world. To support this survey, we have established a project page where papers related to our topic are organized and listed: https://github.com/ActiveVisionLab/Awesome-LLM-3D.},
   archiveprefix = {arXiv},
-  keywords = {Robotic VLM,Survey},
+  keywords = {Robotic Foundation Model,Survey},
   file = {/Users/fangyuan/Zotero/storage/V8FISLZS/Ma et al. - 2024 - When LLMs step into the 3D World A Survey and Meta-Analysis of 3D Tasks via Multi-modal Large Langu.pdf;/Users/fangyuan/Zotero/storage/NWDUX3CE/2405.html}
 }
 
@@ -2933,7 +2933,7 @@
   urldate = {2025-02-26},
   abstract = {Large, general-purpose robotic policies trained on diverse demonstration datasets have been shown to be remarkably effective both for controlling a variety of robots in a range of different scenes, and for acquiring broad repertoires of manipulation skills. However, the data that such policies are trained on is generally of mixed quality -- not only are human-collected demonstrations unlikely to perform the task perfectly, but the larger the dataset is, the harder it is to curate only the highest quality examples. It also remains unclear how optimal data from one embodiment is for training on another embodiment. In this paper, we present a general and broadly applicable approach that enhances the performance of such generalist robot policies at deployment time by re-ranking their actions according to a value function learned via offline RL. This approach, which we call Value-Guided Policy Steering (V-GPS), is compatible with a wide range of different generalist policies, without needing to fine-tune or even access the weights of the policy. We show that the same value function can improve the performance of five different state-of-the-art policies with different architectures, even though they were trained on distinct datasets, attaining consistent performance improvement on multiple robotic platforms across a total of 12 tasks. Code and videos can be found at: https://nakamotoo.github.io/V-GPS},
   archiveprefix = {arXiv},
-  keywords = {VLA},
+  keywords = {Manipulation,Robotic Foundation Model,VLA},
   file = {/Users/fangyuan/Zotero/storage/PATFPYUA/Nakamoto et al. - 2025 - Steering Your Generalists Improving Robotic Foundation Models via Value Guidance.pdf;/Users/fangyuan/Zotero/storage/BY7NMDFN/2410.html}
 }
 
@@ -2972,7 +2972,7 @@
   file = {/Users/fangyuan/Zotero/storage/LTLGYAWA/Nasiriany et al. - 2024 - RoboCasa Large-Scale Simulation of Everyday Tasks for Generalist Robots.pdf;/Users/fangyuan/Zotero/storage/3U8QP5WV/2406.html}
 }
 
-@misc{nvidiaGR00TN1Open2025a,
+@misc{nvidiaGR00TN1Open2025,
   title = {{{GR00T N1}}: {{An Open Foundation Model}} for {{Generalist Humanoid Robots}}},
   shorttitle = {{{GR00T N1}}},
   author = {NVIDIA and Bjorck, Johan and Casta{\~n}eda, Fernando and Cherniadev, Nikita and Da, Xingye and Ding, Runyu and Fan, Linxi "Jim" and Fang, Yu and Fox, Dieter and Hu, Fengyuan and Huang, Spencer and Jang, Joel and Jiang, Zhenyu and Kautz, Jan and Kundalia, Kaushil and Lao, Lawrence and Li, Zhiqi and Lin, Zongyu and Lin, Kevin and Liu, Guilin and Llontop, Edith and Magne, Loic and Mandlekar, Ajay and Narayan, Avnish and Nasiriany, Soroush and Reed, Scott and Tan, You Liang and Wang, Guanzhi and Wang, Zu and Wang, Jing and Wang, Qi and Xiang, Jiannan and Xie, Yuqi and Xu, Yinzhen and Xu, Zhenjia and Ye, Seonghyeon and Yu, Zhiding and Zhang, Ao and Zhang, Hao and Zhao, Yizhou and Zheng, Ruijie and Zhu, Yuke},
@@ -3307,7 +3307,7 @@
   urldate = {2025-02-01},
   abstract = {In this paper, we claim that spatial understanding is the keypoint in robot manipulation, and propose SpatialVLA to explore effective spatial representations for the robot foundation model. Specifically, we introduce Ego3D Position Encoding to inject 3D information into the input observations of the visual-language-action model, and propose Adaptive Action Grids to represent spatial robot movement actions with adaptive discretized action grids, facilitating learning generalizable and transferrable spatial action knowledge for cross-robot control. SpatialVLA is first pre-trained on top of a vision-language model with 1.1 Million real-world robot episodes, to learn a generalist manipulation policy across multiple robot environments and tasks. After pre-training, SpatialVLA is directly applied to perform numerous tasks in a zero-shot manner. The superior results in both simulation and real-world robots demonstrate its advantage of inferring complex robot motion trajectories and its strong in-domain multi-task generalization ability. We further show the proposed Adaptive Action Grids offer a new and effective way to fine-tune the pre-trained SpatialVLA model for new simulation and real-world setups, where the pre-learned action grids are re-discretized to capture robot-specific spatial action movements of new setups. The superior results from extensive evaluations demonstrate the exceptional in-distribution generalization and out-of-distribution adaptation capability, highlighting the crucial benefit of the proposed spatial-aware representations for generalist robot policy learning. All the details and codes will be open-sourced.},
   archiveprefix = {arXiv},
-  keywords = {VLA},
+  keywords = {Manipulation,Spatial,VLA},
   file = {/Users/fangyuan/Zotero/storage/XTHNHWXG/Qu et al. - 2025 - SpatialVLA Exploring Spatial Representations for Visual-Language-Action Model.pdf;/Users/fangyuan/Zotero/storage/AC5RF28E/2501.html}
 }
 
@@ -3696,7 +3696,7 @@
   abstract = {Hierarchical control for robotics has long been plagued by the need to have a well defined interface layer to communicate between high-level task planners and low-level policies. With the advent of LLMs, language has been emerging as a prospective interface layer. However, this has several limitations. Not all tasks can be decomposed into steps that are easily expressible in natural language (e.g. performing a dance routine). Further, it makes end-to-end finetuning on embodied data challenging due to domain shift and catastrophic forgetting. We introduce our method -- Learnable Latent Codes as Bridges (LCB) -- as an alternate architecture to overcome these limitations. {\textbackslash}method{\textasciitilde}uses a learnable latent code to act as a bridge between LLMs and low-level policies. This enables LLMs to flexibly communicate goals in the task plan without being entirely constrained by language limitations. Additionally, it enables end-to-end finetuning without destroying the embedding space of word tokens learned during pre-training. Through experiments on Language Table and Calvin, two common language based benchmarks for embodied agents, we find that {\textbackslash}method{\textasciitilde}outperforms baselines (including those w/ GPT-4V) that leverage pure language as the interface layer on tasks that require reasoning and multi-step behaviors.},
   archiveprefix = {arXiv},
   langid = {english},
-  keywords = {Manipulation,Robotic VLM,VLA},
+  keywords = {Manipulation,Robotic Foundation Model,VLA},
   file = {/Users/fangyuan/Zotero/storage/L9SI7VR5/Shentu et al. - 2024 - From LLMs to Actions Latent Codes as Bridges in Hierarchical Robot Control.pdf}
 }
 
@@ -3970,7 +3970,7 @@
   urldate = {2025-03-11},
   abstract = {Vision-Language-Action (VLA) models demonstrate remarkable potential for generalizable robotic manipulation. The performance of VLA models can be improved by integrating with action chunking, a critical technique for effective control. However, action chunking linearly scales up action dimensions in VLA models with increased chunking sizes. This reduces the inference efficiency. To tackle this problem, we propose PD-VLA, the first parallel decoding framework for VLA models integrated with action chunking. Our framework reformulates autoregressive decoding as a nonlinear system solved by parallel fixed-point iterations. This approach preserves model performance with mathematical guarantees while significantly improving decoding speed. In addition, it enables training-free acceleration without architectural changes, as well as seamless synergy with existing acceleration techniques. Extensive simulations validate that our PD-VLA maintains competitive success rates while achieving 2.52 times execution frequency on manipulators (with 7 degrees of freedom) compared with the fundamental VLA model. Furthermore, we experimentally identify the most effective settings for acceleration. Finally, real-world experiments validate its high applicability across different tasks.},
   archiveprefix = {arXiv},
-  keywords = {VLA},
+  keywords = {Manipulation,VLA},
   file = {/Users/fangyuan/Zotero/storage/EUZWR2TU/Song et al. - 2025 - Accelerating Vision-Language-Action Model Integrated with Action Chunking via Parallel Decoding.pdf;/Users/fangyuan/Zotero/storage/DPTICKAW/2503.html}
 }
 
@@ -4307,7 +4307,7 @@
   urldate = {2024-10-14},
   abstract = {One of the roadblocks for training generalist robotic models today is heterogeneity. Previous robot learning methods often collect data to train with one specific embodiment for one task, which is expensive and prone to overfitting. This work studies the problem of learning policy representations through heterogeneous pre-training on robot data across different embodiments and tasks at scale. We propose Heterogeneous Pre-trained Transformers (HPT), which pre-train a large, shareable trunk of a policy neural network to learn a task and embodiment agnostic shared representation. This general architecture aligns the specific proprioception and vision inputs from distinct embodiments to a short sequence of tokens and then processes such tokens to map to control robots for different tasks. Leveraging the recent large-scale multi-embodiment real-world robotic datasets as well as simulation, deployed robots, and human video datasets, we investigate pre-training policies across heterogeneity. We conduct experiments to investigate the scaling behaviors of training objectives, to the extent of 52 datasets. HPTs outperform several baselines and enhance the fine-tuned policy performance by over 20\% on unseen tasks in multiple simulator benchmarks and real-world settings. See the project website (https://liruiw.github.io/hpt/) for code and videos.},
   archiveprefix = {arXiv},
-  keywords = {Manipulation,VLA},
+  keywords = {Manipulation,Robotic Foundation Model},
   file = {/Users/fangyuan/Zotero/storage/3UYQKZVR/Wang et al. - 2024 - Scaling Proprioceptive-Visual Learning with Heterogeneous Pre-trained Transformers.pdf;/Users/fangyuan/Zotero/storage/U2WXBXMQ/2409.html}
 }
 
@@ -4436,7 +4436,7 @@
   urldate = {2025-02-14},
   abstract = {Enabling robots to perform diverse tasks across varied environments is a central challenge in robot learning. While vision-language-action (VLA) models have shown promise for generalizable robot skills, realizing their full potential requires addressing limitations in action representation and efficient training. Current VLA models often focus on scaling the vision-language model (VLM) component, while the action space representation remains a critical bottleneck. This paper introduces DexVLA, a novel framework designed to enhance the efficiency and generalization capabilities of VLAs for complex, long-horizon tasks across diverse robot embodiments. DexVLA features a novel diffusion-based action expert, scaled to one billion parameters, designed for cross-embodiment learning. A novel embodiment curriculum learning strategy facilitates efficient training: (1) pre-training the diffusion expert that is separable from the VLA on cross-embodiment data, (2) aligning the VLA model to specific embodiments, and (3) post-training for rapid adaptation to new tasks. We conduct comprehensive experiments across multiple embodiments, including single-arm, bimanual, and dexterous hand, demonstrating DexVLA's adaptability to challenging tasks without task-specific adaptation, its ability to learn dexterous skills on novel embodiments with limited data, and its capacity to complete complex, long-horizon tasks using only direct language prompting, such as laundry folding. In all settings, our method demonstrates superior performance compared to state-of-the-art models like Octo, OpenVLA, and Diffusion Policy.},
   archiveprefix = {arXiv},
-  keywords = {Manipulation,VLA},
+  keywords = {Diffusion,Manipulation,VLA},
   file = {/Users/fangyuan/Zotero/storage/5E4FCZVM/Wen et al. - 2025 - DexVLA Vision-Language Model with Plug-In Diffusion Expert for General Robot Control.pdf;/Users/fangyuan/Zotero/storage/74WIAUAZ/2502.html}
 }
 
@@ -4620,7 +4620,7 @@
   abstract = {The ability to reflect on and correct failures is crucial for robotic systems to interact stably with real-life objects.Observing the generalization and reasoning capabilities of Multimodal Large Language Models (MLLMs), previous approaches have aimed to utilize these models to enhance robotic systems accordingly.However, these methods typically focus on high-level planning corrections using an additional MLLM, with limited utilization of failed samples to correct low-level contact poses. To address this gap, we propose an Autonomous Interactive Correction (AIC) MLLM, which makes use of previous low-level interaction experiences to correct SE(3) pose predictions. Specifically, AIC MLLM is initially fine-tuned to acquire both pose prediction and feedback prompt comprehension abilities.We carefully design two types of prompt instructions through interactions with objects: 1) visual masks to highlight unmovable parts for position correction, and 2)textual descriptions to indicate potential directions for rotation correction.During inference, a Feedback Information Extraction module is introduced to recognize the failure cause, allowing AIC MLLM to adaptively correct the pose prediction using the corresponding prompts.To further enhance manipulation stability, we devise a Test Time Adaptation strategy that enables AIC MLLM to better adapt to the current scene configuration.Finally, extensive experiments are conducted in both simulated and real-world environments to evaluate the proposed method. The results demonstrate that our AIC MLLM can efficiently correct failure samples by leveraging interaction experience prompts.Real-world demonstration can be found at https://sites.google.com/view/aic-mllm},
   archiveprefix = {arXiv},
   langid = {english},
-  keywords = {Manipulation,Robotic VLM},
+  keywords = {Manipulation,Robotic Foundation Model},
   file = {/Users/fangyuan/Zotero/storage/INFJZSHQ/2406.pdf}
 }
 
@@ -4687,7 +4687,7 @@
   urldate = {2024-02-01},
   abstract = {The unprecedented advancements in Large Language Models (LLMs) have shown a profound impact on natural language processing but are yet to fully embrace the realm of 3D understanding. This paper introduces PointLLM, a preliminary effort to fill this gap, enabling LLMs to understand point clouds and offering a new avenue beyond 2D visual data. PointLLM understands colored object point clouds with human instructions and generates contextually appropriate responses, illustrating its grasp of point clouds and common sense. Specifically, it leverages a point cloud encoder with a powerful LLM to effectively fuse geometric, appearance, and linguistic information. We collect a novel dataset comprising 660K simple and 70K complex point-text instruction pairs to enable a two-stage training strategy: aligning latent spaces and subsequently instruction-tuning the unified model. To rigorously evaluate the perceptual and generalization capabilities of PointLLM, we establish two benchmarks: Generative 3D Object Classification and 3D Object Captioning, assessed through three different methods, including human evaluation, GPT-4/ChatGPT evaluation, and traditional metrics. Experimental results reveal PointLLM's superior performance over existing 2D and 3D baselines, with a notable achievement in human-evaluated object captioning tasks where it surpasses human annotators in over 50\% of the samples. Codes, datasets, and benchmarks are available at https://github.com/OpenRobotLab/PointLLM .},
   archiveprefix = {arXiv},
-  keywords = {PointCloud,Robotic VLM},
+  keywords = {PointCloud,Robotic Foundation Model},
   file = {/Users/fangyuan/Zotero/storage/38N2P84W/Xu et al. - 2024 - PointLLM Empowering Large Language Models to Understand Point Clouds.pdf;/Users/fangyuan/Zotero/storage/6CBL3CJ4/2308.html}
 }
 
@@ -5024,7 +5024,7 @@
   urldate = {2025-03-28},
   abstract = {Multimodal Large Language Models (MLLMs) excel in understanding complex language and visual data, enabling generalist robotic systems to interpret instructions and perform embodied tasks. Nevertheless, their real-world deployment is hindered by substantial computational and storage demands. Recent insights into the homogeneous patterns in the LLM layer have inspired sparsification techniques to address these challenges, such as early exit and token pruning. However, these methods often neglect the critical role of the final layers that encode the semantic information most relevant to downstream robotic tasks. Aligning with the recent breakthrough of the Shallow Brain Hypothesis (SBH) in neuroscience and the mixture of experts in model sparsification, we conceptualize each LLM layer as an expert and propose a Mixture-of-Layers Vision-Language-Action model (MoLe-VLA, or simply MoLe) architecture for dynamic LLM layer activation. We introduce a Spatial-Temporal Aware Router (STAR) for MoLe to selectively activate only parts of the layers based on the robot's current state, mimicking the brain's distinct signal pathways specialized for cognition and causal reasoning. Additionally, to compensate for the cognitive ability of LLMs lost in MoLe, we devise a Cognition Self-Knowledge Distillation (CogKD) framework. CogKD enhances the understanding of task demands and improves the generation of task-relevant action sequences by leveraging cognitive features. Extensive experiments conducted in both RLBench simulation and real-world environments demonstrate the superiority of MoLe-VLA in both efficiency and performance. Specifically, MoLe-VLA achieves an 8\% improvement in the mean success rate across ten tasks while reducing computational costs by up to x5.6 compared to standard LLMs.},
   archiveprefix = {arXiv},
-  keywords = {Computer Science - Artificial Intelligence,Computer Science - Robotics},
+  keywords = {Manipulation,Spatial,VLA},
   file = {/Users/fangyuan/Zotero/storage/D2GXIQL3/Zhang et al. - 2025 - MoLe-VLA Dynamic Layer-skipping Vision Language Action Model via Mixture-of-Layers for Efficient Ro.pdf;/Users/fangyuan/Zotero/storage/6SHPZL66/2503.html}
 }
 
@@ -5125,7 +5125,7 @@
   urldate = {2025-02-25},
   abstract = {Vision-language-action models (VLAs) have become increasingly popular in robot manipulation for their end-to-end design and remarkable performance. However, existing VLAs rely heavily on vision-language models (VLMs) that only support text-based instructions, neglecting the more natural speech modality for human-robot interaction. Traditional speech integration methods usually involves a separate speech recognition system, which complicates the model and introduces error propagation. Moreover, the transcription procedure would lose non-semantic information in the raw speech, such as voiceprint, which may be crucial for robots to successfully complete customized tasks. To overcome above challenges, we propose VLAS, a novel end-to-end VLA that integrates speech recognition directly into the robot policy model. VLAS allows the robot to understand spoken commands through inner speech-text alignment and produces corresponding actions to fulfill the task. We also present two new datasets, SQA and CSI, to support a three-stage tuning process for speech instructions, which empowers VLAS with the ability of multimodal interaction across text, image, speech, and robot actions. Taking a step further, a voice retrieval-augmented generation (RAG) paradigm is designed to enable our model to effectively handle tasks that require individual-specific knowledge. Our extensive experiments show that VLAS can effectively accomplish robot manipulation tasks with diverse speech commands, offering a seamless and customized interaction experience.},
   archiveprefix = {arXiv},
-  keywords = {VLA},
+  keywords = {Manipulation,VLA,Voice},
   file = {/Users/fangyuan/Zotero/storage/HJSPW6FS/Zhao et al. - 2025 - VLAS Vision-Language-Action Model With Speech Instructions For Customized Robot Manipulation.pdf;/Users/fangyuan/Zotero/storage/U2VA3ZFM/2502.html}
 }
 
@@ -5161,7 +5161,7 @@
   urldate = {2025-03-07},
   abstract = {Dexterous grasping remains a fundamental yet challenging problem in robotics. A general-purpose robot must be capable of grasping diverse objects in arbitrary scenarios. However, existing research typically relies on specific assumptions, such as single-object settings or limited environments, leading to constrained generalization. Our solution is DexGraspVLA, a hierarchical framework that utilizes a pre-trained Vision-Language model as the high-level task planner and learns a diffusion-based policy as the low-level Action controller. The key insight lies in iteratively transforming diverse language and visual inputs into domain-invariant representations, where imitation learning can be effectively applied due to the alleviation of domain shift. Thus, it enables robust generalization across a wide range of real-world scenarios. Notably, our method achieves a 90+\% success rate under thousands of unseen object, lighting, and background combinations in a ``zero-shot'' environment. Empirical analysis further confirms the consistency of internal model behavior across environmental variations, thereby validating our design and explaining its generalization performance. We hope our work can be a step forward in achieving general dexterous grasping. Our demo and code can be found at https://dexgraspvla.github.io/.},
   archiveprefix = {arXiv},
-  keywords = {VLA},
+  keywords = {Dexterous Hand,Manipulation,Robotic Foundation Model},
   file = {/Users/fangyuan/Zotero/storage/UA87LMP9/Zhong et al. - 2025 - DexGraspVLA A Vision-Language-Action Framework Towards General Dexterous Grasping.pdf;/Users/fangyuan/Zotero/storage/DPPM4S7E/2502.html}
 }
 
@@ -5197,7 +5197,7 @@
   urldate = {2025-02-25},
   abstract = {Humans possess a unified cognitive ability to perceive, comprehend, and interact with the physical world. Why can't large language models replicate this holistic understanding? Through a systematic analysis of existing training paradigms in vision-language-action models (VLA), we identify two key challenges: spurious forgetting, where robot training overwrites crucial visual-text alignments, and task interference, where competing control and understanding tasks degrade performance when trained jointly. To overcome these limitations, we propose ChatVLA, a novel framework featuring Phased Alignment Training, which incrementally integrates multimodal data after initial control mastery, and a Mixture-of-Experts architecture to minimize task interference. ChatVLA demonstrates competitive performance on visual question-answering datasets and significantly surpasses state-of-the-art vision-language-action (VLA) methods on multimodal understanding benchmarks. Notably, it achieves a six times higher performance on MMMU and scores 47.2\% on MMStar with a more parameter-efficient design than ECoT. Furthermore, ChatVLA demonstrates superior performance on 25 real-world robot manipulation tasks compared to existing VLA methods like OpenVLA. Our findings highlight the potential of our unified framework for achieving both robust multimodal understanding and effective robot control.},
   archiveprefix = {arXiv},
-  keywords = {VLA},
+  keywords = {Manipulation,MoE,VLA},
   file = {/Users/fangyuan/Zotero/storage/UQGJXRN9/Zhou et al. - 2025 - ChatVLA Unified Multimodal Understanding and Robot Control with Vision-Language-Action Model.pdf;/Users/fangyuan/Zotero/storage/K29TN2NL/2502.html}
 }
 
