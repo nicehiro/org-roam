@@ -23,6 +23,8 @@ Vision-Language-Action models typically utilize pre-trained vision-language mode
 
 - *PD-VLA*: [[id:C52F3ECA-C717-42E5-B6E0-3B533EB58A09][Accelerating Vision-Language-Action Model Integrated with Action Chunking via Parallel Decoding]], HKUST (GZ), arxiv, Mar 4 2025. [[[http://arxiv.org/abs/2503.02310][Paper]]]
 
+- *Hi Robot*: Hi Robot: Open-Ended Instruction Following with Hierarchical  Vision-Language-Action Models, Physical Intelligence & Stanford University, arxiv, Feb 26 2025. [[[http://arxiv.org/abs/2502.19417][Paper]]] [[[https://www.pi.website/research/hirobot][Website]]]
+
 - *ChatVLA*: ChatVLA: Unified Multimodal Understanding and Robot Control  with Vision-Language-Action Model, Midea Group & East China Normal University, arxiv, Feb 21 2025. [[[http://arxiv.org/abs/2502.14420][Paper]]] [[[https://chatvla.github.io/][Website]]]
 
 - *VLAS*: [[id:E66B1947-8FE4-40AB-9BE8-B52C95B7CBB0][VLAS: Vision-Language-Action Model With Speech Instructions For Customized Robot Manipulation]], Westlake University, arxiv, Feb 21 2025. [[[http://arxiv.org/abs/2502.13508][Paper]]] [[[https://github.com/whichwhichgone/VLAS][Code]]]
@@ -46,6 +48,8 @@ Vision-Language-Action models typically utilize pre-trained vision-language mode
 - *EMMA-X*: EMMA-X: An Embodied Multimodal Action Model with Grounded Chain of Thought and Look-ahead Spatial Reasoning, Singapore University of Technology and Design, Dec 17 2024. [[[https: //declare-lab.github.io/Emma-X/][Website]]] [[[http://arxiv.org/abs/2412.11974][Paper]]] [[[https://github.com/declare-lab/Emma-X][Code]]]
 
 - *Diffusion-VLA*: [[id:4d47b657-f192-40e5-8894-0070853731da][Diffusion-VLA: Scaling Robot Foundation Models via Unified Diffusion and Autoregression]], East China Normal University, arxiv, Dec 4 2024. [[[https://diffusion-vla.github.io/][Website]]] [[[http://arxiv.org/abs/2412.03293][Paper]]]
+
+- *CogACT*: [[id:5E419DBB-717B-4F15-AE02-0E094E889ADF][CogACT: A Foundational Vision-Language-Action Model for Synergizing Cognition and Action in Robotic Manipulation]], Tsinghua University, arxiv, Nov 29 2024. [[[http://arxiv.org/abs/2411.19650][Paper]]] [[[https://cogact.github.io][Website]]] [[[https://github.com/microsoft/CogACT][Code]]] [[[https://huggingface.co/CogACT][Model]]]
 
 - $\pi_0$: [[id:205DE6FB-054E-418A-BC32-C05E82AF1CA0][$\pi_0$: A Vision-Language-Action Flow Model for General Robot Control]], Physical Intelligence, arxiv, Oct 31 2024. [[[https://physicalintelligence.company/blog/pi0][Website]]] [[[http://arxiv.org/abs/2410.24164][Paper]]] [[[https://github.com/Physical-Intelligence/openpi][Code]]]
 

@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       5E419DBB-717B-4F15-AE02-0E094E889ADF
+:ROAM_REFS: @liCogACTFoundationalVisionLanguageAction2024
+:END:
+#+title: CogACT: A Foundational Vision-Language-Action Model for Synergizing Cognition and Action in Robotic Manipulation
+#+filetags: :VLA:
+
+
+This paper seems the first one that proposes a specialized action module conditoned on VLM output, rather than directly repurpose VLM for action prediction by simple action quantization. They employ advanced diffusion-based transformers (DiT) as action module, preconditioned on VLM output via attention mechanism.

@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       E581810E-9A6C-4519-90E1-6C0A036DA8E4
+:END:
+#+title: Long-horizon Robotic Dataset
+
+
+- *Calvin*: CALVIN: A Benchmark for Language-Conditioned Policy Learning for Long-Horizon Robot Manipulation Tasks. PyBullet & Franka. 2022. [[[https://arxiv.org/pdf/2112.03227.pdf][Paper]]] [[[http://calvin.cs.uni-freiburg.de][Website]]] [[[https://github.com/mees/calvin][Code]]]
+
+#+begin_quote
+The dataset itself contains short (average length is around 60 steps, and one language instruction) trajectories, while the evaluation strategy contains long-horizon multi-task settings, with multiple instruction involved in one task.
+#+end_quote
+
+- *LoHoRavens*: LoHoRavens: A Long-Horizon Language-Conditioned Benchmark for Robotic Tabletop Manipulation. PyBullet & UR5. 2023. [[[https://arxiv.org/pdf/2310.12020][Paper]]] [[[https://cisnlp.github.io/lohoravens-webpage/][Website]]] [[[https://github.com/Shengqiang-Zhang/LoHo-Ravens][Code]]]
+
+- *Mujoco Manipulus*: MUJOCO MANIPULUS: A ROBOT LEARNING BENCHMARK FOR GENERALIZABLE TOOL MANIPULATION. Mujoco. 2025. [[[https://openreview.net/pdf/e2313c7cd51006c7d28687cf861e963827282bb2.pdf?utm_source=chatgpt.com][Paper]]]
