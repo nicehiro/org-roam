@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       BF61A235-18CE-4F9E-8C20-6A46A729A45A
+:ROAM_REFS: @xieLatentDiffusionPlanning2025
+:END:
+#+title: Latent Diffusion Planning for Imitation Learning
+#+filetags: :imitation:diffusion:
+
+
+Current imitation learning requires large amount of expert demonstrations. This paper proposes Latent Diffusion Planning (LDP) to leverage action-free demonstrations for planning, and sub-optimal data for inverse dynamics model (IDM).
+
+1. Train the latent encoding of the observation by using VAE loss;
+
+2. Use diffusion model as planner to forecasting a dense trajectory of short-future latent states;
+
+3. Train diffusion model as IDM to generate actions based on latent states.

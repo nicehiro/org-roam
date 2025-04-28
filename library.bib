@@ -4289,6 +4289,24 @@
   file = {/Users/fangyuan/Zotero/storage/MBD458UV/Tagliabue et al. - 2021 - Demonstration-Efficient Guided Policy Search via I.pdf}
 }
 
+@misc{tangPoolingAttentionWhat2024,
+  title = {Pooling {{And Attention}}: {{What Are Effective Designs For LLM-Based Embedding Models}}?},
+  shorttitle = {Pooling {{And Attention}}},
+  author = {Tang, Yixuan and Yang, Yi},
+  year = {2024},
+  month = sep,
+  number = {arXiv:2409.02727},
+  eprint = {2409.02727},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2409.02727},
+  urldate = {2025-04-24},
+  abstract = {The significant advancements of Large Language Models (LLMs) in generative tasks have led to a growing body of work exploring LLM-based embedding models. While these models, employing different pooling and attention strategies, have achieved state-of-the-art performance on public embedding benchmarks, questions still arise about what constitutes an effective design for LLM-based embedding models. However, these models are often trained on different datasets, using different LLM base models or training settings. Moreover, evaluations on public embedding benchmarks often fail to report statistical significance, making it difficult to determine which designs truly contribute to final performance. This complicates the process for practitioners seeking optimal training recipes for LLM-based embedding models. In this study, we conduct a large-scale experiment by training a series of LLM-based embedding models using the same training data and base model but differing in their pooling and attention strategies. The results show that there is no one-size-fits-all solution: while bidirectional attention and an additional trainable pooling layer outperform in text similarity and information retrieval tasks, they do not significantly surpass simpler designs like EOS-last token pooling and default causal attention in clustering and classification tasks. Furthermore, we propose a new pooling strategy, Multi-Layers Trainable Pooling, which transforms the outputs of all hidden layers, rather than just the last layer, using a cross-attention network. This method proves to be statistically superior in text similarity and retrieval tasks compared to existing pooling methods. Overall, this paper sheds light on effective training strategies for LLM-based embedding models.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Computation and Language,Computer Science - Information Retrieval},
+  file = {/Users/fangyuan/Zotero/storage/FNS6KF8L/Tang and Yang - 2024 - Pooling And Attention What Are Effective Designs For LLM-Based Embedding Models.pdf;/Users/fangyuan/Zotero/storage/L3646DUV/2409.html}
+}
+
 @misc{taoManiSkill3GPUParallelized2024,
   title = {{{ManiSkill3}}: {{GPU Parallelized Robotics Simulation}} and {{Rendering}} for {{Generalizable Embodied AI}}},
   shorttitle = {{{ManiSkill3}}},
@@ -4305,6 +4323,23 @@
   archiveprefix = {arXiv},
   keywords = {Benchmark},
   file = {/Users/fangyuan/Zotero/storage/XMGJHLSF/Tao et al. - 2024 - ManiSkill3 GPU Parallelized Robotics Simulation and Rendering for Generalizable Embodied AI.pdf;/Users/fangyuan/Zotero/storage/T27EQ238/2410.html}
+}
+
+@misc{taouilPhysicallyConsistentHumanoid2025,
+  title = {Physically {{Consistent Humanoid Loco-Manipulation}} Using {{Latent Diffusion Models}}},
+  author = {Taouil, Ilyass and Zhao, Haizhou and Dai, Angela and Khadiv, Majid},
+  year = {2025},
+  month = apr,
+  number = {arXiv:2504.16843},
+  eprint = {2504.16843},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2504.16843},
+  urldate = {2025-04-25},
+  abstract = {This paper uses the capabilities of latent diffusion models (LDMs) to generate realistic RGB human-object interaction scenes to guide humanoid loco-manipulation planning. To do so, we extract from the generated images both the contact locations and robot configurations that are then used inside a whole-body trajectory optimization (TO) formulation to generate physically consistent trajectories for humanoids. We validate our full pipeline in simulation for different long-horizon loco-manipulation scenarios and perform an extensive analysis of the proposed contact and robot configuration extraction pipeline. Our results show that using the information extracted from LDMs, we can generate physically consistent trajectories that require long-horizon reasoning.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Graphics,Computer Science - Robotics},
+  file = {/Users/fangyuan/Zotero/storage/Z2Y8TMNX/Taouil et al. - 2025 - Physically Consistent Humanoid Loco-Manipulation using Latent Diffusion Models.pdf;/Users/fangyuan/Zotero/storage/3LF2I3DA/2504.html}
 }
 
 @misc{tirinzoniZeroShotWholeBodyHumanoid2025,
@@ -4744,6 +4779,23 @@
   archiveprefix = {arXiv},
   langid = {english},
   file = {/Users/fangyuan/Zotero/storage/A49EIVIX/Xie et al. - 2023 - Decomposing the Generalization Gap in Imitation Le.pdf}
+}
+
+@misc{xieLatentDiffusionPlanning2025,
+  title = {Latent {{Diffusion Planning}} for {{Imitation Learning}}},
+  author = {Xie, Amber and Rybkin, Oleh and Sadigh, Dorsa and Finn, Chelsea},
+  year = {2025},
+  month = apr,
+  number = {arXiv:2504.16925},
+  eprint = {2504.16925},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2504.16925},
+  urldate = {2025-04-27},
+  abstract = {Recent progress in imitation learning has been enabled by policy architectures that scale to complex visuomotor tasks, multimodal distributions, and large datasets. However, these methods often rely on learning from large amount of expert demonstrations. To address these shortcomings, we propose Latent Diffusion Planning (LDP), a modular approach consisting of a planner which can leverage action-free demonstrations, and an inverse dynamics model which can leverage suboptimal data, that both operate over a learned latent space. First, we learn a compact latent space through a variational autoencoder, enabling effective forecasting of future states in image-based domains. Then, we train a planner and an inverse dynamics model with diffusion objectives. By separating planning from action prediction, LDP can benefit from the denser supervision signals of suboptimal and action-free data. On simulated visual robotic manipulation tasks, LDP outperforms state-of-the-art imitation learning approaches, as they cannot leverage such additional data.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Artificial Intelligence,Computer Science - Robotics},
+  file = {/Users/fangyuan/Zotero/storage/EXJL8LRU/Xie et al. - 2025 - Latent Diffusion Planning for Imitation Learning.pdf;/Users/fangyuan/Zotero/storage/NW5PLWPS/2504.html}
 }
 
 @misc{xiongAICMLLMAutonomous2024,
