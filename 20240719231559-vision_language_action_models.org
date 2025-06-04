@@ -31,6 +31,8 @@ Two principal mechanisms are used to connect the vision–language backbone to t
 
 ** Single-system VLA
 
+- *LoHoVLA*: A Unified Vision-Language-Action Model for Long-Horizon Embodied Tasks, arxiv, May 31 2025. [[[http://arxiv.org/abs/2506.00411][Paper]]]
+
 - *UniVLA*: Learning to Act Anywhere with  Task-centric Latent Actions, The University of Hong Kong, arxiv, May 9 2025. [[[http://arxiv.org/abs/2505.06111][Paper]]] [[[https://github.com/OpenDriveLab/UniVLA][Code]]]
 
 - *3D-CAVLA*: 3D-CAVLA: Leveraging Depth and 3D Context to Generalize Vision–Language Action Models for Unseen Tasks, New York University, arxiv, May 9 2025. [[[http://arxiv.org/abs/2505.05800][Paper]]] [[[https://3d-cavla.github.io/][Website]]]
@@ -68,6 +70,8 @@ Two principal mechanisms are used to connect the vision–language backbone to t
 - *CogACT*: [[id:5E419DBB-717B-4F15-AE02-0E094E889ADF][CogACT: A Foundational Vision-Language-Action Model for Synergizing Cognition and Action in Robotic Manipulation]], Tsinghua University, arxiv, Nov 29 2024. [[[http://arxiv.org/abs/2411.19650][Paper]]] [[[https://cogact.github.io][Website]]] [[[https://github.com/microsoft/CogACT][Code]]] [[[https://huggingface.co/CogACT][Model]]]
 
 *** Feature-pooling-bridged
+
+- *SmolVLA*: [[id:AA1366AF-40B5-4975-9559-F0C7554B58C0][SmolVLA: A Vision-Language-Action Model for Affordable and Efficient Robotics]], Hugging Face, arxiv, Jun 4 2025. [[[http://arxiv.org/abs/2506.01844][Paper]]] [[[https://huggingface.co/blog/smolvla][Website]]] [[[https://huggingface.co/blog/smolvla][Model]]]
 
 - *$\pi_{0.5}$*: $\pi_{0.5}$: a Vision-Language-Action Model with Open-World Generalization, Physical Intelligence, arxiv, Apr 22 2025. [[[http://arxiv.org/abs/2504.16054][Paper]]] [[[https://www.pi.website/blog/pi05][Website]]]
 
