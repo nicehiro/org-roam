@@ -4,7 +4,6 @@
 :END:
 #+title: Policy Gradient
 #+DATE: 2020-05-14
-#+LATEX_HEADER: \usepackage[long]{optidef}
 #+filetags: :rl:pg:
 
 本篇文章翻译自 [[https://danieltakeshi.github.io/2017/03/28/going-deeper-into-reinforcement-learning-fundamentals-of-policy-gradients/][Going Deeper Into Reinforcement Learning: Fundamentals of Policy Gradients]]。
