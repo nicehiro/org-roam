@@ -1,0 +1,46 @@
+:PROPERTIES:
+:ID:       2BEF57EC-5133-48D1-B79D-A260925A8B53
+:END:
+#+title: Tokenization
+
+
+The language model places a probablity distribution over sequences of [[id:1D640377-AF71-453A-95F3-62DF0935CFCB][Token]] (usually represented by integer indices).
+
+Tokenization is the procedure that maps raw text to the ordered sequence of tokens (and their IDs) that the model understands.
+
+A tokenizer is a class that implements the encode and decode methods. The vocabulary size is the number of possible tokens.
+
+* Character Tokenizer
+
+A unicode string is a sequence of Unicode characters. Each character can be converted into a code point (integer). For example, "a" can be converted to "97".
+
+Problems:
+1. Large vocabulary (every character is a token).
+2. Many characters are quite rare, which is inefficient use of the vocabulary.
+
+
+* Byte Tokenizer
+
+Unicode strings can be represented as a sequence of bytes, which can be represented by integers between 0 and 255.
+
+The vocabulary size is nice and small: a byte can represent 256 values.
+
+Problems:
+1. Small compression ratio, which means the sequence will be too long.
+
+
+* Word Tokenizer
+
+Another approach (closer to what was done classically in NLP) is to split strings into words by using algorithms like regular expressions.
+
+The compression ratio is really small!
+
+Problems:
+1. The number of words is huge.
+2. Many words are rare and the model won't learn much about them.
+3. This doesn't obviously provide a fixed vocabulary size.
+
+
+* Byte Pair Encoding (BPE)
+
+Start with characters, then repeatedly merge the most frequent adjacent symbol pair into a new symbol. The merges capture common letter n-grams (“th”, “ing”, “tion”) and eventually whole words.

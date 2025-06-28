@@ -14,10 +14,7 @@ p_{\theta}(x_{0:T}) := p(x_T) \prod_{t=1}^T p_{\theta}(x_{t-1} | x_t)
 
 where $p_{\theta}(x_{t-1}|x_t) := \mathcal{N}(x_{t-1}; \mu_{\theta}(x_t, t), \Sigma_{\theta}(x_t, t))$.
 
-#+caption: Fig.1: A visual representation of a Variational Diffusion Model. Source: Understanding Diffusion Models: A Unified Perspective
-#+attr_org: :align center
-#+attr_html: :align center :width 300px
-[[./img/representation-of-diffusion-models.png]]
+[[file:img/representation-of-diffusion-models.png]]
 
 What distinguishes diffusion models from other types of latent variable models is that the approximate posterior $q(x_{1:T}|x_0)$, called the _forward process_ or _diffusion process_, is fixed to a Markov chain that gradually adds Gaussian noise to the data according to a variance schedule.
 
@@ -33,14 +30,14 @@ where $\alpha_t, \beta_t > 0$ and $\alpha_t^2 + \beta_t^2 = 1$. Generally, $\bet
 
 Thus we can get:
 
-\begin{equation}
-\begin{align*}
+$$
+\begin{aligned}
 x_t &= \alpha_t x_{t-1} + \beta_t \epsilon_t \\
 &= \alpha_t (\alpha_{t-1}x_{t-2} + \beta_{t-1}\epsilon_{t-1}) + \beta_t\epsilon_t \\
 &= \dots \\
 &= (\alpha_t \cdots \alpha_1)x_0 + (\alpha_t \cdots \alpha_2)\beta_1\epsilon_1 + (\alpha_t \cdots \alpha_3) \beta_2 \epsilon_2 + \cdots + \alpha_t\beta_{t-1}\epsilon_{t-1} + \beta_t\epsilon_t
-\end{align*}
-\end{equation}
+\end{aligned}
+$$
 
 Since $\epsilon_t \sim \mathcal{N}(0, I)$, so $(\alpha_t \cdots \alpha_2)\beta_1\epsilon_1 \sim \mathcal{N}(0, (\alpha_t \cdots \alpha_2)^2\beta_1^2)$, so as others. Thus $(\alpha_t \cdots \alpha_2)\beta_1\epsilon_1 + (\alpha_t \cdots \alpha_3) \beta_2 \epsilon_2 + \cdots + \alpha_t\beta_{t-1}\epsilon_{t-1} + \beta_t\epsilon_t \sim \mathcal{N}(0, (\alpha_t \cdots \alpha_2)^2\beta_1^2 + \cdots + \alpha_t^2\beta_{t-1}^2 + \beta_t^2)$.
 
@@ -56,7 +53,8 @@ So $x_t = \bar{\alpha}_t x_0 + \bar{\beta}_t \bar{\epsilon_t}$, where $\bar{\eps
 
 We are trying to minimize the distance between original image $x_{t-1}$ and de-noised image $\theta(x_t)$, i.e.:
 
-\begin{align}
+$$
+\begin{aligned}
 \mathcal{L} &= || x_{t-1} - \theta(x_t) ||^2 \\
 &= || \frac{1}{\alpha_t}(x_t - \beta_t \epsilon_t) - \theta(x_t) ||^2 \\
 &= || \frac{1}{\alpha_t}(x_t - \beta_t \epsilon_t) - \frac{1}{\alpha}(x_t - \beta_t \epsilon_{\theta}(x_t, t)) ||^2 \\
@@ -64,7 +62,8 @@ We are trying to minimize the distance between original image $x_{t-1}$ and de-n
 &\approx || \epsilon_t - \epsilon_{\theta}(\alpha_t x_{t-1} + \beta_t \epsilon_t, t) || ^2 \\
 &= || \epsilon_t - \epsilon_{\theta}(\alpha_t (\bar_{\alpha}_{t-1} x_0 + \bar{\beta}_{t-1}\bar{\epsilon}_{t-1}) + \beta_t \epsilon_t, t) || ^2 \\
 &= || \epsilon_t - \epsilon_{\theta}(\bar{\alpha}_t x_0 + \alpha_t \bar{\beta}_{t-1}\bar{\epsilon}_{t-1} + \beta_t\epsilon_t, t) || ^2
-\end{align}
+\end{aligned}
+$$
 
 We resample $x_t$ without $\bar{\epsilon}_t$ because $\epsilon_t$ and $\bar{\epsilon}_t$ are not independent.
 

@@ -1,0 +1,16 @@
+:PROPERTIES:
+:ID:       1D640377-AF71-453A-95F3-62DF0935CFCB
+:END:
+#+title: Token
+
+
+A token is the smallest unit of text that a model treats as an atomic symbol during training or inference.
+
+It could be an entire word ("language", "modeling"), or sub-word piece ("lan", "guage") chosen by an algorithm such as BPE.
+
+A token has two representations:
+1. String form, the human-readable characters ("lan"),
+2. Integer ID, an index into the model's vocabulary.
+
+
+During computation the integer IDs are looked up in an embedding matrix $E \in \mathbb{R}^{|V|\times d}$ to obtain the continuous vectors fed to the network. $d$ is the token size.

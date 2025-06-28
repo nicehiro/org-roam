@@ -1,0 +1,29 @@
+:PROPERTIES:
+:ID:       1CE99DD3-78FC-4893-A921-165A56E3DBF5
+:ROAM_REFS: FLOP
+:END:
+#+title: Floating-point Operation
+
+FLOP stands for "Floating-point OPeration". It is the basic unit we count when we talk about how much numerical work an algorithm or hardware performs. A single FLOP is one arithmetic operation (addition, subtraction, multiplication, division, fused-multiply-add, etc.)
+
+FLOPS stands for FLOP per second.
+
+* Examples
+
+** Dot product of two length-N vectors
+
+$$
+\text{FLOPs} = 2 N
+$$
+
+** Dense layer: input x weights (M x K) to output (M x N)
+
+$$
+\text{FLOPs} = 2 MKN
+$$
+
+** 3x3 convolution, stride 1, no groups on a feature map (C channels, H×W spatial)
+
+$$
+\text{FLOPs} = 9 \times H \times W \times C_{in} \times C_{out}
+$$
