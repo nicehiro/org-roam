@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       51D95C02-452F-4B58-AE9B-9D40A7C3C2BE
+:END:
+#+title: Square Root Scaling Rule
+
+The square root scaling rule is a widely-used heuristic in deep learning for adjusting the learning rate when changing batch sizes.
+
+When we change the batch size by a factor of $k$, we can scale the learning rate by $\sqrt{k}$.
+
+Example:
+- original: $bs=256$, and $lr=1e-3$
+- new: $bs=1024$
+- new: $lr=2e-3$
