@@ -4,6 +4,7 @@
 #+title: Navie Bayes
 #+OPTIONS: toc:nil
 #+filetags: :ml:
+#+startup: latexpreview
 
 * Description
 朴素贝叶斯用来对离散随机变量进行分类。
