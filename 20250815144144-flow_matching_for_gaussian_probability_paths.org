@@ -1,0 +1,143 @@
+:PROPERTIES:
+:ID:       EB24957C-C991-47ED-98C7-26C2E386A5AF
+:END:
+#+title: Flow Matching for Gaussian Probability Paths
+#+startup: latexpreview
+#+author: Fangyuan
+
+
+* Probability Path
+
+** Conditional Gaussian Probability Path
+
+The Gaussian conditional probability path forms the foundation of denoising diffusion models and flow matching.
+
+*Definition*: Let $\alpha_t$, $\beta_t$ be noise schedulers: two continuously differentiable, monotonic functions with boundary conditions $\alpha_0 = \beta_1 = 0$ and $\alpha_1 = \beta_0 = 1$. We define the _conditional probability path_ as a family of distribution $p_t(x|z)$ over $\mathbb{R}^d$:
+
+$$
+p_t(\cdot | z) = \mathcal{N}(\alpha_t z, \beta_t^2 I_d)
+$$
+
+*Boundary Conditions*: The imposed conditions on $\alpha_t$ and $\beta_t$ ensure:
+
+$$
+p_0(\cdot | z) = \mathcal{N}(0, I_d), \text{ and  } p_1(\cdot | z) = \mathcal{N}(z, 0) = \delta_z
+$$
+
+where $z \in \mathbb{R}^d$ is a data point, $\delta_z$ is the Dirac delta "distribution" that sample from $\delta_z$ always returns $z$.
+
+** Marginal Gaussian Probability Path
+
+*Sampling Procedure*: For $z \sim p_{data}$, $\epsilon \sim p_{init} = \mathcal{N}(0,I_d)$, we can sample from marginal path:
+
+$x_t = \alpha_t z + \beta_t \epsilon \sim p_t$
+
+This provides a tracable way to sample from the marginal distribution $p_t(x) = \int p_t(x|z) p_{data}(z) dz$.
+
+* Vector Field
+
+** Conditinoal Gaussian Vector Field
+
+*Definition*: Let $\dot{\alpha_t} = \partial_t\alpha_t$ and $\dot{\beta_t} = \partial_t\beta_t$ denote respective time derivatives of $\alpha_t$ and $\beta_t$. The conditional Gaussian vector field given by:
+
+$$
+u_t^{targe} (x|z) = (\dot{\alpha_t} - \frac{\dot{\beta_t}}{\beta_t} \alpha_t) z + \frac{\dot{\beta_t}}{\beta_t} x
+$$
+
+is a valid conditional vector field model.
+
+*Property*: This vector field generates ODE trajectories $X_t$ that satisfy $X_t \sim p_t(\cdot | z) = \mathcal{N}(\alpha_t z, \beta_t^2 I_d)$ if $X_0 \sim \mathcal{N}(0, I_d)$.
+
+*** Proof
+
+Construct a _conditional flow model_ $\psi_t^{targe}(x|z)$ by defining
+
+$$
+\psi_t^{targe} (x|z) = \alpha_t z + \beta_t x
+$$
+
+If $X_t$ is the ODE trajectory of $\psi_t^{target}(\cdot| z)$ with $X_0 \sim p_{init} = \mathcal{N}(0,I_d)$, then
+
+$$
+X_t = \psi_t^{target} (X_0 | z) = \alpha_t z + \beta_t X_0 \sim \mathcal{N}(\alpha_t z, \beta_t^2 I_d) = p_t(\cdot| z)
+$$
+
+The conditional vector field is:
+
+\begin{aligned}
+\frac{d}{dt}\psi_t^{\text{target}}(x|z) &= u_t^{\text{target}}(\psi_t^{\text{target}}(x|z)|z) \quad \text{for all } x, z \in \mathbb{R}^d \\
+\stackrel{(i)}{\Leftrightarrow} \dot{\alpha}_t z + \dot{\beta}_t x &= u_t^{\text{target}}(\alpha_t z + \beta_t x|z) \quad \text{for all } x, z \in \mathbb{R}^d \\
+\stackrel{(ii)}{\Leftrightarrow} \dot{\alpha}_t z + \dot{\beta}_t \left(\frac{x - \alpha_t z}{\beta_t}\right) &= u_t^{\text{target}}(x|z) \quad \text{for all } x, z \in \mathbb{R}^d \\
+\stackrel{(iii)}{\Leftrightarrow} \left(\dot{\alpha}_t - \frac{\dot{\beta}_t}{\beta_t}\alpha_t\right) z + \frac{\dot{\beta}_t}{\beta_t}x &= u_t^{\text{target}}(x|z) \quad \text{for all } x, z \in \mathbb{R}^d
+\end{aligned}
+
+In (ii), we reparameterized $x \rightarrow (x - \alpha_t z) / \beta_t$.
+
+* Score Function for Conditional Gaussian Probability Paths
+
+For the Gaussian path $p_t(x|z) = \mathcal{N}(x;\alpha_t z, \beta_t^2 I_d)$, we can use the form of the Gaussian probability density to get the _conditional Gaussian score function_, which is the derivetive of $x$,
+
+$$
+\nabla \log p_t(x|z) = - \frac{x - \alpha_t z}{\beta_t^2}
+$$
+
+This linear relationship is a unique property of Gaussian distributions and is fundamental to efficient training.
+
+* Flow Matching for Gaussian Conditional Probability Paths
+
+The conditional flow matching loss is
+
+\begin{align*}
+\mathcal{L}_{\text{CFM}}(\theta) &= \mathbb{E}_{t \sim \text{Unif}, z \sim p_{\text{data}}, x \sim \mathcal{N}(\alpha_t z, \beta_t^2 I_d)} \left[\left\|u_t^{\theta}(x) - \left(\dot{\alpha}_t - \frac{\dot{\beta}_t}{\beta_t}\alpha_t\right)z - \frac{\dot{\beta}_t}{\beta_t}x\right\|^2\right] \\
+&\stackrel{(i)}{=} \mathbb{E}_{t \sim \text{Unif}, z \sim p_{\text{data}}, \epsilon \sim \mathcal{N}(0, I_d)} \left[\left\|u_t^{\theta}(\alpha_t z + \beta_t \epsilon) - (\dot{\alpha}_t z + \dot{\beta}_t \epsilon)\right\|^2\right]
+\end{align*}
+
+In (i) we replace $x$ by $\alpha_t z + \beta_t \epsilon$.
+
+Let us make $\mathcal{L}_{\text{CFM}}$ even more concrete for the special case of $\alpha_t = t$, and $\beta_t = 1-t$. The corresponding conditional probability path $p_t(x|z) = \mathcal{N}(tz, (1-t)^2)$ is referred to as the (Gaussian) _CondOT probability path_. Then we have $\dot{\alpha_t} = 1, \dot{\beta_t} = -1$, so that
+
+$$
+\mathcal{L}_{\text{CFM}}(\theta) = \mathbb{E}_{t \sim \text{Unif}, z \sim p_{\text{data}}, \epsilon \sim \mathcal{N}(0, I_d)} \left[\left\|u_t^{\theta}(t z + (1-t) \epsilon) - (z - \epsilon)\right\|^2\right]
+$$
+
+Models like Stable Diffusion 3, Meta's Movie Gen Video are using this procedure.
+
+** Training Procedure
+
+Given a dataset of samples $z \sim p_{data}$, vector field network $u_t^{\theta}$. For each batch of data:
+
+1. Sample a data example $z$ from the dataset,
+
+2. Sample a random time $t \sim \text{Unif}_[0,1]$,
+
+3. Sample noise $\epsilon \sim \mathcal{N}(0, I_d)$
+
+4. Set $x = tz + (1-t)\epsilon$
+
+5. Compute loss $\mathcal{L}_{\theta} = || u_t^{\theta}(x) - (z-\epsilon) ||^2$
+
+6. Update the model.
+
+* Score Matching for Gaussian Probability Paths
+
+The conditional score matching loss is
+
+\begin{align*}
+\mathcal{L}_{\text{CSM}}(\theta) &= \mathbb{E}_{t\sim\text{Unif}, z\sim p_{data}, x\sim p_t(\cdot|z)} [|| s_t^{\theta}(x) + \frac{x - \alpha_t z}{\beta_t^2} ||^2] \\
+&= \mathbb{E}_{t\sim\text{Unif}, z\sim p_{data}, \epsilon \sim \mathcal{N}(0, I_d)} [|| s_t^{\theta}(\alpha_t z + \beta_t \epsilon) + \frac{\epsilon}{\beta_t} ||^2] \\
+&= \mathbb{E}_{t\sim\text{Unif}, z\sim p_{data}, \epsilon \sim \mathcal{N}(0, I_d)} [\frac{1}{\beta_t^2} || \beta_t s_t^{\theta}(\alpha_t z + \beta_t \epsilon) + \epsilon ||^2]
+\end{align*}
+
+Note that $s_t^{\theta}$ learns to predict the noise that was used to corrupt a data sample $z$. Therefore, the above training loss is also called _denoising score matching_. It was soon realized that the above loss is numerically unstable for $\beta_t \approx 0$ close to zero (i.e. denoising score matching only works if you add a sufficient amount of noise).
+
+In Denosing Diffusion Probabilitic Models (DDPM), it was proposed to drop the constant $\frac{1}{\beta_t^2}$ in the loss, and reparameterize $s_t^{\theta}$ into a noise predictor network $\epsilon_t^{\theta}$ via:
+
+$$
+-\beta_t s_t^{\theta}(x) = \epsilon_t^{\theta}(x)
+$$
+
+thus,
+
+$$
+\mathcal{L}_{\text{DDPM}}(\theta) = \mathbb{E}_{t\sim\text{Unif}, z\sim p_{data}, \epsilon \sim \mathcal{N}(0, I_d)} [|| \epsilon_t^{\theta}(\alpha_t z + \beta_t \epsilon) - \epsilon ||^2]
+$$

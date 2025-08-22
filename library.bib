@@ -1165,6 +1165,23 @@
   file = {/Users/fangyuan/Zotero/storage/FVYNNNIN/Frans et al. - 2025 - One Step Diffusion via Shortcut Models.pdf;/Users/fangyuan/Zotero/storage/H7L4RBQK/2410.html}
 }
 
+@misc{fuComputeOptimalScalingValueBased2025,
+  title = {Compute-{{Optimal Scaling}} for {{Value-Based Deep RL}}},
+  author = {Fu, Preston and Rybkin, Oleh and Zhou, Zhiyuan and Nauman, Michal and Abbeel, Pieter and Levine, Sergey and Kumar, Aviral},
+  year = {2025},
+  month = aug,
+  number = {arXiv:2508.14881},
+  eprint = {2508.14881},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2508.14881},
+  urldate = {2025-08-22},
+  abstract = {As models grow larger and training them becomes expensive, it becomes increasingly important to scale training recipes not just to larger models and more data, but to do so in a compute-optimal manner that extracts maximal performance per unit of compute. While such scaling has been well studied for language modeling, reinforcement learning (RL) has received less attention in this regard. In this paper, we investigate compute scaling for online, value-based deep RL. These methods present two primary axes for compute allocation: model capacity and the update-to-data (UTD) ratio. Given a fixed compute budget, we ask: how should resources be partitioned across these axes to maximize sample efficiency? Our analysis reveals a nuanced interplay between model size, batch size, and UTD. In particular, we identify a phenomenon we call TD-overfitting: increasing the batch quickly harms Q-function accuracy for small models, but this effect is absent in large models, enabling effective use of large batch size at scale. We provide a mental model for understanding this phenomenon and build guidelines for choosing batch size and UTD to optimize compute usage. Our findings provide a grounded starting point for compute-optimal scaling in deep RL, mirroring studies in supervised learning but adapted to TD learning.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Machine Learning},
+  file = {/Users/fangyuan/Zotero/storage/LMKRC3DJ/Fu et al. - 2025 - Compute-Optimal Scaling for Value-Based Deep RL.pdf;/Users/fangyuan/Zotero/storage/RFXNPK4C/2508.html}
+}
+
 @misc{fuD4RLDatasetsDeep2021,
   title = {{{D4RL}}: {{Datasets}} for {{Deep Data-Driven Reinforcement Learning}}},
   shorttitle = {{{D4RL}}},
@@ -1271,6 +1288,20 @@
   langid = {english},
   keywords = {Manipulation,Robotic Foundation Model},
   file = {/Users/fangyuan/Zotero/storage/Q7FQHGRZ/Ghosh et al. - Octo An Open-Source Generalist Robot Policy.pdf}
+}
+
+@misc{glossopCASTCounterfactualLabels2025,
+  title = {{{CAST}}: {{Counterfactual Labels Improve Instruction Following}} in {{Vision-Language-Action Models}}},
+  shorttitle = {{{CAST}}},
+  author = {Glossop, Catherine and Chen, William and Bhorkar, Arjun and Shah, Dhruv and Levine, Sergey},
+  year = {2025},
+  month = aug,
+  journal = {arXiv.org},
+  urldate = {2025-08-22},
+  abstract = {Generalist robots should be able to understand and follow user instructions, but current vision-language-action (VLA) models struggle with following fine-grained commands despite providing a powerful architecture for mapping open-vocabulary natural language instructions to robot actions. One cause for this is a lack of semantic diversity and language grounding in existing robot datasets and, specifically, a lack of fine-grained task diversity for similar observations. To address this, we present a novel method to augment existing robot datasets by leveraging vision language models to create counterfactual labels. Our method improves the language-following capabilities of VLAs by increasing the diversity and granularity of language grounding for robot datasets by generating counterfactual language and actions. We evaluate the resulting model's ability to follow language instructions, ranging from simple object-centric commands to complex referential tasks, by conducting visual language navigation experiments in 3 different indoor and outdoor environments. Our experiments demonstrate that counterfactual relabeling, without any additional data collection, significantly improves instruction-following in VLA policies, making them competitive with state-of-the-art methods and increasing success rate by 27\% on navigation tasks.},
+  howpublished = {https://arxiv.org/abs/2508.13446v1},
+  langid = {english},
+  file = {/Users/fangyuan/Zotero/storage/HQ46Z6UA/Glossop et al. - 2025 - CAST Counterfactual Labels Improve Instruction Following in Vision-Language-Action Models.pdf}
 }
 
 @misc{guAdvancingHumanoidLocomotion2024,
@@ -1833,7 +1864,7 @@
   urldate = {2025-07-21},
   abstract = {Vision-Language-Action (VLA) models have shown remarkable achievements, driven by the rich implicit knowledge of their vision-language components. However, achieving generalist robotic agents demands precise grounding into physical interactions, especially in contact-rich scenarios where fine-grained force control is essential. We advance VLAs' implicit knowledge beyond identifying what to do, towards guiding how to physically interact with real world. This paper introduces Tactile-VLA, a novel framework that deeply fuses vision, language, action, and tactile sensing. This framework incorporates a hybrid position-force controller to translate the model's intentions into precise physical actions and a reasoning module that allows the robot to adapt its strategy based on tactile feedback. Experiments demonstrate Tactile-VLA's effectiveness and generalizability in three key aspects: (1) enabling tactile-aware instruction following, (2) utilizing tactile-relevant commonsense, and (3) facilitating adaptive tactile-involved reasoning. A key finding is that the VLM's prior knowledge already contains semantic understanding of physical interaction; by connecting it to the robot's tactile sensors with only a few demonstrations, we can activate this prior knowledge to achieve zero-shot generalization in contact-rich tasks.},
   archiveprefix = {arXiv},
-  keywords = {Computer Science - Machine Learning,Computer Science - Robotics},
+  keywords = {Manipulation,Tactile,VLA},
   file = {/Users/fangyuan/Zotero/storage/PRPNPRR6/Huang et al. - 2025 - Tactile-VLA Unlocking Vision-Language-Action Model's Physical Knowledge for Tactile Generalization.pdf;/Users/fangyuan/Zotero/storage/SRF3NDVR/2507.html}
 }
 
@@ -2001,6 +2032,24 @@
   archiveprefix = {arXiv},
   keywords = {FFTAI,Motion Generation,Whole Body Control},
   file = {/Users/fangyuan/Zotero/storage/BRJ52664/Jiang et al. - 2024 - Harmon Whole-Body Motion Generation of Humanoid Robots from Language Descriptions.pdf;/Users/fangyuan/Zotero/storage/BWI8288C/2410.html}
+}
+
+@misc{jiangIRLVLATraining2025,
+  title = {{{IRL-VLA}}: {{Training}} an {{Vision-Language-Action Policy}} via {{Reward World Model}}},
+  shorttitle = {{{IRL-VLA}}},
+  author = {Jiang, Anqing and Gao, Yu and Wang, Yiru and Sun, Zhigang and Wang, Shuo and Heng, Yuwen and Sun, Hao and Tang, Shichen and Zhu, Lijuan and Chai, Jinhao and Wang, Jijun and Gu, Zichong and Jiang, Hao and Sun, Li},
+  year = {2025},
+  month = aug,
+  number = {arXiv:2508.06571},
+  eprint = {2508.06571},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2508.06571},
+  urldate = {2025-08-22},
+  abstract = {Vision-Language-Action (VLA) models have demonstrated potential in autonomous driving. However, two critical challenges hinder their development: (1) Existing VLA architectures are typically based on imitation learning in open-loop setup which tends to capture the recorded behaviors in the dataset, leading to suboptimal and constrained performance, (2) Close-loop training relies heavily on high-fidelity sensor simulation, where domain gaps and computational inefficiencies pose significant barriers. In this paper, we introduce IRL-VLA, a novel close-loop Reinforcement Learning via {\textbackslash}textbf\{I\}nverse {\textbackslash}textbf\{R\}einforcement {\textbackslash}textbf\{L\}earning reward world model with a self-built VLA approach. Our framework proceeds in a three-stage paradigm: In the first stage, we propose a VLA architecture and pretrain the VLA policy via imitation learning. In the second stage, we construct a lightweight reward world model via inverse reinforcement learning to enable efficient close-loop reward computation. To further enhance planning performance, finally, we design specialized reward world model guidence reinforcement learning via PPO(Proximal Policy Optimization) to effectively balance the safety incidents, comfortable driving, and traffic efficiency. Our approach achieves state-of-the-art performance in NAVSIM v2 end-to-end driving benchmark, 1st runner up in CVPR2025 Autonomous Grand Challenge. We hope that our framework will accelerate VLA research in close-loop autonomous driving.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Artificial Intelligence,Computer Science - Computer Vision and Pattern Recognition,Computer Science - Robotics},
+  file = {/Users/fangyuan/Zotero/storage/Y4KQRMN2/Jiang et al. - 2025 - IRL-VLA Training an Vision-Language-Action Policy via Reward World Model.pdf;/Users/fangyuan/Zotero/storage/HIHCC95L/2508.html}
 }
 
 @article{jiangSimulationBasedReinforcementLearning,
@@ -3627,6 +3676,24 @@
   file = {/Users/fangyuan/Zotero/storage/LTLGYAWA/Nasiriany et al. - 2024 - RoboCasa Large-Scale Simulation of Everyday Tasks for Generalist Robots.pdf;/Users/fangyuan/Zotero/storage/3U8QP5WV/2406.html}
 }
 
+@misc{nguyenRevisitingDiffusionQLearning2025,
+  title = {Revisiting {{Diffusion Q-Learning}}: {{From Iterative Denoising}} to {{One-Step Action Generation}}},
+  shorttitle = {Revisiting {{Diffusion Q-Learning}}},
+  author = {Nguyen, Thanh and Yoo, Chang D.},
+  year = {2025},
+  month = aug,
+  number = {arXiv:2508.13904},
+  eprint = {2508.13904},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2508.13904},
+  urldate = {2025-08-22},
+  abstract = {The generative power of diffusion models (DMs) has recently enabled high-performing decision-making algorithms in offline reinforcement learning (RL), achieving state-of-the-art results across standard benchmarks. Among them, Diffusion Q-Learning (DQL) stands out as a leading method for its consistently strong performance. Nevertheless, DQL remains limited in practice due to its reliance on multi-step denoising for action generation during both training and inference. Although one-step denoising is desirable, simply applying it to DQL leads to a drastic performance drop. In this work, we revisit DQL and identify its core limitations. We then propose One-Step Flow Q-Learning (OFQL), a novel framework that enables efficient one-step action generation during both training and inference, without requiring auxiliary models, distillation, or multi-phase training. Specifically, OFQL reformulates DQL within the sample-efficient Flow Matching (FM) framework. While conventional FM induces curved generative trajectories that impede one-step generation, OFQL instead learns an average velocity field that facilitates direct, accurate action generation. Collectively, OFQL eliminates the need for multi-step sampling and recursive gradient updates in DQL, resulting in faster and more robust training and inference. Extensive experiments on the D4RL benchmark demonstrate that OFQL outperforms DQL and other diffusion-based baselines, while substantially reducing both training and inference time compared to DQL.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Machine Learning},
+  file = {/Users/fangyuan/Zotero/storage/PAGCP8PQ/Nguyen and Yoo - 2025 - Revisiting Diffusion Q-Learning From Iterative Denoising to One-Step Action Generation.pdf;/Users/fangyuan/Zotero/storage/LL7PGVNI/2508.html}
+}
+
 @misc{nvidiaGR00TN1Open2025,
   title = {{{GR00T N1}}: {{An Open Foundation Model}} for {{Generalist Humanoid Robots}}},
   shorttitle = {{{GR00T N1}}},
@@ -4174,6 +4241,23 @@
   file = {/Users/fangyuan/Zotero/storage/WEE4MKVS/Rosenfeld et al. - 2018 - Leveraging human knowledge in tabular reinforcemen.pdf}
 }
 
+@misc{rouxelExtremumFlowMatching2025,
+  title = {Extremum {{Flow Matching}} for {{Offline Goal Conditioned Reinforcement Learning}}},
+  author = {Rouxel, Quentin and Donoso, Clemente and Chen, Fei and Ivaldi, Serena and Mouret, Jean-Baptiste},
+  year = {2025},
+  month = aug,
+  number = {arXiv:2505.19717},
+  eprint = {2505.19717},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2505.19717},
+  urldate = {2025-08-22},
+  abstract = {Imitation learning is a promising approach for enabling generalist capabilities in humanoid robots, but its scaling is fundamentally constrained by the scarcity of high-quality expert demonstrations. This limitation can be mitigated by leveraging suboptimal, open-ended play data, often easier to collect and offering greater diversity. This work builds upon recent advances in generative modeling, specifically Flow Matching, an alternative to Diffusion models. We introduce a method for estimating the minimum or maximum of the learned distribution by leveraging the unique properties of Flow Matching, namely, deterministic transport and support for arbitrary source distributions. We apply this method to develop several goal-conditioned imitation and reinforcement learning algorithms based on Flow Matching, where policies are conditioned on both current and goal observations. We explore and compare different architectural configurations by combining core components, such as critic, planner, actor, or world model, in various ways. We evaluated our agents on the OGBench benchmark and analyzed how different demonstration behaviors during data collection affect performance in a 2D non-prehensile pushing task. Furthermore, we validated our approach on real hardware by deploying it on the Talos humanoid robot to perform complex manipulation tasks based on high-dimensional image observations, featuring a sequence of pick-and-place and articulated object manipulation in a realistic kitchen environment. Experimental videos and code are available at: https://hucebot.github.io/extremum\_flow\_matching\_website/},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Robotics},
+  file = {/Users/fangyuan/Zotero/storage/R5RJD8TS/Rouxel et al. - 2025 - Extremum Flow Matching for Offline Goal Conditioned Reinforcement Learning.pdf;/Users/fangyuan/Zotero/storage/SVT5KA3F/2505.html}
+}
+
 @misc{rouxelFlowMatchingImitation2024,
   title = {Flow {{Matching Imitation Learning}} for {{Multi-Support Manipulation}}},
   author = {Rouxel, Quentin and Ferrari, Andrea and Ivaldi, Serena and Mouret, Jean-Baptiste},
@@ -4408,6 +4492,24 @@
   archiveprefix = {arXiv},
   keywords = {Benchmark},
   file = {/Users/fangyuan/Zotero/storage/GZM5WVEP/Sferrazza et al. - 2024 - HumanoidBench Simulated Humanoid Benchmark for Whole-Body Locomotion and Manipulation.pdf;/Users/fangyuan/Zotero/storage/5VQKMUUC/2403.html}
+}
+
+@misc{shaoLargeVLMbasedVisionLanguageAction2025,
+  title = {Large {{VLM-based Vision-Language-Action Models}} for {{Robotic Manipulation}}: {{A Survey}}},
+  shorttitle = {Large {{VLM-based Vision-Language-Action Models}} for {{Robotic Manipulation}}},
+  author = {Shao, Rui and Li, Wei and Zhang, Lingsen and Zhang, Renshan and Liu, Zhiyang and Chen, Ran and Nie, Liqiang},
+  year = {2025},
+  month = aug,
+  number = {arXiv:2508.13073},
+  eprint = {2508.13073},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2508.13073},
+  urldate = {2025-08-22},
+  abstract = {Robotic manipulation, a key frontier in robotics and embodied AI, requires precise motor control and multimodal understanding, yet traditional rule-based methods fail to scale or generalize in unstructured, novel environments. In recent years, Vision-Language-Action (VLA) models, built upon Large Vision-Language Models (VLMs) pretrained on vast image-text datasets, have emerged as a transformative paradigm. This survey provides the first systematic, taxonomy-oriented review of large VLM-based VLA models for robotic manipulation. We begin by clearly defining large VLM-based VLA models and delineating two principal architectural paradigms: (1) monolithic models, encompassing single-system and dual-system designs with differing levels of integration; and (2) hierarchical models, which explicitly decouple planning from execution via interpretable intermediate representations. Building on this foundation, we present an in-depth examination of large VLM-based VLA models: (1) integration with advanced domains, including reinforcement learning, training-free optimization, learning from human videos, and world model integration; (2) synthesis of distinctive characteristics, consolidating architectural traits, operational strengths, and the datasets and benchmarks that support their development; (3) identification of promising directions, including memory mechanisms, 4D perception, efficient adaptation, multi-agent cooperation, and other emerging capabilities. This survey consolidates recent advances to resolve inconsistencies in existing taxonomies, mitigate research fragmentation, and fill a critical gap through the systematic integration of studies at the intersection of large VLMs and robotic manipulation. We provide a regularly updated project page to document ongoing progress: https://github.com/JiuTian-VL/Large-VLM-based-VLA-for-Robotic-Manipulation.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Robotics},
+  file = {/Users/fangyuan/Zotero/storage/Y77V45ST/Shao et al. - 2025 - Large VLM-based Vision-Language-Action Models for Robotic Manipulation A Survey.pdf;/Users/fangyuan/Zotero/storage/7U5JR9LV/2508.html}
 }
 
 @inproceedings{shawBimanualDexterityComplex2024,
@@ -5067,6 +5169,23 @@
   file = {/Users/fangyuan/Zotero/storage/Z2Y8TMNX/Taouil et al. - 2025 - Physically Consistent Humanoid Loco-Manipulation using Latent Diffusion Models.pdf;/Users/fangyuan/Zotero/storage/3LF2I3DA/2504.html}
 }
 
+@misc{teamRoboBrain20Technical2025,
+  title = {{{RoboBrain}} 2.0 {{Technical Report}}},
+  author = {Team, BAAI RoboBrain and Cao, Mingyu and Tan, Huajie and Ji, Yuheng and Lin, Minglan and Li, Zhiyu and Cao, Zhou and Wang, Pengwei and Zhou, Enshen and Han, Yi and Tang, Yingbo and Xu, Xiangqi and Guo, Wei and Lyu, Yaoxu and Xu, Yijie and Shi, Jiayu and Du, Mengfei and Chi, Cheng and Zhao, Mengdi and Hao, Xiaoshuai and Zhao, Junkai and Zhang, Xiaojie and Rong, Shanyu and Lyu, Huaihai and Cai, Zhengliang and Fu, Yankai and Chen, Ning and Zhang, Bolun and Zhang, Lingfeng and Zhang, Shuyi and Liu, Dong and Feng, Xi and Wang, Songjing and Liu, Xiaodan and Jiao, Yance and Lyu, Mengsi and Chen, Zhuo and He, Chenrui and Ao, Yulong and Sun, Xue and He, Zheqi and Zheng, Jingshu and Yang, Xi and Shi, Donghai and Xie, Kunchang and Zhang, Bochao and Nie, Shaokai and Men, Chunlei and Lin, Yonghua and Wang, Zhongyuan and Huang, Tiejun and Zhang, Shanghang},
+  year = {2025},
+  month = aug,
+  number = {arXiv:2507.02029},
+  eprint = {2507.02029},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2507.02029},
+  urldate = {2025-08-21},
+  abstract = {We introduce RoboBrain 2.0, our latest generation of embodied vision-language foundation models, designed to unify perception, reasoning, and planning for complex embodied tasks in physical environments. It comes in two variants: a lightweight 7B model and a full-scale 32B model, featuring a heterogeneous architecture with a vision encoder and a language model. Despite its compact size, RoboBrain 2.0 achieves strong performance across a wide spectrum of embodied reasoning tasks. On both spatial and temporal benchmarks, the 32B variant achieves leading results, surpassing prior open-source and proprietary models. In particular, it supports key real-world embodied AI capabilities, including spatial understanding (e.g., affordance prediction, spatial referring, trajectory forecasting) and temporal decision-making (e.g., closed-loop interaction, multi-agent long-horizon planning, and scene graph updating). This report details the model architecture, data construction, multi-stage training strategies, infrastructure and practical applications. We hope RoboBrain 2.0 advances embodied AI research and serves as a practical step toward building generalist embodied agents. The code, checkpoint and benchmark are available at https://superrobobrain.github.io.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Robotics},
+  file = {/Users/fangyuan/Zotero/storage/BUSYDQGK/Team et al. - 2025 - RoboBrain 2.0 Technical Report.pdf;/Users/fangyuan/Zotero/storage/WRZWURAJ/2507.html}
+}
+
 @misc{tirinzoniZeroShotWholeBodyHumanoid2025,
   title = {Zero-{{Shot Whole-Body Humanoid Control}} via {{Behavioral Foundation Models}}},
   author = {Tirinzoni, Andrea and Touati, Ahmed and Farebrother, Jesse and Guzek, Mateusz and Kanervisto, Anssi and Xu, Yingchen and Lazaric, Alessandro and Pirotta, Matteo},
@@ -5273,6 +5392,24 @@
   abstract = {Chain-of-thought prompting combined with pre-trained large language models has achieved encouraging results on complex reasoning tasks. In this paper, we propose a new decoding strategy, self-consistency, to replace the naive greedy decoding used in chain-of-thought prompting. It first samples a diverse set of reasoning paths instead of only taking the greedy one, and then selects the most consistent answer by marginalizing out the sampled reasoning paths. Self-consistency leverages the intuition that a complex reasoning problem typically admits multiple different ways of thinking leading to its unique correct answer. Our extensive empirical evaluation shows that self-consistency boosts the performance of chain-of-thought prompting with a striking margin on a range of popular arithmetic and commonsense reasoning benchmarks, including GSM8K (+17.9\%), SVAMP (+11.0\%), AQuA (+12.2\%), StrategyQA (+6.4\%) and ARC-challenge (+3.9\%).},
   archiveprefix = {arXiv},
   file = {/Users/fangyuan/Zotero/storage/SYFJ77M2/Wang et al. - 2023 - Self-Consistency Improves Chain of Thought Reasoni.pdf;/Users/fangyuan/Zotero/storage/R9FG4Z8S/2203.html}
+}
+
+@misc{wangSpecVLASpeculativeDecoding2025,
+  title = {Spec-{{VLA}}: {{Speculative Decoding}} for {{Vision-Language-Action Models}} with {{Relaxed Acceptance}}},
+  shorttitle = {Spec-{{VLA}}},
+  author = {Wang, Songsheng and Yu, Rucheng and Yuan, Zhihang and Yu, Chao and Gao, Feng and Wang, Yu and Wong, Derek F.},
+  year = {2025},
+  month = jul,
+  number = {arXiv:2507.22424},
+  eprint = {2507.22424},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2507.22424},
+  urldate = {2025-08-04},
+  abstract = {Vision-Language-Action (VLA) models have made substantial progress by leveraging the robust capabilities of Visual Language Models (VLMs). However, VLMs' significant parameter size and autoregressive (AR) decoding nature impose considerable computational demands on VLA models. While Speculative Decoding (SD) has shown efficacy in accelerating Large Language Models (LLMs) by incorporating efficient drafting and parallel verification, allowing multiple tokens to be generated in one forward pass, its application to VLA models remains unexplored. This work introduces Spec-VLA, an SD framework designed to accelerate VLA models. Due to the difficulty of the action prediction task and the greedy decoding mechanism of the VLA models, the direct application of the advanced SD framework to the VLA prediction task yields a minor speed improvement. To boost the generation speed, we propose an effective mechanism to relax acceptance utilizing the relative distances represented by the action tokens of the VLA model. Empirical results across diverse test scenarios affirm the effectiveness of the Spec-VLA framework, and further analysis substantiates the impact of our proposed strategies, which enhance the acceptance length by 44\%, achieving 1.42 times speedup compared with the OpenVLA baseline, without compromising the success rate. The success of the Spec-VLA framework highlights the potential for broader application of speculative execution in VLA prediction scenarios.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Artificial Intelligence,Computer Science - Machine Learning},
+  file = {/Users/fangyuan/Zotero/storage/9FSTXUBL/Wang et al. - 2025 - Spec-VLA Speculative Decoding for Vision-Language-Action Models with Relaxed Acceptance.pdf;/Users/fangyuan/Zotero/storage/6XSGTFRE/2507.html}
 }
 
 @article{wangTaskDrivenReinforcementLearning2023,
@@ -6123,6 +6260,23 @@
   file = {/Users/fangyuan/Zotero/storage/B86XI69C/Zeng et al. - 2022 - Transporter Networks Rearranging the Visual World.pdf}
 }
 
+@misc{zhangAffordancebasedRobotManipulation2025,
+  title = {Affordance-Based {{Robot Manipulation}} with {{Flow Matching}}},
+  author = {Zhang, Fan and Gienger, Michael},
+  year = {2025},
+  month = feb,
+  number = {arXiv:2409.01083},
+  eprint = {2409.01083},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2409.01083},
+  urldate = {2025-08-21},
+  abstract = {We present a framework for assistive robot manipulation, which focuses on two fundamental challenges: first, efficiently adapting large-scale models to downstream scene affordance understanding tasks, especially in daily living scenarios where gathering multi-task data involving humans requires strenuous effort; second, effectively learning robot action trajectories by grounding the visual affordance model. We tackle the first challenge by employing a parameter-efficient prompt tuning method that prepends learnable text prompts to the frozen vision model to predict manipulation affordances in multi-task scenarios. Then we propose to learn robot action trajectories guided by affordances in a supervised flow matching method. Flow matching represents a robot visuomotor policy as a conditional process of flowing random waypoints to desired robot action trajectories. Finally, we introduce a real-world dataset with 10 tasks across Activities of Daily Living to test our framework. Our extensive evaluation highlights that the proposed prompt tuning method for learning manipulation affordance achieves competitive performance and even outperforms some other finetuning protocols across data scales, while satisfying parameter efficiency. Learning multi-task robot action trajectories with flow matching leads to consistently favorable results in several robot manipulation benchmarks than some alternative behavior cloning methods. This includes more stable training and evaluation, and noticeably faster inference, while maintaining comparable generalization performance to diffusion policy, where flow matching performs marginally better in most cases. Our framework seamlessly unifies affordance learning and action generation with flow matching for robot manipulation.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Artificial Intelligence,Computer Science - Robotics},
+  file = {/Users/fangyuan/Zotero/storage/JIEQBXP2/Zhang and Gienger - 2025 - Affordance-based Robot Manipulation with Flow Matching.pdf;/Users/fangyuan/Zotero/storage/7J3YQBD2/2409.html}
+}
+
 @misc{zhangAutomaticChainThought2022,
   title = {Automatic {{Chain}} of {{Thought Prompting}} in {{Large Language Models}}},
   author = {Zhang, Zhuosheng and Zhang, Aston and Li, Mu and Smola, Alex},
@@ -6153,7 +6307,7 @@
   urldate = {2025-07-13},
   abstract = {Recent advances in vision-language-action (VLA) models have shown promise in integrating image generation with action prediction to improve generalization and reasoning in robot manipulation. However, existing methods are limited to challenging image-based forecasting, which suffers from redundant information and lacks comprehensive and critical world knowledge, including dynamic, spatial and semantic information. To address these limitations, we propose DreamVLA, a novel VLA framework that integrates comprehensive world knowledge forecasting to enable inverse dynamics modeling, thereby establishing a perception-prediction-action loop for manipulation tasks. Specifically, DreamVLA introduces a dynamic-region-guided world knowledge prediction, integrated with the spatial and semantic cues, which provide compact yet comprehensive representations for action planning. This design aligns with how humans interact with the world by first forming abstract multimodal reasoning chains before acting. To mitigate interference among the dynamic, spatial and semantic information during training, we adopt a block-wise structured attention mechanism that masks their mutual attention, preventing information leakage and keeping each representation clean and disentangled. Moreover, to model the conditional distribution over future actions, we employ a diffusion-based transformer that disentangles action representations from shared latent features. Extensive experiments on both real-world and simulation environments demonstrate that DreamVLA achieves 76.7\% success rate on real robot tasks and 4.44 average length on the CALVIN ABC-D benchmarks.},
   archiveprefix = {arXiv},
-  keywords = {Computer Science - Computer Vision and Pattern Recognition,Computer Science - Robotics},
+  keywords = {Manipulation,VLA},
   file = {/Users/fangyuan/Zotero/storage/LUZ7JD2Q/Zhang et al. - 2025 - DreamVLA A Vision-Language-Action Model Dreamed with Comprehensive World Knowledge.pdf;/Users/fangyuan/Zotero/storage/JHFTDEVF/2507.html}
 }
 
@@ -6349,6 +6503,23 @@
   archiveprefix = {arXiv},
   keywords = {Computer Science - Computation and Language,Computer Science - Machine Learning},
   file = {/Users/fangyuan/Zotero/storage/9VAUH576/Zhao et al. - 2025 - Learning to Reason without External Rewards.pdf;/Users/fangyuan/Zotero/storage/RWVBYT65/2505.html}
+}
+
+@misc{zhaoLearningReasonExternal2025a,
+  title = {Learning to {{Reason}} without {{External Rewards}}},
+  author = {Zhao, Xuandong and Kang, Zhewei and Feng, Aosong and Levine, Sergey and Song, Dawn},
+  year = {2025},
+  month = aug,
+  number = {arXiv:2505.19590},
+  eprint = {2505.19590},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2505.19590},
+  urldate = {2025-08-15},
+  abstract = {Training large language models (LLMs) for complex reasoning via Reinforcement Learning with Verifiable Rewards (RLVR) is effective but limited by reliance on costly, domain-specific supervision. We explore Reinforcement Learning from Internal Feedback (RLIF), a framework that enables LLMs to learn from intrinsic signals without external rewards or labeled data. We propose Intuitor, an RLIF method that uses a model's own confidence, termed self-certainty, as its sole reward signal. Intuitor replaces external rewards in Group Relative Policy Optimization (GRPO) with self-certainty scores, enabling fully unsupervised learning. Experiments demonstrate that Intuitor matches GRPO's performance on mathematical benchmarks while achieving superior generalization to out-of-domain tasks like code generation, without requiring gold solutions or test cases. Our findings show that intrinsic model signals can drive effective learning across domains, offering a scalable alternative to RLVR for autonomous AI systems where verifiable rewards are unavailable. Code is available at https://github.com/sunblaze-ucb/Intuitor},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Computation and Language,Computer Science - Machine Learning},
+  file = {/Users/fangyuan/Zotero/storage/TZUVENT2/Zhao et al. - 2025 - Learning to Reason without External Rewards.pdf;/Users/fangyuan/Zotero/storage/PPVZUK4E/2505.html}
 }
 
 @misc{zhaoVLASVisionLanguageActionModel2025,

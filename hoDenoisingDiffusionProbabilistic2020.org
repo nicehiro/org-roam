@@ -4,6 +4,7 @@
 :END:
 #+title: Denoising Diffusion Probabilistic Models
 #+filetags: :diffusion:
+#+startup: latexpreview
 
 
 Diffusion models are latent variable models of the form $p_{\theta} := \int p_{\theta}(x_{0:T}) dx_{1:T}$, where $x_1, \cdots, x_T$ are latents of the _same dimensionality_ as the data $x_0 \sim q(x_0)$. $x_0$ represents true data observations such as natural images, $x_T$ represents pure Gaussian noise, and $x_t$ is an intermediate noisy version of $x_0$. The joint distribution $p_{\theta}(x_{0:T})$ is called the *reverse process*, and it is defined as a Markov chain (shown in Fig.1) with learned Gaussian transitions starting at $p(x_T) = \mathcal{N}(x_T; 0, I)$:
