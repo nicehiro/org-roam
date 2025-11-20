@@ -2,8 +2,11 @@
 :id: 17838CD8-5F69-4433-9BAA-F4E1DA02B071
 :END:
 #+title: Softmax
-#+filed: Machine-learning
 #+OPTIONS: toc:nil
 #+filetags: :ml:
 
-* Description
+The softmax function takes as input a tuple $z$ of $K$ _real_ numbers, and normalizes it into a probability distribution consisting of $K$ probabilities proportional to the exponentials of the input numbers.
+
+\[
+\sigma(z)_i = \frac{e^{z_i}}{\sum_{j=1}^K e^{z_j}}
+\]

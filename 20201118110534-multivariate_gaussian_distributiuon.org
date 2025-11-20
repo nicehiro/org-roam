@@ -4,8 +4,8 @@
 #+title: Multivariate Gaussian Distributiuon
 #+OPTIONS: toc:nil
 #+filetags: :probability:
+#+startup: latexpreview
 
-* Description
 随机变量 $X=[X_1\cdots X_n]^T$ ，均值为 $\mu\in R^n$ ，协方差 $\Sigma\in S^{n}_{++}$ ，
 概率密度函数为：
 
@@ -34,9 +34,12 @@ $$
 多维随机变量的正态分布的轮廓是以 $\mu_1,\mu_2,\cdots$ 为中心的椭圆。
 
 若多维随机变量 $X$ 服从多维正态分布，那么对 $X$ 作线性变化后，仍然服从多维正态分布。
+
 * Gaussian facts
+
 1. 如果已知高斯分布变量的均值 $\mu$ 和协方差矩阵 $\Sigma$ ，就可以直接写出 $x$ 的密度函数。
 2. 多维高斯分布的性质：
+
 $$
 \int_{x \in \mathbf{R}^{n}} p(x ; \mu, \Sigma) d x=\int_{-\infty}^{\infty} \cdots \int_{-\infty}^{\infty} p(x ; \mu, \Sigma) d x_{1} \ldots d x_{n}=1
 $$
@@ -53,8 +56,11 @@ $$
    - 相互独立的高斯随机变量之和也是高斯分布。
    - 高斯联合分布的边缘分布是高斯分布。
    - 高斯联合分布的条件分布也是高斯分布。
+
 * 多维高斯分布的扩展
-** 相互独立的高斯随机变量之和也是高斯分布。
+
+** 相互独立的高斯随机变量之和也是高斯分布
+
 假设 $y\sim\mathcal{N}(\mu,\Sigma)$ ， $z\sim\mathcal{N}(\mu^{\prime},\Sigma^{\prime})$ ，
 二者相互独立，则：
 $$
@@ -65,7 +71,9 @@ $$
 1. 随机变量需要相互独立。举个极端的例子，当 $z=-y$ 时，显然 $y+z$ 不服从正态分布。
 2. 如果两个服从正态分布的随机变量相加，它们的密度函数会变成多峰的图形吗？
    需要注意的是，随机变量相加之后的密度函数，不是简单的叠加。
+
 ** 高斯联合分布的边缘分布是高斯分布
+
 假设
 $$
 \left[\begin{array}{l}
@@ -81,17 +89,22 @@ x_{B}
 $$
 
 那么其边缘分布：
-\begin{aligned}
+
+\begin{align*}
 p\left(x_{A}\right) &=\int_{x_{B} \in \mathbf{R}^{n}} p\left(x_{A}, x_{B} ; \mu, \Sigma\right) d x_{B} \\
 p\left(x_{B}\right) &=\int_{x_{A} \in \mathbf{R}^{m}} p\left(x_{A}, x_{B} ; \mu, \Sigma\right) d x_{A}
-\end{aligned}
+\end{align*}
 
 且服从：
+\begin{equation*}
 \begin{array}{l}
 x_{A} \sim \mathcal{N}\left(\mu_{A}, \Sigma_{A A}\right) \\
 x_{B} \sim \mathcal{N}\left(\mu_{B}, \Sigma_{B B}\right)
 \end{array}
+\end{equation*}
+
 ** 高斯联合分布的条件分布也是高斯分布
+
 假设
 $$
 \left[\begin{array}{l}
@@ -107,15 +120,21 @@ x_{B}
 $$
 
 其条件分布为：
+\begin{equation*}
 \begin{array}{l}
 p\left(x_{A} \mid x_{B}\right)=\frac{p\left(x_{A}, x_{B} ; \mu, \Sigma\right)}{\int_{x_{A} \in \mathbf{R}^{m}} p\left(x_{A}, x_{B} ; \mu, \Sigma\right) d x_{A}} \\
 p\left(x_{B} \mid x_{A}\right)=\frac{p\left(x_{A}, x_{B} ; \mu, \Sigma\right)}{\int_{x_{B} \in \mathbf{R}^{n}} p\left(x_{A}, x_{B} ; \mu, \Sigma\right) d x_{B}}
 \end{array}
+\end{equation*}
 
 且服从：
+\begin{equation*}
 \begin{array}{l}
 x_{A} \mid x_{B} \sim \mathcal{N}\left(\mu_{A}+\Sigma_{A B} \Sigma_{B B}^{-1}\left(x_{B}-\mu_{B}\right), \Sigma_{A A}-\Sigma_{A B} \Sigma_{B B}^{-1} \Sigma_{B A}\right) \\
 x_{B} \mid x_{A} \sim \mathcal{N}\left(\mu_{B}+\Sigma_{B A} \Sigma_{A A}^{-1}\left(x_{A}-\mu_{A}\right), \Sigma_{B B}-\Sigma_{B A} \Sigma_{A A}^{-1} \Sigma_{A B}\right)
 \end{array}
+\end{equation*}
+
 * Ref
+
 - [[https://zhuanlan.zhihu.com/p/290876484][证明推导]]

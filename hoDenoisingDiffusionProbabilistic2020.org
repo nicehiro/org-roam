@@ -31,14 +31,12 @@ where $\alpha_t, \beta_t > 0$ and $\alpha_t^2 + \beta_t^2 = 1$. Generally, $\bet
 
 Thus we can get:
 
-$$
-\begin{aligned}
+\begin{align*}
 x_t &= \alpha_t x_{t-1} + \beta_t \epsilon_t \\
 &= \alpha_t (\alpha_{t-1}x_{t-2} + \beta_{t-1}\epsilon_{t-1}) + \beta_t\epsilon_t \\
 &= \dots \\
 &= (\alpha_t \cdots \alpha_1)x_0 + (\alpha_t \cdots \alpha_2)\beta_1\epsilon_1 + (\alpha_t \cdots \alpha_3) \beta_2 \epsilon_2 + \cdots + \alpha_t\beta_{t-1}\epsilon_{t-1} + \beta_t\epsilon_t
-\end{aligned}
-$$
+\end{align*}
 
 Since $\epsilon_t \sim \mathcal{N}(0, I)$, so $(\alpha_t \cdots \alpha_2)\beta_1\epsilon_1 \sim \mathcal{N}(0, (\alpha_t \cdots \alpha_2)^2\beta_1^2)$, so as others. Thus $(\alpha_t \cdots \alpha_2)\beta_1\epsilon_1 + (\alpha_t \cdots \alpha_3) \beta_2 \epsilon_2 + \cdots + \alpha_t\beta_{t-1}\epsilon_{t-1} + \beta_t\epsilon_t \sim \mathcal{N}(0, (\alpha_t \cdots \alpha_2)^2\beta_1^2 + \cdots + \alpha_t^2\beta_{t-1}^2 + \beta_t^2)$.
 
@@ -54,17 +52,19 @@ So $x_t = \bar{\alpha}_t x_0 + \bar{\beta}_t \bar{\epsilon_t}$, where $\bar{\eps
 
 We are trying to minimize the distance between original image $x_{t-1}$ and de-noised image $\theta(x_t)$, i.e.:
 
-$$
-\begin{aligned}
-\mathcal{L} &= || x_{t-1} - \theta(x_t) ||^2 \\
-&= || \frac{1}{\alpha_t}(x_t - \beta_t \epsilon_t) - \theta(x_t) ||^2 \\
-&= || \frac{1}{\alpha_t}(x_t - \beta_t \epsilon_t) - \frac{1}{\alpha}(x_t - \beta_t \epsilon_{\theta}(x_t, t)) ||^2 \\
-&= \frac{\beta_t^2}{\alpha_t^2} || \epsilon_t - \epsilon_{\theta}(x_t, t) || ^2 \\
-&\approx || \epsilon_t - \epsilon_{\theta}(\alpha_t x_{t-1} + \beta_t \epsilon_t, t) || ^2 \\
-&= || \epsilon_t - \epsilon_{\theta}(\alpha_t (\bar_{\alpha}_{t-1} x_0 + \bar{\beta}_{t-1}\bar{\epsilon}_{t-1}) + \beta_t \epsilon_t, t) || ^2 \\
-&= || \epsilon_t - \epsilon_{\theta}(\bar{\alpha}_t x_0 + \alpha_t \bar{\beta}_{t-1}\bar{\epsilon}_{t-1} + \beta_t\epsilon_t, t) || ^2
-\end{aligned}
-$$
+\begin{align*}
+\mathcal{L}
+&= \bigl\|x_{t-1} - \theta(x_t)\bigr\|_2^2 \\
+&= \Bigl\|\tfrac{1}{\alpha_t}\bigl(x_t - \beta_t \epsilon_t\bigr) - \theta(x_t)\Bigr\|_2^2
+\qquad\text{(since }x_t=\alpha_t x_{t-1}+\beta_t\epsilon_t\text{)} \\
+&= \Bigl\|\tfrac{1}{\alpha_t}\bigl(x_t - \beta_t \epsilon_t\bigr)
+      - \tfrac{1}{\alpha_t}\bigl(x_t - \beta_t \,\epsilon_{\theta}(x_t,t)\bigr)\Bigr\|_2^2 \\
+&= \tfrac{\beta_t^2}{\alpha_t^2}\,\bigl\|\epsilon_t - \epsilon_{\theta}(x_t,t)\bigr\|_2^2 \\
+&\propto \bigl\|\epsilon_t - \epsilon_{\theta}(x_t,t)\bigr\|_2^2
+\qquad\text{(drop the $t$-dependent factor; constant w.r.t.\ }\theta\text{)} \\
+&= \bigl\|\epsilon_t - \epsilon_{\theta}(\alpha_t x_{t-1}+\beta_t \epsilon_t,\,t)\bigr\|_2^2 \\
+&= \bigl\|\epsilon_t - \epsilon_{\theta}(\bar{\alpha}_t x_0 + \bar{\beta}_t \bar{\epsilon}_t,\,t)\bigr\|_2^2,
+\end{align*}
 
 We resample $x_t$ without $\bar{\epsilon}_t$ because $\epsilon_t$ and $\bar{\epsilon}_t$ are not independent.
 

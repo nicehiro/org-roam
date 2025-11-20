@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       BE52FE93-3C87-4B95-B893-C98EC1C88FDE
+:END:
+#+title: Categorical Policies
+#+filetags: :discrete:rl:
+
+A categorical policy is like a classifier over discrete actions.
+
+The input is the observation, followed by some number of layers, and then have one final linear layer that gives logits for each action, followed by a [[id:17838CD8-5F69-4433-9BAA-F4E1DA02B071][Softmax]] to convert the logits into probabilities.

@@ -14,8 +14,9 @@ random variable $f(x)$ under distribution $p$ from samples of a different
 distribution $q$.
 
 The key observation is that $\mu$ is can expressed as the expectation of a
-different random variable $f^{*}(x)=\frac{p(x)}{q(x)} f(x)$ under $q$
+different random variable \(f^{\star}(x)=\frac{p(x)}{q(x)} f(x)\) under $q$
 
+#+begin_export md
 \begin{equation}
 \begin{aligned}
 \mu &= \mathbf{E}_{p}[f(x)] \\
@@ -26,6 +27,7 @@ different random variable $f^{*}(x)=\frac{p(x)}{q(x)} f(x)$ under $q$
 &= \mathbf{E}_{q} [f^{*}(x)]
 \end{aligned}
 \end{equation}
+#+end_export
 
 Technique condition: $q$ must have support everywhere $p$ dose.
 Without this condition, the equation is biased!

@@ -1,0 +1,34 @@
+:PROPERTIES:
+:ID:       3EDBDED9-A37C-405D-A2F9-E724E5BA99A6
+:END:
+#+title: Stochastic Policies
+
+A [[id:8AC0AC13-4BFB-48F4-8005-2C763BE9416D][Multivariate Gaussian Distributiuon]] is described by a mean vector, $\mu$, and a covariance matrix, $\Sigma$. A diagonal Gaussian distribution is a special case where the covariance matrix only has entries on the diagonal.
+
+* Representation of the covariance matrix
+
+** Single vector
+
+There is a single vector of log standard deviations, $\log \Sigma$, which is _not a function of state_: the $\log \Sigma$ are standalone parameters.
+
+** Neural Network
+
+There is a neural network that maps from states to log standard deviations, $\log \Sigma_{\theta}(s)$. It may optionally _share_ some layers with the mean network.
+
+Note that in both cases we output _log standard deviations_ instead of standard deviations directly. This is because _log stds are free to take on any values in ($-\infty, \infty$), while stds must be nonnegative_.
+
+* Sampling
+
+Given the mean action $\mu_{\theta}(s)$ and standard deviation $\Sigma_{\theta}(s)$, and a vector $z$ of noise from a spherical Gaussian ($z \sim \mathcal{N}(0, I)$), an action sample can be computed with
+
+\[
+a = \mu_{\theta}(s) + \Sigma_{\theta}(s) \odot z,
+\]
+
+* Log-Likelihood
+
+The log-likelihood of a k-dimensional action $a$, for a diagonal Gaussian with mean $\mu = \mu_{\theta}(s)$ and standard deviation $\Sigma = \Sigma_{\theta}(s)$, is given by
+
+\[
+\log \pi_{\theta}(a|s) = -\frac{1}{2}\left(\sum_{i=1}^k \left(\frac{(a_i - \mu_i)^2}{\sigma_i^2} + 2 \log \sigma_i \right) + k \log 2\pi \right).
+\]
