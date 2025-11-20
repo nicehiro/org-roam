@@ -1,0 +1,43 @@
+:PROPERTIES:
+:ID:       F7FB5F78-A70C-4E71-9F77-9251D947F38E
+:ROAM_REFS: @amin06VLAThat
+:END:
+#+title: $\pi_{0.6}$: A VLA That Learns From Experience
+#+filetags: :flow-matching:rl:VLA:
+
+* Core difference between VLA and VLM
+
+Or the core problem inherit in VLA is, When a VLA trained with imitation controls the robot, it will, like any model, make small mistakes – it might put the gripper in the wrong spot, miss a grasp, or knock over an object. Because the robot is interacting with a real physical environment, this mistake will produce a situation that is a bit different from situations in the training data.
+
+VLMs don't face this because:
+- Each response is essentially independent
+- There's no physical state that drifts from training distribution
+- Mistakes don't compound over time
+
+So actually [[id:8995D417-172D-4B46-B7E3-A3269873A42F][Action Chunking]] is designed to solve this issue in VLA.
+
+* Three stage training process
+
+** Data collection
+
+Robot executes tasks autonomously, with optional human interventions to correct large mistakes. Episodes are labeled with sparse rewards (success/failure).
+
+** Value function training
+
+A multi-task distributional value function is trained to predict the return (See [[id:BD98256C-F9AA-48FF-8F3E-DB20881005AB][Reinforcement Learning]] Return) until successful task completion, using a 670M parameter VLM backbone.
+
+The sparse reward design:
+
+- Every timestep gets -1 (except the last)
+- Final timestep gets 0 (success) or -Cfail (failure)
+- The return becomes: negative of steps-to-success for successful episodes
+
+** Advantage-conditioned training
+
+The VLA is trained with supervised learning on all data, but with an additional input indicating action quality based on advantages from the value function. The policy is conditioned on text inputs "Advantage: positive" or "Advantage: negative" based on whether the action advantage exceeds a task-specific threshold
+
+*** Why Text Conditioning rather than 0/1?
+
+- Leverages pre-trained representations: The VLA already understands language, so "Advantage: positive/negative" taps into semantic understanding
+- Compatibility with VLA architecture: The advantage indicator appears in the training sequence after l but before the (discretized and continuous) actions, such that only the action log-likelihoods are affected
+- Enables classifier-free guidance: They can sample with or without conditioning and interpolate (like CFG in diffusion models)
