@@ -30,3 +30,34 @@ Some interesting ideas from the paper:
 4. The image and language prompt are routed to the VLM backbone, while the robot states and noise actions are routed to the action expert.
 
 5. The model structure is quite interesting: it contains one gemma-2b for llm reasoning, and one gemma-300M for action expert. The image and text tokens will input to llm head, and the robot state and action noise will input to action head. And they use attention to connect the output of llm head and the robot state.
+
+
+* Attention Mask
+
+$\pi_0$ uses a blockwise [[id:0AD75970-48F7-4902-845B-44E056C5788C][Causal Attention]] mask with 3 blocks $[I_t^1, \cdots, I_t^n, l_t]$, $[q_t]$, and $[a_t, \cdots, a_{t+H-1}]$, where $I_t^n$ denotes the image captured by camera $n$ at time step $t$, $l_t$ is the language prompt or task description, $q_t$ is the proprioceptive state at time step $t$, and $[a_t, \cdots, a_{t+H-1}]$ denotes the action chunks from time step $t$ to $t+H-1$.
+
+With each block, there is _full bidirectional attention_, whereas the tokens in each block cannot attend to the tokens in future blocks.
+
+For modality sequence =[img1, img2, text, q, a_1, a_o]=, The attention mask will be: =[0, 0, 0, 1, 1, 0]=, which will generate the following:
+
+| modality | img1 | img2 | text | q | a_1 | a_o |
+|----------+------+------+------+---+-----+-----|
+| img1     |    1 |    1 |    1 | 0 |   0 |   0 |
+| img2     |    1 |    1 |    1 | 0 |   0 |   0 |
+| text     |    1 |    1 |    1 | 0 |   0 |   0 |
+| q        |    1 |    1 |    1 | 1 |   0 |   0 |
+| a_1      |    1 |    1 |    1 | 1 |   1 |   0 |
+| a_o      |    1 |    1 |    1 | 1 |   1 |   1 |
+
+**Advantages**
+
+1. The first block includes the input modalities from PaliGemma’s VLM pre-training, which are prevented from attending to future blocks (which include new inputs) to _minimize distribution shift from said pre-training_.
+
+2. The robot state $q_t$ is its own block _because it does not change with each flow matching integration step_; preventing it from attending to the final block allows its corresponding keys and values to be cached during sampling.
+
+3. From the perspective of casual attention design, State can gather information from ALL visual and textual tokens.
+
+
+**Disadvantages**
+
+1. From the perspective of casual attention design, state _cannot influence how vision-language features are processed_.

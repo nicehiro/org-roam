@@ -5,6 +5,8 @@
 #+title: $\pi_{0.6}$: A VLA That Learns From Experience
 #+filetags: :flow-matching:rl:VLA:
 
+This paper is an follow-up one of [[id:205DE6FB-054E-418A-BC32-C05E82AF1CA0][$\pi_0$: A Vision-Language-Action Flow Model for General Robot Control]] and [[id:C4645F29-C882-4085-925C-635C4E599EB5][$\pi_{0.5}$: A Vision-Language-Action Model with Open-World Generalization]].
+
 * Core difference between VLA and VLM
 
 Or the core problem inherit in VLA is, When a VLA trained with imitation controls the robot, it will, like any model, make small mistakes – it might put the gripper in the wrong spot, miss a grasp, or knock over an object. Because the robot is interacting with a real physical environment, this mistake will produce a situation that is a bit different from situations in the training data.

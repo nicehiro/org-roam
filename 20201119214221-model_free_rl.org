@@ -5,17 +5,21 @@
 #+OPTIONS: toc:nil
 #+filetags: :rl:
 
-* Description
-免模型强化学习算法。
+There are two main approaches to representing and training agents with model-free RL.
 
-* Algorithms
-
-- DQN
-
-- Policy Gradient
-
-- Deep Deterministic Policy Gradient
+*** Policy Optimization
+Methods in this family represent a policy explicitly as $\pi_{\theta}(a|s)$. They optimize the parameters $\theta$ either directly by gradient ascent on the performance objective $J(\pi_{\theta})$, or indirectly, by maximizing local approximations of $J(\pi_{\theta})$. This optimization is _almost always performed on-policy_, which means that each update only uses data collected while acting according to the most recent version of the policy.
 
 - [[id:B994EAC2-A0F1-4FE0-8BFF-E0790743B276][Trust Region Policy Optimization]]
 
 - [[id:6350FA34-31EB-43C3-9E2C-7A26A3CBD719][Proximal Policy Optimization]]
+
+*** Q-Learning (Value Optimization)
+Methods in this family learn an approximator $Q_{\theta}(s,a)$ for the optimal action-value function, $Q^*(s,a)$. Typically they use an objective function based on the Bellman equation. This optimization is _almost always performed off-policy_, which means that each update can use data collected at any point during training, regardless of how the agent was choosing to explore the environment when the data was obtained.
+
+- [[id:F62D7A5B-7EDC-4DDA-A3D8-034A6C67F638][DQN]]
+
+*** Interpolating Between Policy Optimization and Q-Learning
+Algorithms that live on this spectrum are able to carefully trade-off between the strengths and weaknesses of either side.
+
+- [[id:5031EEE4-BF9E-4810-B2CE-CA6BCD8CA009][Deep Deterministic Policy Gradient]]

@@ -109,3 +109,10 @@ The advantage function $A^{\pi}(s,a)$ corresponding to a policy $\pi$ describes 
 \[
 A^{\pi}(s,a) = Q^{\pi}(s,a) - V^{\pi}(s).
 \]
+
+* Kinds of RL Algorithms
+
+#+DOWNLOADED: https://spinningup.openai.com/en/latest/_images/rl_algorithms_9_15.svg @ 2025-11-23 22:05:46
+[[file:img/Kinds_of_RL_Algorithms/2025-11-23_22-05-46_rl_algorithms_9_15.svg]]
+
+One of the most important branching points in an RL algorithm is the question of _whether the agent has access to (or learns) a model of the environment_. By a model of the environment, we mean a function which predicts state transitions and rewards. Algorithms which use a model are called [[id:9C67A92B-1AFF-4B71-BE26-047C56F0C6FA][Model Based RL]], and those that don’t are called [[id:45D8C73D-2AEB-468E-A658-8E71C66AEFC7][Model Free RL]].
