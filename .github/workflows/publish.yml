@@ -1,21 +1,40 @@
-name: Generate static org-roam-ui page
+name: Deploy Notes
+
+on:
+  push:
+    branches: [main]
 
 permissions:
   contents: read
   pages: write
   id-token: write
 
-on:
-  push:
-    branches:
-      - master
-
 jobs:
-  main:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: Generate org-roam-ui page
-        uses: ikoamu/publish-org-roam-ui@main
+      - uses: actions/checkout@v4
+
+      - name: Build site
+        uses: nicehiro/org-roam-web@main
         with:
-          org-roam-db-filename: roam.db
-          deploy-to-pages: true
+          base_url: "org-roam"
+          roam_dir: '.'
+          site_title: 'FF\'s Notes'
+          exclude_tags: 'private,draft'
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
