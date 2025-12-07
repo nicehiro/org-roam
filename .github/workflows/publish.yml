@@ -17,7 +17,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Build site
-        uses: nicehiro/org-roam-web@main
+        uses: nicehiro/org-roam-web@master
         with:
           base_url: "/org-roam"
           roam_dir: '.'
