@@ -18,9 +18,9 @@ jobs:
       - name: Build site
         uses: nicehiro/org-roam-web@main
         with:
-          base_url: "org-roam"
+          base_url: "/org-roam"
           roam_dir: '.'
-          site_title: 'FF\'s Notes'
+          site_title: "FF's Notes"
           exclude_tags: 'private,draft'
 
       - name: Upload artifact
