@@ -1,0 +1,53 @@
+:PROPERTIES:
+:ID:       8A95C680-1501-423E-AAE1-4D4BDF8A94D6
+:ROAM_REFS: https://siddancha.github.io/streaming-flow-policy/notebooks/index.html @jiangStreamingFlowPolicy2025
+:END:
+#+title: Streaming Flow Policy: Simplifying Diffusion/Flow-Matching Policies by Treating Action Trajectories as Flow Trajectories
+#+filetags: :flow-matching:
+#+startup: latexpreview
+
+* Stablizing Conditional Flow
+
+Give a trajectory $\xi \sim \mathcal{D}$ with associated observation history $h$, we will define a conditional flow field $u^{\theta}_t(x | h)$ for learning.
+
+First, we sample the initial action $a_0$ from a Gaussian centered at the initial action of the demonstration trajectory:
+
+\[
+a_0 \sim \mathcal{N}(\xi_0, \sigma_0^2)
+\]
+
+where $\sigma_0$ is a small value. Then the stablizing velocity field is given by:
+
+\[
+u_t(a|\xi) = -k (\psi_t - \xi_t) + \dot{\xi_t}
+\]
+
+where $-k (\psi_t - \xi_t)$ is the stablizing term to correct deviations from the trajectory.
+
+The corresponding ODE is
+
+\begin{align*}
+\frac{d}{dt} \psi_t &= u_t(x|\xi) \\
+\frac{d}{dt} \psi_t &= -k (\psi_t - \xi_t) + \dot{\xi_t} \\
+\frac{d}{dt} (\psi_t - \xi_t) &= -k (\psi_t - \xi_t)
+\end{align*}
+
+The solution of this ODE, i.e., the flow is
+
+\[
+\psi_t(a_0|\xi) = \xi_t + (a_0 - \xi_0) e^{-kt}
+\]
+
+*Proof*
+
+- Check $\psi_0(a_0|\xi)_0 = \xi_0 + (a_0 - \xi_0) e^{k \times 0} = a_0$
+
+- Check $\frac{d}{dt} \psi_t(a_0) = \dot{\xi_t} -k (a_0 - \xi_0) e^{-kt} = \dot{\xi_t} -k (\psi_t - \xi_t) = u_t(x|\xi)$
+
+The per-timestep marginal distribution of the conditional flow at any time $t$ is a Gaussian (based on $a_0 \sim \mathcal{N}(\xi_0, \sigma_0^2)$):
+
+\[
+P(a | t, \xi) = \mathcal{N}(a | \xi_t, \sigma_0^2 e^{-2kt})
+\]
+
+* Decoupling Stochastic via Latent Variables

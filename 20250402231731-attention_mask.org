@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       A9D6F401-4B12-4318-9075-1205231701C7
+:END:
+#+title: Attention Mask
+
+
+An attension mask is a tool used in transformer models to help the model focus on the important part of an input sequence while ignoring the parts that aren't relevant, such as padding.

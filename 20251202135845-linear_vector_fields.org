@@ -1,0 +1,21 @@
+:PROPERTIES:
+:ID:       274B1EC2-133D-474E-A779-14CFC9065EF7
+:END:
+#+title: Linear Vector Fields
+#+filetags: :flow-matching:
+#+startup: latexpreview
+
+Consider a simple vector fields function $u_t(x)$, which is a simple linear function in $x$, i.e. $u_t(x) = -\theta x$ for $\theta > 0$. Then the function
+
+\[
+\psi_t(x_0) = \exp (-\theta t) x_0
+\]
+
+defines a flow $\psi$ solving the ODE.
+
+
+** Proof
+
+- Check $\psi_0(x_0) = x_0$
+
+- Check $\frac{d}{dt} \psi_t(x_0) = u_t(\psi_t(x_0))$

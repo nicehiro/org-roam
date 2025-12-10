@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       DF11ACF3-CD60-4C0B-961C-7572B56CC34B
+:END:
+#+title: Generative Models
+
+The core of generative models is the ability to generate objects. Two widely used generative AI algorithms are [[id:21522348-ADC5-46E5-A547-C0642628E5F3][Diffusion]] models and [[id:A6D90FE6-3E42-4C31-A7CD-C1898D821C89][Flow Matching]].
+
+
+#+begin_quote Generation as Sampling
+Generating an object $z$ is modeled as sampling from the data distribution $z \sim p_{data}$.
+#+end_quote

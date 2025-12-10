@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       0AD75970-48F7-4902-845B-44E056C5788C
+:END:
+#+title: Causal Attention
+
+Causal attention is a type of _self-attention mechanism_ that only allows a model to consider tokens that appear _at or before the current position_ in a sequence, preventing it from "seeing" or attending to future tokens.
+
+This is crucial for autoregressive tasks like language modeling, where the model must predict the next token based only on the preceding ones, similar to how a human reads a sentence. It is often referred to as "masked attention" because _future positions are masked out_ during the calculation of attention scores.

@@ -2,3 +2,41 @@
 :ID:       A6D90FE6-3E42-4C31-A7CD-C1898D821C89
 :END:
 #+title: Flow Matching
+#+filetags: :flow-matching:
+#+startup: latexpreview
+
+* Basic Concepts
+
+** ODE
+
+An Ordinary Differential Equation (ODE) is defined by a _vector field_ $u: \mathbb{R}^d \times [0,1] \to \mathbb{R}^d, (x, t) \to u_t(x)$, i.e. a function of the form
+
+\[
+\frac{d}{dt} X_t = u_t(X_t)
+\]
+
+The solution of an ODE is defined by a _trajectory_ $X: [0, 1] \to \mathbb{R}^d, t \to X_t$, that maps from time $t$ to some location in space $\mathbb{R}^d$.
+
+An ODE imposes a condition on a trajectory: we want a trajectory $X$ that "follows along the lines" of the vector field $u_t$, starting from the point $x_0$.
+
+If we start at $X_0 = x_0$ at $t = 0$, where are we at time $t$ (What's the $X_t$)? The function we called _flow_, $\psi: \mathbb{R}^d \times [0,1] \to \mathbb{R}^t, (x_0, t) \to \psi_t(x_0)$, can obtain the $X_t$, which we also call it the solution of the ODE,
+
+\begin{align*}
+\frac{d}{dt} \psi_t(x_0) &= u_t(\psi_t(x_0)) \quad &&\triangleright\ \text{flow ODE} \\
+\psi_0(x_0) &= x_0 \quad &&\triangleright\ \text{flow initial conditions}
+\end{align*}
+
+For a given initial condition $X_0 = x_0$, a trajectory of the ODE is recovered via $X_t = \psi_t(X_0)$. Therefore, vector fields, ODEs, and flows are, intuitively, three description of the same object: *vector fileds define ODEs whose solutions are flows*.
+
+Check [[id:274B1EC2-133D-474E-A779-14CFC9065EF7][Linear Vector Fields]] for a simple example.
+
+** Flow Models
+
+A flow model is described by the ODE
+
+\begin{align*}
+X_0 &\sim p_{\text{init}} &&\triangleright\ \text{random initialization} \\
+\frac{d}{dt} X_t &= u_t^{\theta}(X_t) &&\triangleright\ \text{ODE}
+\end{align*}
+
+that converts a sample from $p_{init}$ to the desired distribution $p_{data}$ follows a trajectory.

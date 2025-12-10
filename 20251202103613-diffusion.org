@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       21522348-ADC5-46E5-A547-C0642628E5F3
+:END:
+#+title: Diffusion
+
+The goal of diffusion model is to transform samples from $x \sim p_{init}$ into samples from $p_{data}$, where $p_{init}$ is known as a prior and we can easily sample from.

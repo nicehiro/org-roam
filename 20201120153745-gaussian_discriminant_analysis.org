@@ -13,38 +13,38 @@
 
 GDA 模型为：
 
-\begin{aligned}
+\begin{align*}
 y &\sim \text{Bernoulli}(\phi) \\
 x|y=0 &\sim \mathcal{\mu_0,\Sigma} \\
 x|y=1 &\sim \mathcal{\mu_1,\Sigma} \\
-\end{aligned}
+\end{align*}
 
 展开为：
 
-\begin{aligned}
+\begin{align*}
 p(y) &=\phi^{y}(1-\phi)^{1-y} \\
 p(x \mid y=0) &=\frac{1}{(2 \pi)^{d / 2}|\Sigma|^{1 / 2}} \exp \left(-\frac{1}{2}\left(x-\mu_{0}\right)^{T} \Sigma^{-1}\left(x-\mu_{0}\right)\right) \\
 p(x \mid y=1) &=\frac{1}{(2 \pi)^{d / 2}|\Sigma|^{1 / 2}} \exp \left(-\frac{1}{2}\left(x-\mu_{1}\right)^{T} \Sigma^{-1}\left(x-\mu_{1}\right)\right)
-\end{aligned}
+\end{align*}
 
 请注意，此模型中两个随机变量分别有各自的均值 $\mu_0,\mu_1$ ，
 但二者的协方差矩阵都是 $\Sigma$ 。
 
 使用[[id:0863DAB5-25FA-42BD-A02F-9EF1FC11DA78][极大似然法]]求解，计算其 log-likelihood
 
-\begin{aligned}
+\begin{align*}
 \ell\left(\phi, \mu_{0}, \mu_{1}, \Sigma\right) &=\log \prod_{i=1}^{n} p\left(x^{(i)}, y^{(i)} ; \phi, \mu_{0}, \mu_{1}, \Sigma\right) \\
 &=\log \prod_{i=1}^{n} p\left(x^{(i)} \mid y^{(i)} ; \mu_{0}, \mu_{1}, \Sigma\right) p\left(y^{(i)} ; \phi\right)
-\end{aligned}
+\end{align*}
 
 求得其中参数为：
 
-\begin{aligned}
+\begin{align*}
 \phi &=\frac{1}{n} \sum_{i=1}^{n} 1\left\{y^{(i)}=1\right\} \\
 \mu_{0} &=\frac{\sum_{i=1}^{n} 1\left\{y^{(i)}=0\right\} x^{(i)}}{\sum_{i=1}^{n} 1\left\{y^{(i)}=0\right\}} \\
 \mu_{1} &=\frac{\sum_{i=1}^{n} 1\left\{y^{(i)}=1\right\} x^{(i)}}{\sum_{i=1}^{n} 1\left\{y^{(i)}=1\right\}} \\
 \Sigma &=\frac{1}{n} \sum_{i=1}^{n}\left(x^{(i)}-\mu_{y^{(i)}}\right)\left(x^{(i)}-\mu_{y^{(i)}}\right)^{T}
-\end{aligned}
+\end{align*}
 
 上诉参数其实都可以从统计的角度给出合理解释，用样本估计分布参数。
 

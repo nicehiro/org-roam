@@ -7,3 +7,5 @@ logseq/
 .DS_Store
 *~
 *.log
+ltxpng/
+org-tex-*
