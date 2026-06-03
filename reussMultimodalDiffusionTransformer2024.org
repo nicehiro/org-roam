@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       5BDF8D45-CC0A-4B33-BA52-D8AD73821015
+:ROAM_REFS: @reussMultimodalDiffusionTransformer2024
+:END:
+#+title: Multimodal Diffusion Transformer: Learning Versatile Behavior from Multimodal Goals
+#+filetags: :transformer:diffusion:

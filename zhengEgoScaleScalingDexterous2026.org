@@ -1,0 +1,16 @@
+:PROPERTIES:
+:ID:       D732D70F-13A0-4A4B-B202-869E0BD4C975
+:ROAM_REFS: @zhengEgoScaleScalingDexterous2026
+:END:
+#+title: EgoScale: Scaling Dexterous Manipulation with Diverse Egocentric Human Data
+
+The training of EgoScale:
+
+1. pre-training with 20854 hours in-the-wild egocentric recordings spanning diverse real-world environments, incorporating with 829 hours EgoDex dataset that covers 194 tasks. No freezing modules.
+
+2. mid-training with 344 teletop manipulation tasks, with each task captured in approximately 30 human trajectories and 5 robot trajectories, totaling about 50 hours of human data and only 4 hours of robot data. Freezing VLM backbone and only updating vision encoder and DiT head.
+
+3. post-training on task specific robot demonstrations.
+
+
+The model architecture is nothing new here.

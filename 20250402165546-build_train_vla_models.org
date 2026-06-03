@@ -1,0 +1,23 @@
+:PROPERTIES:
+:ID:       420DAEBD-7C05-4971-AE53-12F8F07E0E72
+:END:
+#+title: Build & Train VLA Models
+#+filetags: :LLM:VLA:
+
+
+From [[id:F4850CF2-B4D8-4832-B1B1-3D38DDB88864][MoLe-VLA: Dynamic Layer-skipping Vision Language Action Model via Mixture-of-Layers for Efficient Robot Manipulation]]:
+
+#+begin_quote
+A 7B VLA model running on a commercial-grade GPU like the RTX 4090 generally achieves an inference frequency of approximately 5-12 Hz.
+#+end_quote
+
+
+* Training Parameters
+
+** Data Collator
+
+Core functionality:
+1. Batch creation.
+2. Padding. Ensuring all samples in a batch (such as variable-length text inputs) have the same dimensions.
+3. Convert Python objects to PyTorch.
+4. Create attention masks or add special tokens.

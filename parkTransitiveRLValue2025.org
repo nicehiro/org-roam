@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       AD878219-AE4A-4FD4-9094-A8984BA05CAE
+:ROAM_REFS: https://seohong.me/blog/rl-without-td-learning/ @parkTransitiveRLValue2025
+:END:
+#+title: Transitive RL: Value Learning via Divide and Conquer
+#+filetags: :off_policy:rl:

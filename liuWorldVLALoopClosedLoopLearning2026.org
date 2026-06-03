@@ -1,0 +1,18 @@
+:PROPERTIES:
+:ID:       E0B6F0B8-4950-4C60-95EF-A82FA615D39A
+:ROAM_REFS: @liuWorldVLALoopClosedLoopLearning2026
+:END:
+#+title: World-VLA-Loop: Closed-Loop Learning of Video World Model and VLA Policy
+
+Current major paradigms to overcome real-world RL challenges:
+
+- handcrafted digital twins, which rely on manual asset creation and physics engine modeling but often lack the photorealism and physical fidelity required for real-world adaptation
+
+- 3D based construction, which utilize geometric 3D methods to represent scenes but struggle to generalize across diverse environments and rarely support stochastic exploration
+
+- Video world model generation, which leverage pretrained priors for better generalization but suffer from imprecise action-following and ungrounded reward signals
+
+
+One interesting idea is the Success and Near Success Dataset (SANS). Such data is critical for training robust world models for two reasons: (1) because these trajectories are difficult to distinguish from successful executions, they force the world model to focus on fine-grained nuances in spatial dynamics; and (2) since robot policies frequently exhibit these ”near-success” behaviors, including them ensures the virtual environment more accurately reflects the actual failure modes encountered during policy rollouts.
+
+While the whole training frame work seems combination of few works, such as video world model from Nvidia Cosmos-Predict 2, and adding reward model, adding RL post-training with world model.

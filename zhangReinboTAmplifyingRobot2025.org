@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       AE5E58FE-F1F3-497A-8553-21A65134E16E
+:ROAM_REFS: @zhangReinboTAmplifyingRobot2025
+:END:
+#+title: ReinboT: Amplifying Robot Visual-Language Manipulation with Reinforcement Learning

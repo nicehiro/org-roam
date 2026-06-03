@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       89936A5F-CD51-4BE2-A1F2-1DA11A3F18AF
+:ROAM_ALIASES: ViT
+:END:
+#+title: Vision Transformer

@@ -3,7 +3,7 @@
 
 ((org-mode . ((org-download-image-dir . "./img")
               (eval . (org-indent-mode -1))
-              (eval . (org-hugo-auto-export-mode))
+              (eval . (when (fboundp 'org-hugo-auto-export-mode) (org-hugo-auto-export-mode)))
               (org-hugo-base-dir . "/Users/fangyuan/Documents/quartz/")
               (org-hugo-section . "/")
               (org-hugo-from-matter-format . "yaml"))))

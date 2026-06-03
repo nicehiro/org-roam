@@ -1,0 +1,4 @@
+:PROPERTIES:
+:ID:       CB50E68D-5701-4A2C-B5A7-0A295E3A370D
+:END:
+#+title: Layer Norm

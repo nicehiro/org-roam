@@ -1,0 +1,24 @@
+:PROPERTIES:
+:ID:       D7D2C3C7-9B40-4854-829E-2FB0CAFB555C
+:ROAM_REFS: @yadavRobustFinetuningVisionLanguageAction2026
+:END:
+#+title: Robust Finetuning of Vision-Language-Action Robot Policies via Parameter Merging
+#+filetags: :parameter-merging:VLA:
+
+Naive approaches for finetuning of generalist policies narrowly improve target task performance on settings seen in the finetuning data, but fail to generalize or retain generality beyond the target task.
+
+This paper indicates it is the first to demonstrate the effectiveness of model merging in the context of generalist robot policies.
+
+The core idea is:
+
+$$
+\bar{\theta} = (1- \alpha) \cdot \theta_{pre} + \alpha \cdot \theta_{ft}
+$$
+
+1. Using separate $\alpha$ per modality, they find it suffices to *only merge the LLM backbone* ($\alpha_v = \alpha_a = 1$, $\alpha_l < 1$). The LLM backbone is where generalist knowledge lives.
+
+2. Co-finetuning on $\mathcal{D}_\eta + \mathcal{D}_{\text{pre}}$ before merging outperforms task-only finetuning. Co-FT prevents forgetting; merging transfers generalist knowledge. They stack.
+
+3. More pretraining data $\rightarrow$ better merging. With the largest model, OOD performance nearly matches ID.
+
+4. ~40% higher OOD success rate vs best prior finetuning baselines on real-world DROID tasks.

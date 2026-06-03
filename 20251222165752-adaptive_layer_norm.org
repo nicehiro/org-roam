@@ -1,0 +1,43 @@
+:PROPERTIES:
+:ID:       AC0B3B8F-8CE5-4B17-B4A7-268D915D3DB6
+:END:
+#+title: Adaptive Layer Norm
+#+filetags: :transformer:normalization:
+
+Adaptive Layer Norm (adaLN) extends standard [[id:CB50E68D-5701-4A2C-B5A7-0A295E3A370D][Layer Norm]] by making the scale and shift parameters input-dependent.
+
+* Standard Layer Norm
+
+$$\text{LayerNorm}(x) = \gamma \odot \frac{x - \mu}{\sigma} + \beta$$
+
+where $\gamma$ (scale) and $\beta$ (shift) are learned parameters, fixed after training.
+
+* Adaptive Layer Norm
+
+$$\text{adaLN}(x, c) = \gamma(c) \odot \frac{x - \mu}{\sigma} + \beta(c)$$
+
+where $\gamma(c)$ and $\beta(c)$ are predicted from a conditioning input $c$ via a small MLP:
+
+#+begin_src python
+# Typical implementation
+def adaln(x, c, norm):
+    # c: conditioning embedding (e.g., timestep + class)
+    gamma, beta = mlp(c).chunk(2, dim=-1)
+    return gamma * norm(x) + beta
+#+end_src
+
+* adaLN-Zero
+
+adaLN-Zero (from [[id:D0C3C40E-AC68-425C-8849-B1CC3D70234F][DiT]]) adds a third parameter $\alpha$ that scales the output of attention/MLP blocks:
+
+$$h = h + \alpha(c) \odot \text{Block}(\text{adaLN}(h, c))$$
+
+The key insight: initialize $\alpha = 0$. This makes each transformer block an identity function at initialization, enabling stable training of deep networks.
+
+* Why It Works
+
+adaLN allows conditioning information to modulate feature statistics at every layer without:
+- Adding cross-attention layers (computationally expensive)
+- Increasing sequence length (in-context tokens)
+
+The conditioning "steers" the network's internal representations by adjusting how features are normalized—a lightweight but powerful mechanism.

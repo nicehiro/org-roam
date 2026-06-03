@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       08FA117F-EBCC-406F-B3CC-59B9DDA64D6C
+:ROAM_REFS: @yanManiFlowGeneralRobot
+:END:
+#+title: ManiFlow: A General Robot Manipulation Policy via Consistency Flow Training
+#+filetags: :flow-matching:
+
+This paper propose DiT-X, which is a diffusion transformer architecture with adaptive cross-attention and AdaLN-Zero conditioning that enables fine-gained feature interactions between action tokens and multi-modal observations: vision, language, and proprioceptive state.

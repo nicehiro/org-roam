@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       77ED10A8-95DF-4BB4-B3EB-22656066C29E
+:ROAM_REFS: @gaoFLIPFlowCentricGenerative2025
+:END:
+#+title: FLIP: Flow-Centric Generative Planning as General-Purpose Manipulation World Model
+
+Key idea: use image flow as a robot-agnostic high-level action / short-horizon visual plan, then condition a video world model on that flow for rollout and search.
+
+- “flow” is better understood as an abstract plan token than a primitive action; the paper calls it action because planning happens in flow space.
+
+- Real actions are produced by a separate low-level diffusion-style policy conditioned on observation + language + predicted flow/video plan.
+
+- Nice scaling story: world model learns mostly from video-language data; only the executor needs a smaller action-labeled dataset.
+
+- Related idea: predict a future robot joint / end-effector trace as an intermediate subgoal for the action head. Likely useful as trajectory-conditioned control on one embodiment, though less general than image flow and maybe better framed as a motion trace than “flow”.

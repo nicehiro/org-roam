@@ -1,0 +1,38 @@
+:PROPERTIES:
+:ID:       624FFD71-0D23-4F95-B362-3185D3F02162
+:ROAM_REFS: @torneMEMMultiScaleEmbodied2026
+:END:
+#+title: MEM: Multi-Scale Embodied Memory for Vision Language Action Models
+#+filetags: :pi:VLA:manipulation:
+
+
+Built on top of [[id:F7FB5F78-A70C-4E71-9F77-9251D947F38E][$\pi_{0.6}$: A VLA That Learns From Experience]].
+
+MEM factorizes policy memory into two levels:
+1. =Short-term memory=: a video encoder compresses a recent sequence of observations so the policy can handle occlusion, timing, local dynamics, and failure recovery.
+2. =Long-term memory=: a high-level policy maintains a natural-language summary of past semantic events, e.g. which substeps of a recipe are done.
+
+So instead of throwing the whole history into one huge context window, MEM stores different timescales in different formats.
+
+-----
+
+
+*Efficient ViT-based video encoder for short-horizon memory.*
+
+- Patchify each frame separately.
+- Add a sinusoidal temporal embedding with =e(0)=0= so the current frame matches the original pretrained single-image ViT behavior.
+- Every 4th ViT layer adds =causal temporal attention= across timesteps for the same patch location.
+- Attention is factorized into _space_ and _time_ instead of full spatiotemporal attention.
+- Past-frame patch tokens are dropped in upper layers, so only the current-frame representation is passed downstream.
+
+Complexity:
+- naive joint space-time attention: ~$O(K^2 n^2)$
+- their factorized attention: ~$O(K n^2 + n K^2)$
+
+-----
+
+
+*Why naive memory is not enough?*
+
+1. =Just feed more history=: too expensive for real-time robot control.
+2. =Just append all past text=: causes train-test mismatch, since inference may contain repeated failed attempts that are rare in demonstrations.

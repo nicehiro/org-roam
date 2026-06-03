@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       62425CBD-101C-4289-B4F4-BEA01E62EADA
+:END:
+#+title: BF16
+
+
+BF16, brain float 16, is a 16-bit floating point format,
+
+- 1 sign bit, 8 exponent bits, 7 mantissa bits
+- Lower precision, same range as FP32
+- Range: ~1e-38 to 3.4e38
+- More stable for training, less likely to overflow

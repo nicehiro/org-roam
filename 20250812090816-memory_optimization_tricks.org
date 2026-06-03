@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       FA92F691-06AB-4A4D-853D-713F9FD3B570
+:END:
+#+title: Memory Optimization Tricks
+
+
+* Save tensors with 16 bit
+
+* Gradient checkpointing
+
+Saves memory by recomputing intermediate activations during backprop instead of storing them
+
+* Quantize model

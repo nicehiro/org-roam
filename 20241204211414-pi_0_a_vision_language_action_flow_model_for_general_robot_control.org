@@ -2,11 +2,10 @@
 :ID:       205DE6FB-054E-418A-BC32-C05E82AF1CA0
 :END:
 #+title: $\pi_0$: A Vision-Language-Action Flow Model for General Robot Control
-#+filetags: :manipulation:VLA:
+#+filetags: :pi:manipulation:VLA:
 
 
-This paper proposes a novel [[id:A6D90FE6-3E42-4C31-A7CD-C1898D821C89][Flow Matching]] architecture built on the top of a pre-trained vision-language model (paligemma) and introduces details of how to build and train on a large and diverse dataset from multiple robot platforms. The flow matching algorithm is a variant of diffusion, which allows to handle high-frequency action chunks and highly  dexterous tasks.
-
+This paper proposes a novel [[id:A6D90FE6-3E42-4C31-A7CD-C1898D821C89][Flow Matching]] architecture built on the top of a pre-trained vision-language model (paligemma) and introduces details of how to build and train on a large and diverse dataset from multiple robot platforms.
 
 Some interesting ideas from the paper:
 
@@ -18,21 +17,21 @@ Some interesting ideas from the paper:
 
 4. They also mention that utilizing a high-level policy (such as [[id:c7a09bfb-55e9-445b-ab93-3ec69b8a4fb3][SuSIE: Subgoal Synthesis via Image Editing]]) that decomposes high-level tasks into more immediate subtasks to assist the proposed VLA to complete more complex tasks.
 
+-----
 
-* Training
+
+*Training.*
 
 1. They use the PaliGemma VLM as basebone, with the following differences: (1) additional input and output projections for the robotics-specific tokens, including the robot states and actions, (2) additional MLP for the flow matching timestep information, (3) a second, smaller set of weights for the action expert.
 
 2. The action chunk size is set to 50.
 
-3. The action expert / head is implemented as a single transformer with two sets of weights, where each token is routed to one of the experts; the weights interact only through the transformer's self-attention layers.
+3. The model structure is quite interesting: it contains one gemma-2b for llm reasoning, and one gemma-300M for action expert. The image and text tokens will input to llm head, and the robot state and action noise will input to action head. And they use attention to connect the output of llm head and the robot state.
 
-4. The image and language prompt are routed to the VLM backbone, while the robot states and noise actions are routed to the action expert.
-
-5. The model structure is quite interesting: it contains one gemma-2b for llm reasoning, and one gemma-300M for action expert. The image and text tokens will input to llm head, and the robot state and action noise will input to action head. And they use attention to connect the output of llm head and the robot state.
+-----
 
 
-* Attention Mask
+*Attention Mask.*
 
 $\pi_0$ uses a blockwise [[id:0AD75970-48F7-4902-845B-44E056C5788C][Causal Attention]] mask with 3 blocks $[I_t^1, \cdots, I_t^n, l_t]$, $[q_t]$, and $[a_t, \cdots, a_{t+H-1}]$, where $I_t^n$ denotes the image captured by camera $n$ at time step $t$, $l_t$ is the language prompt or task description, $q_t$ is the proprioceptive state at time step $t$, and $[a_t, \cdots, a_{t+H-1}]$ denotes the action chunks from time step $t$ to $t+H-1$.
 

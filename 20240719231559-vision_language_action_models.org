@@ -20,13 +20,13 @@ We categorize current VLA architectures into two broad families:
 
 - Single‑system VLAs. A single vision–language model handles perception, reasoning, and action prediction. Continuous motor commands are first discretized by a learned action tokenizer (derived from the text tokenizer), and the model simply generates these tokens in sequence.
 
-- Dual‑system VLAs. High‑level understanding and low‑level control are split. A vision–language backbone encodes the current images and instruction, while a dedicated action‑policy network produces continuous commands from those embeddings.
+- Dual‑system VLAs. High-level understanding and low-level control are split. A vision–language backbone encodes the current images and instruction, while a dedicated action‑policy network produces continuous commands from those embeddings.
 
 Two principal mechanisms are used to connect the vision–language backbone to the action head:
 
-- Special‑token-bridged. During VLM fine‑tuning, a reserved token such as _<ACT>_ is appended; its final embedding is passed directly to the policy.
+- Special-token-bridged. During VLM fine‑tuning, a reserved token such as _<ACT>_ is appended; its final embedding is passed directly to the policy.
 
-- Feature‑pooling-bridged. The full sequence of hidden states is aggregated—via max‑pooling, mean‑pooling, or learned attention—to yield a compact feature vector fed to the policy.
+- Feature-pooling-bridged. The full sequence of hidden states is aggregated—via max-pooling, mean‑pooling, or learned attention—to yield a compact feature vector fed to the policy.
 
 
 ** Single-system VLA
@@ -57,6 +57,40 @@ Two principal mechanisms are used to connect the vision–language backbone to t
 
 ** Dual-system VLA
 
+*** Conditioning Strategy Comparison
+
+How does the vision language features and proprio. states connected to the action head?
+
+Check [[id:D0C3C40E-AC68-425C-8849-B1CC3D70234F][Scalable Diffusion Models with Transformers]] for more details of Cross-attn, adaLN, and In-context variantion of DiT.
+
+| Model    | VLM Features | Proprio State |
+|----------+--------------+---------------|
+| [[id:205DE6FB-054E-418A-BC32-C05E82AF1CA0][π0]]       | Cross-attn^{1}  | Cross-attn^{2}   |
+| [[id:C4645F29-C882-4085-925C-635C4E599EB5][\pi0.5]]     | Cross-attn^{3}  | Cross-attn^{}^{}    |
+| [[id:08FA117F-EBCC-406F-B3CC-59B9DDA64D6C][ManiFlow]] | Cross-attn   | adaLN         |
+| [[id:8F86ED09-A19E-4B08-981A-2D41978DFF6C][FLOWER]]   | Cross-attn^{4}^{}  | adaLN         |
+| [[id:2741ABC6-618E-4D10-A8DA-9A0E45204AF5][GR00T N1]] | Cross-attn^{5}^{}  | In-context^{6}^{}   |
+| [[id:AA1366AF-40B5-4975-9559-F0C7554B58C0][SmolVLA]]  | Cross-attn   | Cross-attn^{7}^{}   |
+| [[id:5E419DBB-717B-4F15-AE02-0E094E889ADF][CogACT]]   | In-context^{8}  | ---           |
+| [[id:F4850CF2-B4D8-4832-B1B1-3D38DDB88864][MoLe-VLA]] | In-context^{9}  | ---           |
+| [[id:8AA412D7-D9A6-4471-B8EA-251FF8D576AD][DeeR-VLA]] | In-context^{10} | In-context    |
+| OTTER    | Cross-attn^{11} | Cross-attn    |
+
+Note: All models use adaLN-Zero for timestep conditioning.
+
+1. π0 uses blockwise causal attention: VLM tokens in first block, action tokens attend to all blocks. Preserves VLM pre-training distribution. π series VLA models are using Gemma as action expert, not DiT structure.
+2. π0 places proprio in a separate block between VLM and actions, enabling KV caching during flow sampling.
+3. π0.5 uses blockwise causal attention: VLM tokens and proprio state tokens (by text-tokenzier) in first block, action tokens attend to all blocks.
+4. FLOWER projects VLM latent tokens through linear layer + RMSNorm before cross-attention.
+5. GR00T N1 uses middle-layer (12th) LLM embeddings instead of final layer for better downstream performance.
+6. GR00T N1 uses per-embodiment MLP projection for heterogeneous robot morphologies.
+7. SmolVLA projects proprio to a single token via linear layer, and do cross-attention with vision and language in VLM backbone.
+8. CogACT takes a special token as conditional token, assuming it contains all information of vision and language, into action head, and combined with noised action tokens.
+9. MoLe-VLA uses almost same architecture as CogACT.
+10. DeeR-VLA doesn't use DiT as action head, so it just combines both pooled vlm features and proprio state history.
+11. OTTER first select text-aware vision tokens, then combine with proprio state token (by using MLP), then do pooling (I guess mean) to get one token, then do cross attention with noised action tokens.
+
+
 *** Special-token-bridged
 
 - *OpenHelix*: [[id:3EA902A0-CFFC-4B97-AD97-86CCE3247849][OpenHelix: A Short Survey, Empirical Analysis, and Open-Source Dual-System VLA Model for Robotic Manipulation]], Westlake University, arxiv, May 6 2025. [[[http://arxiv.org/abs/2505.03912][Paper]]]
@@ -73,7 +107,7 @@ Two principal mechanisms are used to connect the vision–language backbone to t
 
 - *SmolVLA*: [[id:AA1366AF-40B5-4975-9559-F0C7554B58C0][SmolVLA: A Vision-Language-Action Model for Affordable and Efficient Robotics]], Hugging Face, arxiv, Jun 4 2025. [[[http://arxiv.org/abs/2506.01844][Paper]]] [[[https://huggingface.co/blog/smolvla][Website]]] [[[https://huggingface.co/blog/smolvla][Model]]]
 
-- *$\pi_{0.5}$*: $\pi_{0.5}$: a Vision-Language-Action Model with Open-World Generalization, Physical Intelligence, arxiv, Apr 22 2025. [[[http://arxiv.org/abs/2504.16054][Paper]]] [[[https://www.pi.website/blog/pi05][Website]]]
+- $\pi_{0.5}$: $\pi_{0.5}$: a Vision-Language-Action Model with Open-World Generalization, Physical Intelligence, arxiv, Apr 22 2025. [[[http://arxiv.org/abs/2504.16054][Paper]]] [[[https://www.pi.website/blog/pi05][Website]]]
 
 - *Hi Robot*: Hi Robot: Open-Ended Instruction Following with Hierarchical  Vision-Language-Action Models, Physical Intelligence & Stanford University, arxiv, Feb 26 2025. [[[http://arxiv.org/abs/2502.19417][Paper]]] [[[https://www.pi.website/research/hirobot][Website]]]
 

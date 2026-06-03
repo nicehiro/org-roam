@@ -1,0 +1,26 @@
+:PROPERTIES:
+:ID:       BFFFB974-3AB2-44A7-8EF6-CEA62C08F1F4
+:ROAM_REFS: @aiP07SteerableGeneralist
+:END:
+#+title: $\pi$0.7: A Steerable Generalist Robotic Foundation Model with Emergent Capabilities
+#+filetags: :pi:VLA:manipulation:
+
+
+This is a follow-up paper of [[id:205DE6FB-054E-418A-BC32-C05E82AF1CA0][$\pi_0$: A Vision-Language-Action Flow Model for General Robot Control]], [[id:C4645F29-C882-4085-925C-635C4E599EB5][$\pi_{0.5}$: A Vision-Language-Action Model with Open-World Generalization]], [[id:F7FB5F78-A70C-4E71-9F77-9251D947F38E][$\pi_{0.6}$: A VLA That Learns From Experience]].
+
+*Update*: train with context prompts that include not only task language, but also subtask instructions, generated subgoal images, control mode, and episode metadata (speed, quality, mistake labels).
+
+-----
+
+
+*History observation encoding*: $\pi_{_{0.7}}$ uses a MEM-style ([[id:624FFD71-0D23-4F95-B362-3185D3F02162][MEM: Multi-Scale Embodied Memory for Vision Language Action Models]]) history encoder: multiple past observation frames are temporally/spatially compressed into a fixed number of visual tokens, equal to one frame’s token budget. This gives memory without increasing transformer context length proportional to history length.
+
+-----
+
+
+$q_t$: Unlike 0.6 that uses discretized text tokens to represent, 0.7 follows MEM and embeds the state using a linear projection that maps the state dimension to the backbone dimension.
+
+-----
+
+
+*Sampling scheme*: We found the following sampling scheme to be effective for selecting the timesteps for the real images: with probability 0.25, we sample the _end-of-segment images_ (consistent with the prediction target for the world model), and with probability 0.75 we sample future images _uniformly from 0–4 seconds_ ahead of the current timestep.
