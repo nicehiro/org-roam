@@ -1,0 +1,17 @@
+:PROPERTIES:
+:ID:       D00D4418-E056-4D99-A0D7-635B9887816B
+:ROAM_REFS: @wuOSCAROmniEmbodimentActionConditioned2026
+:END:
+#+title: OSCAR: Omni-Embodiment Action-Conditioned World Model for Robotics
+#+filetags: :WM:
+
+
+OSCAR for Robotics proposes an action-conditioned video world model for evaluating robot policies across different embodiments. The key idea is to represent actions as rendered 2D kinematic skeletons, providing a unified conditioning signal that works for multiple robot arms, mobile manipulators, and even human hands, instead of relying on embodiment-specific joint spaces or end-effector poses. The authors also build a large curated training pipeline that filters and deduplicates diverse robot and egocentric human manipulation datasets, then finetune Cosmos-Predict2.5-2B to generate future robot videos from an initial frame and action sequence.
+
+-----
+
+
+Input: first RGB frame + rendered 2D action skeleton sequence
+Backbone: VAE-encoded video diffusion transformer, finetuned from Cosmos-Predict2.5-2B
+Conditioning: skeleton latent tokens added to noisy video latent tokens
+Output: future robot video rollout following the given action sequence

@@ -1,0 +1,33 @@
+:PROPERTIES:
+:ID:       2756715E-91A0-476F-9BFE-F28C5C9E3520
+:ROAM_REFS: @zhuUnifiedWorldModels2025
+:END:
+#+title: Unified World Models: Coupling Video and Action Diffusion for Pretraining on Large Robotic Datasets
+#+filetags: :WM:VLA:
+
+
+**Idea** The paper unifies policy learning and world modeling in one diffusion model. Instead of training only $p(a|o)$, it trains over the joint: current observation $o$, action chunk $a$, and future observation $o'$.
+
+The key insight is: *diffusion timestep can behave like a modality mask.*
+
+Action and future observations have seperate diffusion steps, but within same diffusion model. $t_a$ used for action and $t_{o'}$ used for future observation.
+
+1. During training, $t_a$ and $t_{o'}$ sampled independently, and training together with 1 combined loss.
+
+2. During inference, manually setting following to change the model behavior: ($o$ is conditional vector)
+
+to' = T  -> mask future obs -> policy p(a | o)
+ta = 0   -> condition on action -> forward dynamics p(o' | o, a)
+to' = 0  -> condition on future obs -> inverse dynamics p(a | o, o')
+ta = T   -> mask action -> video prediction p(o' | o)
+
+-----
+
+
+*Results* The ablation where they reconstruct future observations performs better than reconstructing current observations.
+
+-----
+
+
+*Limitations*
+The main policy evaluation still uses only the action output; the world model mostly helps through training, not explicit planning.
